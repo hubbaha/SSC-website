@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "prebuild": "tsc tailwind.config.ts --outDir .",
-    "build": "ts-node tailwind.config.ts && next build",
+    
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },

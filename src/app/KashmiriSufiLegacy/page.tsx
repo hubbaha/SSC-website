@@ -183,13 +183,6 @@ export default function Home() {
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
                 Kahmiri Sufism promoted unity, tolerance, coexistence.
-
-
-
-
-
-
-
                 </p>
               </div>
             </li>
