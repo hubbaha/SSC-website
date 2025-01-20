@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Products">
+        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Products">
         {/*Product Start*/}
         <section className="product">
             <div className="container">
@@ -89,7 +89,7 @@ export default function Home() {
                                     <div className="col-xl-4 col-lg-4 col-md-6">
                                         <div className="product__all-single">
                                             <div className="product__all-img">
-                                                <img src="assets/images/shop/shop-product-1-1.jpg" alt=""/>
+                                                <img src="assets/images/shop/product1.jpg" alt=""/>
                                             </div>
                                             <div className="product__all-content">
                                                 <div className="product__all-review">
@@ -99,8 +99,8 @@ export default function Home() {
                                                     <i className="fa fa-star"></i>
                                                     <i className="fa fa-star"></i>
                                                 </div>
-                                                <h4 className="product__all-title"><Link href="product-details">classNamey
-                                                        chair</Link></h4>
+                                                <h4 className="product__all-title"><Link href="product-details">Kashmiri Necklace
+                                                        </Link></h4>
                                                 <p className="product__all-price">$33.00</p>
                                                 <div className="product__all-btn-box">
                                                     <Link href="cart" className="thm-btn product__all-btn">Add to
@@ -114,7 +114,7 @@ export default function Home() {
                                     <div className="col-xl-4 col-lg-4 col-md-6">
                                         <div className="product__all-single">
                                             <div className="product__all-img">
-                                                <img src="assets/images/shop/shop-product-1-2.jpg" alt=""/>
+                                                <img src="assets/images/shop/product2.jpg" alt=""/>
                                             </div>
                                             <div className="product__all-content">
                                                 <div className="product__all-review">
@@ -124,8 +124,8 @@ export default function Home() {
                                                     <i className="fa fa-star"></i>
                                                     <i className="fa fa-star"></i>
                                                 </div>
-                                                <h4 className="product__all-title"><Link href="product-details">Comfy
-                                                        chair</Link></h4>
+                                                <h4 className="product__all-title"><Link href="product-details">Kashmiri Pendant
+                                                        </Link></h4>
                                                 <p className="product__all-price">$68.00</p>
                                                 <div className="product__all-btn-box">
                                                     <Link href="cart" className="thm-btn product__all-btn">Add to
@@ -139,7 +139,7 @@ export default function Home() {
                                     <div className="col-xl-4 col-lg-4 col-md-6">
                                         <div className="product__all-single">
                                             <div className="product__all-img">
-                                                <img src="assets/images/shop/shop-product-1-3.jpg" alt=""/>
+                                                <img src="assets/images/shop/product4.jpg" alt=""/>
                                             </div>
                                             <div className="product__all-content">
                                                 <div className="product__all-review">
@@ -149,8 +149,7 @@ export default function Home() {
                                                     <i className="fa fa-star"></i>
                                                     <i className="fa fa-star"></i>
                                                 </div>
-                                                <h4 className="product__all-title"><Link href="product-details">Boss
-                                                        chair</Link></h4>
+                                                <h4 className="product__all-title"><Link href="product-details">Ethnic necklace</Link></h4>
                                                 <p className="product__all-price">$23.00</p>
                                                 <div className="product__all-btn-box">
                                                     <Link href="cart" className="thm-btn product__all-btn">Add to

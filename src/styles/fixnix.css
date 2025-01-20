@@ -194,6 +194,7 @@ ul {
   z-index: -1;
 }
 
+
 /*--------------------------------------------------------------
 # Custom Cursor
 --------------------------------------------------------------*/
@@ -7695,18 +7696,19 @@ ul {
 .team-one__content {
   position: absolute;
   bottom: 0;
-  right: 117px;
+  right: 219px;
   left: 0;
   background-color: var(--fixnix-white);
-  padding: 22px 19px 22px;
+  padding: 10px 5px 22px;
   border-top-right-radius: 6px;
   z-index: 3;
 }
 
 .team-one__name {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
+  font-size: 20px;
+  font-weight: 300;
+
+  line-height: 18px;
 }
 
 .team-one__name a {
@@ -7720,8 +7722,8 @@ ul {
 }
 
 .team-one__sub-title {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 12px;
+  line-height: 10px;
   color: var(--fixnix-lightpuple);
   margin-top: 4px;
 }

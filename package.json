@@ -2,12 +2,13 @@
   "name": "kumar-global-sufi-centre",
   "version": "0.1.0",
   "private": true,
- "scripts": {
-  "dev": "next dev --turbopack",
-  "build": "ts-node tailwind.config.ts && next build",
-  "start": "next start",
-  "lint": "next lint"
-},
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "prebuild": "tsc tailwind.config.ts --outDir .",
+    "build": "ts-node tailwind.config.ts && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@types/isotope-layout": "^3.0.14",
     "@types/react-curved-text": "^2.0.3",
@@ -31,9 +32,9 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5.7.3"
   }
 }

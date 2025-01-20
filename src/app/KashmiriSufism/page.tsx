@@ -7,21 +7,19 @@ export default function Home() {
     return (
         <>
         <Layout 
-  headerStyle={1} 
-  footerStyle={1} 
-  breadcrumbTitle="Team" 
-  headTitle="Our Team" 
-  wrapperCls="team-page-wrapper"
+    headerStyle={2} 
+    footerStyle={1} 
+    breadcrumbTitle="Team" 
+    headTitle="Our Team" 
+    wrapperCls="team-page-wrapper"
 >
         {/*Team Top Start*/}
         <section className="team-top">
             <div className="container">
                 <div className="section-title section-title--two text-center">
-                    <span className="section-title__tagline">Meet Our Team</span>
-                    <h2 className="section-title__title">We're Gadgetin, Profesional Gadget <br/> Repair Team</h2>
-                    <p className="section-title__text">Duis aute irure dolor in repreh enderit in volup tate velit esse
-                        cillum dolore eu fugiat nulla <br/> dolor atur with Lorem ipsum is simply</p>
-                    <Link href="contact" className="thm-btn team-top__btn">Contact Us</Link>
+                    <span className="section-title__tagline"> Our Heritage</span>
+                    <h2 className="section-title__title">Welcome to the  <br/> Kashmir Sufi Science Centre</h2>
+                    <p className="section-title__text"> a unique institution dedicated to preserving and celebrating the profound spiritual, <br/> intellectual, and scientific legacy of Kashmir Sufi ideology. This Centre stands as a testament to the<br/> region’s rich history of Sufi mysticism, its lasting impact on the sciences, and its integral<br/> role in shaping the cultural and philosophical identity of the Kashmir Valley.</p>
                 </div>
             </div>
         </section>
@@ -33,9 +31,10 @@ export default function Home() {
                 style={{ backgroundImage: 'url(assets/images/shapes/experience-one-shape-1.png)' }} ></div>
             <div className="container">
                 <div className="section-title text-center">
-                    <span className="section-title__tagline">About Experience</span>
-                    <h2 className="section-title__title">We Have Than 20 Years Experience in Gadget
-                        <br/>Smartphone & Laptop Repair Services</h2>
+                    <span className="section-title__tagline "style={{color:"white"}}>Sufi Science Centre-Kashmir Chapter</span>
+                    <h2 className="section-title__title" >
+                    How Kashmiri Sufism blends cultural heritage, 
+                        <br/> scientific inquiry, and wisdom?</h2>
                 </div>
                 <div className="row">
                     {/*Experience One Single Start*/}
@@ -45,10 +44,9 @@ export default function Home() {
                                 <span className="icon-service"></span>
                             </div>
                             <div className="experience-one__content">
-                                <h3 className="experience-one__title"><Link href="services-details">Quality Services</Link>
+                                <h3 className="experience-one__title"><Link href="services-details">Spiritual Heritage</Link>
                                 </h3>
-                                <p className="experience-one__text">Duis aute irure dolor in voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur. </p>
+                                <p className="experience-one__text">Kashmiri Sufism preserves timeless teachings of unity, compassion, and cultural richness, shaping regional identity. </p>
                             </div>
                         </div>
                     </div>
@@ -60,9 +58,8 @@ export default function Home() {
                                 <span className="icon-management"></span>
                             </div>
                             <div className="experience-one__content">
-                                <h3 className="experience-one__title"><Link href="team">Professional Team</Link></h3>
-                                <p className="experience-one__text">Duis aute irure dolor in voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur. </p>
+                                <h3 className="experience-one__title"><Link href="team">Mysticism and Science</Link></h3>
+                                <p className="experience-one__text">Sufi scholars explored astronomy, medicine, and nature’s laws, blending divine wisdom with intellectual pursuits. </p>
                             </div>
                         </div>
                     </div>
@@ -74,43 +71,116 @@ export default function Home() {
                                 <span className="icon-headphones"></span>
                             </div>
                             <div className="experience-one__content">
-                                <h3 className="experience-one__title"><Link href="contact">24 Hour Support</Link></h3>
-                                <p className="experience-one__text">Duis aute irure dolor in voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur. </p>
+                                <h3 className="experience-one__title"><Link href="contact">Enduring Influence</Link></h3>
+                                <p className="experience-one__text">Kashmiri Sufi teachings inspire harmony, self-awareness, and a profound balance between spiritual, intellectual, and cultural growth. </p>
                             </div>
                         </div>
                     </div>
                     {/*Experience One Single End*/}
                 </div>
-                <div className="row">
-                    <div className="col-xl-12">
-                        <ul className="counter-one__list list-unstyled">
-                            <li className="counter-one__single">
-                            <CounterUp end={20} />
-                                <span className="counter-one__plus">+</span>
-                                <p className="counter-one__text">Glorious Years</p>
-                            </li>
-                            <li className="counter-one__single">
-                            <CounterUp end={2} />
-                                <span className="counter-one__plus">k+</span>
-                                <p className="counter-one__text">Happy Customer</p>
-                            </li>
-                            <li className="counter-one__single">
-                            <CounterUp end={5} />
-                                <span className="counter-one__plus">k+</span>
-                                <p className="counter-one__text">Service Complete</p>
-                            </li>
-                            <li className="counter-one__single">
-                            <CounterUp end={99} />
-                                <span className="counter-one__plus">%</span>
-                                <p className="counter-one__text">Satisfactions</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
         </section>
         {/*Experience One End*/}
+        <div className="container">
+                <div className="row">
+                    <div className="col-xl-6 pt-14 col-lg-5">
+                        <div className="core-services__left">
+                            <div className="core-services__img">
+                                <img src="assets/images/services/core-services-img-1.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 py-5 col-lg-7">
+                        <div className="core-services__right">
+                            <div className="section-title section-title--two text-left">
+                                <span className="section-title__tagline">OUR IDENTITY</span>
+                                <h2 className="section-title__title">Fusing spirituality, culture, science, and Kashmir’s legacy</h2>
+                                <p className="section-title__text">The Kashmiri Sufi Center blends spirituality, culture, and intellectual exploration, rooted in historical heritage. It integrates divine wisdom with scientific curiosity, promoting self-awareness, love, and compassion. Through workshops and research, it preserves Kashmiri Sufi teachings, uniting ancient wisdom with modern understanding.</p>
+                            </div>
+                            <ul className="list-unstyled core-services__list">
+                                <li>
+                                    <div className="icon">
+                                        <span className="icon-checked"></span>
+                                    </div>
+                                    <div className="content">
+                                        <h5>Spiritual Wisdom and Cultural Roots</h5>
+                                        <p >Kashmiri Sufism blends spirituality with culture.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon">
+                                        <span className="icon-repair"></span>
+                                    </div>
+                                    <div className="content">
+                                        <h5>Mystical Science Exploration</h5>
+                                        <p>
+                                        Science and mysticism blend in spirituality.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section className="experience-one about-page__experience">
+            <div className="experience-one-shape-1 shapeMover"
+                style={{ backgroundImage: 'url(assets/images/shapes/experience-one-shape-1.png)' }} ></div>
+            <div className="container">
+                <div className="section-title text-center">
+                    <span className="section-title__tagline "style={{color:"white"}}>the Intersection of Spirituality and Science</span>
+                    <h2 className="section-title__title" >
+                   
+                         Kashmir Sufi Science Centre explores the  
+                        <br/> fusion of spirituality and science</h2>
+                </div>
+                <div className="row">
+                    {/*Experience One Single Start*/}
+                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+                        <div className="experience-one__single">
+                            <div className="experience-one__icon">
+                                <span className="icon-service"></span>
+                            </div>
+                            <div className="experience-one__content">
+                                <h3 className="experience-one__title"><Link href="services-details">Light and Sound</Link>
+                                </h3>
+                                <p className="experience-one__text">
+                                Sufi mystics explored light, sound, vibration, and cosmic harmony, deeply connecting the spiritual and physical realms together. </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/*Experience One Single End*/}
+                    {/*Experience One Single Start*/}
+                    <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                        <div className="experience-one__single">
+                            <div className="experience-one__icon">
+                                <span className="icon-management"></span>
+                            </div>
+                            <div className="experience-one__content">
+                                <h3 className="experience-one__title"><Link href="team">Nature's Wisdom</Link></h3>
+                                <p className="experience-one__text">Sufi scholars revered nature’s interconnectedness, promoting ecological balance, sustainability, spiritual principles, harmony, and unity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/*Experience One Single End*/}
+                    {/*Experience One Single Start*/}
+                    <div className="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
+                        <div className="experience-one__single">
+                            <div className="experience-one__icon">
+                                <span className="icon-headphones"></span>
+                            </div>
+                            <div className="experience-one__content">
+                                <h3 className="experience-one__title"><Link href="contact">Ethical Science</Link></h3>
+                                <p className="experience-one__text">Sufi ethics guided scientific pursuits, ensuring integrity, truth, humanity’s welfare, and responsible exploration in knowledge </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/*Experience One Single End*/}
+                </div>
+                
+            </div>
+            </section>
 
         {/*Team One Start*/}
         <section className="team-one">
@@ -121,26 +191,13 @@ export default function Home() {
                         <div className="team-one__single">
                             <div className="team-one__img-box">
                                 <div className="team-one__img">
-                                    <img src="assets/images/team/team-1-1.jpg" alt=""/>
+                                    <img src="assets/images/team/team3.jpg" alt=""/>
                                 </div>
                                 <div className="team-one__content">
-                                    <h3 className="team-one__name"><Link href="team">Nicolas Marko</Link></h3>
-                                    <p className="team-one__sub-title">Master Technician</p>
+                                    <h3 className="team-one__name"><Link href="team">Lala Aragami</Link></h3>
+                                    <p className="team-one__sub-title">Saint of Kashmir</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                             
                             </div>
                         </div>
                     </div>
@@ -150,26 +207,13 @@ export default function Home() {
                         <div className="team-one__single">
                             <div className="team-one__img-box">
                                 <div className="team-one__img">
-                                    <img src="assets/images/team/team-1-2.jpg" alt=""/>
+                                    <img src="assets/images/team/team4.jpg" alt=""/>
                                 </div>
                                 <div className="team-one__content">
-                                    <h3 className="team-one__name"><Link href="team">Joseph Dico</Link></h3>
+                                    <h3 className="team-one__name"><Link href="team">Shamas Faqir</Link></h3>
                                     <p className="team-one__sub-title">Digital Marketing</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                              
                             </div>
                         </div>
                     </div>
@@ -179,26 +223,13 @@ export default function Home() {
                         <div className="team-one__single">
                             <div className="team-one__img-box">
                                 <div className="team-one__img">
-                                    <img src="assets/images/team/team-1-3.jpg" alt=""/>
+                                    <img src="assets/images/team/team6.jpg" alt=""/>
                                 </div>
                                 <div className="team-one__content">
-                                    <h3 className="team-one__name"><Link href="team">Nicolas Marko</Link></h3>
+                                    <h3 className="team-one__name"><Link href="team">Lal Ded</Link></h3>
                                     <p className="team-one__sub-title">Master Technician</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -208,26 +239,13 @@ export default function Home() {
                         <div className="team-one__single">
                             <div className="team-one__img-box">
                                 <div className="team-one__img">
-                                    <img src="assets/images/team/team-1-4.jpg" alt=""/>
+                                    <img src="assets/images/team/team8.jpg" alt=""/>
                                 </div>
                                 <div className="team-one__content">
-                                    <h3 className="team-one__name"><Link href="team">Hasnat Marko</Link></h3>
+                                    <h3 className="team-one__name"><Link href="team">Wahab Khar</Link></h3>
                                     <p className="team-one__sub-title">Master Technician</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -243,20 +261,7 @@ export default function Home() {
                                     <h3 className="team-one__name"><Link href="team">Nicolas Poran</Link></h3>
                                     <p className="team-one__sub-title">Digital Marketing</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -272,20 +277,7 @@ export default function Home() {
                                     <h3 className="team-one__name"><Link href="team">Hasibur Nico</Link></h3>
                                     <p className="team-one__sub-title">Master Technician</p>
                                 </div>
-                                <ul className="team-one__social list-unstyled">
-                                    <li>
-                                        <Link href="#"><span className="fab fa-facebook-f"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-twitter"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-instagram"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#"><span className="fab fa-pinterest-p"></span></Link>
-                                    </li>
-                                </ul>
+                            
                             </div>
                         </div>
                     </div>
@@ -296,6 +288,7 @@ export default function Home() {
         {/*Team One End*/}
 
             </Layout>
+            
         </>
     )
 }

@@ -5,7 +5,7 @@ import React from "react";
 export default function Menu() {
   return (
     <>
-    <ul className="main-menu__list flex space-x-[30px]">
+    <ul className="main-menu__list flex space-x-[43px]  ">
   <li className="dropdown megamenu relative group">
     <Link href="/" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
       HOME
@@ -66,22 +66,22 @@ export default function Menu() {
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Our Heritage & Identity</Link>
+      <Link href="/OurHeritage&Identity" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Our Heritage & Identity</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Kashmiri Sufi Legacy</Link>
+      <Link href="/KashmiriSufiLegacy" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Kashmiri Sufi Legacy</Link>
     </li>
     <li className="mb-2">
-      <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Purpose & Direction</Link>
+      <Link href="/Purpose&Direction" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Purpose & Direction</Link>
     </li>
     
     
     
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Our Work & Practices</Link>
+      <Link href="/OurWork&Practices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Our Work & Practices</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Understanding Kashmiri Sufism</Link>
+      <Link href="/UnderstandingKashmiriSufism" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Understanding Kashmiri Sufism</Link>
     </li>
   </ul>
 </li>
@@ -89,7 +89,7 @@ export default function Menu() {
 {/* Teachings Dropdown */}
 <li className="relative group">
   <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
-    YOUR SPIRITUAL JOURNEY
+    YOUR JOURNEY
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">
@@ -99,7 +99,7 @@ export default function Menu() {
       <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Core Learning Paths</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Growth & Development</Link>
+      <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Growth & Development</Link>
     </li>
     <li className="mb-2">
       <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Leadership & Teaaching</Link>
@@ -118,7 +118,7 @@ export default function Menu() {
   <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
     SUFI SCIENCE EXPLORER
   </Link>
-  <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-80 rounded-b-md max-h-[500px]   hidden group-hover:block">
+  <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px]   hidden group-hover:block">
     <li className="mb-2">
       <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
     </li>
@@ -144,7 +144,7 @@ export default function Menu() {
 {/* Knowledge Hub Dropdown */}
 <li className="relative group">
   <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
-    DIGITAL LEARNING CENTER
+    LEARNING CENTER
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">
@@ -162,7 +162,7 @@ export default function Menu() {
 {/* Sufi Gifts Dropdown */}
 <li className="relative group">
   <Link href="#" className="text-fixnix-darkpurple font-bold text-[15px] hover:text-fixnix-darkpurple">
-    SACRED GIFTS & ARTISTRY
+    SACRED GIFT SHOP
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">

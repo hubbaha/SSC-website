@@ -36,11 +36,11 @@ export default function Footer1() {
                                         <h3 className="footer-widget__title">Quick Links</h3>
                                     </div>
                                     <ul className="footer-widget__Explore-list list-unstyled">
-                                        <li><Link href="/">About SSC</Link></li>
-                                        <li><Link href="">The Training Ground</Link></li>
+                                        <li><Link href="/">Discover SSC</Link></li>
+                                        <li><Link href="">Your Journey</Link></li>
                                         <li><Link href="">Sufi Science Explorer</Link></li>
-                                        <li><Link href="">Knowledge Hub</Link></li>
-                                        <li><Link href="">Sufi Gift Collection</Link></li>
+                                        <li><Link href="">Learning Center</Link></li>
+                                        <li><Link href="">Sacred Gift Shop</Link></li>
                                     </ul>
                                 </div>
                             </div>
