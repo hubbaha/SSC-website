@@ -9,10 +9,9 @@ import Header1 from "./header/Header1";
 import Header2 from './header/Header2';
 import Header3 from "./header/Header3";
 import Footer1 from './footer/Footer1';
-import Footer2 from './footer/Footer2';
+import Footer2 from "./footer/Footer2";
 import Footer3 from "./footer/Footer3";
 import Footer4 from "./footer/Footer4";
-
 
 declare global {
   interface Window {
@@ -55,36 +54,37 @@ const Layout: React.FC<LayoutProps> = ({
   const handleSidebar = () => setSidebar(!isSidebar);
 
   useEffect(() => {
-    const WOW = require('wowjs');
-    window.wow = new WOW.WOW({ live: false });
-    window.wow.init();
+    import('wowjs').then((module) => {
+      const WOW = module.default;
+      const wow = new WOW({
+        live: false,
+      });
+      wow.init();
+    });
 
     const onScroll = () => {
       const scrollCheck = window.scrollY > 100 ? 1 : 0;  // Store 1 or 0 (number)
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);  // No need to use `scrollCheck ? 1 : 0` because it's already a number
-      }
-      
+      setScroll(scrollCheck);  // No need to use `scrollCheck ? 1 : 0` because it's already a number
     };
 
     document.addEventListener("scroll", onScroll);
     return () => {
       document.removeEventListener("scroll", onScroll);
     };
-  }, [scroll]);
+  }, []);
 
   return (
     <>
       <DataBg />
       <div className={`page-wrapper ${wrapperCls ? wrapperCls : ""}`} id="#top">
         {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
+        
         {headerStyle === 1 && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
         {headerStyle === 2 && <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
         {headerStyle === 3 && <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
 
         <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
-
         {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
         {children}
 
@@ -94,8 +94,7 @@ const Layout: React.FC<LayoutProps> = ({
         {footerStyle === 3 && <Footer3 />}
         {footerStyle === 4 && <Footer4 />}
       </div>
-      <BackToTop scroll={scroll > 100} />  
- 
+      <BackToTop scroll={scroll > 100} />
     </>
   );
 };

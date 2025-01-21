@@ -5,19 +5,24 @@ import MobileMenu from "../MobileMenu";
 import Image from "next/image";
 
 
+
 interface Header2Props {
+  scroll: number;               // Added scroll prop
   handlePopup: () => void;
   handleMobileMenu: () => void;
+  isMobileMenu: boolean;
   isSidebar?: boolean;
   handleSidebar?: () => void;
 }
 
-export default function Header2({
+const Header2: React.FC<Header2Props> = ({
+  scroll,
   handlePopup,
   handleMobileMenu,
   isSidebar,
+  isMobileMenu, 
   handleSidebar,
-}: Header2Props) {
+}: Header2Props) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -33,7 +38,7 @@ export default function Header2({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [])
 
   return (
     <>
@@ -175,4 +180,5 @@ export default function Header2({
       />
     </>
   );
-}
+};
+export default Header2;
