@@ -23,7 +23,7 @@ export default function Home() {
     <>
     
       <Layout 
-        headerStyle={1} 
+        headerStyle={2} 
         footerStyle={1} 
         headTitle={headTitle} 
         breadcrumbTitle={breadcrumbTitle} 
