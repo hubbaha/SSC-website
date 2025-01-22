@@ -14,9 +14,9 @@ export default function Home() {
   headTitle="Our Team" 
   wrapperCls="team-page-wrapper"
 >
-         {/*Team Top Start*/}
-         <section className="team-top">
-  <div className="container mx-auto">
+        {/*Team Top Start*/}
+<section className="team-top">
+  <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
       <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
@@ -26,22 +26,27 @@ export default function Home() {
       </span>
 
       {/* Section Title */}
-      <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
+      <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
         Welcome to the <br /> Kashmir Sufi Science Centre
       </h2>
 
       {/* Section Text */}
-      <p className="pt-[20px] text-gray-600">
-        a unique institution dedicated to preserving and celebrating the profound spiritual, <br /> intellectual, and scientific legacy of Kashmir Sufi ideology. This Centre stands as a testament to the <br /> region’s rich history of Sufi mysticism, its lasting impact on the sciences, and its integral <br /> role in shaping the cultural and philosophical identity of the Kashmir Valley.
-      </p>
+      <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+  Our heritage is built upon the timeless principles of Wahdat al-Wujud, where all creation, from the
+  smallest grain of <br />sand to the grandest galaxies, is seen as a manifestation of the Divine. It is within
+  this sacred understanding that Sufi science<br />finds its roots — in the recognition of the interconnectedness of
+  all things. This stands as a bridge between the ancient<br />
+  spiritual traditions of Kashmir and the modern scientific quest to understand the laws of nature,
+  consciousness, and energy.
+</p>
     </div>
   </div>
 </section>
 
         {/*Team Top End*/}
 
-        {/*Experience One Start*/}
-        <section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+    {/* Experience One Start */}
+<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -51,49 +56,47 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-    <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+      <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
         SUFI SCIENCE CENTRE-KASHMIR CHAPTER
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
-      <h2 className="mt-[14px] text-white text-[42px] leading-[52px] font-semibold">
-        How Kashmiri Sufism blends cultural heritage, <br />
-        scientific inquiry, and wisdom?
+      <h2 className="mt-[14px] text-white text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
+      How Kashmiri Sufism blends cultural heritage, <br />
+      scientific inquiry, and wisdom?
       </h2>
     </div>
 
     {/* Row */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
-      
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
-  <div className="relative block">
-    <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
-      <i className="icon-service"></i>
-    </span>
-  </div>
-  <div className="ml-[20px]">
-    <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
-      <Link
-        href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
-      >
-        Spiritual Heritage
-      </Link>
-    </h3>
-    <p className="text-white group-hover:text-white">
-      Kashmiri Sufism preserves timeless teachings of unity, compassion, and
-      cultural richness, shaping regional identity.
-    </p>
-  </div>
-</div>
-
-
-      {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
-      <i className="icon-service"></i>
+            <i className="icon-service"></i>
+          </span>
+        </div>
+        <div className="ml-[20px]">
+          <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+            <Link
+              href="services-details"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
+            >
+              Spiritual Heritage
+            </Link>
+          </h3>
+          <p className="text-fixnix-lightpurple group-hover:text-white">
+            Kashmiri Sufism preserves timeless teachings of unity, compassion, and
+            cultural richness, shaping regional identity.
+          </p>
+        </div>
+      </div>
+
+      {/* Experience Two Single */}
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+        <div className="relative block">
+          <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
+            <i className="icon-service"></i>
             <i className="icon-management"></i>
           </span>
         </div>
@@ -101,12 +104,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Mysticism and Science
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
             Sufi scholars explored astronomy, medicine, and nature’s laws,
             blending divine wisdom with intellectual pursuits.
           </p>
@@ -114,7 +117,7 @@ export default function Home() {
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -124,12 +127,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Enduring Influence
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
             Kashmiri Sufi teachings inspire harmony, self-awareness, and a
             profound balance between spiritual and intellectual
             growth.
@@ -139,6 +142,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
         {/*Experience One End*/}
         <div className="relative block py-12 lg:py-28 bg-cover bg-center bg-no-repeat">
@@ -156,7 +160,7 @@ export default function Home() {
               height={400}
               className="w-full transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-[rgba(59,34,94,0.8)] opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
           </div>
         </div>
       </div>
@@ -222,12 +226,12 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-    <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    <span className="relative inline-block lg:text-[16px] sm:text-[6px] md:text-[8px]  leading-[16px] text-white font-semibold uppercase z-[1]">
          the Intersection of Spirituality and Science
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
-      <h2 className="mt-[14px] text-white text-[42px] leading-[52px] font-semibold">
+      <h2 className="mt-[14px] text-white text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
       Kashmir Sufi Science Centre explores the   <br />
       fusion of spirituality and science
       </h2>
@@ -237,7 +241,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
     <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -247,12 +251,12 @@ export default function Home() {
     <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
       <Link
         href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
       >
         Light and Sound
       </Link>
     </h3>
-    <p className="text-white group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white">
     Sufi mystics explored light, sound, vibration, and cosmic harmony, deeply connecting the spiritual and physical realms.
     </p>
   </div>
@@ -260,7 +264,7 @@ export default function Home() {
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -271,19 +275,19 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Nature's Wisdom
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Sufi scholars revered nature’s interconnectedness, promoting ecological balance,  spiritual principles, harmony, and unity.
           </p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -293,12 +297,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Ethical Science
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Sufi ethics guided scientific pursuits, ensuring integrity, truth, humanity’s welfare, and responsible exploration.
           </p>
         </div>

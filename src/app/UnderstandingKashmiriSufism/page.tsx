@@ -27,12 +27,12 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
-      Kashmiri Sufism bridges  <br /> past, present, and future wisdom.
+      Uniting Kashmir Sufism and Modern Science<br/> for Spiritual and Intellectual Awakening
       </h2>
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600">
-      Kashmiri Sufism integrates spiritual traditions and practical teachings to address modern challenges.<br/> It fosters interfaith harmony, promotes environmental stewardship, enhances mental well-being, and preserves<br/> cultural heritage. This timeless spiritual path continues to inspire individuals and communities, offering profound<br/> insights that bridge historical richness with contemporary relevance.</p>
+      The Sufi Science Centre - Kashmir Chapter blends ancient Sufi wisdom with modern scientific exploration.<br/> Rooted in Kashmir’s mystical heritage, it invites seekers on a transformative journey of spiritual awakening, connecting body,<br/> mind, and soul, while deepening understanding of existence, consciousness, and the universe, fostering holistic growth</p>
     </div>
   </div>
 </section>
@@ -51,13 +51,12 @@ export default function Home() {
     {/* Section Title */}
     <div className="text-center mb-[57px]">
     <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-        Foundations of Kashmiri Sufism
+    Essence of Kashmir Sufism
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[42px] leading-[52px] font-semibold">
-      Kashmiri Sufism nurtures divine love,  <br/>
-      mindfulness, and humble self-purification.<br/> 
+      Unity, Divine Light, and the<br/> Journey of Oneness 
       </h2>
     </div>
 
@@ -65,7 +64,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
     <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -75,20 +74,20 @@ export default function Home() {
     <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
       <Link
         href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
       >
-        Divine Oneness
+        The Concept of Unity
       </Link>
     </h3>
-    <p className="text-white group-hover:text-white">
-    The Sufi Path emphasizes the unity of all existence, with the ultimate goal being the realization of oneness with the Divine.
+    <p className="text-fixnix-lightpurple group-hover:text-white">
+    Realizing interconnectedness and oneness with the world, emanating from a singular divine source.
     </p>
   </div>
 </div>
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -99,18 +98,18 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
              Spiritual Mindfulness
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Practicing mindfulness in worship and integrating it into daily life fosters a profound connection to the Divine.</p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -120,12 +119,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Humility in Action
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Embracing simplicity & fostering humility through actions are seen as fundamental steps toward achieving self-purification. </p>
         </div>
       </div>
@@ -149,7 +148,7 @@ export default function Home() {
               height={400}
               className="w-full transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-[rgba(59,34,94,0.8)] opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
           </div>
         </div>
       </div>
@@ -159,14 +158,14 @@ export default function Home() {
         <div className="relative">
           <div className="text-left mb-8">
             <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-            Unique Traditions
+            Spiritual Geography of Kashmir
               <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-            The tradition blends spirituality & culture, enriching Kashmir’s heritage & identity.
+            Exploring Kashmir’s Sacred Geography as Divine Reflection
             </h2>
             <p className="text-base sm:text-lg text-gray-700">
-            Kashmiri Sufism blends Islamic mysticism with the region's rich cultural heritage. It emphasizes love, devotion, and spirituality, fostering a deep connection with nature and humanity. Local traditions, poetry, music, and rituals, such as the famous "Sufi shrines," embody its practices, influencing Kashmiri art, literature, and social harmony.
+            Kashmir’s natural landscapes—its lakes, valleys, forests, and mountains—reflect the divine presence. To truly understand Kashmir’s Sufism, one must engage with the land, walk the sacred paths of saints, and meditate at serene locations like Dal Lake and Nigeen Lake, where nature mirrors the depths of the soul.
             </p>
           </div>
           <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
@@ -177,10 +176,10 @@ export default function Home() {
               </div>
               <div className="ml-6 sm:ml-6">
                 <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white group-hover:bg-black">
-                Rishi Order
+                Sacred Kashmir Landscapes
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
-                Emphasizes asceticism & vegetarianism with nature
+                Divine presence reflected in lakes & mountains.
                 </p>
               </div>
             </li>
@@ -192,10 +191,10 @@ export default function Home() {
               </div>
               <div className="ml-4 sm:ml-6">
                 <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white">
-                Shrines
+                Meditation on Sacred Shores
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
-                 Centers for spiritual gatherings & communal prayers</p>
+                Reflecting by Dal & Nigeen Lake </p>
               </div>
             </li>
           </ul>
@@ -228,7 +227,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
     <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -238,12 +237,12 @@ export default function Home() {
     <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
       <Link
         href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
       >
         Zikr (Remembrance)
       </Link>
     </h3>
-    <p className="text-white group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white">
     Zikr, through repetitive chanting  God’s names to attain spiritual focus, inner peace, and connection with the Divine.
     </p>
   </div>
@@ -251,7 +250,7 @@ export default function Home() {
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -262,18 +261,18 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
              Muraqaba (Meditation)
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Deep contemplation and meditation help foster a stronger bond with the Divine presence and awareness.</p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -283,12 +282,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
             >
               Sama (Music & Dance)
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Listening to mystical music and participating in rhythmic movements to achieve spiritual ecstasy.</p>
         </div>
       </div>

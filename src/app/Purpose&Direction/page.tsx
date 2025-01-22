@@ -27,12 +27,12 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
-      Celebrating Kashmir's Sufi legacy <br /> in science and spirituality 
+      To bridge Sufism’s wisdom with<br/> science’s evolving understanding. 
       </h2>
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600">
-      The Kashmir Sufi Science Centre is committed to unearthing, showcasing, and fostering the legacy of<br/> Kashmir’s Sufi scholars, whose contributions bridged the worlds of spirituality and science. Our mission is to highlight<br/> the enduring influence of these mystics on fields such as astronomy, medicine, mathematics, and environmental science,<br/> demonstrating how their work continues to shape our understanding of the world today
+      Our purpose is to create a sanctuary for knowledge seekers, where the path of the soul intertwines with the precision of scientific thought.<br/> Here, we honor the sacred connection between the seen and unseen, the known and unknown, understanding that true wisdom transcends<br/> the boundaries of any single discipline. In the Sufi tradition, the Divine is immanent in all creation, and by contemplating the<br/> mysteries of the universe, we come closer to the ultimate Truth that binds all things together.
       </p>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
     <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -76,12 +76,12 @@ export default function Home() {
     <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
       <Link
         href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
       >
         Global Recognition
       </Link>
     </h3>
-    <p className="text-white group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white">
     Seeking global recognition of Kashmir's spiritual and scientific heritage, blending ancient wisdom with modernity.
     </p>
   </div>
@@ -89,7 +89,7 @@ export default function Home() {
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -100,19 +100,19 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
              Bridging Generations
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Inspiring future generations to explore the harmony between spirituality and science, ensuring lasting cultural preservation.
           </p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -122,12 +122,12 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Sustainable Legacy
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Fostering a balanced, ethical approach to modern challenges, drawing from ancient wisdom for global impact.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function Home() {
               height={400}
               className="w-full transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-[rgba(59,34,94,0.8)] opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
           </div>
         </div>
       </div>
@@ -162,14 +162,14 @@ export default function Home() {
         <div className="relative">
           <div className="text-left mb-8">
             <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-            Community Impact 
+            Bridging Spirituality and Science
               <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-            Kashmiri Sufism promotes unity, compassion, and social responsibility .
+            Unifying Sufi wisdom with modern scientific discovery.
             </h2>
             <p className="text-base sm:text-lg text-gray-700">
-            Kashmiri Sufism has played a pivotal role in shaping the cultural and social fabric of the region. Its emphasis on compassion, tolerance, and spiritual unity has helped bridge gaps between diverse communities, fostering a sense of solidarity and peace, especially during times of conflict. Sufi teachings focus on the inherent goodness of all people, promoting love and understanding beyond religious and cultural divides.
+            The Centre seeks to integrate Sufi spiritual practices with modern science, showing how these two realms complement each other. By studying quantum physics, sacred geometry, and consciousness, it aims to create a unified approach to understanding the mysteries of existence and reality’s true nature. Sufi teachings focus on the inherent goodness of all people, promoting love and understanding beyond religious and cultural divides.
             </p>
           </div>
           <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
@@ -180,10 +180,10 @@ export default function Home() {
               </div>
               <div className="ml-6 sm:ml-6">
                 <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white group-hover:bg-black">
-                Spiritual Unity and Social Harmony
+                Kashmir’s Sacred Wisdom
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
-                Fostering harmony, understanding, and mutual respect.
+                Preserving Kashmir’s cultural and spiritual heritage.
                 </p>
               </div>
             </li>
@@ -195,10 +195,10 @@ export default function Home() {
               </div>
               <div className="ml-4 sm:ml-6">
                 <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white">
-                Community Service & Engagement
+                Fostering Global Dialogue
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
-                Khanqahs foster spiritual growth, kindness, and service.</p>
+                Encourage collaboration between mystics & scientists.</p>
               </div>
             </li>
           </ul>
@@ -207,7 +207,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1] ">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -231,7 +231,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
     <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -241,12 +241,12 @@ export default function Home() {
     <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
       <Link
         href="services-details"
-        className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
       >
         Knowledge Sharing
       </Link>
     </h3>
-    <p className="text-white group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white">
     The Centre highlights Kashmir's Sufi scholars’ contributions globally, fostering international research and collaboration.
     </p>
   </div>
@@ -254,7 +254,7 @@ export default function Home() {
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
@@ -265,18 +265,18 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="team"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
              Global Challenges 
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Kashmiri Sufi teachings address modern ethical, environmental, and peace-related challenges, offering sustainable solutions.</p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#272a2d] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
@@ -286,56 +286,45 @@ export default function Home() {
           <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-white transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Spiritual Integration
             </Link>
           </h3>
-          <p className="text-white group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white">
           Cultural exchanges promote understanding between science and spirituality, guiding towards a harmonious global future.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-        {/* Team One Start */}
-       
-
-        <section className="relative block py-28">
+<section className="team-top">
   <div className="container mx-auto">
-    <div className="flex flex-col items-center">
-      {/* Heading Above the Image */}
-      <h2 className="text-3xl font-semibold text-center mb-6 text-fixnix-darkpurple">
-        The Divine Saints of Kashmir
+    <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
+      {/* Section Tagline */}
+      <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+      science meets the soul
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
+
+      {/* Section Title */}
+      <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
+      Join us in uncovering the profound <br/>mysteries that await
       </h2>
 
-      {/* Team Member Start */}
-      <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
-        <div className="relative group">
-          {/* Image Box */}
-          <div className="relative overflow-hidden rounded-lg">
-            <Image
-              src="/assets/images/team/saints.jpg" // Path to the image
-              alt="Kashmiri Saints"
-              width={500}  // Set your preferred width
-              height={500} // Set your preferred height
-              className="w-full h-full rounded-lg transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
-          </div>
-
-          {/* Content */}
-          
-          {/* Social Links */}
-        </div>
-      </div>
-      {/* Team Member End */}
+      {/* Section Text */}
+      <p className="pt-[20px] text-gray-600">
+      At the Sufi Science Centre - Kashmir Chapter, we are more than just seekers of knowledge—we are travelers on a sacred journey.<br/> This journey calls us to rediscover the wisdom embedded within the very fabric of existence, to heal and transform ourselves, <br/>and to create a lasting impact on the world. As we walk this path, we are guided by the timeless light of the Divine.
+      </p>
+      <h2 className="mt-[14px] text-fixnix-darkpurple text-[18px] leading-[52px] font-semibold">
+      A space where the divine mysteries of the universe are revealed through the pure lens of Sufi wisdom.
+      </h2>
     </div>
   </div>
 </section>
+  
 
-{/* Team One End */}
 
             </Layout>
             

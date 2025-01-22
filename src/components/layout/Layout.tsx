@@ -12,12 +12,7 @@ import Footer1 from './footer/Footer1';
 import Footer2 from "./footer/Footer2";
 import Footer3 from "./footer/Footer3";
 import Footer4 from "./footer/Footer4";
-
-declare global {
-  interface Window {
-    wow: any;
-  }
-}
+import 'animate.css';  // Import Animate.css
 
 interface LayoutProps {
   headerStyle?: number;
@@ -36,35 +31,24 @@ const Layout: React.FC<LayoutProps> = ({
   children,
   wrapperCls,
 }) => {
-  const [scroll, setScroll] = useState(0);
+  const [scroll, setScroll] = useState<number>(0);
   const [isMobileMenu, setMobileMenu] = useState(false);
   const [isPopup, setPopup] = useState(false);
   const [isSidebar, setSidebar] = useState(false);
 
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
-    if (isMobileMenu) {
-      document.body.classList.remove("mobile-menu-visible");
-    } else {
-      document.body.classList.add("mobile-menu-visible");
-    }
+    document.body.classList.toggle("mobile-menu-visible", !isMobileMenu);
   };
 
   const handlePopup = () => setPopup(!isPopup);
   const handleSidebar = () => setSidebar(!isSidebar);
 
   useEffect(() => {
-    import('wowjs').then((module) => {
-      const WOW = module.default;
-      const wow = new WOW({
-        live: false,
-      });
-      wow.init();
-    });
-
+    // Scroll handler to determine when to show animation
     const onScroll = () => {
-      const scrollCheck = window.scrollY > 100 ? 1 : 0;  // Store 1 or 0 (number)
-      setScroll(scrollCheck);  // No need to use `scrollCheck ? 1 : 0` because it's already a number
+      const scrollCheck = window.scrollY > 100 ? 1 : 0;
+      setScroll(scrollCheck);
     };
 
     document.addEventListener("scroll", onScroll);
@@ -77,17 +61,25 @@ const Layout: React.FC<LayoutProps> = ({
     <>
       <DataBg />
       <div className={`page-wrapper ${wrapperCls ? wrapperCls : ""}`} id="#top">
+        {/* Header */}
         {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
         
         {headerStyle === 1 && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
         {headerStyle === 2 && <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
         {headerStyle === 3 && <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
 
+        {/* Main content */}
         <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
+        
         {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-        {children}
+        
+        {/* Applying Animation based on scroll */}
+        <div className={`animate__animated ${scroll === 1 ? 'animate__fadeIn' : ''}`}>
+          {children}
+        </div>
 
+        {/* Footer */}
         {!footerStyle && <Footer1 />}
         {footerStyle === 1 && <Footer1 />}
         {footerStyle === 2 && <Footer2 />}
