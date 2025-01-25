@@ -15,24 +15,25 @@ export default function Home() {
   headTitle="Our Team" 
   wrapperCls="team-page-wrapper"
 >
-         {/*Team Top Start*/}
-         <section className="team-top">
-  <div className="container mx-auto">
+        {/*Team Top Start*/}
+<section className="team-top">
+  <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
-      <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+      <span className="relative inline-block text-[16px]  leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
       Our Work & Practices
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
 
       {/* Section Title */}
-      <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
-      Uniting Sufi Wisdom and Scientific <br/>Exploration for Harmony
+      <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
+      Uniting Sufi Wisdom and Scientific<br/>
+      Exploration for Harmony
       </h2>
 
       {/* Section Text */}
-      <p className="pt-[20px] text-gray-600">
+      <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
       At the Sufi Science Centre - Kashmir Chapter, we stand as a bridge between the ancient wisdom of Sufism and the transformative powers <br/>of modern science.Rooted in the profound spiritual heritage of Kashmir, our work embodies the sacred dance of science and spirituality,<br/> bringing together the timeless principles of Sufi thought with contemporary scientific discoveries.
 
 </p>
@@ -53,28 +54,28 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-    <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-    Seeker and Scientist
-        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+      Seeker and Scientist
+        <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
-      <h2 className="mt-[14px] text-white text-[42px] leading-[52px] font-semibold">
-      Inner exploration and divine connection<br/> through spiritual practices.
+      <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+      Inner exploration and divine connection<br/>
+through spiritual practices
       </h2>
     </div>
 
     {/* Row */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
-      
-<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
-  <div className="relative block">
-    <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
-      <i className="icon-service"></i>
-    </span>
-  </div>
-  <div className="ml-[20px]">
-    <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+      <div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+        <div className="relative block">
+          <span className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
+            <i className="icon-service"></i>
+          </span>
+        </div>
+        <div className="ml-[20px] sm:ml-[20px]">
+    <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
       <Link
         href="services-details"
         className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
@@ -82,22 +83,22 @@ export default function Home() {
        Sacred Science
       </Link>
     </h3>
-    <p className="text-fixnix-lightpurple group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
     Exploring quantum phenomena as reflections of the divine order, sacred unity, and cosmic interconnectedness.</p>
   </div>
 </div>
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
-          <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
-      <i className="icon-service"></i>
+          <span className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
+            <i className="icon-service"></i>
             <i className="icon-management"></i>
           </span>
         </div>
-        <div className="ml-[20px]">
-          <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+        <div className="ml-[20px] sm:ml-[20px]">
+          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
             <Link
               href="team"
               className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
@@ -105,7 +106,7 @@ export default function Home() {
              Divine Consciousness
             </Link>
           </h3>
-          <p className="text-fixnix-lightpurple group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Unifying the soul and cosmos through Sufi practices, aligning with universal consciousness and presence.
 
 
@@ -114,14 +115,14 @@ export default function Home() {
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
           <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
           </span>
         </div>
-        <div className="ml-[20px]">
-          <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+        <div className="ml-[20px] sm:ml-[20px]">
+          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
             <Link
               href="contact"
               className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
@@ -129,7 +130,7 @@ export default function Home() {
               Holistic Healing
             </Link>
           </h3>
-          <p className="text-fixnix-lightpurple group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Merging Sufi wisdom with energy, sound, meditation and spiritual purification to restore balance and spiritual well-being.
           </p>
         </div>
@@ -219,13 +220,14 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-    <span className="relative inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
     Spirituality and Science
-        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
-      <h2 className="mt-[14px] text-white text-[42px] leading-[52px] font-semibold">
-      Fusing spirituality and science for <br/>divine understanding and growth.
+      <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+      Fusing spirituality and science for<br/>
+      divine understanding and growth.
       </h2>
     </div>
 
@@ -233,14 +235,14 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
       {/* Experience One Single */}
       
-<div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+<div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
   <div className="relative block">
-    <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
+    <span className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
     </span>
   </div>
-  <div className="ml-[20px]">
-    <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+  <div className="ml-[20px] sm:ml-[20px]">
+    <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
       <Link
         href="services-details"
         className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
@@ -248,7 +250,7 @@ export default function Home() {
         Divine Geometry
       </Link>
     </h3>
-    <p className="text-fixnix-lightpurple group-hover:text-white">
+    <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
     Exploring sacred patterns linking spirituality with mathematical principles, revealing the universe's divine symmetry.
     </p>
   </div>
@@ -256,15 +258,15 @@ export default function Home() {
 
 
       {/* Experience Two Single */}
-      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
-          <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
+          <span className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
       <i className="icon-service"></i>
             <i className="icon-management"></i>
           </span>
         </div>
-        <div className="ml-[20px]">
-          <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+        <div className="ml-[20px] sm:ml-[20px]">
+          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
             <Link
               href="team"
               className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
@@ -272,28 +274,28 @@ export default function Home() {
              Sustainable Harmony
             </Link>
           </h3>
-          <p className="text-fixnix-lightpurple group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Encouraging eco-friendly living in deep sync with nature and traditional Kashmiri sustainable practices.</p>
         </div>
       </div>
 
       {/* Experience Three Single */}
-      <div className="relative flex items-center bg-[#ffff] p-[26px] rounded-[6px] mb-[30px] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
+      <div className="relative flex items-center bg-[#ffff]  p-[20px] sm:p-[26px] rounded-[6px] mb-[20px] lg:mb-[30px]  transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-lightpurple">
         <div className="relative block">
-          <span className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-white">
+          <span className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
             <i className="icon-headphones"></i>
           </span>
         </div>
-        <div className="ml-[20px]">
-          <h3 className="text-[20px] font-semibold leading-[30px] mb-[8px]">
+        <div className="ml-[20px] sm:ml-[20px]">
+          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
             <Link
               href="contact"
-              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-fixnix-darkpurple"
+              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
             >
               Divine Knowledge
             </Link>
           </h3>
-          <p className="text-fixnix-lightpurple group-hover:text-white">
+          <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Uniting Sufism and modern science to deepen understanding, promote personal transformation, and global healing.</p>
         </div>
       </div>
@@ -302,31 +304,33 @@ export default function Home() {
 </section>
 
     
-<section className="team-top">
-  <div className="container mx-auto">
-    <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
+<section className="team-top py-[40px] sm:py-[60px] md:py-[80px]">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
       {/* Section Tagline */}
-      <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
-      This Sacred Journey
-        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      <span className="relative inline-block text-[14px] sm:text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+        This Sacred Journey
+        <span className="absolute top-[6px] left-[-40px] sm:left-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] sm:right-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
 
       {/* Section Title */}
-      <h2 className="mt-[14px] text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold">
-      Journey of discovery where the worlds of<br/> science and spirituality meet
+      <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+        Journey of discovery where the worlds of<br className="hidden sm:block" />
+        science and spirituality meet
       </h2>
 
       {/* Section Text */}
-      <p className="pt-[20px] text-gray-600">
-      Whether you are a scientist, a spiritual seeker, or someone curious about the deeper mysteries of the universe, the Sufi Science<br/> Centre - Kashmir Chapter offers a sanctuary for those seeking to understand the divine harmony that governs all things.<br/>
-Together, we will explore the sacred science that unites us with the Divine and with each other, walking the path<br/> of wisdom, compassion, and light.
-
+      <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
+        Whether you are a scientist, a spiritual seeker, or someone curious about the deeper mysteries of the universe, the Sufi Science<br className="hidden md:block" />
+        Centre - Kashmir Chapter offers a sanctuary for those seeking to understand the divine harmony that governs all things.<br className="hidden md:block" />
+        Together, we will explore the sacred science that unites us with the Divine and with each other, walking the path<br className="hidden md:block" />
+        of wisdom, compassion, and light.
       </p>
-     
     </div>
   </div>
 </section>
+
   
 
 
