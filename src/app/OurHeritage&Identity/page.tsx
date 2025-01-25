@@ -27,15 +27,15 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
-        Welcome to the <br /> Kashmir Sufi Science Centre
+        Welcome to the  Kashmir Sufi Science Centre
       </h2>
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
   Our heritage is built upon the timeless principles of Wahdat al-Wujud, where all creation, from the
-  smallest grain of <br />sand to the grandest galaxies, is seen as a manifestation of the Divine. It is within
-  this sacred understanding that Sufi science<br />finds its roots — in the recognition of the interconnectedness of
-  all things. This stands as a bridge between the ancient<br />
+  smallest grain of sand to the grandest galaxies, is seen as a manifestation of the Divine. It is within
+  this sacred understanding that Sufi science finds its roots — in the recognition of the interconnectedness of
+  all things. This stands as a bridge between the ancient
   spiritual traditions of Kashmir and the modern scientific quest to understand the laws of nature,
   consciousness, and energy.
 </p>
@@ -62,8 +62,8 @@ export default function Home() {
         <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      How Kashmiri Sufism blends cultural heritage, <br />
-      scientific inquiry, and wisdom?
+      How Kashmiri Sufism blends cultural heritage, 
+      scientific inquiry, & wisdom?
       </h2>
     </div>
 
@@ -232,8 +232,7 @@ export default function Home() {
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Kashmir Sufi Science Centre explores the   <br />
-      fusion of spirituality and science
+      Kashmir Sufi Science Centre explores the fusion of spirituality & science
       </h2>
     </div>
 
