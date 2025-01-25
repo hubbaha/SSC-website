@@ -26,13 +26,15 @@ export default function Home() {
       </span>
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
-      A Journey through the<br/>
+      A Journey through the
       Mystical Heritage of Kashmir
       </h2>
 
       {/* Section Text */}
-      <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-      Kashmir’s Sufi heritage blends spiritual wisdom, divine poetry, music, and sacred sciences, transcending time and place.<br/> Mystics like Shah Hamdan and Nund Rishi teach self-realization as an ever-present reality within. This legacy views the<br/> physical world as interconnected through the divine breath, shaping Kashmir’s spirituality, art, and philosophy.
+      <p className="pt-[20px] text-left text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+      
+       
+Kashmir’s Sufi heritage blends spiritual wisdom, poetry, music, and sacred sciences, transcending time & place. Mystics like Shah Hamdan and Nund Rishi teach self-realization as an ever-present reality. This legacy views the world as interconnected through the divine breath, shaping Kashmir’s spirituality, art, & philosophy. Rooted in unity, it inspires coexistence, illuminating the bond between humanity, nature, & the Divine
       </p>
     </div>
   </div>
@@ -51,14 +53,15 @@ export default function Home() {
  <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-      The Confluence of Sufism and Science
+    
+    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    the Confluence of Sufism and Science
         <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      How Ancient wisdom traditions emphasize spiritual<br/>
-growth, balance, and intellectual exploration?
+      
+Ancient wisdom traditions emphasize spiritual growth, balance, & exploration
       </h2>
     </div>
 
@@ -224,8 +227,7 @@ growth, balance, and intellectual exploration?
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      A sanctuary blending spirituality, science,<br/>
-and self-discovery
+      A peaceful sanctuary merging spirituality, science, growth, & self-discovery
       </h2>
     </div>
 
@@ -324,15 +326,14 @@ and self-discovery
 
       {/* Section Title */}
       <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-        Join us to rediscover divine<br className="hidden sm:block" />
-        science in Kashmir's sacred mountains.
+      Join us to rediscover divine science in Kashmir's mountains
       </h2>
 
       {/* Section Text */}
-      <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-        The Kashmir Sufi Legacy is a treasure that transcends borders, a gift to humanity that holds the potential to inspire<br className="hidden md:block" />
-        transformation on a global scale. Through our educational programs, spiritual practices, and scientific research, we invite you<br className="hidden md:block" />
-        to experience the timeless wisdom that continues to illuminate the hearts and minds of all who seek truth and enlightenment.<br className="hidden md:block" />
+      <p className="pt-[15px] sm:pt-[20px] text-center xs:text-left sm:text-left md:text-center lg:text-center text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
+        The Kashmir Sufi Legacy is a treasure that transcends borders, a gift to humanity that holds the potential to inspire 
+        transformation on a global scale. Through our educational programs, spiritual practices, and scientific research, we invite you
+        to experience the timeless wisdom that continues to illuminate the hearts and minds of all who seek truth and enlightenment.
         Welcome to a journey that will deepen your understanding of the universe and the divine presence within it.
       </p>
 
