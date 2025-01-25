@@ -99,15 +99,19 @@ const Header2: React.FC<Header2Props> = ({
           Sufi Science Centre-Kashmir Chapter
         </span>
       </div>
-
       <div className="flex items-center ml-auto">
-        <Link
-          href="appointment"
-          className="h-11 inline-flex items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-4 px-6 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm"
-        >
-          Get Membership
-        </Link>
-      </div>
+  <Link
+    href="appointment"
+    className="h-11  items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm hidden sm:block"
+  >
+    Get Membership
+  </Link>
+</div>
+
+
+
+
+
 
       <p className="italic text-gray-600 lg:text-sm lg:ml-[130px] lg:-mt-[60px] hidden sm:block md:text-[9px] md:ml-[85px] md:-mt-[45px]">
         A Harmony of Knowledge and Inner Peace: The Next Generation Sufi Way Forward
@@ -118,18 +122,19 @@ const Header2: React.FC<Header2Props> = ({
                 <div className="flex items-center mt-4 -mb-2">
                   <Link
                     href="#"
-                    className="mobile-nav__toggler text-2xl text-fixnix-darkpurple sm:block lg:hidden"
+                    className="mobile-nav__toggler text-xl sm:text-md md:text-2xl text-fixnix-darkpurple sm:block lg:hidden"
                     onClick={handleMobileMenu}
                   >
                     <i className="fa fa-bars"></i>
                   </Link>
                   <Menu />
                   <Link
-                    href="Cart"
-                    className="text-2xl pl-5 text-fixnix-lightpurple transition-all duration-500 ease-in-out hover:text-fixnix-darkpurple"
-                  >
-                    <i className="fas fa-shopping-cart"></i>
-                  </Link>
+  href="Cart"
+  className="text-xl px-2 sm:text-md md:text-2xl text-fixnix-lightpurple transition-all duration-500 ease-in-out hover:text-fixnix-darkpurple"
+>
+  <i className="fas fa-shopping-cart"></i>
+</Link>
+
                 </div>
 
                 {/* Search Icon */}
@@ -150,22 +155,22 @@ const Header2: React.FC<Header2Props> = ({
         </nav>
       </header>
 
-      {/* Sticky Header */}
-      {isSticky && (
-        <div className="fixed top-0 left-0 w-full bg-white shadow-md z-[1200] transition-all duration-300 ">
-          <div className="flex items-center justify-between p-4">
-            <Link href="/">
-              <Image
-                src="/assets/images/resources/logo-3.png"
-                alt="Sufi Science Centre Logo"
-                width={55}
-                height={55}
-              />
-            </Link>
+     {/* Sticky Header */}
+{isSticky && (
+  <div className="fixed top-0 left-0 w-full bg-white shadow-md z-[1200] transition-all duration-300 sm:hidden lg:hidden md:block xl:block">
+    <div className="flex items-center justify-between p-4">
+      <Link href="/">
+        <Image
+          src="/assets/images/resources/logo-3.png"
+          alt="Sufi Science Centre Logo"
+          width={55}
+          height={55}
+        />
+      </Link>
             <Menu />
             <Link
               href="Cart"
-              className="text-xl text-fixnix-lightpurple transition-all duration-500 ease-in-out hover:text-fixnix-darkpurple"
+              className="text-xl text-fixnix-lightpurple transition-all duration-500 ease-in-out  hover:text-fixnix-darkpurple"
             >
               <i className="fas fa-shopping-cart"></i>
             </Link>

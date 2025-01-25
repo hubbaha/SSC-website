@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";  // Importing the Next.js Image component
+import Image from "next/image";  
 import { useState } from "react";
 
 interface MobileMenuProps {
@@ -117,7 +117,7 @@ const MobileMenu = ({
                 } dropdown`}
               >
                 <Link href="#" className="text-white text-sm font-medium">
-                  About KSSC
+                  Discover KSSC
                 </Link>
                 <ul
                   style={{
@@ -126,22 +126,92 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/About" className="text-white text-sm font-medium">
-                      Our Mission
+                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium">
+                      Our Heritage & Identity
                     </Link>
                   </li>
                   <li>
-                    <Link href="/OurVision" className="text-white text-sm font-medium">
-                      Our Vision
+                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium">
+                      Kashmiri Sufi Legacy
                     </Link>
                   </li>
-                  {/* More list items */}
+                  <li>
+                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium">
+                      Purpose & Direction
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium">
+                      Our Work & Practices
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                      Understanding Kashmiri Sufism
+                    </Link>
+                  </li>
                 </ul>
                 <button
                   className={`${
                     isActive.key === "2" ? "expanded open" : ""
                   } text-white`}
                   onClick={() => handleToggle("2")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
+              </li>
+
+              {/* Your Journey menu */}
+              <li
+                className={`${
+                  isActive.key === "3" ? "current" : ""
+                } dropdown`}
+              >
+                <Link href="#" className="text-white text-sm font-medium">
+                  Your Journey
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === "3" ? "block" : "none"}`,
+                  }}
+                  className="space-y-2 ml-4"
+                >
+                  <li>
+                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium">
+                      Begin Your Journey
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium">
+                      Core Learning Paths
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium">
+                      Growth & Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium">
+                      Leadership & Teaching
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                      Community & Events
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                      Resources & Support
+                    </Link>
+                  </li>
+                </ul>
+                <button
+                  className={`${
+                    isActive.key === "3" ? "expanded open" : ""
+                  } text-white`}
+                  onClick={() => handleToggle("3")}
                 >
                   <span className="fa fa-angle-right" />
                 </button>

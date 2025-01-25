@@ -19,7 +19,7 @@ export default function Home() {
   <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
-      <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+      <span className="relative inline-block text-[16px]  leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
         Our Heritage
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
