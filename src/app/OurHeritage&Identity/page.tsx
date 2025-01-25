@@ -32,12 +32,7 @@ export default function Home() {
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-  Our heritage is built upon the timeless principles of Wahdat al-Wujud, where all creation, from the
-  smallest grain of sand to the grandest galaxies, is seen as a manifestation of the Divine. It is within
-  this sacred understanding that Sufi science finds its roots — in the recognition of the interconnectedness of
-  all things. This stands as a bridge between the ancient
-  spiritual traditions of Kashmir and the modern scientific quest to understand the laws of nature,
-  consciousness, and energy.
+      Our heritage is built upon the principles of Wahdat al-Wujud, where all creation, from the smallest grain of sand to the grandest galaxies, is seen as a manifestation of the Divine. Within this sacred understanding, Sufi science roots itself in recognizing the interconnectedness of all things. This bridges ancient spiritual traditions of Kashmir and the modern scientific quest to understand laws of nature,  and energy.
 </p>
     </div>
   </div>
