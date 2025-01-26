@@ -643,6 +643,32 @@ ul {
   display: block;
   padding: 28px 0;
 }
+.mobile-nav__wrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav__content {
+  z-index: 2006; /* Higher than the header */
+}
+
+.mobile-nav__wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav__wrapper.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobile-nav__content {
+  transform: translateX(0);
+}
+
+.mobile-nav__content.-translate-x-full {
+  transform: translateX(-100%);
+}
+
 /* Base styles */
 .main-menu-two__logo {
   display: flex;
@@ -702,7 +728,7 @@ ul {
     font-size: 2.5rem;
   }
   .responsive-tagline{
-    font-size:10px;
+    font-size:12px;
     margin-top: -40px;
     margin-left: 110px;
   }

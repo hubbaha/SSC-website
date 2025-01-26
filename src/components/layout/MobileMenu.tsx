@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";  
+import Image from "next/image";
 import { useState } from "react";
 
 interface MobileMenuProps {
@@ -37,14 +37,18 @@ const MobileMenu = ({
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full z-50 mobile-nav__wrapper transition-all transform -translate-x-full opacity-0 visibility-hidden">
+      <div
+        className={`fixed inset-0 z-[2000] bg-black bg-opacity-50 transform transition-transform duration-300 ${
+          isSidebar ? "translate-x-0 opacity-100 visible" : "-translate-x-full opacity-0 invisible"
+        }`}
+      >
         <div
-          className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 cursor-pointer mobile-nav__overlay"
+          className="absolute inset-0 cursor-pointer"
           onClick={handleMobileMenu}
         ></div>
-        <div className="relative h-full w-72 bg-darkpurple py-8 px-4 mobile-nav__content opacity-0 visibility-hidden transition-all transform -translate-x-full">
+        <div className="relative h-full w-72 bg-fixnix-darkpurple py-8 px-6 overflow-y-auto transition-all transform">
           <span
-            className="absolute top-5 right-4 text-white text-lg cursor-pointer mobile-nav__close"
+            className="absolute top-5 right-5 text-white text-lg cursor-pointer"
             onClick={handleMobileMenu}
           >
             <i className="fa fa-times"></i>
@@ -54,8 +58,8 @@ const MobileMenu = ({
             <Link href="/" aria-label="logo image">
               <Image
                 src="/assets/images/resources/logo-4.png"  // Path to your image
-                width={20}  // Set the width
-                height={20}  // Set the height
+                width={70}  // Set the width
+                height={70}  // Set the height
                 alt="Logo"
                 className=""
               />
@@ -65,12 +69,12 @@ const MobileMenu = ({
           <div className="mobile-nav__container">
             <ul className="space-y-4 main-menu__list">
               {/* Home menu */}
-              <li
-                className={`${
-                  isActive.key === "1" ? "current" : ""
-                } dropdown`}
-              >
-                <Link href="/" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+              <li className={`${isActive.key === "1" ? "current" : ""} dropdown`}>
+                <Link
+                  href="/"
+                  className="text-white text-sm font-medium"
+                  onClick={handleMobileMenu}
+                >
                   Home
                 </Link>
                 <ul
@@ -80,43 +84,57 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Home One
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-2" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/Index-2"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Home Two
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-3" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/Index-3"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Home Three
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-dark" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/Index-dark"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Home Four
                     </Link>
                   </li>
                 </ul>
                 <button
-                  className={`${
-                    isActive.key === "1" ? "expanded open" : ""
-                  } text-white`}
+                  className={`${isActive.key === "1" ? "expanded open" : ""} text-white`}
                   onClick={() => handleToggle("1")}
                 >
-                  <span className="fa fa-angle-right" />
+                  <span className="fa fa-angle-right ml-[160px]" />
                 </button>
               </li>
 
-              {/* About KSSC menu */}
-              <li
-                className={`${
-                  isActive.key === "2" ? "current" : ""
-                } dropdown`}
-              >
-                <Link href="#" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+              {/* Discover KSSC menu */}
+              <li className={`${isActive.key === "2" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                  onClick={handleMobileMenu}
+                >
                   Discover KSSC
                 </Link>
                 <ul
@@ -126,48 +144,65 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Our Heritage & Identity
                     </Link>
                   </li>
                   <li>
-                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Kashmiri Sufi Legacy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Purpose & Direction
                     </Link>
                   </li>
                   <li>
-                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/OurWork&Practices"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Our Work & Practices
                     </Link>
                   </li>
                   <li>
-                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                      onClick={handleMobileMenu}
+                    >
                       Understanding Kashmiri Sufism
                     </Link>
                   </li>
                 </ul>
                 <button
-                  className={`${
-                    isActive.key === "2" ? "expanded open" : ""
-                  } text-white`}
+                  className={`${isActive.key === "2" ? "expanded open" : ""} text-white`}
                   onClick={() => handleToggle("2")}
                 >
-                  <span className="fa fa-angle-right" />
+                  <span className="fa fa-angle-right ml-[105px]" />
                 </button>
               </li>
 
               {/* Your Journey menu */}
-              <li
-                className={`${
-                  isActive.key === "3" ? "current" : ""
-                } dropdown`}
-              >
-                <Link href="#" className="text-white text-sm font-medium">
+              <li className={`${isActive.key === "3" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                >
                   Your Journey
                 </Link>
                 <ul
@@ -177,51 +212,300 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium">
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                    >
                       Begin Your Journey
                     </Link>
                   </li>
                   <li>
-                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium">
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                    >
                       Core Learning Paths
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium">
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                    >
                       Growth & Development
                     </Link>
                   </li>
                   <li>
-                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium">
+                    <Link
+                      href="/OurWork&Practices"
+                      className="text-white text-sm font-medium"
+                    >
                       Leadership & Teaching
                     </Link>
                   </li>
                   <li>
-                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
                       Community & Events
                     </Link>
                   </li>
                   <li>
-                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
                       Resources & Support
                     </Link>
                   </li>
                 </ul>
                 <button
-                  className={`${
-                    isActive.key === "3" ? "expanded open" : ""
-                  } text-white`}
+                  className={`${isActive.key === "3" ? "expanded open" : ""} text-white`}
                   onClick={() => handleToggle("3")}
                 >
-                  <span className="fa fa-angle-right" />
+                  <span className="fa fa-angle-right ml-[120px]" />
+                </button>
+              </li>
+              {/*Sufi science menu */}
+              <li className={`${isActive.key === "4" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                >
+                  Sufi Science Explorer
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === "4" ? "block" : "none"}`,
+                  }}
+                  className="space-y-2 ml-4"
+                >
+                  <li>
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                    >
+                     Foundational Sciences
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                    >
+                      Mind & Conciousness
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                    >
+                      Nature & Environment
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/OurWork&Practices"
+                      className="text-white text-sm font-medium"
+                    >
+                      Philosophy & Ethics
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
+                      Human Sciences
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
+                      Spiritual Technologies
+                    </Link>
+                  </li>
+                </ul>
+                <button
+                  className={`${isActive.key === "4" ? "expanded open" : ""} text-white`}
+                  onClick={() => handleToggle("4")}
+                >
+                  <span className="fa fa-angle-right ml-[68px]" />
+                </button>
+              </li>
+              {/* Learning center menu */}
+              <li className={`${isActive.key === "5" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                >
+                  Learning Center
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === "5" ? "block" : "none"}`,
+                  }}
+                  className="space-y-2 ml-4"
+                >
+                  <li>
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                    >
+                      Research & Publications
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                    >
+                      Multimedia Library
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                    >
+                      Digital Books Section
+                    </Link>
+                  </li>
+                  
+                </ul>
+                <button
+                  className={`${isActive.key === "5" ? "expanded open" : ""} text-white`}
+                  onClick={() => handleToggle("5")}
+                >
+                  <span className="fa fa-angle-right ml-[100px] border-white rounded" />
+                </button>
+              </li>
+              {/* Sacred Gift Shop menu */}
+              <li className={`${isActive.key === "6" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                >
+                  Sacred Gift Shop
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === "6" ? "block" : "none"}`,
+                  }}
+                  className="space-y-2 ml-4"
+                >
+                  <li>
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                    >
+                      Jewelry & Acessories
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                    >
+                      Art & Wall Decor
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                    >
+                      Home & Living
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/OurWork&Practices"
+                      className="text-white text-sm font-medium"
+                    >
+                      Fashion & Apparel
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
+                     Wellness & Medication
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/UnderstandingKashmiriSufism"
+                      className="text-white text-sm font-medium"
+                    >
+                      Music & Sound
+                    </Link>
+                  </li>
+                </ul>
+                <button
+                  className={`${isActive.key === "6" ? "expanded open" : ""} text-white`}
+                  onClick={() => handleToggle("6")}
+                >
+                  <span className="fa fa-angle-right ml-24" />
+                </button>
+              </li>
+              {/* Support Usy menu */}
+              <li className={`${isActive.key === "7" ? "current" : ""} dropdown`}>
+                <Link
+                  href="#"
+                  className="text-white text-sm font-medium"
+                >
+                  Support Us
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === "7" ? "block" : "none"}`,
+                  }}
+                  className="space-y-2 ml-4"
+                >
+                  <li>
+                    <Link
+                      href="/OurHeritage&Identity"
+                      className="text-white text-sm font-medium"
+                    >
+                      Ways to Give
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/KashmiriSufiLegacy"
+                      className="text-white text-sm font-medium"
+                    >
+                      Volunteer With Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Purpose&Direction"
+                      className="text-white text-sm font-medium"
+                    >
+                      Collaborations
+                    </Link>
+                  </li>
+                  
+                </ul>
+                <button
+                  className={`${isActive.key === "7" ? "expanded open" : ""} text-white`}
+                  onClick={() => handleToggle("7")}
+                >
+                  <span className="fa fa-angle-right ml-32" />
                 </button>
               </li>
 
               {/* Additional menu items... */}
-
               <li>
-                <Link href="/Contact" className="text-white text-sm font-medium">
-                  Contact
+                <Link href="/Contact" className="text-red-600 text-sm font-medium">
+                  GET MEMBERSHIP
                 </Link>
               </li>
             </ul>
