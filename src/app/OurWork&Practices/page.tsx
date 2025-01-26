@@ -16,7 +16,7 @@ export default function Home() {
   wrapperCls="team-page-wrapper"
 >
         {/*Team Top Start*/}
-<section className="team-top">
+<section className="text-left-mobile team-top">
   <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -28,14 +28,13 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
-      Uniting Sufi Wisdom and Scientific<br/>
+      Uniting Sufi Wisdom & Scientific
       Exploration for Harmony
       </h2>
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-      At the Sufi Science Centre - Kashmir Chapter, we stand as a bridge between the ancient wisdom of Sufism and the transformative powers <br/>of modern science.Rooted in the profound spiritual heritage of Kashmir, our work embodies the sacred dance of science and spirituality,<br/> bringing together the timeless principles of Sufi thought with contemporary scientific discoveries.
-
+      At the Sufi Science Centre - Kashmir Chapter, we stand as a bridge between the ancient wisdom of Sufism and the transformative powers of modern science. Rooted in the profound spiritual heritage of Kashmir, our work embodies the sacred dance of science and spirituality, bringing together the timeless principles of Sufi thought with contemporary scientific discoveries, innovative research, and enlightening exploration.
 </p>
     </div>
   </div>
@@ -44,7 +43,7 @@ export default function Home() {
         {/*Team Top End*/}
 
         {/*Experience One Start*/}
-        <section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+        <section className="text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -54,14 +53,13 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-      Seeker and Scientist
+    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    Seeker and scientist
         <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Inner exploration and divine connection<br/>
-through spiritual practices
+      Inner exploration & divine connection through transformative spiritual practices.
       </h2>
     </div>
 
@@ -210,7 +208,7 @@ through spiritual practices
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className="text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -226,8 +224,7 @@ through spiritual practices
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Fusing spirituality and science for<br/>
-      divine understanding and growth.
+      Fusing spirituality and science for profound divine understanding & growth
       </h2>
     </div>
 
@@ -304,7 +301,7 @@ through spiritual practices
 </section>
 
     
-<section className="team-top py-[40px] sm:py-[60px] md:py-[80px]">
+<section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -316,25 +313,17 @@ through spiritual practices
 
       {/* Section Title */}
       <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-        Journey of discovery where the worlds of<br className="hidden sm:block" />
-        science and spirituality meet
+        Discovery of where worlds of
+        science & spirituality meet
       </h2>
 
       {/* Section Text */}
       <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-        Whether you are a scientist, a spiritual seeker, or someone curious about the deeper mysteries of the universe, the Sufi Science<br className="hidden md:block" />
-        Centre - Kashmir Chapter offers a sanctuary for those seeking to understand the divine harmony that governs all things.<br className="hidden md:block" />
-        Together, we will explore the sacred science that unites us with the Divine and with each other, walking the path<br className="hidden md:block" />
-        of wisdom, compassion, and light.
+      Whether you are a scientist, a spiritual seeker, or someone curious about the deeper mysteries of the universe, the Sufi Science Centre - Kashmir Chapter offers a sanctuary for those seeking to understand the divine harmony that governs all things. Together, we will explore the sacred science that unites us with the Divine, with each other, and with the cosmos, walking the path of wisdom, compassion, and light.
       </p>
     </div>
   </div>
 </section>
-
-  
-
-
-
             </Layout>
             
         </>

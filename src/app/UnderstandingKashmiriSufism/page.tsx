@@ -15,7 +15,7 @@ export default function Home() {
   wrapperCls="team-page-wrapper"
 >
           {/*Team Top Start*/}
-<section className="team-top">
+<section className="text-left-mobile team-top">
   <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -27,13 +27,13 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
-      WUniting Kashmir Sufism & Modern Science<br/>
-      for Spiritual & Intellectual Awakening
+      Uniting Kashmir Sufism & Modern Science
+      
       </h2>
 
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-      The Sufi Science Centre - Kashmir Chapter blends ancient Sufi wisdom with modern scientific exploration.<br/> Rooted in Kashmir’s mystical heritage, it invites seekers on a transformative journey of spiritual awakening, connecting body,<br/> mind, and soul, while deepening understanding of existence, consciousness, and the universe, fostering holistic growth</p>
+      The Sufi Science Centre - Kashmir Chapter blends ancient Sufi wisdom with modern scientific exploration. Rooted in Kashmir’s mystical heritage, it invites seekers on a transformative journey of spiritual awakening, connecting body, mind, and soul, while deepening understanding of existence, consciousness, and the universe, fostering holistic growth and promoting profound inner peace, balance, and harmony in life.</p>
     </div>
   </div>
 </section>
@@ -41,7 +41,7 @@ export default function Home() {
         {/*Team Top End*/}
 
         {/*Experience One Start*/}
-        <section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+        <section className="text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -51,14 +51,14 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-      Essence of Kashmir Sufism
+    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    Essence of Kashmiri sufism
         <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Unity, Divine Light, and the<br/>
-Journey of Oneness
+      
+      Unity, Divine Light, and the Sacred Journey of Oneness, Healing,& Transformation.
       </h2>
     </div>
 
@@ -204,7 +204,7 @@ Journey of Oneness
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className="text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -220,8 +220,8 @@ Journey of Oneness
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      How the spiritual practices are diverse & rooted in<br/>
-both Islamic and local traditions?
+      How the spiritual practices are diverse & rooted in
+both Islamic & local traditions?
       </h2>
     </div>
 

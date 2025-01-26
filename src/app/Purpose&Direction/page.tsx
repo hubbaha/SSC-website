@@ -15,7 +15,7 @@ export default function Home() {
   wrapperCls="team-page-wrapper"
 >
               {/*Team Top Start*/}
-<section className="team-top">
+<section className="team-top text-left-mobile">
   <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -27,12 +27,12 @@ export default function Home() {
 
       {/* Section Title */}
       <h2 className="mt-[14px] text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
-      To bridge Sufism’s wisdom with<br/>
-      science’s evolving understanding.
+      Bridging Sufi wisdom with evolving science
       </h2>
       {/* Section Text */}
       <p className="pt-[20px] text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-      Our purpose is to create a sanctuary for knowledge seekers, where the path of the soul intertwines with the precision of scientific thought.<br/> Here, we honor the sacred connection between the seen and unseen, the known and unknown, understanding that true wisdom transcends<br/> the boundaries of any single discipline. In the Sufi tradition, the Divine is immanent in all creation, and by contemplating the<br/> mysteries of the universe, we come closer to the ultimate Truth that binds all things together.
+      
+      Our purpose is to create a sanctuary for knowledge seekers, where the soul’s path intertwines with scientific thought. We honor the sacred connection between the seen and unseen, understanding that true wisdom transcends disciplines. In the Sufi tradition, the Divine is immanent in all creation, and by contemplating the universe’s mysteries, we approach the ultimate Truth, bridging spirit and science.
       </p>
     </div>
   </div>
@@ -41,7 +41,7 @@ export default function Home() {
         {/*Team Top End*/}
 
         {/*Experience One Start*/}
-        <section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+        <section className=" text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -51,14 +51,14 @@ export default function Home() {
   <div className="container mx-auto">
     {/* Section Title */}
     <div className="text-center mb-[57px]">
-      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-      A Vision for the Future
+    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+    Vison for the future
         <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-        <span className="absolute top-[6px] right-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Honoring Kashmir’s legacy, uniting spirituality,<br/>
-science, and global progress.
+      Honoring Kashmir’s legacy, uniting spirituality,
+science, & global progress.
       </h2>
     </div>
 
@@ -205,7 +205,7 @@ science, and global progress.
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1] ">
+<section className="text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1] ">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -221,8 +221,8 @@ science, and global progress.
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
       <h2 className="mt-[14px] text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-      Raising global awareness of Kashmir’s Sufi<br/>
-scholars’ spiritual and scientific contributions.
+      Raising global awareness of Kashmir’s Sufi
+scholars’ spiritual & scientific contributions.
       </h2>
     </div>
 
@@ -297,7 +297,7 @@ scholars’ spiritual and scientific contributions.
     </div>
   </div>
 </section>
-<section className="team-top py-[40px] sm:py-[60px] md:py-[80px]">
+<section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -309,7 +309,7 @@ scholars’ spiritual and scientific contributions.
 
       {/* Section Title */}
       <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-        Join us in uncovering the profound <br className="hidden sm:block" />
+        Join us in uncovering the profound 
         mysteries that await
       </h2>
 

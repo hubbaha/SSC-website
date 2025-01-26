@@ -113,9 +113,10 @@ const Header2: React.FC<Header2Props> = ({
 
 
 
-      <p className="italic text-gray-600 lg:text-sm lg:ml-[130px] lg:-mt-[60px] hidden sm:block md:text-[9px] md:ml-[85px] md:-mt-[45px]">
-        A Harmony of Knowledge and Inner Peace: The Next Generation Sufi Way Forward
-      </p>
+<p className="italic text-gray-600   text-center    responsive-tagline">
+  A Harmony of Knowledge and Inner Peace: The Next Generation Sufi Way Forward
+</p>
+
 
               {/* Mobile and Desktop Navigation */}
               <div className="flex items-center gap-4">

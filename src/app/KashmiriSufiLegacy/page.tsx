@@ -15,7 +15,7 @@ export default function Home() {
   wrapperCls="team-page-wrapper"
 >
          {/*Team Top Start*/}
-         <section className="team-top">
+         <section className="team-top text-left-mobile">
   <div className="container mx-auto px-4">
     <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -43,7 +43,7 @@ Kashmir’s Sufi heritage blends spiritual wisdom, poetry, music, and sacred sci
         {/*Team Top End*/}
 
         {/*Experience One Start*/}
-        <section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+        <section className=" text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -211,7 +211,7 @@ Ancient wisdom traditions emphasize spiritual growth, balance, & exploration
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className=" text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -314,7 +314,7 @@ Ancient wisdom traditions emphasize spiritual growth, balance, & exploration
         The Divine Saints of Kashmir
       </h2> */} 
 
-<section className="team-top py-[40px] sm:py-[60px] md:py-[80px]">
+<section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
       {/* Section Tagline */}
@@ -331,10 +331,8 @@ Ancient wisdom traditions emphasize spiritual growth, balance, & exploration
 
       {/* Section Text */}
       <p className="pt-[15px] sm:pt-[20px] text-center xs:text-left sm:text-left md:text-center lg:text-center text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-        The Kashmir Sufi Legacy is a treasure that transcends borders, a gift to humanity that holds the potential to inspire 
-        transformation on a global scale. Through our educational programs, spiritual practices, and scientific research, we invite you
-        to experience the timeless wisdom that continues to illuminate the hearts and minds of all who seek truth and enlightenment.
-        Welcome to a journey that will deepen your understanding of the universe and the divine presence within it.
+      The Kashmir Sufi Legacy transcends borders, inspiring transformation globally. Through our educational programs, spiritual practices, and scientific research, we invite you
+      to experience the timeless wisdom that continues to illuminate the hearts and minds of all who seek truth . Welcome to a transformative journey that will profoundly deepen your understanding of the vast mysteries of the universe and the divine.
       </p>
 
       {/* Subheading */}

@@ -14,27 +14,30 @@ export default function Home() {
   headTitle="Our Team" 
   wrapperCls="team-page-wrapper"
 >
-        {/*Team Top Start*/}
-<section className="team-top">
+<section className="team-top text-left-mobile">
   <div className="container mx-auto px-4">
-    <div className="text-center relative block mt-[-6px] mb-[49px] z-[1]">
+    <div className="text-center sm:text-left relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
-      <span className="relative inline-block text-[16px]  leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+      <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
         Our Heritage
         <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
 
       {/* Section Title */}
-<h2 className="mt-[14px] md:text-center lg:text-center sm:text-left text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold ">
-  Welcome to the Kashmir Sufi Science Centre
-</h2>
+      <h2 className="mt-[14px]  text-center text-fixnix-darkpurple text-[28px] sm:text-[36px] md:text-[42px] leading-[40px] sm:leading-[48px] md:leading-[52px] font-semibold">
+        Welcome to the Kashmir Sufi Science Centre
+      </h2>
 
-{/* Section Text */}
-<p className="pt-[20px] text-left sm:text-left md:text-center lg:text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-  Our heritage is built upon the principles of Wahdat al-Wujud, where all creation, from the smallest grain of sand to the grandest galaxies, is seen as a manifestation of the Divine. Within this sacred understanding, Sufi science roots itself in recognizing the interconnectedness of all things. This bridges ancient spiritual traditions of Kashmir and the modern scientific quest to understand laws of nature, and energy.
-</p>
-
+      {/* Section Text */}
+      <p className="pt-[20px] text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+        Our heritage is built upon the principles of Wahdat al-Wujud, where all
+        creation, from the smallest grain of sand to the grandest galaxies, is
+        seen as a manifestation of the Divine. Within this sacred understanding,
+        Sufi science roots itself in recognizing the interconnectedness of all
+        things. This bridges ancient spiritual traditions of Kashmir and the
+        modern scientific quest to understand laws of nature, and energy.
+      </p>
     </div>
   </div>
 </section>
@@ -42,7 +45,7 @@ export default function Home() {
         {/*Team Top End*/}
 
     {/* Experience One Start */}
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className=" text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{
@@ -57,7 +60,7 @@ export default function Home() {
         <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
         <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       </span>
-      <h2 className="mt-[14px]  text-center xs:text-left sm:text-left md:text-center lg:text-center text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold
+      <h2 className="mt-[14px]  text-center  text-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold
 ">
       How Kashmiri Sufism blends cultural heritage, 
       scientific inquiry, & wisdom?
@@ -213,7 +216,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-<section className="relative block bg-fixnix-darkpurple py-[120px] z-[1]">
+<section className=" text-left-mobile relative block bg-fixnix-darkpurple py-[120px] z-[1]">
   <div
     className="absolute top-[20px] bottom-[20px] left-0 right-0 bg-no-repeat bg-center bg-cover z-[-1]"
     style={{

@@ -180,6 +180,25 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* Apply styles for small screens (mobile) */
+@media (max-width: 768px) {
+  /* Target specific sections explicitly */
+  .text-left-mobile p,
+  .text-left-mobile h1,
+  .text-left-mobile h2,
+  .text-left-mobile h3,
+  .text-left-mobile h4,
+  .text-left-mobile h5,
+  .text-left-mobile h6,
+  .text-left-mobile div,
+  .text-left-mobile span {
+    text-align: left !important;
+  }
+}
+
+
+
+
 
 #particles-js {
   position: absolute;
@@ -674,9 +693,23 @@ ul {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+@media (max-width: 1450px) {
+  .responsive-logo {
+    height: 90px;
+    width: 90px;
+  }
+  .responsive-website-name {
+    font-size: 2rem;
+  }
+  .responsive-tagline{
+    font-size:10px;
+    margin-top: -40px;
+    margin-left: 100px;
+  }
+}
 
 /* Medium screens */
-@media (max-width: 992px) {
+@media (max-width: 1090px) {
   .responsive-logo {
     height: 90px;
     width: 90px;
@@ -684,27 +717,70 @@ ul {
   .responsive-website-name {
     font-size: 1.5rem;
   }
+  .responsive-tagline{
+    font-size:10px;
+    margin-top: -50px;
+    margin-left: 105px;
+  }
 }
-
-/* Small screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .responsive-logo {
     height: 70px;
     width: 70px;
   }
   .responsive-website-name {
-    font-size: 1.5rem;
+    font-size: 20px;
+  }
+  .responsive-tagline{
+    font-size:8px;
+    margin-left: 85px;
+    margin-top:-75px
+  }
+}
+@media (max-width: 500px) {
+  .responsive-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .responsive-website-name {
+    font-size: 14px;
+  }
+  .responsive-tagline{
+    font-size:6px;
+    margin-left: 85px;
+    margin-top:-40px
+  }
+}
+/* Small screens */
+@media (max-width: 400px) {
+  .responsive-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .responsive-website-name {
+    font-size: 12px;
+  }
+  .responsive-tagline{
+    font-size:5.5px;
+    margin-left: 85px;
+    margin-top:-40px
   }
 }
 
 /* Extra-small screens */
-@media (max-width: 576px) {
+@media (max-width: 340px) {
   .responsive-logo {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .responsive-website-name {
-    font-size: 10px;
+    font-size: 10.5px;
+  }
+  .responsive-tagline{
+    font-size:4px;
+    margin-left: 54px;
+    margin-top: -25px;
+    
   }
 }
 
