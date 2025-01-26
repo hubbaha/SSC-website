@@ -693,18 +693,18 @@ ul {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1440px) {
   .responsive-logo {
-    height: 90px;
-    width: 90px;
+    height:100px;
+    width: 100px;
   }
   .responsive-website-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .responsive-tagline{
     font-size:10px;
     margin-top: -40px;
-    margin-left: 100px;
+    margin-left: 110px;
   }
 }
 
@@ -764,6 +764,20 @@ ul {
     font-size:5.5px;
     margin-left: 85px;
     margin-top:-40px
+  }
+}
+@media (max-width: 360px) {
+  .responsive-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .responsive-website-name {
+    font-size: 11px;
+  }
+  .responsive-tagline{
+    font-size:5.5px;
+    margin-left: 85px;
+    margin-top:-45px
   }
 }
 

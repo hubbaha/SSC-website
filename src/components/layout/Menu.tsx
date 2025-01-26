@@ -29,23 +29,19 @@ export default function Menu() {
                               <Link
                                 href={`/Index-${page === 4 ? "dark" : page}`}
                                 aria-label={`View Home Page ${page}`}
-                                legacyBehavior
                               >
-                                <a className="block">
-                                  <Image
-                                    src={`/assets/images/home-showcase/home-showcase-1-${page}.jpg`}
-                                    alt={`Home Page ${page}`}
-                                    width={600}
-                                    height={700}
-                                    className="w-full transition-transform duration-500 ease-in-out transform scale-100"
-                                  />
-                                </a>
+                                <Image
+                                  src={`/assets/images/home-showcase/home-showcase-1-${page}.jpg`}
+                                  alt={`Home Page ${page}`}
+                                  width={600}
+                                  height={700}
+                                  className="w-full transition-transform duration-500 ease-in-out transform scale-100"
+                                />
                               </Link>
                               <div className="absolute inset-0 flex justify-center items-center transform scale-y-0 opacity-0 invisible transition-all duration-500 ease-in-out">
                                 <Link
                                   href={`/Index-${page === 4 ? "dark" : page}`}
                                   aria-label={`View Home Page ${page}`}
-                                  legacyBehavior
                                 >
                                   <span className="p-[15px] text-center w-[150px]">
                                     View Page {page}
@@ -66,6 +62,7 @@ export default function Menu() {
             </li>
           </ul>
         </li>
+
 
         {/* About Us */}
         <li className="relative group">
