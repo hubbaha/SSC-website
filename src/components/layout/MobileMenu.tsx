@@ -53,11 +53,11 @@ const MobileMenu = ({
           <div className="mb-10">
             <Link href="/" aria-label="logo image">
               <Image
-                src="/assets/images/resources/logo-1.png"  // Path to your image
-                width={150}  // Set the width
-                height={40}  // Set the height
+                src="/assets/images/resources/logo-4.png"  // Path to your image
+                width={20}  // Set the width
+                height={20}  // Set the height
                 alt="Logo"
-                className="w-full"
+                className=""
               />
             </Link>
           </div>
@@ -70,7 +70,7 @@ const MobileMenu = ({
                   isActive.key === "1" ? "current" : ""
                 } dropdown`}
               >
-                <Link href="/" className="text-white text-sm font-medium">
+                <Link href="/" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                   Home
                 </Link>
                 <ul
@@ -80,22 +80,22 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/" className="text-white text-sm font-medium">
+                    <Link href="/" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Home One
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-2" className="text-white text-sm font-medium">
+                    <Link href="/Index-2" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Home Two
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-3" className="text-white text-sm font-medium">
+                    <Link href="/Index-3" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Home Three
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Index-dark" className="text-white text-sm font-medium">
+                    <Link href="/Index-dark" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Home Four
                     </Link>
                   </li>
@@ -116,7 +116,7 @@ const MobileMenu = ({
                   isActive.key === "2" ? "current" : ""
                 } dropdown`}
               >
-                <Link href="#" className="text-white text-sm font-medium">
+                <Link href="#" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                   Discover KSSC
                 </Link>
                 <ul
@@ -126,27 +126,27 @@ const MobileMenu = ({
                   className="space-y-2 ml-4"
                 >
                   <li>
-                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium">
+                    <Link href="/OurHeritage&Identity" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Our Heritage & Identity
                     </Link>
                   </li>
                   <li>
-                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium">
+                    <Link href="/KashmiriSufiLegacy" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Kashmiri Sufi Legacy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium">
+                    <Link href="/Purpose&Direction" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Purpose & Direction
                     </Link>
                   </li>
                   <li>
-                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium">
+                    <Link href="/OurWork&Practices" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Our Work & Practices
                     </Link>
                   </li>
                   <li>
-                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium">
+                    <Link href="/UnderstandingKashmiriSufism" className="text-white text-sm font-medium" onClick={handleMobileMenu}>
                       Understanding Kashmiri Sufism
                     </Link>
                   </li>
