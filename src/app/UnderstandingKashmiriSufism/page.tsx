@@ -298,38 +298,30 @@ both Islamic & local traditions?
   </div>
 </section>
 
-        {/* Team One Start */}
-       
+<section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
+      {/* Section Tagline */}
+      <span className="relative inline-block text-[14px] sm:text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+      Your Journey Begins Here
+        <span className="absolute top-[6px] left-[-40px] sm:left-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] sm:right-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
 
-        <section className="relative block py-28">
-  <div className="container mx-auto">
-    <div className="flex flex-col items-center">
-      {/* Heading Above the Image */}
-      <h2 className="text-3xl font-semibold text-center mb-6 text-fixnix-darkpurple">
-        The Divine Saints of Kashmir
+      {/* Section Title */}
+      <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+      Embark on a Transformative Journey of Awakening
       </h2>
 
-      {/* Team Member Start */}
-      <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
-        <div className="relative group">
-          {/* Image Box */}
-          <div className="relative overflow-hidden rounded-lg">
-            <Image
-              src="/assets/images/team/saints.jpg" // Path to the image
-              alt="Kashmiri Saints"
-              width={500}  // Set your preferred width
-              height={500} // Set your preferred height
-              className="w-full h-full rounded-lg transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
-          </div>
+      {/* Section Text */}
+      <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
+      Our center provides a sacred space for seekers, scientists, and individuals yearning to understand existence. The Kashmir Chapter of the Sufi Science Centre serves as a guiding beacon, shedding light on the timeless wisdom of the Sufi tradition while embracing modern discoveries. Step into the world of Sufi Science and experience a profound journey of awakening, healing, and transformation.
+      </p>
 
-          {/* Content */}
-          
-          {/* Social Links */}
-        </div>
-      </div>
-      {/* Team Member End */}
+      {/* Subheading */}
+      <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[16px] sm:text-[18px] md:text-[20px] leading-[30px] sm:leading-[40px] font-semibold">
+      Discover the truth within, and awaken to the Divine Presence that surrounds us all.
+      </h2>
     </div>
   </div>
 </section>

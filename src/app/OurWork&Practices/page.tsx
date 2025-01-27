@@ -321,6 +321,9 @@ export default function Home() {
       <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
       Whether you are a scientist, a spiritual seeker, or someone curious about the deeper mysteries of the universe, the Sufi Science Centre - Kashmir Chapter offers a sanctuary for those seeking to understand the divine harmony that governs all things. Together, we will explore the sacred science that unites us with the Divine, with each other, and with the cosmos, walking the path of wisdom, compassion, and light.
       </p>
+      <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[16px] sm:text-[18px] md:text-[20px] leading-[30px] sm:leading-[40px] font-semibold">
+      Exploring the sacred science that unites us with the Divine, cosmos, and each other through wisdom.
+      </h2>
     </div>
   </div>
 </section>

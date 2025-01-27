@@ -643,12 +643,12 @@ ul {
   display: block;
   padding: 28px 0;
 }
-.mobile-nav__wrapper {
+/* .mobile-nav__wrapper {
   transition: all 0.3s ease-in-out;
 }
 
 .mobile-nav__content {
-  z-index: 2006; /* Higher than the header */
+  z-index: 2006; 
 }
 
 .mobile-nav__wrapper.visible {
@@ -667,7 +667,7 @@ ul {
 
 .mobile-nav__content.-translate-x-full {
   transform: translateX(-100%);
-}
+} */
 
 /* Base styles */
 .main-menu-two__logo {
