@@ -182,31 +182,31 @@ export default function Home() {
           </div>
           <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
             {/* List Item 1 */}
-            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md transition-all duration-500 ">
-              <div className="flex items-center justify-center w-[60px] h-[60px] bg-fixnix-lightpurple text-white text-[30px] rounded-full transition-all duration-[500ms] transform scale-[1] group-hover:bg-white group-hover:text-fixnix-lightpurple">
-                <span className="icon-checked"></span>
+            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white hover:-translate-y-[10px] group rounded-lg shadow-md  transition-all duration-500">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
+                <span className="icon-repair"></span>
               </div>
               <div className="ml-4 sm:ml-6">
-                <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white group-hover:bg-black">
-                  Spiritual and Cultural Roots
+                <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
+                Spirituality Roots
                 </h5>
-                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
+                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
                    Sufism blends spirituality with culture.
                 </p>
               </div>
             </li>
 
             {/* List Item 2 */}
-            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md  transition-all duration-500">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 group-hover:bg-white">
+            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white hover:-translate-y-[10px] group rounded-lg shadow-md  transition-all duration-500">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
                 <span className="icon-repair"></span>
               </div>
               <div className="ml-4 sm:ml-6">
-                <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white">
-                  Mystical Science Exploration
+                <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
+                  Science Exploration
                 </h5>
-                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
-                  Science and mysticism blend in spirituality.
+                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
+                Spirituality blends science and mysticism.
                 </p>
               </div>
             </li>

@@ -218,86 +218,116 @@ export default function Home() {
         {/*Pricing One End*/}
 
         {/*Contact Two Start*/}
-        <section className="text-left-mobile contact-two bg-fixnix-darkpurple ">
-            {/* <div className="contact-two-bg jarallax"
-                style={{ backgroundImage: 'url(assets/images/backgrounds/contact-two-bg.jpg)' }} ></div> */}
-            <div className="container">
-                <div className="contact-two__inner">
-                    <div className="section-title section-title--two text-center">
-                        <span className="section-title__tagline ">Start Your Journey Today</span>
-                        <h2 className="section-title__title ">Your journey into the heart of Sufi science begins</h2>
-                        <p className=" section-title__text">With each step, you will uncover new dimensions of understanding, not only of the world around you but also of the divine presence within. The ancient Sufi wisdom and modern scientific discoveries are not separate but two expressions of the same Divine Truth. Through this journey, we will awaken hidden knowledge and power, fostering personal transformation, collective healing, and the realization of Divine Unity that connects and sustains all of creation.
-</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+        <section className="text-left-mobile relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
+  <div className="absolute inset-0 bg-center bg-cover mix-blend-multiply z-[-1]"></div>
+  <div className="container">
+    <div className="relative block">
+      <div className=" text-center mb-[42px]">
+      <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+      Start Your Journey Today
+        <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
+        <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
+      </span>
+      <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+      Your journey into the heart of Sufi science begins
+      </h2>
+      <p className="pt-[15px] sm:pt-[20px] text-gray-100 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
+      With each step, you will uncover new dimensions of understanding, not only of the world around you but also of the divine presence within. The ancient Sufi wisdom and modern scientific discoveries are not separate but two expressions of the same Divine Truth. We will awaken hidden knowledge and power, fostering personal transformation, collective healing, and the realization of Divine Unity that connects all of creation.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
         {/*Contact Two  End*/}
 
         {/*Services One Start*/}
-        <section className="text-left-mobile services-one">
-            <div className="services-one-shape-1 float-bob-x">
-                <img src="assets/images/shapes/services-one-shape-1.png" alt=""/>
-            </div>
-            <div className="services-one-shape-2 float-bob-y">
-                <img src="assets/images/shapes/services-one-shape-2.png" alt=""/>
-            </div>
-            <div className="container">
-                <div className="section-title section-title--two text-center">
-                    <span className="section-title__tagline">What Awaits You on This Sacred Journey?</span>
-                    <h2 className="section-title__title">Embark on a Transformative Path</h2>
-                    <p className="section-title__text">Step into a realm where ancient wisdom and modern science converge, offering you profound insights into the universe and your inner self. This journey will awaken your spirit, expand your consciousness, and guide you toward deeper healing and enlightenment.</p>
-                </div>
-                <div className="row">
-                    {/*Services One Single Start*/}
-                    <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div className="services-one__single">
-                            <div className="services-one__img">
-                                <img src="assets/images/services/services-1-1.jpg" alt=""/>
-                                
-                            </div>
-                            <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Sufi Practices</Link></h3>
-                                <p className="services-one__text">Learn spiritual meditation, dhikr, and sacred whirling to connect with divine energy and awaken the soul.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    {/*Services One Single Start*/}
-                    {/*Services One Single Start*/}
-                    <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div className="services-one__single">
-                            <div className="services-one__img">
-                                <img src="assets/images/services/services-1-2.jpg" alt=""/>
-                                
-                            </div>
-                            <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Sacred Geometry</Link></h3>
-                                <p className="services-one__text">Explore the universe's hidden geometric patterns, uniting modern physics and ancient wisdom for universal harmony.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    {/*Services One Single Start*/}
-                    {/*Services One Single Start*/}
-                    <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                        <div className="services-one__single">
-                            <div className="services-one__img">
-                                <img src="assets/images/services/services-1-3.jpg" alt=""/>
-                                
-                            </div>
-                            <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Consciousness Studies</Link></h3>
-                                <p className="services-one__text">Study the connection between spirit and mind, with Sufi wisdom guiding pathways to  inner-outer unity.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    {/*Services One Single Start*/}
-                </div>
-            </div>
-        </section>
+        <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
+  <div className="absolute top-[10px] left-0 services-one-shape-1">
+    <img src="assets/images/shapes/services-one-shape-1.png" alt=""/>
+  </div>
+  <div className="absolute top-[65px] right-0 services-one-shape-2">
+    <img src="assets/images/shapes/services-one-shape-2.png" alt=""/>
+  </div>
+  <div className="container">
+    <div className=" text-center mb-[49px]">
+      <span className=" text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
+        What Awaits You on This Sacred Journey?
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
+      <h2 className=" text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
+        Embark on a Transformative Path
+      </h2>
+      <p className="s pt-[20px]">
+        Step into a realm where ancient wisdom and modern science converge, offering you profound insights into the universe and your inner self. This journey will awaken your spirit, expand your consciousness, and guide you toward deeper healing and enlightenment.
+      </p>
+    </div>
+
+    <div className="row flex flex-wrap">
+      {/* Service 1 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+        <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
+          <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-1.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div>
+          <div className=" p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] font-semibold leading-[34px]">
+              
+                Sufi Practices
+              
+            </h3>
+            <p className=" mt-[15px] mb-[22px]">
+              Learn spiritual meditation, dhikr, and sacred whirling to connect with divine energy and awaken the soul.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Service 2 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+        <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
+          <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-2.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div>
+          <div className=" p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] font-semibold leading-[34px]">
+              
+                Sacred Geometry
+              
+            </h3>
+            <p className=" mt-[15px] mb-[22px]">
+              Explore the universe's hidden geometric patterns, uniting modern physics and ancient wisdom for universal harmony.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Service 3 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+        <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
+          <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-3.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div>
+          <div className="p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] font-semibold leading-[34px]">
+             
+                Mindful Science
+              
+            </h3>
+            <p className=" mt-[15px] mb-[22px]">
+              Study the connection between spirit and mind, with Sufi wisdom guiding pathways to inner-outer unity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         {/*Services One End*/}
 
             </Layout>

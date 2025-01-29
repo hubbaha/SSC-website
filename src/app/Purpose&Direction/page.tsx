@@ -71,13 +71,10 @@ science, & global progress.
           </span>
         </div>
         <div className="ml-[20px] sm:ml-[20px]">
-    <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-      <Link
-        href="services-details"
-        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-      >
+    <h3 className="text-[16px] sm:text-[20px] group-hover:text-white font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
+      
         Global Recognition
-      </Link>
+      
     </h3>
     <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
     Seeking global recognition of Kashmir's spiritual and scientific heritage, blending ancient wisdom with modernity.
@@ -95,13 +92,10 @@ science, & global progress.
           </span>
         </div>
         <div className="ml-[20px] sm:ml-[20px]">
-          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-            <Link
-              href="team"
-              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-            >
+          <h3 className="text-[16px] sm:text-[20px] group-hover:text-white font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
+           
              Bridging Generations
-            </Link>
+            
           </h3>
           <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Inspiring future generations to explore the harmony between spirituality and science, ensuring lasting cultural preservation.
@@ -117,13 +111,10 @@ science, & global progress.
           </span>
         </div>
         <div className="ml-[20px] sm:ml-[20px]">
-          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-            <Link
-              href="contact"
-              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-            >
+          <h3 className="text-[16px] sm:text-[20px] group-hover:text-white font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
+            
               Sustainable Legacy
-            </Link>
+            
           </h3>
           <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Fostering a balanced, ethical approach to modern challenges, drawing from ancient wisdom for global impact.
@@ -172,30 +163,30 @@ science, & global progress.
           </div>
           <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
             {/* List Item 1 */}
-            <li className="relative flex items-center p-4 py-6 md:py-8 bg-white rounded-lg shadow-md transition-all duration-500 ">
-              <div className="flex items-center justify-center w-14 h-14 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 group-hover:bg-white group-hover:text-fixnix-lightpurple">
+            <li className="relative flex items-center p-4 py-6 md:py-8 bg-white rounded-lg shadow-md transition-all duration-500  hover:-translate-y-[10px] group ">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
                 <span className="icon-checked"></span>
               </div>
               <div className="ml-6 sm:ml-6">
-                <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white group-hover:bg-black">
+                <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
                 Kashmir’s Sacred Wisdom
                 </h5>
-                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
+                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
                 Preserving Kashmir’s cultural and spiritual heritage.
                 </p>
               </div>
             </li>
 
             {/* List Item 2 */}
-            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md  transition-all duration-500">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 group-hover:bg-white">
+            <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md  transition-all duration-500  hover:-translate-y-[10px] group">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
                 <span className="icon-repair"></span>
               </div>
               <div className="ml-4 sm:ml-6">
-                <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 group-hover:text-white">
+                <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
                 Fostering Global Dialogue
                 </h5>
-                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 group-hover:text-white">
+                <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
                 Encourage collaboration between mystics & scientists.</p>
               </div>
             </li>
@@ -237,13 +228,10 @@ scholars’ spiritual & scientific contributions.
     </span>
   </div>
   <div className="ml-[20px] sm:ml-[20px]">
-    <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-      <Link
-        href="services-details"
-        className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-      >
+    <h3 className="text-[16px] sm:text-[20px] group-hover:text-white font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
+      
         Knowledge Sharing
-      </Link>
+      
     </h3>
     <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
     The Centre highlights Kashmir's Sufi scholars’ contributions globally, fostering international research and collaboration.
@@ -261,13 +249,10 @@ scholars’ spiritual & scientific contributions.
           </span>
         </div>
         <div className="ml-[20px] sm:ml-[20px]">
-          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-            <Link
-              href="team"
-              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-            >
+          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px] group-hover:text-white">
+            
              Global Challenges 
-            </Link>
+            
           </h3>
           <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Kashmiri Sufi teachings address modern ethical, environmental, and peace-related challenges, offering sustainable solutions.</p>
@@ -282,13 +267,10 @@ scholars’ spiritual & scientific contributions.
           </span>
         </div>
         <div className="ml-[20px] sm:ml-[20px]">
-          <h3 className="text-[16px] sm:text-[20px] font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
-            <Link
-              href="contact"
-              className="text-fixnix-lightpurple transition-all duration-[500ms] group-hover:text-white"
-            >
+          <h3 className="text-[16px] sm:text-[20px] group-hover:text-white font-semibold leading-[24px] sm:leading-[30px] mb-[8px]">
+            
               Spiritual Integration
-            </Link>
+            
           </h3>
           <p className="text-fixnix-lightpurple group-hover:text-white sm:text-[16px]">
           Cultural exchanges promote understanding between science and spirituality, guiding towards a harmonious global future.</p>
