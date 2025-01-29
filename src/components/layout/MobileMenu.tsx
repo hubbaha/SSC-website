@@ -225,7 +225,7 @@ const MobileMenu = ({
                 >
                   <li>
                     <Link
-                      href="/OurHeritage&Identity"
+                      href="/BeginYourJourney"
                       className="text-white text-sm font-medium"
                     >
                       Begin Your Journey
@@ -542,7 +542,7 @@ const MobileMenu = ({
 
               {/* Additional menu items... */}
               <li>
-                <Link href="/Contact" className="text-red-600 text-md font-bold">
+                <Link href="/Contact" className="text-red-600 text-lg font-bold">
                   GET MEMBERSHIP
                 </Link>
               </li>

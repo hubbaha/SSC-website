@@ -218,13 +218,13 @@ export default function Home() {
         {/*Pricing One End*/}
 
         {/*Contact Two Start*/}
-        <section className="contact-two bg-fixnix-darkpurple ">
+        <section className="text-left-mobile contact-two bg-fixnix-darkpurple ">
             {/* <div className="contact-two-bg jarallax"
                 style={{ backgroundImage: 'url(assets/images/backgrounds/contact-two-bg.jpg)' }} ></div> */}
             <div className="container">
                 <div className="contact-two__inner">
                     <div className="section-title section-title--two text-center">
-                        <span className="section-title__tagline text-fixnix-darkpurple">Start Your Journey Today</span>
+                        <span className="section-title__tagline ">Start Your Journey Today</span>
                         <h2 className="section-title__title ">Your journey into the heart of Sufi science begins</h2>
                         <p className=" section-title__text">With each step, you will uncover new dimensions of understanding, not only of the world around you but also of the divine presence within. The ancient Sufi wisdom and modern scientific discoveries are not separate but two expressions of the same Divine Truth. Through this journey, we will awaken hidden knowledge and power, fostering personal transformation, collective healing, and the realization of Divine Unity that connects and sustains all of creation.
 </p>
@@ -236,7 +236,7 @@ export default function Home() {
         {/*Contact Two  End*/}
 
         {/*Services One Start*/}
-        <section className="services-one">
+        <section className="text-left-mobile services-one">
             <div className="services-one-shape-1 float-bob-x">
                 <img src="assets/images/shapes/services-one-shape-1.png" alt=""/>
             </div>
@@ -247,7 +247,7 @@ export default function Home() {
                 <div className="section-title section-title--two text-center">
                     <span className="section-title__tagline">What Awaits You on This Sacred Journey?</span>
                     <h2 className="section-title__title">Embark on a Transformative Path</h2>
-                    <p className="section-title__text">Step into a realm where ancient wisdom and science converge, awakening your spirit, expanding consciousness, and guiding you toward divine unity and transformation.</p>
+                    <p className="section-title__text">Step into a realm where ancient wisdom and modern science converge, offering you profound insights into the universe and your inner self. This journey will awaken your spirit, expand your consciousness, and guide you toward deeper healing and enlightenment.</p>
                 </div>
                 <div className="row">
                     {/*Services One Single Start*/}
@@ -258,9 +258,8 @@ export default function Home() {
                                 
                             </div>
                             <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Laptop Repair</Link></h3>
-                                <p className="services-one__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-one__title"><Link href="services-details">Sufi Practices</Link></h3>
+                                <p className="services-one__text">Learn spiritual meditation, dhikr, and sacred whirling to connect with divine energy and awaken the soul.</p>
                                 
                             </div>
                         </div>
@@ -274,9 +273,8 @@ export default function Home() {
                                 
                             </div>
                             <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Phone Repair</Link></h3>
-                                <p className="services-one__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-one__title"><Link href="services-details">Sacred Geometry</Link></h3>
+                                <p className="services-one__text">Explore the universe's hidden geometric patterns, uniting modern physics and ancient wisdom for universal harmony.</p>
                                 
                             </div>
                         </div>
@@ -290,9 +288,8 @@ export default function Home() {
                                 
                             </div>
                             <div className="services-one__content">
-                                <h3 className="services-one__title"><Link href="services-details">Tablet Repair</Link></h3>
-                                <p className="services-one__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-one__title"><Link href="services-details">Consciousness Studies</Link></h3>
+                                <p className="services-one__text">Study the connection between spirit and mind, with Sufi wisdom guiding pathways to  inner-outer unity.</p>
                                 
                             </div>
                         </div>

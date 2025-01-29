@@ -9,9 +9,11 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: 'var(--fixnix-primary)',
         "fixnix-lightpurple": "#70436b",
         "fixnix-darkpurple": "#472a44",
         "fixnix-white": "#ffffff",
+        
       },
     },
   },
