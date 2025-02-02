@@ -121,17 +121,13 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                  className={`${isActive.key === "1" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("1")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                >
-
-                
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "1" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("1")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
 
               {/* Discover KSSC menu */}
@@ -197,16 +193,14 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                  className={`${isActive.key === "2" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("2")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+                className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                 isActive.key === "2" ? "rotate-90" : ""
+                 }`}
+                 onClick={() => handleToggle("2")}
+                  >
+                   <span className="fa fa-angle-right" />
+                 </button>
+                  
               </li>
 
               {/* Your Journey menu */}
@@ -273,16 +267,13 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                  className={`${isActive.key === "3" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("3")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "3" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("3")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
               {/*Sufi science menu */}
               <li className={`${isActive.key === "4" ? "current" : ""} dropdown`}>
@@ -348,16 +339,13 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                  className={`${isActive.key === "4" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("4")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "4" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("4")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
               {/* Learning center menu */}
               <li className={`${isActive.key === "5" ? "current" : ""} dropdown`}>
@@ -400,17 +388,13 @@ const MobileMenu = ({
                   
                 </ul>
                 <button
-                  className={`${isActive.key === "5" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("5")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px',
-                     // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "5" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("5")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
               {/* Sacred Gift Shop menu */}
               <li className={`${isActive.key === "6" ? "current" : ""} dropdown`}>
@@ -476,16 +460,13 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                  className={`${isActive.key === "6" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("6")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "6" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("6")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
               {/* Support Usy menu */}
               <li className={`${isActive.key === "7" ? "current" : ""} dropdown`}>
@@ -528,16 +509,13 @@ const MobileMenu = ({
                   
                 </ul>
                 <button
-                  className={`${isActive.key === "7" ? "expanded open" : ""} text-white`}
-                  onClick={() => handleToggle("7")}
-                  style={{
-                    position: 'absolute', // Ensures the button stays in place
-                    right: '1px', // Adjusts the icon position to stay on the right side
-                  }}
-                
-                >
-                  <span className="fa fa-angle-right " />
-                </button>
+  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+    isActive.key === "7" ? "rotate-90" : ""
+  }`}
+  onClick={() => handleToggle("7")}
+>
+  <span className="fa fa-angle-right" />
+</button>
               </li>
 
               {/* Additional menu items... */}
