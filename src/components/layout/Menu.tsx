@@ -128,16 +128,16 @@ export default function Menu() {
       <Link href="/CoreLearningPaths" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Core Learning Paths</Link>
     </li>
     <li className="mb-2">
-      <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Growth & Development</Link>
+      <Link href="/Growth&Development" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Growth & Development</Link>
     </li>
     <li className="mb-2">
-      <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Leadership & Teaaching</Link>
+      <Link href="/Leadership&Teaching" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Leadership & Teaching</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Community & Events</Link>
+      <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Community & Events</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Resources & Support</Link>
+      <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Resources & Support</Link>
     </li>
   </ul>
 </li>

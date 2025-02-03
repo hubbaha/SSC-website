@@ -227,7 +227,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/KashmiriSufiLegacy"
+                      href="/CoreLearningPaths"
                       className="text-white text-sm font-medium"
                     >
                       Core Learning Paths
@@ -235,7 +235,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/Purpose&Direction"
+                      href="/Growth&Development"
                       className="text-white text-sm font-medium"
                     >
                       Growth & Development
@@ -243,7 +243,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/OurWork&Practices"
+                      href="/Leadership&Teaching"
                       className="text-white text-sm font-medium"
                     >
                       Leadership & Teaching
