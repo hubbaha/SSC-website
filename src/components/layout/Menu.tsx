@@ -137,7 +137,7 @@ export default function Menu() {
       <Link href="/Community&Events" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Community & Events</Link>
     </li>
     <li className="mb-2">
-      <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Resources & Support</Link>
+      <Link href="/Resources&Support" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Resources & Support</Link>
     </li>
   </ul>
 </li>
@@ -161,7 +161,7 @@ export default function Menu() {
       <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Philosophy & Ethics</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Human Sciences</Link>
+      <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Human Sciences</Link>
     </li>
     <li className="mb-2">
       <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Spiritual Technologies</Link>

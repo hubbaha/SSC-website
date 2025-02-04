@@ -98,13 +98,14 @@ const Header2: React.FC<Header2Props> = ({
                 </span>
               </div>
               <div className="flex items-center ml-auto">
-                <Link
-                  href="appointment"
-                  className="h-11 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm hidden sm:block"
-                >
-                  Get Membership
-                </Link>
+            <Link
+            href="appointment"
+            className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
+             >
+            Get Membership
+          </Link>
               </div>
+              
 
               <p className="italic text-gray-600 text-center responsive-tagline">
                 A Harmony of Knowledge and Inner Peace: The Next Generation Sufi Way Forward
