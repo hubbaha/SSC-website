@@ -251,7 +251,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/UnderstandingKashmiriSufism"
+                      href="/Community&Events"
                       className="text-white text-sm font-medium"
                     >
                       Community & Events
@@ -267,10 +267,10 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "3" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("3")}
+               className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+               isActive.key === "3" ? "rotate-90" : ""
+               }`}
+               onClick={() => handleToggle("3")}
 >
   <span className="fa fa-angle-right" />
 </button>
