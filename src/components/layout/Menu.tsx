@@ -5,7 +5,7 @@ import React from "react";
 export default function Menu() {
   return (
     <>
-      <ul className="main-menu__list hidden lg:flex space-x-[43px]">
+      <ul className="main-menu__list hidden lg:flex  space-x-[43px]  ">
         {/* HOME */}
         <li className="dropdown megamenu relative group">
           <Link

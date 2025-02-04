@@ -699,11 +699,11 @@ ul {
   }
 }
 
-.responsive-header {
+/* .responsive-header {
   display: flex;
   align-items: center;
   gap: 15px;
-}
+} */
 
 .responsive-logo {
   height: 110px;
@@ -718,19 +718,52 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   transition: all 0.3s ease;
+  text-align: center;
 }
-@media (max-width: 1440px) {
+
+.responsive-header {
+  display: flex;
+  flex-direction: column; /* Stack elements */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center;
+}
+
+.responsive-tagline {
+  font-size: 16px;
+  margin-top: 5px; /* Ensures space between website name and tagline */
+  text-align: center;
+}
+
+/* 4K screens */
+@media (min-width: 2560px) {
   .responsive-logo {
-    height:100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .responsive-website-name {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
-  .responsive-tagline{
-    font-size:12px;
-    margin-top: -40px;
-    margin-left: 110px;
+  .responsive-tagline {
+    font-size: 2rem;
+    margin-top: -110px;
+    margin-left: 200px;
+  }
+}
+
+/* Large screens */
+@media (max-width: 1740px) {
+  .responsive-logo {
+    height: 130px;
+    width: 130px;
+  }
+  .responsive-website-name {
+    font-size: 2rem;
+  }
+  .responsive-tagline {
+    font-size: 12px;
+    margin-top: -80px;
+    margin-left: 145px;
   }
 }
 
@@ -743,86 +776,75 @@ ul {
   .responsive-website-name {
     font-size: 1.5rem;
   }
-  .responsive-tagline{
-    font-size:10px;
+  .responsive-tagline {
+    font-size: 10px;
     margin-top: -50px;
-    margin-left: 105px;
+    margin-left: 100px;
   }
 }
-@media (max-width: 900px) {
+/* Medium screens */
+@media (max-width: 800px) {
   .responsive-logo {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
   }
   .responsive-website-name {
-    font-size: 20px;
+    font-size: 1.4rem;
   }
-  .responsive-tagline{
-    font-size:8px;
-    margin-left: 85px;
-    margin-top:-75px
+  .responsive-tagline {
+    font-size: 10px;
+    margin-top: -100px;
+    margin-left: 100px;
   }
 }
+
+
+/* Small screens */
 @media (max-width: 500px) {
   .responsive-logo {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
   }
   .responsive-website-name {
     font-size: 14px;
   }
-  .responsive-tagline{
-    font-size:6px;
-    margin-left: 85px;
-    margin-top:-40px
+  .responsive-tagline {
+    font-size: 6px;
+    margin-top: -70px;
+    margin-left: 65px;
   }
 }
-/* Small screens */
-@media (max-width: 400px) {
-  .responsive-logo {
-    height: 70px;
-    width: 70px;
-  }
-  .responsive-website-name {
-    font-size: 12px;
-  }
-  .responsive-tagline{
-    font-size:5.5px;
-    margin-left: 85px;
-    margin-top:-40px
-  }
-}
-@media (max-width: 360px) {
-  .responsive-logo {
-    height: 70px;
-    width: 70px;
-  }
-  .responsive-website-name {
-    font-size: 11px;
-  }
-  .responsive-tagline{
-    font-size:5.5px;
-    margin-left: 85px;
-    margin-top:-45px
-  }
-}
-
 /* Extra-small screens */
-@media (max-width: 340px) {
+@media (max-width: 380px) {
   .responsive-logo {
     height: 40px;
     width: 40px;
   }
   .responsive-website-name {
-    font-size: 10.5px;
+    font-size: 12px;
   }
-  .responsive-tagline{
-    font-size:4px;
-    margin-left: 54px;
-    margin-top: -25px;
-    
+  .responsive-tagline {
+    font-size: 5px;
+    margin-top: -60px;
+    margin-left: 55px;
   }
 }
+/* Extra-small screens */
+@media (max-width: 330px) {
+  .responsive-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .responsive-website-name {
+    font-size: 11px;
+  }
+  .responsive-tagline {
+    font-size: 4px;
+    margin-top: -25px;
+    margin-left: 55px;
+  }
+}
+
 
 
 .main-menu__main-menu-box {
