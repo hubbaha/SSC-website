@@ -137,7 +137,7 @@ const MobileMenu = ({
                   className="text-white text-sm uppercase font-bold"
                   onClick={handleMobileMenu}
                 >
-                  Discover KSSC
+                  Discover SSC
                 </Link>
                 <ul
                   style={{

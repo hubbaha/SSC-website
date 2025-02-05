@@ -162,7 +162,7 @@ export default function Home() {
 
             </div>
         </div>
-        <div className="flex flex-col md:flex-row  bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
+        <div className="flex flex-col md:flex-row pl-5 bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
             <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
                 <div className="mb-[24px]">
                     <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">Consciousness & the Soul</h4>

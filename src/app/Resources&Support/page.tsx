@@ -80,7 +80,7 @@ export default function Home() {
                 Integrating Mystical Teachings 
                 </h5>
                 <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
-                Uniting ancient wisdom with scientific discovery </p>
+                Uniting ancient wisdom with scientific discovery. </p>
               </div>
             </li>
           </ul>
@@ -102,14 +102,14 @@ export default function Home() {
         <div className="relative block">
           <div className="text-left">
           <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-          Sufi Leadership 
+          Spiritual & Scientific Resources
               <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-            A Beacon of Divine Light
+            Empowering growth through wisdom 
             </h2>
             <p className="text-base sm:text-lg text-gray-700">
-            Sufi leadership embodies humility, service, and compassion, guiding others through inner wisdom and divine grace. Our programs inspire individuals to nurture their spiritual growth, fostering interconnectedness and selfless service.</p>
+            In our commitment to supporting your journey, we offer a vast array of resources designed to nurture both the spiritual and scientific aspects of your being, fostering enlightenment, growth, harmony, wisdom, knowledge, balance, mindfulness, connection, and transformation.</p>
           </div>
         </div>
       </div>
@@ -130,68 +130,68 @@ export default function Home() {
                       </div>
             <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
               <div className="mb-[24px]">
-                  <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]"> Illuminating the Path to Divine Presence</h4>
-                  <p>Like a quiet lamp, a Sufi leader illuminates the path to divine presence, helping others discover the sacredness in all things.</p>
+                  <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">  Pathway to Enlightenment & Growth</h4>
+                  <p>Immerse yourself in a holistic journey of learning and self-discovery. These resources offer a bridge between heart and mind, helping you achieve balance and mindfulness </p>
               </div>
               <ul className="space-y-[17px] pb-[17px]">
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Humility Strength</h5>
-          <p>Sufi leaders empower others through humble service, not seeking recognition.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Sufi Teachings</h5>
+          <p>Explore mystical wisdom from Rumi, Shams Tabrizi, and Ibn Arabi.</p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Divine Wisdom</h5>
-          <p>Leaders guide through inner wisdom, shaped by divine grace and insight.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Science & Spirituality</h5>
+          <p>Discover quantum physics, neuroscience, and Sufi metaphysics in harmony.</p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Love Patience</h5>
-          <p>Nurturing others' souls with love and patience for spiritual growth.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Meditation Practices</h5>
+          <p>Engage in guided meditations, dhikr, and spiritual consciousness exercises.</p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Selfless Service</h5>
-          <p>Our programs inspire service through knowledge, wisdom, and selfless actions.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Divine Unity</h5>
+          <p>Unveil connections between energy, consciousness, and mystical transformation.</p>
       </div>
   </li>
 </ul>
 
           </div>
       </div>
-      <div className="flex flex-col md:flex-row  bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
+      <div className="flex flex-col pl-5 md:flex-row  bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
           <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
               <div className="mb-[24px]">
-                  <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">Teaching as a Sacred Art</h4>
-                  <p>Teaching awakens souls, unites spiritual wisdom with modern understanding and growth.</p>
+                  <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">Personal Guidance & Mentorship</h4>
+                  <p>Embark on a transformative journey with expert Sufi masters and scientific mentors. Receive personalized insights that seamlessly integrate mystical wisdom .</p>
               </div>
               <ul className="space-y-[17px] pb-[17px]">
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Sacred Responsibility</h5>
-          <p>Teaching in Sufism awakens the soul, helping others see the unseen .</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Heart Purification</h5>
+          <p>Purify your soul (Nafs) and align with divine love daily.</p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Learning Experience</h5>
-          <p>We blend Sufi spiritual practices with modern science to foster deep understanding.
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Research Support</h5>
+          <p>Receive guidance from scientists and scholars to enhance your pursuits.
 </p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Sciences of the Universe</h5>
-          <p>Our courses and workshops illuminate ancient truths through contemporary scientific insights.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Knowledge Workshops</h5>
+          <p>Participate in workshops and conferences bridging mysticism with scientific discovery.</p>
       </div>
   </li>
   <li className="flex justify-between border-b border-gray-300 pb-[17px]">
       <div>
-          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Divine Truths</h5>
-          <p>We teach how to integrate spiritual practices like dhikr and meditation into daily life.</p>
+          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Science Mysticism</h5>
+          <p>Explore the connection between spiritual wisdom and modern scientific principles.</p>
       </div>
   </li>
 </ul>
@@ -217,22 +217,21 @@ export default function Home() {
       {/*Pricing One End*/}
 
       {/*Contact Two Start*/}
-      <section className="text-left-mobile relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
-<div className="absolute inset-0 bg-center bg-cover mix-blend-multiply z-[-1]"></div>
-<div className="container">
+      <section className="text-left-mobile  relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
+<div className="absolute inset-0 bg-center  bg-cover mix-blend-multiply z-[-1]"></div>
+<div className="container ">
   <div className="relative block">
     <div className=" text-center mb-[42px]">
-    <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-    A Call to Seekers
+    <span className="relative  inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+      Embark on Your Sufi Science Journey
       <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
       <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
     </span>
     <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-    Step forward with an open heart and a receptive mind.
+    Harmonious integration of Sufism with the science.
     </h2>
     <p className="pt-[15px] sm:pt-[20px] text-gray-100 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-    In the rich tradition of Kashmiri Sufism, we offer a space where leadership is born from service, where teaching is rooted in love, and where the journey of the soul is illuminated by the divine light of truth.
-This is an invitation to step into a world where the sacred & scientific are one, where you are not only a seeker but also a guide for others, and where your personal journey is deeply intertwined with collective journey of humanity. Awaken your soul, expand your consciousness, and become a leader of the divine sciences in the land where mysticism and science meet.
+    The Sufi Science Center supports your journey, offering knowledge, resources, and community to merge Sufism with scientific discoveries. As you walk this sacred path, may you find wisdom, healing, and illumination for yourself and all of creation. Begin this transformative journey with us, where the Divine Light and scientific inquiry guide us towards a deeper understanding of the universe and our place within it.
 
 
     </p>
@@ -254,14 +253,14 @@ This is an invitation to step into a world where the sacred & scientific are one
 <div className="container">
   <div className="text-center mb-[49px]">
     <span className="text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
-    Nurturing Future Sufi Scholars
+    Workshops, Retreats & Training Programs
       <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
       <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
     </span>
     <h2 className="text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
-    Fostering Sufi Scientists for Spiritual and Scientific Growth
+    Facilitating personal growth & community empowerment
     </h2>
-    <p className="s pt-[20px]">Empowering youth to integrate spirituality with science, our programs foster leaders who will inspire positive transformation, bridging the material and spiritual realms for holistic growth.</p>
+    <p className="s pt-[20px]">Through our workshops, retreats, and immersive training programs, we offer a unique opportunity to experience the practical application of Sufi teachings in modern life. These programs are designed to deepen your connection to both the spiritual and scientific realms.</p>
   </div>
 
   <div className="row flex flex-wrap">
@@ -274,11 +273,10 @@ This is an invitation to step into a world where the sacred & scientific are one
         </div>
         <div className="p-[22px] pb-[30px]">
           <h3 className="text-[24px] font-semibold leading-[34px]">
-          Scientific Inquiry
+          Sufi Science Workshops
           </h3>
           <p className="mt-[15px] mb-[22px]">
-          We combine ancient spiritual teachings with modern scientific exploration to guide transformative leaders.
-          </p>
+          Participate in workshops that explore the intersection of Sufi metaphysics with fields such as quantum physics and mind science. </p>
         </div>
       </div>
     </div>
@@ -292,10 +290,10 @@ This is an invitation to step into a world where the sacred & scientific are one
         </div>
         <div className="p-[22px] pb-[30px]">
           <h3 className="text-[24px] font-semibold leading-[34px]">
-          Inspiring Responsibility
+          	Healing Retreats
           </h3>
           <p className="mt-[15px] mb-[22px]">
-          Our programs instill a sense of responsibility to understand and nurture both the physical and spiritual realms.</p>
+          Engage in healing retreats that combine Sufi healing practices, spiritual purification, and holistic wellness techniques.</p>
         </div>
       </div>
     </div>
@@ -309,10 +307,10 @@ This is an invitation to step into a world where the sacred & scientific are one
         </div>
         <div className="p-[22px] pb-[30px]">
           <h3 className="text-[24px] font-semibold leading-[34px]">
-          Divine Purpose
+          Training Programs
           </h3>
           <p className="mt-[15px] mb-[22px]">
-          We empower individuals to explore the mysteries of the universe, revealing the divine truths behind all that exists.
+          These programs are designed to bring the Sufi scientific method to life, offering practical skills in the integration of spiritual principles.
           </p>
         </div>
       </div>
