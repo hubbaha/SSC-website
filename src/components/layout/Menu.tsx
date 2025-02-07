@@ -5,7 +5,7 @@ import React from "react";
 export default function Menu() {
   return (
     <>
-      <ul className="main-menu__list hidden lg:flex  space-x-[43px]  ">
+      <ul className="main-menu__list lg:pl-[130px] 2xl:pl-[200px]  hidden lg:flex  lg:space-x-[30px] 2xl:space-x-[55px]  ">
         {/* HOME */}
         <li className="dropdown megamenu relative group">
           <Link
@@ -164,7 +164,7 @@ export default function Menu() {
       <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Human Sciences</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Spiritual Technologies</Link>
+      <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Spiritual Technologies</Link>
     </li>
     
   </ul>

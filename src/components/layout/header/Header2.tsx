@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import StickyHeader from "../StickyHeader";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
 import Image from "next/image";
@@ -44,7 +45,7 @@ const Header2: React.FC<Header2Props> = ({
         {/* Top Bar */}
         <div className="bg-fixnix-darkpurple py-2 lg:block hidden">
           <div className="container mx-auto flex items-center justify-between px-4">
-            <p className="text-white text-base font-sans">
+            <p className="text-white text-base font-sans lg:ml-28 2xl:-ml-[440px]">
               Welcome To Sufi Science Centre-Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
@@ -148,11 +149,12 @@ const Header2: React.FC<Header2Props> = ({
           </div>
         </nav>
       </header>
+      <StickyHeader />
 
      {/* Sticky Header */}
-{isSticky && (
+     {/* {isSticky && (
   <div className="fixed top-0 left-0 w-full bg-white shadow-md z-[1200] transition-all duration-300 sm:hidden lg:hidden md:block xl:block">
-    <div className="flex items-center justify-between p-4">
+    <div className="flex items-center justify-between text-[10px] p-4">
       <Link href="/">
         <Image
           src="/assets/images/resources/logo-3.png"
@@ -161,16 +163,24 @@ const Header2: React.FC<Header2Props> = ({
           height={55}
         />
       </Link>
-            <Menu />
-            <Link
-              href="Cart"
-              className="text-xl text-fixnix-lightpurple transition-all duration-500 ease-in-out  hover:text-fixnix-darkpurple"
-            >
-              <i className="fas fa-shopping-cart"></i>
-            </Link>
-          </div>
-        </div>
-      )}
+
+      
+      
+  <Menu />
+
+
+      
+
+      <Link
+        href="Cart"
+        className="text-xl text-white transition-all duration-500 ease-in-out hover:text-gray-300"
+      >
+        <i className="fas fa-shopping-cart"></i>
+      </Link>
+    </div>
+  </div>
+)} */}
+
 
 <MobileMenu
         isSidebar={isMobileMenu}

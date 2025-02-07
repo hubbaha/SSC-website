@@ -704,6 +704,10 @@ ul {
   align-items: center;
   gap: 15px;
 } */
+.menu-custom-style {
+  color: black;
+  background-color: white;
+}
 
 .responsive-logo {
   height: 110px;
@@ -746,8 +750,8 @@ ul {
   }
   .responsive-tagline {
     font-size: 2rem;
-    margin-top: -110px;
-    margin-left: 200px;
+    margin-top: -95px;
+    margin-left: 210px;
   }
 }
 

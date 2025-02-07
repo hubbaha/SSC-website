@@ -158,7 +158,7 @@ export default function Home() {
           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">Meditation & Mindfulness</h5>
           <p>Join guided circles for inner peace and divine connection.</p>
         </div>
-      </li>
+     </li>
     </ul>
   </div>
 </div>
