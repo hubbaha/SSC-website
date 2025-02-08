@@ -420,7 +420,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/KashmiriSufiLegacy"
+                      href="/Art&WallDecor"
                       className="text-white text-sm font-medium"
                     >
                       Art & Wall Decor
@@ -428,7 +428,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/Purpose&Direction"
+                      href="/Home&Living"
                       className="text-white text-sm font-medium"
                     >
                       Home & Living

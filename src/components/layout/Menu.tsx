@@ -198,16 +198,16 @@ export default function Menu() {
       <Link href="/Jewelry&Acessories" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Jewelry & Accessories</Link>
     </li>
     <li className="mb-2">
-      <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Art & Wall Decor</Link>
+      <Link href="/Art&WallDecor" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Art & Wall Decor</Link>
     </li>
     <li className="mb-2">
-      <Link href="/" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
+      <Link href="/Home&Living" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
     </li>
     <li className="mb-2">
       <Link href="Products" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Fashion & Apparel</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
+      <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
     </li>
     <li className="mb-2">
       <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>

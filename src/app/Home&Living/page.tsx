@@ -9,7 +9,7 @@ export default function Home() {
              {/* Page Title */}
              <div className="text-center pl-5 mt-8 mb-6">
                 <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                    Jewelry & Accessories   
+                    Home & Living   
                     <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
                     <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
                 </span>
@@ -45,9 +45,10 @@ export default function Home() {
                             <div className="p-4 border rounded-lg bg-gray-100 shadow-sm">
                                 <h3 className="font-semibold mb-2">Categories</h3>
                                 <ul className="space-y-2">
-                                    <li className="font-bold hover:text-fixnix-darkpurple"><Link href="#">Jewelry & Accessories</Link></li>
+                                    
+                                    <li><Link href="Jewelry&Accessories" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Jewelry & Accessories</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Art & Wall Decor</Link></li>
-                                    <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Home & Living</Link></li>
+                                    <li className="font-bold"><Link href="/Art&WallDecor" className=" hover:text-fixnix-darkpurple">Home & Living</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Fashion & Apparel</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Wellness & Meditation</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Music & Sound</Link></li>
@@ -71,7 +72,7 @@ export default function Home() {
                                     style={{ boxShadow: "fixnix-lightpurple" }} // Light purple shadow
                                     >
                                         <div className="overflow-hidden rounded-lg">
-                                            <img src={`/assets/images/shop/product${i + 1}.jpg`} alt="Product" className="w-full h-48 object-cover hover:scale-125" />
+                                            <img src={`/assets/images/shop/produc${i + 1}.jpg`} alt="Product" className="w-full h-48 object-cover hover:scale-125" />
                                         </div>
                                         <div className="mt-4 text-center">
                                             <div className="text-yellow-500">

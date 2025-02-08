@@ -22,7 +22,7 @@ export default function StickyHeader() {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isSticky ? "bg-fixnix-lightpurple shadow-lg py-3" : "bg-transparent py-5"}`}>
-      <div className="container  flex justify-between items-center  ">
+      <div className="container  flex -left-1 items-center    ">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -30,7 +30,7 @@ export default function StickyHeader() {
             alt="Logo"
             width={60}
             height={60}
-                className="transition-all duration-300 lg:ml-2 "
+            className="transition-all duration-300 lg:ml-2  "
           />
         </Link>
 
