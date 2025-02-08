@@ -412,10 +412,10 @@ const MobileMenu = ({
                 >
                   <li>
                     <Link
-                      href="/OurHeritage&Identity"
+                      href="/Jewelry&Accessories"
                       className="text-white text-sm font-medium"
                     >
-                      Jewelry & Acessories
+                      Jewelry & Accessories
                     </Link>
                   </li>
                   <li>
