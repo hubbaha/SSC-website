@@ -5,12 +5,12 @@ import React from "react";
 export default function Menu() {
   return (
     <>
-      <ul className="main-menu__list lg:pl-[130px] 2xl:pl-[200px]  hidden lg:flex  lg:space-x-[30px] 2xl:space-x-[55px]  ">
+      <ul className="main-menu__list lg:pl-[100px] xl:pl-[130px]  2xl:pl-[200px]  hidden lg:flex  lg:space-x-[25px] xl:space-x-[30px]  2xl:space-x-[55px]  ">
         {/* HOME */}
         <li className="dropdown megamenu relative group">
           <Link
             href="/"
-            className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple"
+            className="text-fixnix-darkpurple text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
           >
             HOME
           </Link>
@@ -68,7 +68,7 @@ export default function Menu() {
         <li className="relative group">
           <Link
             href="#"
-            className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple"
+            className="text-fixnix-darkpurple text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
           >
             DISCOVER SSC
           </Link>
@@ -117,7 +117,7 @@ export default function Menu() {
         </li>
         {/* Teachings Dropdown */}
 <li className="relative group">
-  <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
+  <Link href="#" className="text-fixnix-darkpurple text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
     YOUR JOURNEY
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
@@ -144,7 +144,7 @@ export default function Menu() {
 
 {/* Programs & Events Dropdown */}
 <li className="relative group">
-  <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
+  <Link href="#" className="text-fixnix-darkpurple text-[15px] lg:text-[10px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
     SUFI SCIENCE EXPLORER
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px]   hidden group-hover:block">
@@ -172,7 +172,7 @@ export default function Menu() {
 
 {/* Knowledge Hub Dropdown */}
 <li className="relative group">
-  <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
+  <Link href="#" className="text-fixnix-darkpurple text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
     LEARNING CENTER
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
@@ -190,7 +190,7 @@ export default function Menu() {
 
 {/* Sufi Gifts Dropdown */}
 <li className="relative group">
-  <Link href="#" className="text-fixnix-darkpurple font-bold text-[15px] hover:text-fixnix-darkpurple">
+  <Link href="#" className="text-fixnix-darkpurple font-bold text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] hover:text-fixnix-darkpurple">
     SACRED GIFT SHOP
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
@@ -201,7 +201,7 @@ export default function Menu() {
       <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Art & Wall Decor</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
+      <Link href="/Jewelry&Acessories" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
     </li>
     <li className="mb-2">
       <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Fashion & Apparel</Link>
@@ -218,7 +218,7 @@ export default function Menu() {
 
 {/* Support Us Dropdown */}
 <li className="relative group">
-  <Link href="#" className="text-fixnix-darkpurple text-[15px] font-bold hover:text-fixnix-darkpurple">
+  <Link href="#" className="text-fixnix-darkpurple text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
     SUPPORT US
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] rounded-e-md overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">

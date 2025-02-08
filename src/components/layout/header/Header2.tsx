@@ -45,7 +45,7 @@ const Header2: React.FC<Header2Props> = ({
         {/* Top Bar */}
         <div className="bg-fixnix-darkpurple py-2 lg:block hidden">
           <div className="container mx-auto flex items-center justify-between px-4">
-            <p className="text-white text-base font-sans lg:ml-28 2xl:-ml-[440px]">
+            <p className="text-white text-base font-sans lg:ml-28 xl:ml-10 2xl:-ml-[440px]">
               Welcome To Sufi Science Centre-Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
