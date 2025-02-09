@@ -22,7 +22,8 @@ export default function StickyHeader() {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isSticky ? "bg-fixnix-lightpurple shadow-lg py-3" : "bg-transparent py-5"}`}>
-      <div className="container flex items-center justify-start"> {/* Aligning everything to the left */}
+      <div className="max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl lg:mx-5 xl:mx-12 2xl:mx-[117px] flex items-center justify-start pl-4">
+      {/* Aligning everything to the left */}
         {/* Logo */}
         <Link href="/">
           <Image
@@ -35,7 +36,7 @@ export default function StickyHeader() {
         </Link>
 
         {/* Navigation Menu */}
-        <ul className="main-menu__list hidden lg:flex lg:pl-[16px] xl:pl-[0px] 2xl:pl-[20px] lg:space-x-[25px] xl:space-x-[30px] 2xl:space-x-[55px]">
+        <ul className="main-menu__list hidden lg:flex lg:pl-[16px] xl:pl-[16px] 2xl:pl-[20px] lg:space-x-[25px] xl:space-x-[30px] 2xl:space-x-[55px]">
           {/* HOME */}
           <li className="dropdown megamenu relative group">
             <Link

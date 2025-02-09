@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout"
 import CounterUp from "../../components/elements/CounterUp"
 import Link from "next/link"
 import Image from "next/image"
+import Banner from "@/components/sections/home3/Banner"
 
 export default function Home() {
 
@@ -11,10 +12,11 @@ export default function Home() {
         <Layout 
   headerStyle={2} 
   footerStyle={1} 
-  breadcrumbTitle="Team" 
+   
   headTitle="Our Team" 
   wrapperCls="team-page-wrapper"
 >
+  <Banner></Banner>
         {/*Team Top Start*/}
 <section className="text-left-mobile team-top">
   <div className="container mx-auto px-4">

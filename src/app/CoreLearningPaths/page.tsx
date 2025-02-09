@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Image from "next/image"
 import { SetStateAction, useState } from "react"
+import Banner from "@/components/sections/home3/Banner"
 export default function Home() {
 
     const [activeIndex, setActiveIndex] = useState(1)
@@ -11,7 +12,8 @@ export default function Home() {
     }
     return (
         <>
-        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Price List">
+        <Layout headerStyle={2} footerStyle={1} >
+          <Banner></Banner>
         {/*Core Services Start*/}
         <section className="relative block py-[120px] z-[1]">
   <div
