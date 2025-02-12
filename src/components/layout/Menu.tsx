@@ -149,7 +149,7 @@ export default function Menu() {
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px]   hidden group-hover:block">
     <li className="mb-2">
-      <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
+      <Link href="/Memberships" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
     </li>
     <li className="mb-2">
       <Link href="/Conferences" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Mind & Consciousness</Link>
@@ -177,13 +177,13 @@ export default function Menu() {
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">
-      <Link href="/Articles" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Research & Publications</Link>
+      <Link href="/Research&Publications" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Research & Publications</Link>
     </li>
     <li className="mb-2">
-      <Link href="/Library" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Multimedia Library</Link>
+      <Link href="/MultimediaLibrary" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Multimedia Library</Link>
     </li>
     <li className="mb-2">
-      <Link href="/Books" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Digital Books Section</Link>
+      <Link href="/Library" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Digital Books Section</Link>
     </li>
   </ul>
 </li>
@@ -210,7 +210,7 @@ export default function Menu() {
       <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
     </li>
     <li className="mb-2">
-      <Link href="" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>
+      <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>
     </li>
    
   </ul>
@@ -223,19 +223,19 @@ export default function Menu() {
   </Link>
   <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] rounded-e-md overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
     <li className="mb-2">
-      <Link href="/Donations" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Ways to Give</Link>
+      <Link href="/Contact" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Ways to Give</Link>
     </li>
     <li className="mb-2">
-      <Link href="/Volunteering" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Volunteer With Us</Link>
+      <Link href="/VirtualOffering" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Volunteer With Us</Link>
     </li>
    
     <li className="mb-2">
-      <Link href="/Collaborations" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Collaborations</Link>
+      <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Collaborations</Link>
     </li>
   </ul>
 </li>
 <Link
-                    href="Cart"
+                    href="/Volunteering"
                     className="text-xl px-2 sm:text-md md:text-2xl text-fixnix-lightpurple transition-all duration-500 ease-in-out hover:text-fixnix-darkpurple"
                   >
                     <i className="fas fa-shopping-cart"></i>

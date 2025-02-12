@@ -844,7 +844,7 @@ ul {
   }
   .responsive-tagline {
     font-size: 4px;
-    margin-top: -25px;
+    margin-top: -65px;
     margin-left: 55px;
   }
 }
@@ -9190,7 +9190,7 @@ ul {
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
-.product {
+/* .product {
   position: relative;
   display: block;
   padding: 120px 0 90px;
@@ -9702,7 +9702,7 @@ ul {
 .product__all-btn {
   font-size: 12px;
   padding: 5px 20px 5px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Product Details

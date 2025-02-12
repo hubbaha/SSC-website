@@ -7,7 +7,7 @@ export default function Home() {
     const [isOpen, setOpen] = useState(false)
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="How To Fix Broken Back Glass On Your Phone">
+        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="How To Fix Broken Back Glass On Your Phone">
         {/*Blog Sidebar Start*/}
         <section className="blog-sidebar">
             <div className="container">

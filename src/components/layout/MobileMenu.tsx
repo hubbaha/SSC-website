@@ -363,7 +363,7 @@ const MobileMenu = ({
                 >
                   <li>
                     <Link
-                      href="/OurHeritage&Identity"
+                      href="/Research&Publications"
                       className="text-white text-sm font-medium"
                     >
                       Research & Publications
@@ -371,7 +371,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/KashmiriSufiLegacy"
+                      href="/MultimediaLibrary"
                       className="text-white text-sm font-medium"
                     >
                       Multimedia Library

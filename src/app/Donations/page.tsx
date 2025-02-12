@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="How To Fix Broken Back Glass On Your Phone">
+        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="How To Fix Broken Back Glass On Your Phone">
         {/*Blog Details Two Start*/}
         <section className="blog-details-two">
             <div className="container">

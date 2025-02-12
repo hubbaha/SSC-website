@@ -22,22 +22,22 @@ export default function Home() {
                                     <div className="blog-one__img">
                                         <img src="assets/images/blog/blog-1-1.jpg" alt=""/>
                                         <div className="blog-one__plus">
-                                            <Link href="blog-details"><i className="fa fa-plus"></i></Link>
+                                            <Link href="/Donations"><i className="fa fa-plus"></i></Link>
                                         </div>
                                     </div>
                                     <div className="blog-one__content">
                                         <ul className="blog-one__meta list-unstyled">
                                             <li>
-                                                <Link href="blog-details"><i className="fa fa-calendar-alt"></i>5 AUG 2023</Link>
+                                                <Link href="/Donations"><i className="fa fa-calendar-alt"></i>5 AUG 2023</Link>
                                             </li>
                                             <li>
                                                 <Link href="blog-details"><i className="far fa-comments"></i>02 COMMENTS</Link>
                                             </li>
                                         </ul>
-                                        <h3 className="blog-one__title"><Link href="blog-details">How To Fix Broken Back Glass On
+                                        <h3 className="blog-one__title"><Link href="/Donations">How To Fix Broken Back Glass On
                                                 Your Phone</Link></h3>
                                         <div className="blog-one__btn-box">
-                                            <Link href="blog-details" className="thm-btn blog-one__btn">Read More</Link>
+                                            <Link href="/Donations" className="thm-btn blog-one__btn">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
