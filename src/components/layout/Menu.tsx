@@ -183,7 +183,7 @@ export default function Menu() {
       <Link href="/MultimediaLibrary" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Multimedia Library</Link>
     </li>
     <li className="mb-2">
-      <Link href="/Library" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Digital Books Section</Link>
+      <Link href="/DigitalBooksSection" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Digital Books Section</Link>
     </li>
   </ul>
 </li>
@@ -204,13 +204,13 @@ export default function Menu() {
       <Link href="/Home&Living" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
     </li>
     <li className="mb-2">
-      <Link href="Products" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Fashion & Apparel</Link>
+      <Link href="/Fashion&Apparel" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Fashion & Apparel</Link>
     </li>
     <li className="mb-2">
-      <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
+      <Link href="/Wellness&Meditation" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
     </li>
     <li className="mb-2">
-      <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>
+      <Link href="/Music&Sound" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>
     </li>
    
   </ul>

@@ -379,7 +379,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/Purpose&Direction"
+                      href="/DigitalBooksSection"
                       className="text-white text-sm font-medium"
                     >
                       Digital Books Section
@@ -436,7 +436,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/OurWork&Practices"
+                      href="/Fashion&Apparel"
                       className="text-white text-sm font-medium"
                     >
                       Fashion & Apparel
@@ -444,7 +444,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/UnderstandingKashmiriSufism"
+                      href="/Wellness&Meditation"
                       className="text-white text-sm font-medium"
                     >
                      Wellness & Medication
@@ -452,7 +452,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/UnderstandingKashmiriSufism"
+                      href="/Music&Sound"
                       className="text-white text-sm font-medium"
                     >
                       Music & Sound

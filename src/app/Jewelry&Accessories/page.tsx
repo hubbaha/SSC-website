@@ -1,13 +1,15 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Banner from "@/components/sections/home3/Banner";
 
 
 export default function Home() {
     return (
-        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Products">
+        <Layout headerStyle={2} footerStyle={1}>
+            <Banner></Banner>
              {/* Page Title */}
-             <div className="text-center pl-5 mt-8 mb-6">
+             <div className="flex justify-center items-center text-center  mt-8 mb-6">
                 <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
                     Jewelry & Accessories   
                     <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>

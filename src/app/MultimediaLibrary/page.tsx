@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Layout headerStyle={2} footerStyle={2} >
+    <Layout headerStyle={2} footerStyle={1} >
         <Banner></Banner>
       {/* Blog Two Start */}
       <section className="relative block py-[120px] text-left-mobile">

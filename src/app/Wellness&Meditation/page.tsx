@@ -11,7 +11,7 @@ export default function Home() {
              {/* Page Title */}
              <div className="flex justify-center items-center text-center  mt-8 mb-6">
                 <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                    Home & Living   
+                    Wellness & Meditation   
                     <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
                     <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
                 </span>
@@ -50,9 +50,10 @@ export default function Home() {
                                     
                                     <li><Link href="Jewelry&Accessories" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Jewelry & Accessories</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Art & Wall Decor</Link></li>
-                                    <li className="font-bold"><Link href="/Art&WallDecor" className=" hover:text-fixnix-darkpurple">Home & Living</Link></li>
+                                    <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple"> Home & Living</Link></li>
+                                    
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Fashion & Apparel</Link></li>
-                                    <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Wellness & Meditation</Link></li>
+                                    <li className="font-bold"><Link href="/Art&WallDecor" className=" hover:text-fixnix-darkpurple">Wellness & Meditation</Link></li>
                                     <li><Link href="#" className="text-fixnix-lightpurple font-semibold hover:underline hover:text-fixnix-darkpurple">Music & Sound</Link></li>
                                 </ul>
                             </div>
