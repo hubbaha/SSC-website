@@ -263,7 +263,7 @@ export default function StickyHeader() {
           </li>
 
           <Link
-            href="/Volunteering"
+            href="/Cart"
             className="text-xl px-2 sm:text-md md:text-2xl text-white transition-all duration-500 ease-in-out hover:text-fixnix-darkpurple"
           >
             <i className="fas fa-shopping-cart"></i>

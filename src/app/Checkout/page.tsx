@@ -6,21 +6,22 @@ export default function Home() {
         <>
         <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Checkout">
         {/*Start Checkout Page*/}
-        <section className="checkout-page">
+        <section className="checkout-page py-[110px] pb-[120px]">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
                         <div className="billing_details">
-                            <div className="billing_title">
-                                <p>Returning Customer? <span>Click here to Login</span></p>
-                                <h2>Billing details</h2>
+                            <div className="billing_title mb-[35px]">
+                                <p className="text-base">Returning Customer? <span>
+                                <Link href="/Login" className="text-fixnix-lightpurple hover:text-fixnix-darkpurple">Click here to Login</Link></span> </p>
+                                <h2 className="text-[30px] leading-[30px] font-semibold mt-[16px]">Billing details</h2>
                             </div>
                             <form className="billing_details_form">
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
+                                        <div className="billing_input_box mb-[20px]">
                                             <div className="select-box">
-                                                <select className="wide">
+                                                <select className="w-[220px] bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
                                                     <option data-display="Select a country">Select a country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">England</option>
@@ -33,67 +34,68 @@ export default function Home() {
                                 </div>
                                 <div className="row bs-gutter-x-20">
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="first_name" placeholder="First name"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="first_name" placeholder="First name" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="last_name" placeholder="Last name"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="last_name" placeholder="Last name" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="company_name" placeholder="Company"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="company_name" placeholder="Company" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="Address" placeholder="Address"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="Address" placeholder="Address" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="company_name"
-                                                placeholder="Appartment, unit, etc. (optional)"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="company_name" placeholder="Appartment, unit, etc. (optional)" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="Town/City" placeholder="Town / City"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="Town/City" placeholder="Town / City" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row bs-gutter-x-20">
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="State" placeholder="State"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="State" placeholder="State" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input name="form_zip" type="text" pattern="[0-9]*" placeholder="Zip code"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input name="form_zip" type="text" pattern="[0-9]*" placeholder="Zip code" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input name="email" type="email" placeholder="Email address"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input name="email" type="email" placeholder="Email address" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="tel" name="form_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                                 placeholder="Phone"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="tel" name="form_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="checked-box">
+                                        <div className="checked-box mt-[-4px]">
                                             <input type="checkbox" name="skipper1" id="skipper"/>
-                                            <label><span></span>Create an account?</label>
+                                            <label className="pl-[30px] cursor-pointer text-[#707070] text-[16px] leading-[26px] font-normal">
+                                                <span className="absolute top-2 left-0 w-[20px] h-[20px] rounded-full bg-fixnix-lightpurple transition-all ease-in-out"></span>
+                                                Create an account?
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -101,18 +103,18 @@ export default function Home() {
                         </div>
                     </div>
 
-
                     <div className="col-xl-6 col-lg-6">
                         <div className="billing_details ship_different_address">
-                            <div className="billing_title ship_different_address_title">
-                                <h2>Ship to a different address <span className="fa fa-check-circle"></span></h2>
+                            <div className="billing_title ship_different_address_title mt-[40px]">
+                                <h2 className="text-[30px] leading-[30px] font-semibold"><span className="text-[#B78EFB]">Ship to a different address</span></h2>
                             </div>
                             <form className="billing_details_form ship_different_address_form">
+                            
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
+                                        <div className="billing_input_box mb-[20px]">
                                             <div className="select-box">
-                                                <select className="wide">
+                                                <select className="w-full bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
                                                     <option data-display="Select a country">Select a country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">England</option>
@@ -125,66 +127,60 @@ export default function Home() {
                                 </div>
                                 <div className="row bs-gutter-x-20">
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="first_name" placeholder="First name"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="first_name" placeholder="First name" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="last_name" placeholder="Last name"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="last_name" placeholder="Last name" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="company_name" placeholder="Company"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="company_name" placeholder="Company" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="Address" placeholder="Address"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="Address" placeholder="Address" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="company_name"
-                                                placeholder="Appartment, unit, etc. (optional)"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="company_name" placeholder="Appartment, unit, etc. (optional)" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-12">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="Town/City" placeholder="Town / City"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="Town/City" placeholder="Town / City" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row bs-gutter-x-20">
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="text" name="State" placeholder="State" required/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="text" name="State" placeholder="State" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input name="form_zip" type="text" pattern="[0-9]*" placeholder="Zip code"/>
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input name="form_zip" type="text" pattern="[0-9]*" placeholder="Zip code" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6">
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input name="email" type="email" placeholder="Email address" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6">
+                                        <div className="billing_input_box mb-[20px]">
+                                            <input type="tel" name="form_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" className="w-full h-[60px] bg-[#F3F3F3] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal"/>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div className="row bs-gutter-x-20">
-                                    <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input name="email" type="email" placeholder="Email address"/>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-6">
-                                        <div className="billing_input_box">
-                                            <input type="tel" name="form_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                                 placeholder="Phone"/>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div className="row">
                                     <div className="col-xl-12">
                                         <div className="ship_different_input">
@@ -193,38 +189,40 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+
+                            
                             </form>
                         </div>
                     </div>
                 </div>
-                <div className="your_order">
-                    <h2>Your order</h2>
+                <div className="your_order mt-[56px]">
+                    <h2 className="text-[30px] leading-[30px] font-semibold mb-[36px]">Your order</h2>
                     <div className="row">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="order_table_box">
-                                <table className="order_table_detail">
-                                    <thead className="order_table_head">
+                            <div className="order_table_box w-full border-b border-[#E0E0E3] pb-[24px]">
+                                <table className="order_table_detail w-full">
+                                    <thead className="order_table_head border-t border-[#E0E0E3]">
                                         <tr>
-                                            <th>Product</th>
-                                            <th className="right">Price</th>
+                                            <th className="text-[#6D3992] text-[20px] font-bold p-[23px]">Product</th>
+                                            <th className="text-right text-[#6D3992] text-[20px] font-bold p-[23px]">Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="pro__title">Product Name</td>
-                                            <td className="pro__price">$10.99 USD</td>
+                                            <td className="pro__title text-[#707070] text-[16px]">Product Name</td>
+                                            <td className="pro__price text-right text-[#707070] text-[16px]">$10.99 USD</td>
                                         </tr>
                                         <tr>
-                                            <td className="pro__title">Subtotal</td>
-                                            <td className="pro__price">$10.99 USD</td>
+                                            <td className="pro__title text-[#707070] text-[16px]">Subtotal</td>
+                                            <td className="pro__price text-right text-[#707070] text-[16px]">$10.99 USD</td>
                                         </tr>
                                         <tr>
-                                            <td className="pro__title">Shipping</td>
-                                            <td className="pro__price">$0.00 USD</td>
+                                            <td className="pro__title text-[#707070] text-[16px]">Shipping</td>
+                                            <td className="pro__price text-right text-[#707070] text-[16px]">$0.00 USD</td>
                                         </tr>
                                         <tr>
-                                            <td className="pro__title">Total</td>
-                                            <td className="pro__price">$20.98 USD</td>
+                                            <td className="pro__title text-[#707070] text-[16px]">Total</td>
+                                            <td className="pro__price text-right text-[#707070] text-[16px]">$20.98 USD</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -232,37 +230,36 @@ export default function Home() {
                         </div>
 
                         <div className="col-lg-6">
-                            <div className="checkout__payment">
-                                <div className="checkout__payment__item checkout__payment__item--active">
-                                    <h3 className="checkout__payment__title">Direct bank transfer</h3>
-                                    <div className="checkout__payment__content">
-                                        Make your payment directly into our bank account. Please
-                                        use your Order ID as the payment reference. Your order
-                                        wont be shipped until the funds have cleared.
-                                    </div>{/* /.checkout__payment__content */}
-                                </div>{/* /.checkout__payment__item */}
-                                <div className="checkout__payment__item">
-                                    <h3 className="checkout__payment__title">Paypal payment <img
-                                            src="assets/images/shop/paypal-1.jpg" alt=""/></h3>
-                                    <div className="checkout__payment__content">
-                                        Make your payment directly into our bank account. Please
-                                        use your Order ID as the payment reference. Your order
-                                        wont be shipped until the funds have cleared.
-                                    </div>{/* /.checkout__payment__content */}
-                                </div>{/* /.checkout__payment__item */}
-                            </div>{/* /.checkout__payment */}
-                            <div className="text-right d-flex justify-content-end">
-                                <Link href="checkout" className="thm-btn">Place your order</Link>
-                            </div>{/* /.text-right */}
-
-                        </div>{/* /.col-lg-6 */}
+                            <div className="checkout__payment bg-[#F3F3F3] py-[49px] px-[50px] mb-[30px]">
+                                <div className="checkout__payment__item checkout__payment__item--active mb-[41px]">
+                                    <h3 className="checkout__payment__title flex items-center text-[#6D3992] text-[18px] font-semibold mb-[27px] cursor-pointer">
+                                        Direct bank transfer
+                                    </h3>
+                                    <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
+                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared.
+                                    </div>
+                                </div>
+                                <div className="checkout__payment__item mb-[41px]">
+                                    <h3 className="checkout__payment__title flex items-center text-[#6D3992] text-[18px] font-semibold mb-[27px] cursor-pointer">
+                                        Paypal payment <img className="ml-[15px]" src="assets/images/shop/paypal-1.jpg" alt=""/>
+                                    </h3>
+                                    <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
+                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="payment_button mt-[20px]">
+                                <Link href="/thankyou" legacyBehavior>
+                                    <a className="btn text-[#ffffff] text-[16px] font-medium rounded-full py-[12px] px-[30px] bg-fixnix-lightpurple hover:bg-fixnix-darkpurple w-full">Proceed to checkout</a>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         {/*End Checkout Page*/}
-
-            </Layout>
+        </Layout>
         </>
     )
 }
