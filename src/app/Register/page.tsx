@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 export default function Register() {
   return (
@@ -8,45 +6,24 @@ export default function Register() {
       <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md xl:max-w-lg p-6 sm:p-8 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-fixnix-lightpurple">Register</h2>
         
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-sm sm:text-md md:text-md lg:text-md xl:text-[15px] 2xl:text-[15px] font-bold text-fixnix-lightpurple">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              className="block w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple"
-              placeholder="you@example.com"
-            />
-          </div>
-          
-          <div>
-            <label htmlFor="password" className="block text-sm sm:text-md md:text-md lg:text-md xl:text-[15px] 2xl:text-[15px] font-bold text-fixnix-lightpurple">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              required
-              className="block w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple"
-              placeholder="********"
-            />
-          </div>
-          
-          <div>
-            <label htmlFor="confirm-password" className="block text-sm sm:text-md font-bold md:text-md lg:text-md xl:text-[15px] 2xl:text-[15px] text-fixnix-lightpurple">
-              Confirm Password
-            </label>
-            <input
-              type="password"
-              id="confirm-password"
-              required
-              className="block w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple"
-              placeholder="********"
-            />
-          </div>
+        <form className="space-y-6">
+          {['email', 'password', 'confirm-password'].map((field, index) => (
+            <div key={index} className="relative">
+              <input
+                type={field.includes('password') ? 'password' : 'email'}
+                id={field}
+                required
+                className="peer block w-full px-4 pt-4 pb-2 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple placeholder-transparent"
+                placeholder={field === 'email' ? 'Email' : field === 'password' ? 'Password' : 'Confirm Password'}
+              />
+              <label
+                htmlFor={field}
+                className="absolute left-4 top-2 text-gray-500 text-sm peer-placeholder-shown:top-1 peer-placeholder-shown:text-sm peer-focus:top-1 peer-focus:text-xs peer-focus:text-fixnix-lightpurple transition-all"
+              >
+                {field === 'email' ? 'Email' : field === 'password' ? 'Password' : 'Confirm Password'}
+              </label>
+            </div>
+          ))}
 
           <button
             type="submit"

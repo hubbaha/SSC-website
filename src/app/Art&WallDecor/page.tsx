@@ -9,13 +9,26 @@ export default function Home() {
        <Layout headerStyle={2} footerStyle={1}>
             <Banner></Banner>
              {/* Page Title */}
-             <div className="flex justify-center items-center text-center  mt-8 mb-6">
-                <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                    Art & Wall Decor   
-                    <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                    <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                </span>
-            </div>
+             <section className="team-top text-left-mobile">
+  <div className="container mx-auto px-4">
+    <div className="text-center sm:text-left relative block mt-[-6px] mb-[49px] z-[1]">
+      {/* Section Tagline */}
+      <span className="relative inline-block text-[18px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+        Art & Wall Decor
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
+
+      {/* Section Title */}
+     
+
+      {/* Section Text */}
+      <p className="pt-[20px] text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+      Kashmiri Sufi Calligraphy, Spiritual Art, and Sacred Geometric Art reflect the deep spiritual heritage of Kashmir, blending intricate hand-painted calligraphy with divine Sufi poetry and sacred phrases. These pieces often depict mystics, dervishes, and spiritual symbols, capturing the essence of Sufi mysticism. Sacred geometric patterns, meticulously hand-painted on wood or canvas, symbolize cosmic harmony and divine order. Complementing this, Kashmiri artisans craft exquisite wood carvings featuring sacred symbols and calligraphy, showcasing their centuries-old craftsmanship. Each creation embodies a spiritual journey, evoking peace, devotion, and artistic mastery.
+      </p>
+    </div>
+  </div>
+</section>
            
             {/* Product Start */}
                         

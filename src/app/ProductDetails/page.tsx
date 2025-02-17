@@ -43,7 +43,7 @@ export default function Home() {
                             
                             <div className="mt-6 flex space-x-4">
                                 
-                                <Link href="/cart" className="bg-fixnix-lightpurple hover:bg-fixnix-darkpurple text-white px-4 py-2 rounded">Add to Cart</Link>
+                                <Link href="/Cart" className="bg-fixnix-lightpurple hover:bg-fixnix-darkpurple text-white px-4 py-2 rounded">Add to Cart</Link>
                             </div>
                         </div>
                     </div>

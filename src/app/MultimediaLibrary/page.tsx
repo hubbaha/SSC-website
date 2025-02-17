@@ -22,7 +22,9 @@ export default function Home() {
           <p className="text-gray-600 mt-3">
           A sacred space where seekers can explore the essence of Divine Unity, consciousness, and the mystical science that connects us to the cosmic dance of creation. Whether through audio recitations of sacred texts, visual representations of sacred geometry, or documentaries that explore the deep connections between spirituality and science, our library aims to nourish the soul and mind alike. 
           </p>
-        </div>
+        </div> 
+    
+        
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
@@ -90,6 +92,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((item, index) => (
               <div key={index} className="relative bg-white shadow-light-purple rounded-lg overflow-hidden hover:shadow-2xl transition duration-300">
