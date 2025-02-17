@@ -106,7 +106,7 @@ export default function Home() {
                     <div className="col-xl-6 col-lg-6">
                         <div className="billing_details ship_different_address">
                             <div className="billing_title ship_different_address_title mt-[40px]">
-                                <h2 className="text-[30px] leading-[30px] font-semibold"><span className="text-[#B78EFB]">Ship to a different address</span></h2>
+                                <h2 className="text-[30px] leading-[30px] font-semibold"><span className="text-fixnix-lightpurple">Ship to a different address</span></h2>
                             </div>
                             <form className="billing_details_form ship_different_address_form">
                             
@@ -114,7 +114,7 @@ export default function Home() {
                                     <div className="col-xl-12">
                                         <div className="billing_input_box mb-[20px]">
                                             <div className="select-box">
-                                                <select className="w-full bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
+                                                <select className="w-[220px] bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
                                                     <option data-display="Select a country">Select a country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">England</option>
