@@ -37,7 +37,7 @@ export default function Home() {
         <Layout headerStyle={2} footerStyle={1} >
         {/*Book Service Start*/}
         <Banner></Banner>
-        <section className="book-service">
+        <section className="book-service text-left-mobile">
             <div className="book-service__bg"
                 style={{ backgroundImage: 'url(assets/images/backgrounds/book-services-bg-img-1.jpg)' }} ></div>
             <div className="container">
@@ -101,7 +101,7 @@ export default function Home() {
         </section>
         {/*Book Service End*/}
        
-        <section className="relative block pb-20 mt-20 bg-white">
+        <section className="relative block pb-20 mt-20 bg-white text-left-mobile ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
         <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
@@ -147,7 +147,7 @@ export default function Home() {
         </section>
 
         {/*Contact Two Start*/}
-        <section className="contact-two">
+        <section className="contact-two text-left-mobile ">
             <div className="contact-two-bg jarallax"
                 ></div>
             <div className="container">
@@ -185,7 +185,7 @@ export default function Home() {
         {/*Contact Two  End*/}
 
         {/*Contact Page Two Start*/}
-        <section className="contact-page-two">
+        <section className="contact-page-two text-left-mobile ">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
