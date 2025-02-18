@@ -254,7 +254,7 @@ export default function StickyHeader() {
                 <Link href="/Donations" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Ways to Give</Link>
               </li>
               <li className="mb-2">
-                <Link href="/Volunteering" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Volunteer With Us</Link>
+                <Link href="/VolunteerWithUs" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Volunteer With Us</Link>
               </li>
               <li className="mb-2">
                 <Link href="/Collaborations" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Collaborations</Link>

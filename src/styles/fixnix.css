@@ -10513,7 +10513,7 @@ ul {
 /*--------------------------------------------------------------
 # Checkout
 --------------------------------------------------------------*/
-.checkout-page {
+/* .checkout-page {
   position: relative;
   display: block;
   padding: 110px 0 120px;
@@ -10839,7 +10839,7 @@ ul {
   line-height: 30px;
   color: var(--fixnix-gray);
   font-weight: 400;
-}
+} */
 
 /*--------------------------------------------------------------
 # Feature One

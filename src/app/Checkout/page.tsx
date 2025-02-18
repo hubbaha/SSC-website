@@ -1,4 +1,6 @@
 import Layout from "@/components/layout/Layout"
+import { Label } from "@/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import Link from "next/link"
 export default function Home() {
 
@@ -14,15 +16,15 @@ export default function Home() {
                             <div className="billing_title mb-[35px]">
                                 <p className="text-base">Returning Customer? <span>
                                 <Link href="/Login" className="text-fixnix-lightpurple hover:text-fixnix-darkpurple">Click here to Login</Link></span> </p>
-                                <h2 className="text-[30px] leading-[30px] font-semibold mt-[16px]">Billing details</h2>
+                                <h2 className="text-[30px] leading-[30px] font-semibold mt-[16px] text-fixnix-darkpurple ">Billing details</h2>
                             </div>
                             <form className="billing_details_form">
                                 <div className="row">
                                     <div className="col-xl-12">
                                         <div className="billing_input_box mb-[20px]">
                                             <div className="select-box">
-                                                <select className="w-[220px] bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
-                                                    <option data-display="Select a country">Select a country</option>
+                                                <select className="w-full bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
+                                                    <option data-display="Select a country" >Select a country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">England</option>
                                                     <option value="3">Australia</option>
@@ -91,10 +93,13 @@ export default function Home() {
                                 <div className="row">
                                     <div className="col-xl-12">
                                         <div className="checked-box mt-[-4px]">
-                                            <input type="checkbox" name="skipper1" id="skipper"/>
+                                            
                                             <label className="pl-[30px] cursor-pointer text-[#707070] text-[16px] leading-[26px] font-normal">
-                                                <span className="absolute top-2 left-0 w-[20px] h-[20px] rounded-full bg-fixnix-lightpurple transition-all ease-in-out"></span>
+                                                <span >
+                                               <Link href="/Register" className="text-fixnix-lightpurple font-semibold">
                                                 Create an account?
+                                                </Link>
+                                                </span>
                                             </label>
                                         </div>
                                     </div>
@@ -106,7 +111,7 @@ export default function Home() {
                     <div className="col-xl-6 col-lg-6">
                         <div className="billing_details ship_different_address">
                             <div className="billing_title ship_different_address_title mt-[40px]">
-                                <h2 className="text-[30px] leading-[30px] font-semibold"><span className="text-fixnix-lightpurple">Ship to a different address</span></h2>
+                                <h2 className="text-[30px] leading-[30px] font-semibold text-fixnix-darkpurple mb-[35px]"><span className="text-fixnix-darkpurple">Ship to a different address</span></h2>
                             </div>
                             <form className="billing_details_form ship_different_address_form">
                             
@@ -114,7 +119,7 @@ export default function Home() {
                                     <div className="col-xl-12">
                                         <div className="billing_input_box mb-[20px]">
                                             <div className="select-box">
-                                                <select className="w-[220px] bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
+                                                <select className="w-full bg-[#F3F3F3] border-none py-[15px] pl-[30px] pr-[30px] text-[#707070] text-[14px] font-normal">
                                                     <option data-display="Select a country">Select a country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">England</option>
@@ -183,9 +188,9 @@ export default function Home() {
                                 </div>
                                 <div className="row">
                                     <div className="col-xl-12">
-                                        <div className="ship_different_input">
+                                        <div className="ship_different_input mb-[20px]">
                                             <textarea placeholder="Notes about order"
-                                                name="form_order_notes"></textarea>
+                                                name="form_order_notes" className="w-full h-[80px] bg-[#F3F3F3] pl-[30px] pr-[30px]  text-[#707070] text-[14px] font-normal"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -203,8 +208,8 @@ export default function Home() {
                                 <table className="order_table_detail w-full">
                                     <thead className="order_table_head border-t border-[#E0E0E3]">
                                         <tr>
-                                            <th className="text-[#6D3992] text-[20px] font-bold p-[23px]">Product</th>
-                                            <th className="text-right text-[#6D3992] text-[20px] font-bold p-[23px]">Price</th>
+                                            <th className="text-fixnix-lightpurple text-[20px] font-bold pr-[23px]">Product</th>
+                                            <th className="text-right text-fixnix-lightpurple text-[20px] font-bold p-[23px]">Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -231,8 +236,10 @@ export default function Home() {
 
                         <div className="col-lg-6">
                             <div className="checkout__payment bg-[#F3F3F3] py-[49px] px-[50px] mb-[30px]">
+                                
                                 <div className="checkout__payment__item checkout__payment__item--active mb-[41px]">
-                                    <h3 className="checkout__payment__title flex items-center text-[#6D3992] text-[18px] font-semibold mb-[27px] cursor-pointer">
+                                    
+                                    <h3 className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
                                         Direct bank transfer
                                     </h3>
                                     <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
@@ -240,7 +247,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="checkout__payment__item mb-[41px]">
-                                    <h3 className="checkout__payment__title flex items-center text-[#6D3992] text-[18px] font-semibold mb-[27px] cursor-pointer">
+                                    <h3 className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
                                         Paypal payment <img className="ml-[15px]" src="assets/images/shop/paypal-1.jpg" alt=""/>
                                     </h3>
                                     <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">

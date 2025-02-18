@@ -39,7 +39,7 @@ export default function Banner() {
                     <SwiperSlide>
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style={{ backgroundImage: 'url(assets/images/backgrounds/main-slider-1-2.jpg)' }} ></div>
+                            ></div>
                         {/* /.image-layer */}
                         <div className="container">
                             <div className="row">
@@ -62,7 +62,7 @@ export default function Banner() {
                     <SwiperSlide>
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style={{ backgroundImage: 'url(assets/images/backgrounds/main-slider-1-1.jpg)' }} ></div>
+                             ></div>
                         {/* /.image-layer */}
                         <div className="container">
                             <div className="row">
@@ -85,7 +85,7 @@ export default function Banner() {
                     <SwiperSlide>
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style={{ backgroundImage: 'url(assets/images/backgrounds/main-slider-1-3.jpg)' }} ></div>
+                             ></div>
                         {/* /.image-layer */}
                         <div className="container">
                             <div className="row">
