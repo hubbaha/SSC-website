@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner"
 import { Roboto, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${sourceCodePro.variable} antialiased`}
       >
+        <Toaster />
         {children}
       </body>
     </html>

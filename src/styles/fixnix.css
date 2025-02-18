@@ -8528,7 +8528,7 @@ ul {
 /*--------------------------------------------------------------
 # Book Service
 --------------------------------------------------------------*/
-.book-service {
+/* .book-service {
   position: relative;
   display: block;
   background-color: var(--fixnix-primary);
@@ -8615,7 +8615,7 @@ ul {
 .book-service__right-img img {
   width: 100%;
   border-radius: var(--fixnix-bdr-radius);
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact Page

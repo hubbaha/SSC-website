@@ -4817,7 +4817,7 @@ ul {
 /*--------------------------------------------------------------
 # Contact Two
 --------------------------------------------------------------*/
-.contact-two {
+/* .contact-two {
   position: relative;
   display: block;
   background-color: var(--fixnix-lightpuple);
@@ -4952,7 +4952,7 @@ ul {
 
 .contact-two__details li .content p a:hover {
   color: var(--fixnix-lightpuple);
-}
+} */
 
 /*--------------------------------------------------------------
 # Two Section
