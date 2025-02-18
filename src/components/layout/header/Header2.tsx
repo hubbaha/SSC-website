@@ -49,7 +49,7 @@ const Header2: React.FC<Header2Props> = ({
               Welcome To Sufi Science Centre-Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
-              <Link href="/Login" className="flex items-center justify-center py-2 px-2 bg-fixnix-white text-fixnix-darkpurple rounded-md text-sm font-bold transition-all duration-300 hover:bg-fixnix-lightpurple hover:text-fixnix-white">Login</Link>
+              <Link href="/Login" className="flex items-center justify-center py-2 px-2 bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300 hover:bg-fixnix-lightpurple hover:text-fixnix-white">Login</Link>
               <div className="flex space-x-3">
                 <Link
                   href="#"

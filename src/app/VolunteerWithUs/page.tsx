@@ -122,7 +122,7 @@ export default function Home() {
           {[
             { icon: "icon-award", title: "Assist with Spiritual Programs", desc:"Help us organize and facilitate our Sufi gatherings, spiritual lectures, prayer ceremonies, and meditative workshops." },
             { icon: "icon-customer-service", title: "Support Craft and Culture Preservation", desc:"Engage with our artisans and help in preserving Kashmiri crafts, such as wood carving, and sacred calligraphy." },
-            { icon: "icon-security", title: "Fundraising and Event Organization:", desc:"Assist with organizing events, exhibitions, and fundraising efforts to sustain and grow our work in Kashmir and beyond." },
+            { icon: "icon-security", title: "Fundraising and Event Organization", desc:"Assist with organizing events, exhibitions, and fundraising efforts to sustain and grow our work in Kashmir and beyond." },
             { icon: "icon-computer-1", title: "Outreach and Community Engagement", desc:"Help us expand our reach by connecting with local communities and sharing the teachings of Sufism." },
           ].map((item, index) => (
             <div
