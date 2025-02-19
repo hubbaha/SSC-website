@@ -4,7 +4,10 @@ import Layout from "../../components/layout/Layout"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
+import ModalVideo from 'react-modal-video';
 import Link from "next/link"
+import Skill from "@/components/sections/home2/Skill"
+import Banner from "@/components/sections/home3/Banner"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -50,19 +53,69 @@ export default function Home() {
             });
         }
     };
+    const [isOpen, setOpen] = useState(false);
     
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Our services">
+        <Layout headerStyle={2} footerStyle={1} >
+            <Banner></Banner>
         {/*Services Two Start*/}
         <section className="services-two">
+            
+            <section className="relative pb-20 bg-cover bg-center" >
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-56 mb-11 items-center">
+            {/* Left Column */}
+            <div>
+            <div className="text-left ">
+        <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
+            Collaborations
+                <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
+              </span>
+                <h2 className="text-3xl font-bold text-fixnix-darkpurple mt-2">Unity in the Divine Craft</h2>
+              </div>
+              <p className="text-gray-700 mt-4">
+              At the Sufi Science Centre – Kashmir Chapter, we believe in the transformative power of unity, where the heart beats as one, and the soul resonates in harmony. Our path is illuminated by the divine light of collaboration, for it is through collective effort that we elevate the sacred arts, preserve ancient wisdom, and empower the community.
+              </p>
+              <p className="text-gray-700 mt-2">
+              We invite partners, organizations, and individuals who share our vision to join us in a sacred journey of spiritual awakening, artistic preservation, and cultural enrichment. Collaboration, in the truest sense, is an offering to the Divine, a shared commitment to fostering knowledge, beauty, and peace across the world.
+              </p>
+
+              
+            </div>
+
+            {/* Right Column */}
+            <div className="relative">
+              <div className="rounded-lg overflow-hidden w-[425px] h-[500px]  bg-fixnix-lightpurple">
+                <img src="assets/images/resources/skill-1-1.jpg" alt="Repair Services" className="w-[425px] h-[500px] mix-blend-multiply" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <button onClick={() => setOpen(true)} className="w-16 h-16 bg-white bg-opacity-30 rounded-full flex items-center justify-center text-purple-700">
+                    <span className="fa fa-play text-lg"></span>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        {/* Counter Section */}
+       
+      </section>
+
+      {/* Modal Video */}
+      <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId="Get7rqXYrbQ"
+        onClose={() => setOpen(false)}
+      />
             <div className="container">
                 <div className="section-title section-title--two text-center">
-                    <span className="section-title__tagline">OUR SERVICES</span>
-                    <h2 className="section-title__title">Our Efficient Solution</h2>
-                    <p className="section-title__text">Duis aute irure dolor in repreh enderit in volup tate velit esse
-                        cillum dolore <br/> eu fugiat nulla dolor atur with Lorem ipsum is simply</p>
+                    <span className="section-title__tagline">Our Collaborative Endeavours</span>
+                    <h2 className="section-title__title">Empower, Preserve, Transform.</h2>
+                    <p className="section-title__text">We collaborate to empower artisans, preserve cultural heritage, foster educational partnerships, <br/>and promote spiritual growth and community well-being in Kashmir.</p>
                 </div>
                 <div className="row">
                     {/*Services Two Single Start*/}
@@ -72,9 +125,8 @@ export default function Home() {
                                 <div className="services-two__icon">
                                     <span className="icon-phone"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Mobile Phone</Link></h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-two__title">Artisan Empowerment</h3>
+                                <p className="services-two__text"> We extend our hands to like-minded artisans, spiritual guides, and craftsmen whose work embodies the traditions. </p>
                             </div>
                         </div>
                     </div>
@@ -86,9 +138,8 @@ export default function Home() {
                                 <div className="services-two__icon services-two__icon--two">
                                     <span className="icon-tap"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Tablet</Link></h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-two__title">Educational Partnerships</h3>
+                                <p className="services-two__text">The Centre seeks to build alliances with educational institutions, universities, and spiritual academies worldwide.</p>
                             </div>
                         </div>
                     </div>
@@ -100,9 +151,8 @@ export default function Home() {
                                 <div className="services-two__icon services-two__icon--three">
                                     <span className="icon-laptop"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Laptop</Link></h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-two__title">Cultural Preservation</h3>
+                                <p className="services-two__text">From the delicate craft of  weaving to the intricate spiritual calligraphy, we strive to preserve the sacred arts.</p>
                             </div>
                         </div>
                     </div>
@@ -114,10 +164,9 @@ export default function Home() {
                                 <div className="services-two__icon services-two__icon--three">
                                     <span className="icon-computer"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Computer Desktop</Link>
+                                <h3 className="services-two__title">Spiritual Retreats 
                                 </h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <p className="services-two__text">. Through prayer, meditation, and collective celebration of divine love, we aim to nurture the soul.</p>
                             </div>
                         </div>
                     </div>
@@ -129,9 +178,8 @@ export default function Home() {
                                 <div className="services-two__icon">
                                     <span className="icon-camera"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Camera</Link></h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-two__title">Social Initiatives </h3>
+                                <p className="services-two__text">By working together, we uplift the spiritual and material well-being of the region, one heart at a time.</p>
                             </div>
                         </div>
                     </div>
@@ -143,9 +191,8 @@ export default function Home() {
                                 <div className="services-two__icon services-two__icon--two">
                                     <span className="icon-smartwatch"></span>
                                 </div>
-                                <h3 className="services-two__title"><Link href="services-details">Wearable Device</Link></h3>
-                                <p className="services-two__text">Duis aute irure dolor in repreh enderit in volup tate
-                                    velit esse cillum dolore fugiat nulla dolor atur</p>
+                                <h3 className="services-two__title">Community Empowerment</h3>
+                                <p className="services-two__text">We invite partners who wish to make a difference in the lives of the people of Kashmir, empowering communities.</p>
                             </div>
                         </div>
                     </div>
@@ -156,374 +203,138 @@ export default function Home() {
         {/*Services Two End*/}
 
         {/*Newsletter One Start*/}
-        <section className="newsletter-one">
-            <div className="newsletter-one-bg jarallax"
-                style={{ backgroundImage: 'url(assets/images/backgrounds/newsletter-one-bg.jpg)' }} ></div>
-            <div className="container">
-                <div className="section-title section-title--two text-center">
-                    <span className="section-title__tagline">NEWSLETTER</span>
-                    <h2 className="section-title__title">Join Our Newsletter</h2>
-                    <p className=" section-title__text">Duis aute irure dolor in repreh enderit in volup tate velit esse
-                        cillum dolore <br/> eu fugiat nulla dolor atur with Lorem ipsum is simply </p>
-                </div>
-                <form className="newsletter-one__form">
-                    <div className="newsletter-one__input-box">
-                        <input type="email" placeholder="Your Email" name="email"/>
-                        <button type="submit" className="thm-btn newsletter-one__btn">Subscribe Now</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        {/*Newsletter One End*/}
+        <section className="relative bg-[var(--fixnix-lightpuple)] py-24 text-left-mobile">
+  <div className="absolute inset-0 bg-no-repeat bg-center bg-cover mix-blend-multiply"></div>
+  <div className="container">
+  <div className="text-center mb-12">
+        <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+        For partnership inquiries
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-white"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-white"></span>
+      </span>
+      <h2 className="text-[var(--fixnix-white)] text-3xl mt-2 font-bold">
+         Please reach out to us
+      </h2>
+      <p className="text-[var(--fixnix-white)] mt-2">
+      Whether you are an artisan, educator, spiritual guide, or a partner in social change, we welcome you to unite with us, to share the love of the Divine, and to contribute to a future where the spiritual sciences of Kashmir flourish, where sacred traditions are honored, and where the soul’s quest for truth is illuminated.
+        <br />
+        May this collaboration be blessed with divine grace, and may it illuminate the hearts of all those who participate.
+      </p>
+    </div>
+    <div className="flex flex-wrap justify-center gap-8">
+      {[
+        { icon: "fa-envelope", title: "Send us an email", text: "contact@gmail.com", link: "mailto:contact@gmail.com" },
+        { icon: "fa-phone", title: "Give us a call", text: "+012 (435) 7689", link: "tel:0124357689" }
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="relative flex items-center bg-white rounded-lg p-3 max-w-[325px] w-full transition-all"
+        >
+          <div className="flex items-center justify-center h-[55px] w-[55px] rounded-full bg-[var(--fixnix-lightpuple)] transition-all duration-500 hover:bg-[var(--fixnix-darkpurple)]">
+            <span className={`fa ${item.icon} text-white text-2xl transform transition-all duration-500 scale-100 hover:scale-90`}></span>
+          </div>
+          <div className="ml-4">
+            <span className="block text-[20px] text-[var(--fixnix-darkpurple)] font-bold leading-6 mb-2">
+              {item.title}
+            </span>
+            <p className="text-[18px] leading-[18px]">
+              <a href={item.link} className="text-[var(--fixnix-gray)] transition-all duration-500 hover:text-[var(--fixnix-lightpuple)]">
+                {item.text}
+              </a>
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-        {/*Testimonial One Start*/}
-        <section className="testimonial-one">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-12">
-                        <div className="section-title text-left">
-                            <span className="section-title__tagline">OUR HAPPY CLIENTS</span>
-                            <h2 className="section-title__title">Our Customers Review</h2>
-                        </div>
-                        <Swiper {...swiperOptions} className="testimonial-one__carousel owl-carousel owl-theme thm-owl__carousel">
-                            {/*testimonial One Single Start*/}
-                            <SwiperSlide>
-                            <div className="item">
-                                <div className="testimonial-one__single">
-                                    <div className="testimonial-one__client-img-box">
-                                        <div className="testimonial-one__client-img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-one__client-info-box">
-                                        <div className="testimonial-one__quote">
-                                            <span className="icon-quote"></span>
-                                        </div>
-                                        <p className="testimonial-one__text">Sed ut perspiciatis unde omnis iste natus error
-                                            sit laudantium, rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                            beatae dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                            quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
-                                        <div className="testimonial-one__client-info">
-                                            <h3>Nicolas Marko</h3>
-                                            <p>Graphic Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            {/*testimonial One Single End*/}
-                            {/*testimonial One Single Start*/}
-                            <SwiperSlide>
-                            <div className="item">
-                                <div className="testimonial-one__single">
-                                    <div className="testimonial-one__client-img-box">
-                                        <div className="testimonial-one__client-img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-one__client-info-box">
-                                        <div className="testimonial-one__quote">
-                                            <span className="icon-quote"></span>
-                                        </div>
-                                        <p className="testimonial-one__text">Sed ut perspiciatis unde omnis iste natus error
-                                            sit laudantium, rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                            beatae dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                            quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
-                                        <div className="testimonial-one__client-info">
-                                            <h3>Nicolas Marko</h3>
-                                            <p>Graphic Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            {/*testimonial One Single End*/}
-                            {/*testimonial One Single Start*/}
-                            <SwiperSlide>
-                            <div className="item">
-                                <div className="testimonial-one__single">
-                                    <div className="testimonial-one__client-img-box">
-                                        <div className="testimonial-one__client-img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-one__client-info-box">
-                                        <div className="testimonial-one__quote">
-                                            <span className="icon-quote"></span>
-                                        </div>
-                                        <p className="testimonial-one__text">Sed ut perspiciatis unde omnis iste natus error
-                                            sit laudantium, rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                            beatae dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                            quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
-                                        <div className="testimonial-one__client-info">
-                                            <h3>Nicolas Marko</h3>
-                                            <p>Graphic Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            {/*testimonial One Single End*/}
-                            {/*testimonial One Single Start*/}
-                            <SwiperSlide>
-                            <div className="item">
-                                <div className="testimonial-one__single">
-                                    <div className="testimonial-one__client-img-box">
-                                        <div className="testimonial-one__client-img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-one__client-info-box">
-                                        <div className="testimonial-one__quote">
-                                            <span className="icon-quote"></span>
-                                        </div>
-                                        <p className="testimonial-one__text">Sed ut perspiciatis unde omnis iste natus error
-                                            sit laudantium, rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                            beatae dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                            quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
-                                        <div className="testimonial-one__client-info">
-                                            <h3>Nicolas Marko</h3>
-                                            <p>Graphic Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            {/*testimonial One Single End*/}
-                            {/*testimonial One Single Start*/}
-                            <SwiperSlide>
-                            <div className="item">
-                                <div className="testimonial-one__single">
-                                    <div className="testimonial-one__client-img-box">
-                                        <div className="testimonial-one__client-img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="testimonial-one__client-info-box">
-                                        <div className="testimonial-one__quote">
-                                            <span className="icon-quote"></span>
-                                        </div>
-                                        <p className="testimonial-one__text">Sed ut perspiciatis unde omnis iste natus error
-                                            sit laudantium, rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                            beatae dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                            quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
-                                        <div className="testimonial-one__client-info">
-                                            <h3>Nicolas Marko</h3>
-                                            <p>Graphic Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            {/*testimonial One Single End*/}
-                        </Swiper>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {/*Testimonial One End*/}
+<section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
+  <div className="absolute top-[10px] left-0 services-one-shape-1">
+    <img src="assets/images/shapes/services-one-shape-1.png" alt=""/>
+  </div>
+  <div className="absolute top-[65px] right-0 services-one-shape-2">
+    <img src="assets/images/shapes/services-one-shape-2.png" alt=""/>
+  </div>
+  <div className="container">
+    <div className=" text-center mb-[49px]">
+      <span className=" text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
+      Why Collaborate with Us?
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
+      <h2 className=" text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
+      Divine flow of collaboration connects us all
+      </h2>
+      <p className="text-gray-700 pt-[20px]">
+      Together, in unity and in love, we create a divine journey—a journey that transcends borders, a journey of spiritual awakening, healing, and collective growth. <br/>We aim to offer rich, transformative learning experiences rooted in Sufi science, Kashmiri mysticism, and sacred knowledge. 
+      </p>
+    </div>
 
-        {/*FAQ One Start*/}
-        <section className="faq-one">
-            <div className="faq-one-shape-1 shapeMover"
-                style={{ backgroundImage: 'url(assets/images/shapes/faq-one-shape.png)' }} ></div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6">
-                        <div className="faq-one__left">
-                            <div className="section-title text-left">
-                                <span className="section-title__tagline">Have Question?</span>
-                                <h2 className="section-title__title">Frequently Asked Question</h2>
-                            </div>
-                            <p className="faq-one__text-1">There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form, by injected randomised words
-                                which don't look even slightly believable. There are many variations of passages of
-                                Lorem Ipsum available,
-                                but the majority have suffered alteration</p>
-                            <p className="faq-one__text-2">There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form, by injected randomised words
-                                which don't look even slightly believable. There are many variations </p>
-                            <div className="faq-one__btn-box">
-                                <Link href="#" className=" thm-btn faq-one__btn">Ask Questions Here</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6">
-                        <div className="faq-one__right">
-                            <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion">
-                                <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
-                                    <div className="accrodion-title">
-                                        <h4>Can you clean my phone or device?</h4>
-                                    </div>
-                                    <div className="accrodion-content">
-                                        <div className="inner">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the
-                                                majority have suffered alteration in some form, by words which don't
-                                                look even slightly believable.</p>
-                                        </div>{/* /.inner */}
-                                    </div>
-                                </div>
-                                <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
-                                    <div className="accrodion-title">
-                                        <h4>Do you offer a warranty?</h4>
-                                    </div>
-                                    <div className="accrodion-content">
-                                        <div className="inner">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the
-                                                majority have suffered alteration in some form, by words which don't
-                                                look even slightly believable.</p>
-                                        </div>{/* /.inner */}
-                                    </div>
-                                </div>
-                                <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
-                                    <div className="accrodion-title">
-                                        <h4>How Many Locations Do You Have?</h4>
-                                    </div>
-                                    <div className="accrodion-content">
-                                        <div className="inner">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the
-                                                majority have suffered alteration in some form, by words which don't
-                                                look even slightly believable.</p>
-                                        </div>{/* /.inner */}
-                                    </div>
-                                </div>
-                                <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
-                                    <div className="accrodion-title">
-                                        <h4>Is there a charge for the loaner phone service?</h4>
-                                    </div>
-                                    <div className="accrodion-content">
-                                        <div className="inner">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the
-                                                majority have suffered alteration in some form, by words which don't
-                                                look even slightly believable.</p>
-                                        </div>{/* /.inner */}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {/*FAQ One End*/}
+    <div className="row flex flex-wrap">
+      {/* Service 1 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+        <div className=" relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
+          {/* <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-1.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div> */}
+          <div className=" p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] text-white transition-all duration-[500ms]  font-semibold leading-[34px]">
+              
+            A Sacred Purpose
+              
+            </h3>
+            <p className=" mt-[15px] mb-[22px] text-white">
+            Every partnership with the Sufi Science Centre is rooted in a higher calling—a shared dedication to advancing the timeless wisdom of Sufi science, to preserving the art and culture of Kashmir, and to cultivating peace, love, and understanding in the world.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        {/*Counter One Start*/}
-        <section className="counter-one">
-            <div className="counter-one__bg jarallax"
-                style={{ backgroundImage: 'url(assets/images/backgrounds/counter-one-bg.jpg)' }} ></div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-12">
-                        <ul className="counter-one__list list-unstyled">
-                            <li className="counter-one__single">
-                            <CounterUp end={20} />
-                                <span className="counter-one__plus">+</span>
-                                <p className="counter-one__text">Glorious Years</p>
-                            </li>
-                            <li className="counter-one__single">
-                                <CounterUp end={2} />
-                                <span className="counter-one__plus">k+</span>
-                                <p className="counter-one__text">Happy Customer</p>
-                            </li>
-                            <li className="counter-one__single">
-                            <CounterUp end={5} />
-                                <span className="counter-one__plus">k+</span>
-                                <p className="counter-one__text">Service Complete</p>
-                            </li>
-                            <li className="counter-one__single">
-                            <CounterUp end={99} />
-                                <span className="counter-one__plus">%</span>
-                                <p className="counter-one__text">Satisfactions</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {/*Counter One End*/}
+      {/* Service 2 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+        <div className="relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
+          {/* <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-2.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div> */}
+          <div className=" p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] text-white transition-all duration-[500ms] font-semibold leading-[34px]">
+              
+            Platform for Transformation
+              
+            </h3>
+            <p className=" mt-[15px] mb-[22px] text-white">
+            Our collaborations offer a space for deep, meaningful impact. By working together, we amplify each other’s efforts, creating a ripple of transformation that reaches far beyond our individual endeavors. Collaboration connects us all, weaving threads of unity and purpose.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        {/*Why Choose One Start*/}
-        <section className="why-choose-one">
-            <div className="container">
-                <div className="section-title section-title--two text-center">
-                    <span className="section-title__tagline">Why Choose Us</span>
-                    <h2 className="section-title__title">Gadget Repair For Everyone</h2>
-                    <p className="section-title__text">Duis aute irure dolor in repreh enderit in volup tate velit esse
-                        cillum dolore <br/> eu fugiat nulla dolor atur with Lorem ipsum is simply</p>
-                </div>
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
-                        {/*Why Choose One Single Start*/}
-                        <div className="why-choose-one__single">
-                            <div className="why-choose-one__icon">
-                                <span className="icon-award"></span>
-                            </div>
-                            <div className="why-choose-one__content">
-                                <h3 className="why-choose-one__title"><Link href="services-details">Warranty Service</Link>
-                                </h3>
-                                <p className="why-choose-one__text">Duis aute irure dolor in repreh enderit in
-                                    volup tate velit esse cillum dolore eu fugiat</p>
-                            </div>
-                        </div>
-                        {/*Why Choose One Single Start*/}
-                    </div>
-                    <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
-                        {/*Why Choose One Single Start*/}
-                        <div className="why-choose-one__single">
-                            <div className="why-choose-one__icon">
-                                <span className="icon-customer-service"></span>
-                            </div>
-                            <div className="why-choose-one__content">
-                                <h3 className="why-choose-one__title"><Link href="services-details">Customer Service</Link>
-                                </h3>
-                                <p className="why-choose-one__text">Duis aute irure dolor in repreh enderit in
-                                    volup tate velit esse cillum dolore eu fugiat</p>
-                            </div>
-                        </div>
-                        {/*Why Choose One Single Start*/}
-                    </div>
-                    <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
-                        {/*Why Choose One Single Start*/}
-                        <div className="why-choose-one__single">
-                            <div className="why-choose-one__icon">
-                                <span className="icon-security"></span>
-                            </div>
-                            <div className="why-choose-one__content">
-                                <h3 className="why-choose-one__title"><Link href="services-details">Secured Device</Link>
-                                </h3>
-                                <p className="why-choose-one__text">Duis aute irure dolor in repreh enderit in
-                                    volup tate velit esse cillum dolore eu fugiat</p>
-                            </div>
-                        </div>
-                        {/*Why Choose One Single Start*/}
-                    </div>
-                    <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="400ms">
-                        {/*Why Choose One Single Start*/}
-                        <div className="why-choose-one__single">
-                            <div className="why-choose-one__icon">
-                                <span className="icon-computer-1"></span>
-                            </div>
-                            <div className="why-choose-one__content">
-                                <h3 className="why-choose-one__title"><Link href="services-details">No Virus Threat</Link>
-                                </h3>
-                                <p className="why-choose-one__text">Duis aute irure dolor in repreh enderit in
-                                    volup tate velit esse cillum dolore eu fugiat</p>
-                            </div>
-                        </div>
-                        {/*Why Choose One Single Start*/}
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xl-12">
-                        <div className="why-choose-one__bottom">
-                            <p className="why-choose-one__bottom-text">Get proper services from us <Link
-                                    href="about">guideline and
-                                    knowledge</Link></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      {/* Service 3 */}
+      <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+        <div className="relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
+          {/* <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
+            <img src="assets/images/services/services-1-3.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
+            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
+          </div> */}
+          <div className="p-[22px] pb-[30px]">
+            <h3 className=" text-[24px] text-white transition-all duration-[500ms]  font-semibold leading-[34px]">
+             
+            Legacy of Enlightenment
+              
+            </h3>
+            <p className="text-white mt-[15px] mb-[22px]">
+            Through our collective efforts, we build a lasting legacy of spiritual enlightenment, cultural preservation, and artistic excellence. Each collaboration strengthens the foundation of wisdom, compassion, and harmony.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
         {/*Why Choose One End*/}
 
             </Layout>
