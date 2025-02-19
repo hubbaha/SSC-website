@@ -492,7 +492,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/KashmiriSufiLegacy"
+                      href="/VolunteerWithUs"
                       className="text-white text-sm font-medium"
                     >
                       Volunteer With Us
@@ -500,7 +500,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/Purpose&Direction"
+                      href="/Collaborations"
                       className="text-white text-sm font-medium"
                     >
                       Collaborations
