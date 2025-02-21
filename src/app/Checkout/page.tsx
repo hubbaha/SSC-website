@@ -235,32 +235,49 @@ export default function Home() {
                         </div>
 
                         <div className="col-lg-6">
-                            <div className="checkout__payment bg-[#F3F3F3] py-[49px] px-[50px] mb-[30px]">
-                                
-                                <div className="checkout__payment__item checkout__payment__item--active mb-[41px]">
-                                    
-                                    <h3 className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
-                                        Direct bank transfer
-                                    </h3>
-                                    <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
-                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared.
-                                    </div>
-                                </div>
-                                <div className="checkout__payment__item mb-[41px]">
-                                    <h3 className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
-                                        Paypal payment <img className="ml-[15px]" src="assets/images/shop/paypal-1.jpg" alt=""/>
-                                    </h3>
-                                    <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
-                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="payment_button mt-[20px]">
-                                <Link href="/thankyou" legacyBehavior>
-                                    <a className="btn text-[#ffffff] text-[16px] font-medium rounded-full py-[12px] px-[30px] bg-fixnix-lightpurple hover:bg-fixnix-darkpurple w-full">Proceed to checkout</a>
-                                </Link>
-                            </div>
-                        </div>
+    <div className="checkout__payment bg-[#F3F3F3] py-[49px] px-[50px] mb-[30px]">
+        
+        <div className="checkout__payment__item checkout__payment__item--active mb-[41px]">
+            <label className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
+                <input 
+                    type="radio" 
+                    name="paymentMethod" 
+                    value="bankTransfer" 
+                    className="mr-2"
+                />
+                Direct bank transfer
+            </label>
+            <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared.
+            </div>
+        </div>
+        
+        <div className="checkout__payment__item mb-[41px]">
+            <label className="checkout__payment__title flex items-center text-fixnix-lightpurple text-[18px] font-semibold mb-[27px] cursor-pointer">
+                <input 
+                    type="radio" 
+                    name="paymentMethod" 
+                    value="paypal" 
+                    className="mr-2"
+                />
+                Paypal payment 
+                <img className="ml-[15px]" src="assets/images/shop/paypal-1.jpg" alt=""/>
+            </label>
+            <div className="checkout__payment__content text-[#707070] text-[16px] leading-[30px]">
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared.
+            </div>
+        </div>
+    </div>
+    
+    <div className="payment_button mt-[20px]">
+        <Link href="/thankyou" legacyBehavior>
+            <a className="btn text-[#ffffff] text-[16px] font-medium rounded-full py-[12px] px-[30px] bg-fixnix-lightpurple hover:bg-fixnix-darkpurple w-full">
+                Proceed to checkout
+            </a>
+        </Link>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
