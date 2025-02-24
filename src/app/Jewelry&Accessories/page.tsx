@@ -11,7 +11,7 @@ export default function Home() {
              {/* Page Title */}
              <section className="team-top text-left-mobile">
   <div className="container mx-auto px-4">
-    <div className="text-center sm:text-left relative block mt-[-6px] mb-[49px] z-[1]">
+    <div className="text-center sm:text-left relative block mt-[-6px] mb-[10px] z-[1]">
       {/* Section Tagline */}
       <span className="relative inline-block text-[18px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
         Jewelry & Accessories
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Section Text */}
       <p className="pt-[20px] text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
-      Kashmiri jewelry features a stunning array of intricate craftsmanship, including Kashmiri Silver Prayer Beads (Tasbeeh) made with local silver and semi-precious stones. The collection also includes Kashmiri Lapis Lazuli Pendants, carved with sacred Sufi symbols that carry deep spiritual significance. Additionally, Kashmiri Handcrafted Rings are engraved with divine symbols and mystical patterns, adding a sense of mysticism and tradition. Each piece reflects the rich cultural legacy of Kashmir, combining artistry with profound meaning.
+      Kashmiri jewelry showcases exquisite craftsmanship, featuring Silver Prayer Beads (Tasbeeh) made with local silver and semi-precious stones. The collection includes Lapis Lazuli Pendants carved with sacred Sufi symbols and Handcrafted Rings engraved with divine patterns, blending mysticism and tradition. Each piece reflects Kashmir’s rich cultural legacy, merging artistry with profound spiritual meaning. 
       </p>
     </div>
   </div>

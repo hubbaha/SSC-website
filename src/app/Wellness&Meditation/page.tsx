@@ -9,13 +9,26 @@ export default function Home() {
         <Layout headerStyle={2} footerStyle={1}>
             <Banner></Banner>
              {/* Page Title */}
-             <div className="flex justify-center items-center text-center  mt-8 mb-6">
-                <span className="relative inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                    Wellness & Meditation   
-                    <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                    <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                </span>
-            </div>
+             <section className="team-top text-left-mobile">
+  <div className="container mx-auto px-4">
+    <div className="text-center sm:text-left relative block mt-[-6px] mb-[10px] z-[1]">
+      {/* Section Tagline */}
+      <span className="relative inline-block text-[18px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+       WELLNESS & MEDITATION
+        <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+        <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+      </span>
+
+      {/* Section Title */}
+     
+
+      {/* Section Text */}
+      <p className="pt-[20px] text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+      Handwoven reed mats, crafted from grass and rice straws, are used in Kashmir for prayer, meditation, and sacred rituals like ablution. Sufi healing candles, scented with saffron, lavender, and rose, promote peace and purification. Khewa tea blends saffron, herbs, and spices for spiritual clarity, while Kashmiri gemstones like lapis lazuli and rose quartz offer healing and divine connection. 
+      </p>
+    </div>
+  </div>
+</section>
            
             {/* Product Start */}
                         

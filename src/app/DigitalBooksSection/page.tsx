@@ -17,7 +17,7 @@ export default function Home() {
                
                 {/* <Welcome /> */}
                 <section className="relative block py-[80px] md:py-[100px] lg:py-[120px] z-[1]">
-                <div className="absolute top-0 right-0 w-full md:w-[50%] lg:w-[40%] bottom-0 mb-20 bg-fixnix-lightpurple bg-blend-color-burn bg-no-repeat bg-cover bg-right-center z-[-1]"></div>
+                <div className="absolute top-0 right-0 w-full md:w-[50%] lg:w-[40%] bottom-0 mb-20 sm:bg-white md:bg-white lg:bg-white xl:bg-fixnix-lightpurple 2xl:bg-fixnix-lightpurple bg-blend-color-burn bg-no-repeat bg-cover bg-right-center z-[-1]"></div>
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap flex-col lg:flex-row">
                         <div className="w-full lg:w-1/2 pr-0 lg:pr-8 mb-10 lg:mb-0">
@@ -117,7 +117,7 @@ export default function Home() {
       <ModalVideo channel="youtube" isOpen={isOpen} videoId="Get7rqXYrbQ" onClose={() => setOpen(false)} />
     </section>
     <section className="team-top text-left-mobile">
-  <div className="container mx-auto px-4">
+  <div className="container mx-auto px-4text-left-mobile">
     <div className="text-center sm:text-left relative block mt-[-6px] mb-[49px] z-[1]">
       {/* Section Tagline */}
       <span className="relative inline-block text-[18px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
@@ -130,7 +130,7 @@ export default function Home() {
      
 
       {/* Section Text */}
-      <p className="pt-[20px] text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
+      <p className="pt-[20px] text-left-mobile text-center text-gray-600 text-sm sm:text-base md:text-md lg:text-lg leading-[1.8] sm:leading-[2] md:leading-[1.5]">
       Our collection includes a wide range of Sufi texts, written by spiritual luminaries and scholars whose teachings have shaped the spiritual landscape of Kashmir and beyond. These digital books offer insights into subjects such as the nature of reality, the soul’s journey and the science of divine love. Whether you are a novice or a seasoned seeker, these books will guide you on your path to spiritual enlightenment.
       </p>
     </div>

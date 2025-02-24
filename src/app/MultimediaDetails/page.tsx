@@ -312,16 +312,7 @@ export default function Home() {
                                     <Link href="#">Gadget</Link>
                                 </div>
                             </div>
-                            <div className="sidebar__single sidebar__booking">
-                                <div className="sidebar__booking-bg"
-                                    style={{ backgroundImage: 'url(assets/images/blog/booking-bg-img.jpg)' }} ></div>
-                                <div className="sidebar__booking-content">
-                                    <h3 className="sidebar__booking-title">Computer Repair Service</h3>
-                                    <div className="sidebar__booking-btn-box">
-                                        <Link href="#" className="thm-btn sidebar__booking-btn">Book A Service</Link>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>

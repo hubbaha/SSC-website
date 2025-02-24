@@ -1,60 +1,88 @@
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
 
-export default function Login() {
+type RegisterFormInputs = {
+  name: string;
+  email: string;
+  password: string;
+};
+
+export default function Register() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<RegisterFormInputs>(); // <-- Pass the form type here
+
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const onSubmit = (data: RegisterFormInputs) => {
+    setLoading(true);
+    // Simulate an async request, then go to OTP page
+    setTimeout(() => {
+      router.push("/OTP");
+    }, 1000);
+  };
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md xl:max-w-lg p-6 sm:p-8 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-fixnix-lightpurple">Login</h2>
-        
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-sm sm:text-md md:text-md lg:text-md xl:text-[15px] 2xl:text-[15px] font-bold text-fixnix-lightpurple">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              className="block w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple"
-              placeholder="you@example.com"
-            />
-          </div>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="bg-white p-6 rounded-lg shadow-md w-96">
+        <h2 className="text-center text-2xl font-semibold text-fixnix-lightpurple">
+          Login SSC
+        </h2>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 mt-4">
           
-          <div>
-            <label htmlFor="password" className="block text-sm sm:text-md md:text-md lg:text-md xl:text-[15px] 2xl:text-[15px] font-bold text-fixnix-lightpurple">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              required
-              className="block w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple"
-              placeholder="********"
-            />
-          </div>
+         
 
-          <p className="text-xs sm:text-sm text-right">
-            <Link href="/forgot-password" className="text-fixnix-darkpurple hover:underline">
-              Forgot Password?
-            </Link>
-          </p>
+          {/* Email Field */}
+          <input
+            {...register("email", { required: "Email is required" })}
+            type="email"
+            placeholder="Email"
+            className="w-full p-2 border rounded"
+          />
+          {errors.email && (
+            <p className="text-red-500 text-sm">
+              {errors.email.message}
+            </p>
+          )}
 
+          {/* Password Field */}
+          <input
+            {...register("password", {
+              required: "Password is required",
+              minLength: { value: 6, message: "At least 6 characters" },
+            })}
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 border rounded"
+          />
+          {errors.password && (
+            <p className="text-red-500 text-sm">
+              {errors.password.message}
+            </p>
+          )}
+
+          {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-2 mt-3 text-white bg-fixnix-lightpurple rounded-md hover:bg-fixnix-darkpurple transition duration-200"
+            className="w-full bg-fixnix-lightpurple text-white py-2 rounded hover:bg-fixnix-darkpurple transition"
           >
-            Login
+            {loading ? "Processing..." : "Login"}
           </button>
         </form>
-
-        <p className="text-sm sm:text-md text-center text-gray-600 mt-4">
-          Don't have an account?{' '}
-          <Link href="/Register" className="text-blue-600 hover:underline">
+        <p className="text-center mt-4 text-sm">
+          Don't have an account?{" "}
+          <Link href="/Register" className="text-fixnix-darkpurple font-bold">
             Register
           </Link>
         </p>
+      
+  
 
         {/* Social Login Buttons */}
         <p className="text-sm sm:text-md text-center text-gray-600 mt-4">
@@ -81,6 +109,7 @@ export default function Login() {
                   <i className="fab fa-instagram"></i>
                 </Link>
               </div>
+              </div>
         
         {/* <div className="flex items-center justify-center space-x-4 mt-2">
           <button className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition duration-200">
@@ -91,6 +120,8 @@ export default function Login() {
           </button>
         </div> */}
       </div>
-    </div>
+  
+    
+        
   );
 }

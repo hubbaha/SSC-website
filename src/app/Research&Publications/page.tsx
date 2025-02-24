@@ -33,31 +33,31 @@ export default function Home() {
                     className="w-full h-60 object-cover"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity">
-                    <Link href="/blog-details" className="text-white text-2xl">
-                      <i className="fa fa-plus"></i>
+                    <Link href="/ResearchDetails" className="text-white text-2xl">
+                      
                     </Link>
                   </div>
                 </div>
                 <div className="p-4">
                   <ul className="flex space-x-4 text-gray-500 text-sm mb-2">
                     <li>
-                      <Link href="/blog-details" className="flex items-center text-fixnix-lightpurple font-bold">
+                      <Link href="/ResearchDetails" className="flex items-center text-fixnix-lightpurple hover:text-fixnix-darkpurple font-bold">
                         <i className="fa fa-calendar-alt mr-2"></i> 5 AUG 2023
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details" className="flex items-center text-fixnix-lightpurple font-bold">
+                      <Link href="/ResearchDetails" className="flex items-center text-fixnix-lightpurple hover:text-fixnix-darkpurple font-bold">
                         <i className="far fa-comments mr-2"></i> 02 COMMENTS
                       </Link>
                     </li>
                   </ul>
                   <h3 className="text-lg font-semibold text-fixnix-darkpurple mb-3">
-                    <Link href="/blog-details" className="text-fixnix-darkpurple">Blog Post Title {item}</Link>
+                    <Link href="/ResearchDetails" className="text-fixnix-darkpurple hover:text-fixnix-lightpurple">Blog Post Title {item}</Link>
                   </h3>
                   <div>
                     <Link
-                      href="/Donations"
-                      className="inline-block bg-fixnix-lightpurple text-white px-4 py-2 rounded-md"
+                      href="/ResearchDetails"
+                      className="inline-block bg-fixnix-lightpurple text-white hover:bg-fixnix-darkpurple px-4 py-2 rounded-md"
                     >
                       Read More
                     </Link>

@@ -179,7 +179,7 @@ export default function StickyHeader() {
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px] hidden group-hover:block">
               <li className="mb-2">
-                <Link href="/Workshops" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
+                <Link href="/FoundationalSciences" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
               </li>
               <li className="mb-2">
                 <Link href="/Conferences" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Mind & Consciousness</Link>
@@ -223,12 +223,14 @@ export default function StickyHeader() {
               SACRED GIFT SHOP
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
-              <li className="mb-2">
-                <Link href="/Jewelry&Acessories" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Jewelry & Accessories</Link>
-              </li>
+              
               <li className="mb-2">
                 <Link href="/Art&WallDecor" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Art & Wall Decor</Link>
               </li>
+              <li className="mb-2">
+                <Link href="/Jewelry&Accessories" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Jewelry & Accessories</Link>
+              </li>
+              
               <li className="mb-2">
                 <Link href="/Home&Living" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
               </li>

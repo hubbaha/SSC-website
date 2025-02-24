@@ -105,12 +105,12 @@ export default function Home() {
                 <div className="p-6">
                   
                   <h3 className="text-xl font-semibold text-fixnix-lightpurple hover:text-fixnix-darkpurple transition">
-                    <Link href="/Memberships" className="text-fixnix-lightpurple hover:text-fixnix-darkpurple transition">Blog Post Title {item}</Link>
+                    <Link href="/MultimediaDetails" className="text-fixnix-lightpurple hover:text-fixnix-darkpurple transition">Blog Post Title {item}</Link>
                   </h3>
                   <p className="text-gray-500 py-3">
                     Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla cupidatat non proident.
                   </p>
-                  <Link href="/Memberships" className="text-white border rounded-md px-3 py-2 bg-fixnix-lightpurple font-semibold hover:text-purple-900 transition">
+                  <Link href="/MultimediaDetails" className="text-white border rounded-md px-3 py-2 bg-fixnix-lightpurple font-semibold hover:bg-fixnix-darkpurple transition">
                     Read More
                   </Link>
                 </div>

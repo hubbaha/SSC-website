@@ -1,41 +1,92 @@
-import Link from 'next/link';
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
+
+type RegisterFormInputs = {
+  name: string;
+  email: string;
+  password: string;
+};
 
 export default function Register() {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md xl:max-w-lg p-6 sm:p-8 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-fixnix-lightpurple">Register</h2>
-        
-        <form className="space-y-6">
-          {['email', 'password', 'confirm-password'].map((field, index) => (
-            <div key={index} className="relative">
-              <input
-                type={field.includes('password') ? 'password' : 'email'}
-                id={field}
-                required
-                className="peer block w-full px-4 pt-4 pb-2 border rounded-md focus:outline-none focus:ring focus:ring-fixnix-lightpurple placeholder-transparent"
-                placeholder={field === 'email' ? 'Email' : field === 'password' ? 'Password' : 'Confirm Password'}
-              />
-              <label
-                htmlFor={field}
-                className="absolute left-4 top-2 text-gray-500 text-sm peer-placeholder-shown:top-1 peer-placeholder-shown:text-sm peer-focus:top-1 peer-focus:text-xs peer-focus:text-fixnix-lightpurple transition-all"
-              >
-                {field === 'email' ? 'Email' : field === 'password' ? 'Password' : 'Confirm Password'}
-              </label>
-            </div>
-          ))}
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<RegisterFormInputs>(); // <-- Pass the form type here
 
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const onSubmit = (data: RegisterFormInputs) => {
+    setLoading(true);
+    // Simulate an async request, then go to OTP page
+    setTimeout(() => {
+      router.push("/OTP");
+    }, 1000);
+  };
+
+  return (
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="bg-white p-6 rounded-lg shadow-md w-96">
+        <h2 className="text-center text-2xl font-semibold text-fixnix-lightpurple">
+          Register SSC
+        </h2>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 mt-4">
+          {/* Full Name Field */}
+          <input
+            {...register("name", { required: "Full name is required" })}
+            placeholder="Full Name"
+            className="w-full p-2 border rounded"
+          />
+          {errors.name && (
+            <p className="text-red-500 text-sm">
+              {errors.name.message}
+            </p>
+          )}
+
+          {/* Email Field */}
+          <input
+            {...register("email", { required: "Email is required" })}
+            type="email"
+            placeholder="Email"
+            className="w-full p-2 border rounded"
+          />
+          {errors.email && (
+            <p className="text-red-500 text-sm">
+              {errors.email.message}
+            </p>
+          )}
+
+          {/* Password Field */}
+          <input
+            {...register("password", {
+              required: "Password is required",
+              minLength: { value: 6, message: "At least 6 characters" },
+            })}
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 border rounded"
+          />
+          {errors.password && (
+            <p className="text-red-500 text-sm">
+              {errors.password.message}
+            </p>
+          )}
+
+          {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-2 mt-3 text-white bg-fixnix-lightpurple rounded-md hover:bg-fixnix-darkpurple transition duration-200"
+            className="w-full bg-fixnix-lightpurple text-white py-2 rounded hover:bg-fixnix-darkpurple transition"
           >
-            Register
+            {loading ? "Processing..." : "Register"}
           </button>
         </form>
-
-        <p className="text-sm sm:text-md text-center text-gray-600 mt-4">
-          Already have an account?{' '}
-          <Link href="/Login" className="text-blue-600 hover:underline">
+        <p className="text-center mt-4 text-sm">
+          Already have an account?{" "}
+          <Link href="/Login" className="text-fixnix-darkpurple font-bold">
             Login
           </Link>
         </p>

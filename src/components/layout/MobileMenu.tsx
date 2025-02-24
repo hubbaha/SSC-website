@@ -291,7 +291,7 @@ const MobileMenu = ({
                 >
                   <li>
                     <Link
-                      href="/OurHeritage&Identity"
+                      href="/FoundationalSciences"
                       className="text-white text-sm font-medium"
                     >
                      Foundational Sciences
@@ -484,7 +484,7 @@ const MobileMenu = ({
                 >
                   <li>
                     <Link
-                      href="/OurHeritage&Identity"
+                      href="/WaysToGive"
                       className="text-white text-sm font-medium"
                     >
                       Ways to Give
