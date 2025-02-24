@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
 import { Roboto, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 

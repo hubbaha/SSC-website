@@ -1,5 +1,4 @@
-declare module 'wowjs' {
-    var WOW: any;
-    export = WOW;
-  }
-  
+declare module "wowjs" {
+  var WOW: any;
+  export = WOW;
+}

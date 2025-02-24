@@ -5,10 +5,16 @@ export default function WhyChoose() {
     <section className="relative block py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="text-lg font-semibold text-fixnix-lightpurple">Multimedia Library</span>
-          <h2 className="text-3xl font-bold text-fixnix-darkpurple mt-2">A beacon of illumination</h2>
+          <span className="text-lg font-semibold text-fixnix-lightpurple">
+            Multimedia Library
+          </span>
+          <h2 className="text-3xl font-bold text-fixnix-darkpurple mt-2">
+            A beacon of illumination
+          </h2>
           <p className="text-gray-600 mt-3">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br /> eu fugiat nulla dolor atur with Lorem ipsum is simply
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore <br /> eu fugiat nulla dolor atur with Lorem ipsum is
+            simply
           </p>
         </div>
 
@@ -31,7 +37,8 @@ export default function WhyChoose() {
                   <Link href="/services-details">{item.title}</Link>
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat
                 </p>
               </div>
             </div>
@@ -40,8 +47,11 @@ export default function WhyChoose() {
 
         <div className="text-center mt-12">
           <p className="text-lg font-semibold text-fixnix-darkpurple">
-            Get proper services from us{' '}
-            <Link href="/about" className="text-fixnix-lightpurple hover:text-fixnix-darkpurple transition duration-500">
+            Get proper services from us{" "}
+            <Link
+              href="/about"
+              className="text-fixnix-lightpurple hover:text-fixnix-darkpurple transition duration-500"
+            >
               guideline and knowledge
             </Link>
           </p>

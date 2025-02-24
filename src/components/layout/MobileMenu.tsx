@@ -39,7 +39,9 @@ const MobileMenu = ({
     <>
       <div
         className={`fixed inset-0 z-[2000] bg-black bg-opacity-50 transform transition-transform duration-300 ${
-          isSidebar ? "translate-x-0 opacity-100 visible" : "-translate-x-full opacity-0 invisible"
+          isSidebar
+            ? "translate-x-0 opacity-100 visible"
+            : "-translate-x-full opacity-0 invisible"
         }`}
       >
         <div
@@ -57,9 +59,9 @@ const MobileMenu = ({
           <div className="mb-10">
             <Link href="/" aria-label="logo image">
               <Image
-                src="/assets/images/resources/logo-4.png"  // Path to your image
-                width={70}  // Set the width
-                height={70}  // Set the height
+                src="/assets/images/resources/logo-4.png" // Path to your image
+                width={70} // Set the width
+                height={70} // Set the height
                 alt="Logo"
                 className=""
               />
@@ -69,7 +71,9 @@ const MobileMenu = ({
           <div className="mobile-nav__container">
             <ul className="space-y-4 main-menu__list">
               {/* Home menu */}
-              <li className={`${isActive.key === "1" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "1" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="/"
                   className="text-white text-sm uppercase font-bold"
@@ -121,17 +125,19 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "1" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("1")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "1" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("1")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
 
               {/* Discover KSSC menu */}
-              <li className={`${isActive.key === "2" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "2" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm uppercase font-bold"
@@ -177,7 +183,6 @@ const MobileMenu = ({
                       href="/OurWork&Practices"
                       className="text-white text-sm font-medium"
                       onClick={handleMobileMenu}
-                    
                     >
                       Our Work & Practices
                     </Link>
@@ -193,18 +198,19 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-                className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-                 isActive.key === "2" ? "rotate-90" : ""
-                 }`}
-                 onClick={() => handleToggle("2")}
-                  >
-                   <span className="fa fa-angle-right" />
-                 </button>
-                  
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "2" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("2")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
 
               {/* Your Journey menu */}
-              <li className={`${isActive.key === "3" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "3" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm uppercase font-bold"
@@ -267,16 +273,18 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-               className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-               isActive.key === "3" ? "rotate-90" : ""
-               }`}
-               onClick={() => handleToggle("3")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "3" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("3")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
               {/*Sufi science menu */}
-              <li className={`${isActive.key === "4" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "4" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm font-bold uppercase"
@@ -294,12 +302,12 @@ const MobileMenu = ({
                       href="/FoundationalSciences"
                       className="text-white text-sm font-medium"
                     >
-                     Foundational Sciences
+                      Foundational Sciences
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/KashmiriSufiLegacy"
+                      href="/Mind&Consciousness"
                       className="text-white text-sm font-medium"
                     >
                       Mind & Conciousness
@@ -307,7 +315,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/Purpose&Direction"
+                      href="/Nature&Environment"
                       className="text-white text-sm font-medium"
                     >
                       Nature & Environment
@@ -339,16 +347,18 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "4" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("4")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "4" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("4")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
               {/* Learning center menu */}
-              <li className={`${isActive.key === "5" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "5" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm uppercase font-bold"
@@ -385,19 +395,20 @@ const MobileMenu = ({
                       Digital Books Section
                     </Link>
                   </li>
-                  
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "5" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("5")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "5" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("5")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
               {/* Sacred Gift Shop menu */}
-              <li className={`${isActive.key === "6" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "6" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm uppercase font-bold"
@@ -447,7 +458,7 @@ const MobileMenu = ({
                       href="/Wellness&Meditation"
                       className="text-white text-sm font-medium"
                     >
-                     Wellness & Medication
+                      Wellness & Medication
                     </Link>
                   </li>
                   <li>
@@ -460,16 +471,18 @@ const MobileMenu = ({
                   </li>
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "6" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("6")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "6" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("6")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
               {/* Support Usy menu */}
-              <li className={`${isActive.key === "7" ? "current" : ""} dropdown`}>
+              <li
+                className={`${isActive.key === "7" ? "current" : ""} dropdown`}
+              >
                 <Link
                   href="#"
                   className="text-white text-sm font-bold uppercase"
@@ -506,21 +519,23 @@ const MobileMenu = ({
                       Collaborations
                     </Link>
                   </li>
-                  
                 </ul>
                 <button
-  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
-    isActive.key === "7" ? "rotate-90" : ""
-  }`}
-  onClick={() => handleToggle("7")}
->
-  <span className="fa fa-angle-right" />
-</button>
+                  className={`absolute right-2 top-1 mt-2 transform -translate-y-1/2 text-white transition-transform duration-300 ${
+                    isActive.key === "7" ? "rotate-90" : ""
+                  }`}
+                  onClick={() => handleToggle("7")}
+                >
+                  <span className="fa fa-angle-right" />
+                </button>
               </li>
 
               {/* Additional menu items... */}
               <li>
-                <Link href="/Contact" className="text-red-600 text-lg font-bold">
+                <Link
+                  href="/Contact"
+                  className="text-red-600 text-lg font-bold"
+                >
                   GET MEMBERSHIP
                 </Link>
               </li>
@@ -545,10 +560,22 @@ const MobileMenu = ({
 
           {/* Social Media */}
           <div className="mobile-nav__social flex items-center space-x-4">
-            <Link href="#" className="fab fa-twitter text-white text-lg hover:text-lightpurple"></Link>
-            <Link href="#" className="fab fa-facebook-square text-white text-lg hover:text-lightpurple"></Link>
-            <Link href="#" className="fab fa-pinterest-p text-white text-lg hover:text-lightpurple"></Link>
-            <Link href="#" className="fab fa-instagram text-white text-lg hover:text-lightpurple"></Link>
+            <Link
+              href="#"
+              className="fab fa-twitter text-white text-lg hover:text-lightpurple"
+            ></Link>
+            <Link
+              href="#"
+              className="fab fa-facebook-square text-white text-lg hover:text-lightpurple"
+            ></Link>
+            <Link
+              href="#"
+              className="fab fa-pinterest-p text-white text-lg hover:text-lightpurple"
+            ></Link>
+            <Link
+              href="#"
+              className="fab fa-instagram text-white text-lg hover:text-lightpurple"
+            ></Link>
           </div>
         </div>
       </div>

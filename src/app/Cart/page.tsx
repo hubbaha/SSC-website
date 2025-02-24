@@ -30,7 +30,10 @@ export default function Home() {
                         />
                       </div>
                       <h3 className="text-[20px] font-bold text-fixnix-darkpurple">
-                        <Link href="product-details" className="text-fixnix-lightpurple">
+                        <Link
+                          href="product-details"
+                          className="text-fixnix-lightpurple"
+                        >
                           {item === 1 ? "Comfy Chair" : "Classic Chair"}
                         </Link>
                       </h3>
@@ -71,24 +74,38 @@ export default function Home() {
             <div>
               <ul className="space-y-4 text-[18px] font-medium text-fixnix-gray">
                 <li className="flex justify-between">
-                  <span className="font-bold text-fixnix-darkpurple">Subtotal</span>
+                  <span className="font-bold text-fixnix-darkpurple">
+                    Subtotal
+                  </span>
                   <span>$20.98 USD</span>
                 </li>
                 <li className="flex justify-between">
-                  <span className="font-bold text-fixnix-darkpurple">Shipping Cost</span>
+                  <span className="font-bold text-fixnix-darkpurple">
+                    Shipping Cost
+                  </span>
                   <span>$0.00 USD</span>
                 </li>
                 <li className="flex justify-between">
-                  <span className="font-bold text-fixnix-darkpurple">Total</span>
-                  <span className="text-fixnix-lightpuple font-bold">$20.98 USD</span>
+                  <span className="font-bold text-fixnix-darkpurple">
+                    Total
+                  </span>
+                  <span className="text-fixnix-lightpuple font-bold">
+                    $20.98 USD
+                  </span>
                 </li>
               </ul>
 
               <div className="flex justify-end mt-6 space-x-4">
-                <Link href="#" className="px-6 py-3 text-white bg-fixnix-lightpurple hover:bg-fixnix-lightpurple">
+                <Link
+                  href="#"
+                  className="px-6 py-3 text-white bg-fixnix-lightpurple hover:bg-fixnix-lightpurple"
+                >
                   Update
                 </Link>
-                <Link href="/Checkout" className="px-6 py-3 text-white bg-fixnix-lightpurple hover:bg-fixnix-darkpurple">
+                <Link
+                  href="/Checkout"
+                  className="px-6 py-3 text-white bg-fixnix-lightpurple hover:bg-fixnix-darkpurple"
+                >
                   Checkout
                 </Link>
               </div>
@@ -97,9 +114,15 @@ export default function Home() {
 
           {/* Deals Section */}
           <div className="mt-10 p-6 bg-gray-100 rounded-lg">
-            <h2 className="text-2xl font-bold text-fixnix-darkpurple mb-4">Special Deals</h2>
-            <p className="text-[18px] text-fixnix-gray">Buy 2 items and get a 10% discount on your total purchase!</p>
-            <p className="text-[18px] text-fixnix-gray">Discount will be applied automatically at checkout.</p>
+            <h2 className="text-2xl font-bold text-fixnix-darkpurple mb-4">
+              Special Deals
+            </h2>
+            <p className="text-[18px] text-fixnix-gray">
+              Buy 2 items and get a 10% discount on your total purchase!
+            </p>
+            <p className="text-[18px] text-fixnix-gray">
+              Discount will be applied automatically at checkout.
+            </p>
           </div>
         </div>
       </section>

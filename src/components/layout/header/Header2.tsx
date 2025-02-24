@@ -49,17 +49,23 @@ const Header2: React.FC<Header2Props> = ({
               Welcome To Sufi Science Centre-Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
-            <div className="flex items-center justify-center py-2 px-4 bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300   space-x-1">
-      {/* Login Link */}
-      <Link href="/Login" className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple">
-        Login
-      </Link>
-      <span>/</span>
-      {/* Register Link */}
-      <Link href="/Register" className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple">
-        Register
-      </Link>
-    </div>
+              <div className="flex items-center justify-center py-2 px-4 bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300   space-x-1">
+                {/* Login Link */}
+                <Link
+                  href="/Login"
+                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple"
+                >
+                  Login
+                </Link>
+                <span>/</span>
+                {/* Register Link */}
+                <Link
+                  href="/Register"
+                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple"
+                >
+                  Register
+                </Link>
+              </div>
               <div className="flex space-x-3">
                 <Link
                   href="#"
@@ -109,17 +115,17 @@ const Header2: React.FC<Header2Props> = ({
                 </span>
               </div>
               <div className="flex items-center ml-auto">
-            <Link
-            href="/GetMembership"
-            className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
-             >
-            Get Membership
-          </Link>
+                <Link
+                  href="/GetMembership"
+                  className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
+                >
+                  Get Membership
+                </Link>
               </div>
-              
 
               <p className="italic text-gray-600 text-center responsive-tagline">
-                A Harmony of Knowledge and Inner Peace: The Next Generation Sufi Way Forward
+                A Harmony of Knowledge and Inner Peace: The Next Generation Sufi
+                Way Forward
               </p>
 
               {/* Mobile and Desktop Navigation */}
@@ -139,7 +145,6 @@ const Header2: React.FC<Header2Props> = ({
                   >
                     <i className="fas fa-shopping-cart"></i>
                   </Link> */}
-
                 </div>
 
                 {/* Search Icon */}
@@ -161,8 +166,8 @@ const Header2: React.FC<Header2Props> = ({
       </header>
       <StickyHeader />
 
-     {/* Sticky Header */}
-     {/* {isSticky && (
+      {/* Sticky Header */}
+      {/* {isSticky && (
   <div className="fixed top-0 left-0 w-full bg-white shadow-md z-[1200] transition-all duration-300 sm:hidden lg:hidden md:block xl:block">
     <div className="flex items-center justify-between text-[10px] p-4">
       <Link href="/">
@@ -191,8 +196,7 @@ const Header2: React.FC<Header2Props> = ({
   </div>
 )} */}
 
-
-<MobileMenu
+      <MobileMenu
         isSidebar={isMobileMenu}
         handleMobileMenu={handleMobileMenu}
         handleSidebar={handleSidebar || (() => {})}

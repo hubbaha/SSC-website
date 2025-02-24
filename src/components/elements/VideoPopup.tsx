@@ -1,15 +1,15 @@
-'use client'; // Ensure this component is rendered on the client-side
+"use client"; // Ensure this component is rendered on the client-side
 
-import { useState } from 'react';
-import dynamic from 'next/dynamic';
+import { useState } from "react";
+import dynamic from "next/dynamic";
 
 // Dynamically import ModalVideo to ensure it's only loaded on the client side
-const ModalVideo = dynamic(() => import('react-modal-video'), { ssr: false });
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 // Define types for the props
 interface VideoPopupProps {
-  style?: 0 | 1 | 2 | 3 | 4 | 5;   // Restrict style to specific values
-  text?: string;    // Optional text for style 2
+  style?: 0 | 1 | 2 | 3 | 4 | 5; // Restrict style to specific values
+  text?: string; // Optional text for style 2
 }
 
 export default function VideoPopup({ style, text }: VideoPopupProps) {
@@ -46,7 +46,7 @@ export default function VideoPopup({ style, text }: VideoPopupProps) {
           >
             <span className="play-icon flaticon-play" />
           </a>
-          <h6>{text || 'Latest Program Video'}</h6>
+          <h6>{text || "Latest Program Video"}</h6>
         </div>
       )}
 
@@ -84,28 +84,28 @@ export default function VideoPopup({ style, text }: VideoPopupProps) {
         isOpen={isOpen}
         videoId="vfhzo499OeA"
         onClose={() => setOpen(false)}
-        allowFullScreen={true}        // Add missing props
-        ratio="16:9"                 // Add ratio for video
-        animationSpeed={1}           // Add animation speed
+        allowFullScreen={true} // Add missing props
+        ratio="16:9" // Add ratio for video
+        animationSpeed={1} // Add animation speed
         classNames={{
-          modalVideoEffect: 'modal-video-effect',
-          modalVideo: 'modal-video',
-          modalVideoClose: 'modal-video-close',
-          modalVideoBody: 'modal-video-body',
-          modalVideoInner: 'modal-video-inner',
-          modalVideoIframeWrap: 'modal-video-movie-wrap',
-          modalVideoCloseBtn: 'modal-video-close-btn'
+          modalVideoEffect: "modal-video-effect",
+          modalVideo: "modal-video",
+          modalVideoClose: "modal-video-close",
+          modalVideoBody: "modal-video-body",
+          modalVideoInner: "modal-video-inner",
+          modalVideoIframeWrap: "modal-video-movie-wrap",
+          modalVideoCloseBtn: "modal-video-close-btn",
         }} // Set classNames as a valid string
         aria={{
-          openMessage: 'Video player opened',       // Set openMessage for accessibility
-          dismissBtnMessage: 'Close video player',  // Set dismissBtnMessage for accessibility
+          openMessage: "Video player opened", // Set openMessage for accessibility
+          dismissBtnMessage: "Close video player", // Set dismissBtnMessage for accessibility
         }}
         youtube={{
-          autoplay: 1,                // Enable autoplay
-          loop: 1,                    // Enable loop
-          controls: 1,                // Show controls
-          modestbranding: 1,          // Minimal branding
-          rel: 0,                     // Disable related videos
+          autoplay: 1, // Enable autoplay
+          loop: 1, // Enable loop
+          controls: 1, // Show controls
+          modestbranding: 1, // Minimal branding
+          rel: 0, // Disable related videos
         }}
       />
     </>

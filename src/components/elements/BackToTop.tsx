@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface BackToTopProps {
   scroll?: boolean; // Define the type of scroll prop (optional boolean)

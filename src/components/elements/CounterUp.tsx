@@ -1,6 +1,6 @@
-'use client';
-import { useEffect, useState } from 'react';
-import Counter from './Counter';
+"use client";
+import { useEffect, useState } from "react";
+import Counter from "./Counter";
 
 interface CounterUpProps {
   end: number;
@@ -10,7 +10,7 @@ export default function CounterUp({ end }: CounterUpProps) {
   const [inViewport, setInViewport] = useState(false);
 
   const handleScroll = () => {
-    const elements = document.getElementsByClassName('count-text');
+    const elements = document.getElementsByClassName("count-text");
     if (elements.length > 0) {
       const element = elements[0] as HTMLElement;
       const rect = element.getBoundingClientRect();
@@ -34,14 +34,14 @@ export default function CounterUp({ end }: CounterUpProps) {
 
   useEffect(() => {
     // Add scroll event listener
-    window.addEventListener('scroll', debouncedHandleScroll);
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     // Perform initial check if the element is in the viewport
     handleScroll();
 
     // Cleanup event listener on unmount
     return () => {
-      window.removeEventListener('scroll', debouncedHandleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, [debouncedHandleScroll]);
 

@@ -21,9 +21,11 @@ export default function StickyHeader() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isSticky ? "bg-fixnix-lightpurple shadow-lg py-3" : "bg-transparent py-5"}`}>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isSticky ? "bg-fixnix-lightpurple shadow-lg py-3" : "bg-transparent py-5"}`}
+    >
       <div className="max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl lg:mx-5 xl:mx-12 2xl:mx-[117px] flex items-center justify-start pl-4">
-      {/* Aligning everything to the left */}
+        {/* Aligning everything to the left */}
         {/* Logo */}
         <Link href="/">
           <Image
@@ -147,119 +149,253 @@ export default function StickyHeader() {
 
           {/* Teachings Dropdown */}
           <li className="relative group">
-            <Link href="#" className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
+            <Link
+              href="#"
+              className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
+            >
               YOUR JOURNEY
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
               <li className="mb-2">
-                <Link href="/BeginYourJourney" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Begin Your Journey</Link>
+                <Link
+                  href="/BeginYourJourney"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Begin Your Journey
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/CoreLearningPaths" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Core Learning Paths</Link>
+                <Link
+                  href="/CoreLearningPaths"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Core Learning Paths
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Growth&Development" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Growth & Development</Link>
+                <Link
+                  href="/Growth&Development"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Growth & Development
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Leadership&Teaching" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Leadership & Teaching</Link>
+                <Link
+                  href="/Leadership&Teaching"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Leadership & Teaching
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Community&Events" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Community & Events</Link>
+                <Link
+                  href="/Community&Events"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Community & Events
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Resources&Support" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Resources & Support</Link>
+                <Link
+                  href="/Resources&Support"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Resources & Support
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Programs & Events Dropdown */}
           <li className="relative group">
-            <Link href="#" className="text-white text-[15px] lg:text-[10px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
+            <Link
+              href="#"
+              className="text-white text-[15px] lg:text-[10px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
+            >
               SUFI SCIENCE EXPLORER
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px] hidden group-hover:block">
               <li className="mb-2">
-                <Link href="/FoundationalSciences" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Foundational Sciences</Link>
+                <Link
+                  href="/FoundationalSciences"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Foundational Sciences
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Conferences" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Mind & Consciousness</Link>
+                <Link
+                  href="/Mind&Consciousness"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Mind & Consciousness
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/VirtualOffering" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Nature & Environment</Link>
+                <Link
+                  href="/Nature&Environment"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Nature & Environment
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/About" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Philosophy & Ethics</Link>
+                <Link
+                  href="/About"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Philosophy & Ethics
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/ScientificExploration" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Human Sciences</Link>
+                <Link
+                  href="/ScientificExploration"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Human Sciences
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/EthicalPractices" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Spiritual Technologies</Link>
+                <Link
+                  href="/EthicalPractices"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Spiritual Technologies
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Knowledge Hub Dropdown */}
           <li className="relative group">
-            <Link href="#" className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
+            <Link
+              href="#"
+              className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
+            >
               LEARNING CENTER
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
               <li className="mb-2">
-                <Link href="/Research&Publications" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Research & Publications</Link>
+                <Link
+                  href="/Research&Publications"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Research & Publications
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/MultimediaLibrary" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Multimedia Library</Link>
+                <Link
+                  href="/MultimediaLibrary"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Multimedia Library
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/DigitalBooksSection" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Digital Books Section</Link>
+                <Link
+                  href="/DigitalBooksSection"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Digital Books Section
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Sufi Gifts Dropdown */}
           <li className="relative group">
-            <Link href="#" className="text-white font-bold text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] hover:text-fixnix-darkpurple">
+            <Link
+              href="#"
+              className="text-white font-bold text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] hover:text-fixnix-darkpurple"
+            >
               SACRED GIFT SHOP
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
-              
               <li className="mb-2">
-                <Link href="/Art&WallDecor" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Art & Wall Decor</Link>
+                <Link
+                  href="/Art&WallDecor"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Art & Wall Decor
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Jewelry&Accessories" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Jewelry & Accessories</Link>
+                <Link
+                  href="/Jewelry&Accessories"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Jewelry & Accessories
+                </Link>
               </li>
-              
+
               <li className="mb-2">
-                <Link href="/Home&Living" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Home & Living</Link>
+                <Link
+                  href="/Home&Living"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Home & Living
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Fashion&Apparel" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Fashion & Apparel</Link>
+                <Link
+                  href="/Fashion&Apparel"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Fashion & Apparel
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Wellness&Meditation" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Wellness & Meditation</Link>
+                <Link
+                  href="/Wellness&Meditation"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Wellness & Meditation
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Music&Sound" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Music & Sound</Link>
+                <Link
+                  href="/Music&Sound"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Music & Sound
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Support Us Dropdown */}
           <li className="relative group">
-            <Link href="#" className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple">
+            <Link
+              href="#"
+              className="text-white text-[15px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-bold hover:text-fixnix-darkpurple"
+            >
               SUPPORT US
             </Link>
             <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[400px] rounded-e-md overflow-y-auto scrollbar-thin scrollbar-thumb-fixnix-darkpurple scrollbar-track-fixnix-lightpuple hidden group-hover:block">
               <li className="mb-2">
-                <Link href="/WaysToGive" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Ways to Give</Link>
+                <Link
+                  href="/WaysToGive"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Ways to Give
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/VolunteerWithUs" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Volunteer With Us</Link>
+                <Link
+                  href="/VolunteerWithUs"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Volunteer With Us
+                </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Collaborations" className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all">Collaborations</Link>
+                <Link
+                  href="/Collaborations"
+                  className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+                >
+                  Collaborations
+                </Link>
               </li>
             </ul>
           </li>

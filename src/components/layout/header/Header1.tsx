@@ -18,7 +18,7 @@ const Header1: React.FC<Header1Props> = ({
   handleMobileMenu,
   isMobileMenu = false, // Default value is false if not passed
   isSidebar = false, // Default value is false if not passed
-  handleSidebar = () => {} // Default to an empty function if not passed
+  handleSidebar = () => {}, // Default to an empty function if not passed
 }) => {
   return (
     <>
@@ -28,11 +28,17 @@ const Header1: React.FC<Header1Props> = ({
             <div className="main-menu__wrapper-inner">
               <div className="main-menu__left">
                 <div className="main-menu__logo">
-                  <Link href="/"><img src="assets/images/resources/logo-1.png" alt="Logo" /></Link>
+                  <Link href="/">
+                    <img src="assets/images/resources/logo-1.png" alt="Logo" />
+                  </Link>
                 </div>
               </div>
               <div className="main-menu__main-menu-box">
-                <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}>
+                <Link
+                  href="#"
+                  className="mobile-nav__toggler"
+                  onClick={handleMobileMenu}
+                >
                   <i className="fa fa-bars"></i>
                 </Link>
                 <Menu />
@@ -64,20 +70,37 @@ const Header1: React.FC<Header1Props> = ({
       </header>
 
       {/* MobileMenu only rendered if isMobileMenu is true */}
-      {isMobileMenu && <MobileMenu handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} />}
+      {isMobileMenu && (
+        <MobileMenu
+          handleMobileMenu={handleMobileMenu}
+          isSidebar={isSidebar}
+          handleSidebar={handleSidebar}
+        />
+      )}
 
-      <div className={`stricky-header stricked-menu main-menu ${scroll ? "stricky-fixed" : ""}`}>
+      <div
+        className={`stricky-header stricked-menu main-menu ${scroll ? "stricky-fixed" : ""}`}
+      >
         <div className="sticky-header__content">
           <nav className="main-menu">
             <div className="main-menu__wrapper">
               <div className="main-menu__wrapper-inner">
                 <div className="main-menu__left">
                   <div className="main-menu__logo">
-                    <Link href="/"><img src="assets/images/resources/logo-1.png" alt="Logo" /></Link>
+                    <Link href="/">
+                      <img
+                        src="assets/images/resources/logo-1.png"
+                        alt="Logo"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="main-menu__main-menu-box">
-                  <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}>
+                  <Link
+                    href="#"
+                    className="mobile-nav__toggler"
+                    onClick={handleMobileMenu}
+                  >
                     <i className="fa fa-bars"></i>
                   </Link>
                   <Menu />
@@ -86,7 +109,11 @@ const Header1: React.FC<Header1Props> = ({
                   <div className="main-menu__search-cart-call-box">
                     <div className="main-menu__search-cart-box">
                       <div className="main-menu__search-box">
-                        <Link href="#" className="main-menu__search search-toggler icon-search-interface-symbol" onClick={handlePopup}></Link>
+                        <Link
+                          href="#"
+                          className="main-menu__search search-toggler icon-search-interface-symbol"
+                          onClick={handlePopup}
+                        ></Link>
                       </div>
                       {/* <div className="main-menu__cart-box">
                         <Link href="Cart" className="main-menu__cart fas fa-shopping-cart"></Link>

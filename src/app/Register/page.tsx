@@ -42,9 +42,7 @@ export default function Register() {
             className="w-full p-2 border rounded"
           />
           {errors.name && (
-            <p className="text-red-500 text-sm">
-              {errors.name.message}
-            </p>
+            <p className="text-red-500 text-sm">{errors.name.message}</p>
           )}
 
           {/* Email Field */}
@@ -55,9 +53,7 @@ export default function Register() {
             className="w-full p-2 border rounded"
           />
           {errors.email && (
-            <p className="text-red-500 text-sm">
-              {errors.email.message}
-            </p>
+            <p className="text-red-500 text-sm">{errors.email.message}</p>
           )}
 
           {/* Password Field */}
@@ -71,9 +67,7 @@ export default function Register() {
             className="w-full p-2 border rounded"
           />
           {errors.password && (
-            <p className="text-red-500 text-sm">
-              {errors.password.message}
-            </p>
+            <p className="text-red-500 text-sm">{errors.password.message}</p>
           )}
 
           {/* Submit Button */}

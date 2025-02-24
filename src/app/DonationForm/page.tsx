@@ -50,37 +50,27 @@ export default function DonationForm() {
     setDonationPool((prev: string[]) =>
       prev.includes(pool)
         ? prev.filter((item) => item !== pool)
-        : [...prev, pool]
+        : [...prev, pool],
     );
   };
 
-  const handlePersonalInfoChange = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const handlePersonalInfoChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPersonalInfo({ ...personalInfo, [e.target.name]: e.target.value });
   };
 
-  const handleDonationTypeChange = (
-    e: ChangeEvent<HTMLSelectElement>
-  ) => {
+  const handleDonationTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setDonationType(e.target.value);
   };
 
-  const handleAmountChange = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
     setAmount(e.target.value);
   };
 
-  const handleCustomAmountChange = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleCustomAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
 
-  const handlePaymentMethodChange = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const handlePaymentMethodChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPaymentMethod(e.target.value);
   };
 
@@ -97,10 +87,6 @@ export default function DonationForm() {
       </div>
 
       <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg my-4 rounded-xl">
-        
-
-        
-
         {/* Donation Amount Section */}
         <div className="mb-4">
           <label className="block text-fixnix-lightpurple text-xl font-bold">
@@ -146,9 +132,15 @@ export default function DonationForm() {
             <option value="Monthly">Monthly</option>
             <option value="GeneralDonations">General Donations</option>
             <option value="SponsorshipDonations">Sponsorship Donations</option>
-            <option value="PatronMembershipContributions">Patron Membership Contributions</option>
-            <option value="Educational&ScholarshipDonations">Educational & Scholarship Donations</option>
-            <option value="Legacy&PlannedGiving">Legacy & Planned Giving</option>
+            <option value="PatronMembershipContributions">
+              Patron Membership Contributions
+            </option>
+            <option value="Educational&ScholarshipDonations">
+              Educational & Scholarship Donations
+            </option>
+            <option value="Legacy&PlannedGiving">
+              Legacy & Planned Giving
+            </option>
             <option value="Recurring">Recurring</option>
           </select>
         </div>
@@ -174,7 +166,9 @@ export default function DonationForm() {
           </div>
         </div>
         {/* Personal Information Section */}
-        <h3 className="text-xl text-fixnix-lightpurple font-semibold mb-4">Personal Information</h3>
+        <h3 className="text-xl text-fixnix-lightpurple font-semibold mb-4">
+          Personal Information
+        </h3>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <input
             type="text"

@@ -8,11 +8,7 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isSidebar, handleSidebar }) => {
-  return (
-    <>
-     
-    </>
-  );
+  return <></>;
 };
 
 export default Sidebar;
