@@ -78,7 +78,7 @@ export default function Home() {
                         Sufism and Ecological Wisdom
                         </h3>
                         <p className="about-one__points-subtitle">
-                          Strengthening the spiritual bonds between us all
+                         Environment where both humanity and earth thrive.
                         </p>
                       </div>
                     </div>
