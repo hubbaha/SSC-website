@@ -780,12 +780,13 @@ ul {
     width: 200px;
   }
   .responsive-website-name {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .responsive-tagline {
-    font-size: 2rem;
-    margin-top: -95px;
-    margin-left: 210px;
+    font-size: 1.3rem;
+    margin-top: -70px;
+    margin-left:210px;
+    padding-right: 380px
   }
 }
 

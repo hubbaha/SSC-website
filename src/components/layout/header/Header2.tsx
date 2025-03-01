@@ -45,8 +45,8 @@ const Header2: React.FC<Header2Props> = ({
         {/* Top Bar */}
         <div className="bg-fixnix-darkpurple py-2 lg:block hidden">
           <div className="container mx-auto flex items-center justify-between px-4">
-            <p className="text-white text-base font-sans lg:ml-28 xl:ml-10 2xl:-ml-[440px]">
-              Welcome To Sufi Science Centre-Kashmir Chapter
+            <p className="text-white text-base font-bold font-sans lg:ml-28 xl:ml-10 2xl:-ml-[440px]">
+              Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
               <div className="flex items-center justify-center py-2 px-4 bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300   space-x-1">
@@ -100,7 +100,7 @@ const Header2: React.FC<Header2Props> = ({
         <nav className="bg-fixnix-white z-[1200]">
           <div className="relative z-10">
             <div className="flex flex-wrap items-center justify-between p-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-5">
                 <Link href="/">
                   <Image
                     src="/assets/images/resources/logo-3.png"
@@ -111,20 +111,20 @@ const Header2: React.FC<Header2Props> = ({
                   />
                 </Link>
                 <span className="text-fixnix-darkpurple font-bold text-[40px] leading-none font-serif whitespace-nowrap responsive-website-name">
-                  Sufi Science Centre-Kashmir Chapter
+                  Sufi Science Centre
                 </span>
               </div>
-              <div className="flex items-center ml-auto">
+              <div className="flex items-center  ml-auto">
                 <Link
                   href="/GetMembership"
-                  className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10 whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
+                  className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10  whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
                 >
                   Get Membership
                 </Link>
                 
               </div>
 
-              <p className="italic text-gray-600 text-center responsive-tagline">
+              <p className="italic text-gray-600  responsive-tagline">
                 A Harmony of Knowledge and Inner Peace: The Next Generation Sufi
                 Way Forward
               </p>
