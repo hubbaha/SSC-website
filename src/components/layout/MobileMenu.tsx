@@ -323,7 +323,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/OurWork&Practices"
+                      href="/Philosophy&Ethics"
                       className="text-white text-sm font-medium"
                     >
                       Philosophy & Ethics

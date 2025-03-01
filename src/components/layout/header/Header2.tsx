@@ -121,6 +121,7 @@ const Header2: React.FC<Header2Props> = ({
                 >
                   Get Membership
                 </Link>
+                
               </div>
 
               <p className="italic text-gray-600 text-center responsive-tagline">

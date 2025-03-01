@@ -298,6 +298,46 @@ ul {
 .thm-btn:hover:before {
   top: -40%;
 }
+.thm-btn2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none !important;
+  background-color: var(--fixnix-white);
+  color: var(--fixnix-white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 43px 14px;
+  border-radius: 4px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.thm-btn2:before {
+  transition-duration: 800ms;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--fixnix-darkpurple);
+}
+
+.thm-btn2:hover {
+  color: var(--fixnix-white);
+}
+
+.thm-btn2:hover:before {
+  top: -40%;
+}
 
 .section-title {
   position: relative;

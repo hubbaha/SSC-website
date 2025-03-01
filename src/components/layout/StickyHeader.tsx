@@ -242,7 +242,7 @@ export default function StickyHeader() {
               </li>
               <li className="mb-2">
                 <Link
-                  href="/About"
+                  href="/Philosophy&Ethics"
                   className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
                 >
                   Philosophy & Ethics

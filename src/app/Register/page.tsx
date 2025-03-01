@@ -35,40 +35,54 @@ export default function Register() {
           Register SSC
         </h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 mt-4">
-          {/* Full Name Field */}
-          <input
-            {...register("name", { required: "Full name is required" })}
-            placeholder="Full Name"
-            className="w-full p-2 border rounded"
-          />
-          {errors.name && (
-            <p className="text-red-500 text-sm">{errors.name.message}</p>
-          )}
+  {/* Full Name Field */}
+  <label className="relative block">
+    <input
+      {...register("name", { required: "Full name is required" })}
+      type="text"
+      placeholder=" "
+      className="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none peer"
+    />
+    <span className="absolute left-2 top-2 text-gray-500 transition-opacity transform scale-100 opacity-50 peer-placeholder-shown:opacity-50 peer-placeholder-shown:scale-100 peer-focus:opacity-100 peer-focus:scale-75 peer-focus:-translate-y-5 peer-focus:-translate-x-1 peer-focus:text-fixnix-lightpurple peer-focus:bg-white">
+      Full Name
+    </span>
+  </label>
+  {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
 
-          {/* Email Field */}
-          <input
-            {...register("email", { required: "Email is required" })}
-            type="email"
-            placeholder="Email"
-            className="w-full p-2 border rounded"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email.message}</p>
-          )}
+  {/* Email Field */}
+  <label className="relative block">
+    <input
+      {...register("email", { required: "Email is required" })}
+      type="email"
+      placeholder=" "
+      className="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none peer"
+    />
+    <span className="absolute left-2 top-2 text-gray-500 transition-opacity transform scale-100 opacity-50 peer-placeholder-shown:opacity-50 peer-placeholder-shown:scale-100 peer-focus:opacity-100 peer-focus:scale-75 peer-focus:-translate-y-5 peer-focus:-translate-x-1 peer-focus:text-fixnix-lightpurple peer-focus:bg-white">
+      Email
+    </span>
+  </label>
+  {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
 
-          {/* Password Field */}
-          <input
-            {...register("password", {
-              required: "Password is required",
-              minLength: { value: 6, message: "At least 6 characters" },
-            })}
-            type="password"
-            placeholder="Password"
-            className="w-full p-2 border rounded"
-          />
-          {errors.password && (
-            <p className="text-red-500 text-sm">{errors.password.message}</p>
-          )}
+  {/* Password Field */}
+  <label className="relative block">
+    <input
+      {...register("password", {
+        required: "Password is required",
+        minLength: { value: 6, message: "At least 6 characters" },
+      })}
+      type="password"
+      placeholder=" "
+      className="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none peer"
+    />
+    <span className="absolute left-2 top-2 text-gray-500 transition-opacity transform scale-100 opacity-50 peer-placeholder-shown:opacity-50 peer-placeholder-shown:scale-100 peer-focus:opacity-100 peer-focus:scale-75 peer-focus:-translate-y-5 peer-focus:-translate-x-1 peer-focus:text-fixnix-lightpurple peer-focus:bg-white">
+      Password
+    </span>
+  </label>
+  {errors.password && <p className="text-red-500 text-sm">{errors.password.message}</p>}
+
+
+
+
 
           {/* Submit Button */}
           <button

@@ -424,7 +424,7 @@ export default function Home() {
 
                   <div className="payment_button mt-[20px]">
                     <Link href="/thankyou" legacyBehavior>
-                      <a className="btn text-[#ffffff] text-[16px] font-medium rounded-full py-[12px] px-[30px] bg-fixnix-lightpurple hover:bg-fixnix-darkpurple w-full">
+                      <a className="btn text-[#ffffff] text-[16px] font-medium rounded-full py-[12px] px-[30px] bg-fixnix-lightpurple hover:bg-fixnix-darkpurple hover:text-white w-full">
                         Proceed to checkout
                       </a>
                     </Link>
