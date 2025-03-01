@@ -2,11 +2,48 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
+const JewelrySlides = [
+  {
+    subTitle: "Elegance Rooted in Spiritual Tradition",
+    title: "Timeless Sufi-Inspired<br/> Jewelry & Accessories",
+    text: " Adorn yourself with handcrafted jewelry and accessories inspired by Kashmiri Sufi<br/> artistry, blending tradition, beauty, and spiritual significance.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Wear the Essence of Spiritual Beauty",
+    title: "Handcrafted Adornments <br/>with Mystical Meaning",
+    text: "Explore unique Sufi-inspired jewelry and accessories that carry the<br/> essence of devotion, wisdom, and artistic heritage from Kashmir.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Symbols in Every Design",
+    title: "Jewelry That Reflects <br/>Your Inner Light",
+    text: "Discover intricately designed jewelry infused with spiritual symbolism, celebrating the harmony<br/> between craftsmanship and Kashmiri Sufi traditions.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Crafted with Devotion, Worn with Grace",
+    title: "Spiritual Elegance in<br/> Every Detail",
+    text: "Our collection of Kashmiri Sufi-inspired accessories brings divine beauty<br/> and soulful artistry to your personal style and presence.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Adornment Inspired by Divine Wisdom",
+    title: "Unique Jewelry for the <br/>Soulful Seeker",
+    text: " Each piece tells a story—wear jewelry that embodies love, devotion,<br/> and the timeless artistry of Kashmiri Sufi traditions.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={JewelrySlides}/>
       {/* Page Title */}
       <section className="team-top text-left-mobile">
         <div className="container mx-auto px-4">

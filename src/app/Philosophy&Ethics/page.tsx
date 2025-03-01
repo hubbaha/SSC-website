@@ -4,6 +4,43 @@ import Link from "next/link";
 import Image from "next/image";
 import { SetStateAction, useState } from "react";
 import Banner from "@/components/sections/home3/Banner";
+const PhilosophySlides = [
+  {
+    subTitle: "Wisdom, Morality, Reflection, Truth, Harmony",
+    title: "Unveiling the Ethical<br/> Foundations of Sufism",
+    text: " Explore the philosophical and ethical teachings of Sufism, where spirituality and morality<br/> unite to guide a life of integrity and purpose.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "The Path of Virtue and Wisdom",
+    title: "Sufi Ethics:<br/> A Code for Life",
+    text: "Discover the timeless ethical principles of Kashmiri Sufism, emphasizing love,<br/> justice, humility, and the pursuit of higher truth.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Conscious Living Through Sufi Wisdom",
+    title: "Philosophy Rooted in<br/> Spiritual Consciousness",
+    text: "Sufi thought blends deep philosophical inquiry with moral clarity, guiding seekers <br/>toward ethical action, compassion, and enlightenment.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Truth, Justice, Compassion, Integrity, Honor",
+    title: "  Ethical Teachings for<br/> a Balanced Life",
+    text: " Learn how Sufi philosophy shapes ethical behavior, offering wisdom on justice,<br/> responsibility, and self-awareness in a complex world.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Living Ethics, Inspired by Sufism",
+    title: " Spiritual Morality in <br/>Kashmiri Sufi Thought",
+    text: " Sufi ethics encourage a life of sincerity, kindness, and wisdom,<br/> fostering harmony between self, society, and the divine.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index: SetStateAction<number>) => {
@@ -13,7 +50,7 @@ export default function Home() {
     <>
       <Layout headerStyle={2} footerStyle={1}>
         {/*Core Services Start*/}
-        <Banner></Banner>
+         <Banner slides={PhilosophySlides}/>
         <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
           <div className="absolute top-[10px] left-0 services-one-shape-1">
             <img src="assets/images/shapes/services-one-shape-1.png" alt="" />

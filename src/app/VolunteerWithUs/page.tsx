@@ -5,6 +5,43 @@ import Link from "next/link";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+const VolunteerSlides = [
+  {
+    subTitle: "Serve, Inspire, Grow, Connect, Transform",
+    title: " Join Us in <br/>Preserving Sufi Wisdom",
+    text: "Become a part of our mission—volunteer your time and skills to help sustain <br/>Kashmiri Sufi traditions and spiritual education.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Give Your Time, Make a Difference",
+    title: " Empower Communities <br/>Through Meaningful Service",
+    text: " Join hands with us to support Sufi heritage, engage in cultural initiatives,<br/> and inspire seekers on the path of wisdom.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Lend a Hand, Uplift Spirits  ",
+    title: "Be a Part of <br/>Something Greater",
+    text: " Your volunteer work helps spread Sufi knowledge, preserve sacred traditions,<br/> and foster a community rooted in love and enlightenment.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Together We Create Lasting Impact",
+    title: "Volunteer and Serve <br/>with Purpose",
+    text: "Whether in research, events, or community engagement, your efforts<br/> help keep the wisdom of Sufism alive and accessible to all.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Heartfelt Service, Spiritual Fulfillment, Growth",
+    title: "Offer Your Time,<br/> Share Your Light",
+    text: "Support our mission by volunteering—contribute your skills, spread awareness,<br/> and help nurture a thriving Sufi-inspired community.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -34,7 +71,7 @@ export default function Home() {
     <>
       <Layout headerStyle={2} footerStyle={1}>
         {/*Book Service Start*/}
-        <Banner></Banner>
+       <Banner slides={VolunteerSlides}/>
         <section className="relative block bg-[var(--fixnix-primary)] py-[120px] pb-[90px] z-[1]">
           <div
             className="absolute inset-0 bg-no-repeat bg-center bg-cover -z-[1]"

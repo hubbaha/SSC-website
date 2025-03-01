@@ -7,13 +7,50 @@ import Banner from "../../components/sections/home3/Banner";
 import Welcome from "../../components/sections/home3/Welcome";
 import About from "@/components/sections/home2/About";
 import Image from "next/image";
+const MindSlides = [
+  {
+    subTitle: "Awaken the Mind, Elevate Consciousness",
+    title: "Exploring the Depths of <br/>Inner Awareness",
+    text: " Unlock the mysteries of the mind and consciousness through Sufi wisdom,<br/> blending spirituality, psychology, and higher states of awareness.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Beyond Thought, Into Spiritual Awakening",
+    title: "The Science of<br/> Mindful Awareness",
+    text: "Sufi teachings reveal the connection between mind, soul, and consciousness,<br/> guiding seekers toward inner balance and enlightenment.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Consciousness, Reflection, Enlightenment, Truth, Growth",
+    title: "The Path to <br/>Self-Realization Begins",
+    text: "Discover the power of the mind in shaping reality, expanding awareness, and attaining<br/> spiritual clarity through Kashmiri Sufi insights.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Inner Peace Through Higher Awareness",
+    title: " Unraveling the Mysteries <br/>of the Mind",
+    text: " Explore the Sufi understanding of consciousness, where thought, meditation, <br/>and divine connection lead to profound self-awareness and wisdom.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Mind, Soul, Awareness, Truth, Transcendence",
+    title: " Journey Into Consciousness <br/>and Self-Discovery",
+    text: " Through Kashmiri Sufi wisdom, explore the layers of consciousness, unlocking the mind’s potential for <br/>transformation and spiritual enlightenment.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner />
+         <Banner slides={MindSlides}/>
 
         {/* <Welcome /> */}
         <section className="relative block py-[80px] md:py-[100px] lg:py-[120px] z-[1]">

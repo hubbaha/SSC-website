@@ -7,6 +7,43 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ModalVideo from "react-modal-video";
 import Banner from "@/components/sections/home3/Banner";
+const ScienceSlides = [
+  {
+    subTitle: "Nurture Wisdom, Evolve Spiritually, Transform",
+    title: "Unlock Your Spiritual <br/>Potential and Growth",
+    text: " Embrace personal and spiritual growth through Kashmiri Sufi teachings,<br/> fostering wisdom, resilience, and self-discovery for a fulfilled life.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Spiritual Awakening, Lifelong Learning, Inner Strength",
+    title: "Elevate Your Mind, <br/>Heart, and Soul",
+    text: "Guided by Sufi principles, embark on a journey of self-improvement,<br/> wisdom, and transformation to achieve true inner peace and fulfillment.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Learn, Reflect, Flourish, Empower, Inspire",
+    title: " Cultivating Spiritual Growth <br/>Through Sufi Wisdom",
+    text: "Deepen your connection to Sufi teachings, unlocking the strength, clarity, <br/>and purpose needed for continuous growth and meaningful transformation.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Knowledge, Devotion, Progress, Purpose, Fulfillment",
+    title: "A Transformative Path<br/> to Self-Realization",
+    text: "Harness the wisdom of Kashmiri Sufism to evolve spiritually, <br/>refine your character, and develop a profound sense of purpose in life.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Expand Consciousness, Deepen Inner Awareness",
+    title: "Journey Toward Lasting <br/>Personal & Spiritual Growth",
+    text: " Step into a transformative journey guided by Kashmiri Sufi wisdom, nurturing your<br/> mind, soul, and spirit for a fulfilling life.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 1,
@@ -55,7 +92,7 @@ export default function Home() {
     <>
       <Layout headerStyle={2} footerStyle={1}>
         {/*Core Services Start*/}
-        <Banner></Banner>
+        <Banner slides={ScienceSlides}/>
         <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
           <div className="absolute top-[10px] left-0 services-one-shape-1">
             <img src="assets/images/shapes/services-one-shape-1.png" alt="" />

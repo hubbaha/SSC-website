@@ -5,12 +5,48 @@ import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
 import { useState } from "react";
-
+const NatureSlides = [
+  {
+    subTitle: "Harmony Between Spirit and Nature",
+    title: "Exploring the Sacred<br/> Balance of Life",
+    text: " Discover the Sufi perspective on nature, where spiritual wisdom guides environmental consciousness, sustainability,<br/> and respect for the natural world.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Nature Reflects the Divine Essence",
+    title: "The Spiritual Connection <br/>to the Earth",
+    text: "Sufism teaches that nature is a sacred mirror of existence, guiding us toward<br/> balance, gratitude, and ecological responsibility.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Nature, Wisdom, Balance, Reflection, Unity",
+    title: "Embracing Ecology Through <br/>Sufi Teachings",
+    text: "Learn how Kashmiri Sufi traditions encourage deep environmental awareness, <br/>inspiring sustainable living in harmony with the natural world.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Earth, Sacred Responsibility, Sacred Life",
+    title: "  Sufi Wisdom for<br/> Environmental Sustainability",
+    text: " Explore how Sufi philosophy fosters an ethical relationship with nature, promoting conservation,<br/> mindfulness, and respect for all living beings.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "The Divine Language of Nature",
+    title: "Spiritual Ecology in <br/>Kashmiri Sufism",
+    text: " Nature is a gateway to divine wisdom—discover how Sufism <br/>connects spirituality with environmental responsibility for a sustainable future.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+       <Banner slides={NatureSlides}/>
 
       <section className="about-one">
         <div

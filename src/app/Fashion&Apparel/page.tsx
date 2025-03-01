@@ -2,11 +2,48 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
+const FashionSlides = [
+  {
+    subTitle: "Elegance Woven with Spiritual Essence",
+    title: " Timeless Sufi-Inspired<br/> Fashion & Apparel",
+    text: " Discover handcrafted clothing inspired by Kashmiri Sufi traditions, blending heritage,<br/> artistry, and spirituality into every stitch.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Wear the Spirit of Tradition",
+    title: " Sufi-Inspired Attire<br/> for Every Occasion",
+    text: "Explore exquisite garments infused with cultural symbolism and crafted with<br/> devotion, reflecting the grace of Kashmiri Sufi heritage.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Artistry, Culture, Spirituality in Fashion",
+    title: " Handcrafted Apparel Rooted<br/> in Kashmiri Tradition",
+    text: "  Adorn yourself with beautifully designed garments that embody the <br/>elegance, wisdom, and cultural depth of Kashmiri Sufi traditions.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Fashion That Reflects Inner Harmony",
+    title: "Experience the Beauty<br/> of Sufi Elegance",
+    text: "From flowing robes to intricate patterns, embrace a fashion line that<br/> fuses spirituality, tradition, and contemporary style.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Graceful Attire, Inspired by Spirituality",
+    title: "Traditional Textiles with<br/> a Sacred Touch",
+    text: "Adorn yourself with beautifully designed garments that embody the elegance, <br/>wisdom, and cultural depth of Kashmiri Sufi traditions.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={FashionSlides}/>
       {/* Page Title */}
       <section className="team-top text-left-mobile">
         <div className="container mx-auto px-4">

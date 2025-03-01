@@ -6,13 +6,49 @@ import Layout from "../../components/layout/Layout";
 import Banner from "../../components/sections/home3/Banner";
 import Welcome from "../../components/sections/home3/Welcome";
 import About from "@/components/sections/home2/About";
-
+const BooksSlides = [
+  {
+    subTitle: "Sacred Texts, Anytime, Anywhere",
+    title: "Discover Sufi Wisdom <br/>in Digital Books",
+    text: " Access an extensive collection of Sufi literature, manuscripts, and teachings <br/>in digital format, bringing centuries of wisdom to your fingertips.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Timeless Knowledge in Digital Form",
+    title: "A Treasure of Sufi<br/> Literature Online",
+    text: "Explore rare and contemporary Sufi texts, offering deep insights into<br/> spirituality, philosophy, and the mystical traditions of Kashmiri Sufism.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Read, Reflect, Learn, Grow, Transform",
+    title: " The Gateway to Sufi<br/> Knowledge Online",
+    text: "Enhance your spiritual journey with a curated selection of digital books, <br/>bridging Sufi heritage with modern understanding.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Wisdom Preserved, Digitally Accessible",
+    title: " Unlock the Mystical <br/>World of Sufism",
+    text: "Explore centuries of Sufi philosophy, poetry, and teachings in a vast digital<br/> library designed for seekers of truth and enlightenment.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "A Digital Library of Enlightenment",
+    title: "Sufi Teachings at<br/> Your Fingertips",
+    text: " Dive into a rich collection of sacred Sufi writings, available in<br/> digital format for convenient access and lifelong learning.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner />
+        <Banner slides={BooksSlides}/>
 
         {/* <Welcome /> */}
         <section className="relative block py-[80px] md:py-[100px] lg:py-[120px] z-[1]">

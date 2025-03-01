@@ -5,12 +5,50 @@ import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
 import { useState } from "react";
+const WaysSlides = [
+  {
+    subTitle: "Give with Purpose, Transform Lives",
+    title: " Support Sufi Knowledge<br/> & Spiritual Growth",
+    text: "Your generosity helps preserve Kashmiri Sufi traditions, fund research,<br/> and provide spiritual education to seekers worldwide.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Empower, Uplift, Sustain, Preserve, Share",
+    title: " Make an Impact with<br/> Your Contribution",
+    text: " Support our mission by donating, sponsoring projects, or contributing resources<br/> to keep the wisdom of Sufism alive for future generations.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Give from the Heart, Inspire Change  ",
+    title: "Your Support Fuels<br/> Spiritual Education",
+    text: " Join hands in preserving Sufi wisdom by supporting initiatives that <br/>spread knowledge, foster community, and sustain sacred teachings.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sustaining Wisdom, One Gift at a Time",
+    title: "Donate to Keep Sufi<br/> Teachings Alive",
+    text: "Every contribution strengthens our work in research, learning, and community<br/> engagement—helping souls connect with timeless Sufi wisdom.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Preserve, Educate, Inspire, Give, Grow",
+    title: "Support Sufi Science for<br/> Future Generations",
+    text: "Be part of a movement that nurtures spiritual enlightenment, preserves traditions, <br/>and fosters a community of seekers and scholars.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
+
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+       <Banner slides={WaysSlides}/>
 
       <section className="about-one">
         <div

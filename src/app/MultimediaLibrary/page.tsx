@@ -2,11 +2,47 @@ import Layout from "@/components/layout/Layout";
 import Whychoose from "@/components/sections/home2/Whychoose";
 import Banner from "@/components/sections/home3/Banner";
 import Link from "next/link";
-
+const MultimediaSlides = [
+  {
+    subTitle: "Experience Wisdom Through Digital Learning",
+    title: "Explore Sufi Knowledge in<br/> Multimedia Form",
+    text: "  Access a vast collection of videos, audio lectures, and<br/> visual archives that bring Kashmiri Sufi teachings to life.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sufi Teachings, Now at Your Fingertips",
+    title: "A Digital Hub for<br/> Spiritual Learning",
+    text: "Engage with immersive multimedia content, including documentaries, podcasts,<br/> and interactive experiences inspired by Kashmiri Sufism.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Listen, Watch, Reflect, Learn, Grow",
+    title: "Unlock the Power<br/> of Visual Learning",
+    text: " Explore rare Sufi manuscripts, teachings, and spiritual insights through <br/>our rich multimedia library designed for seekers worldwide.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Wisdom Preserved in Sound and Sight",
+    title: "  Digital Archives of <br/>Sufi Teachings",
+    text: " Discover a multimedia journey through Kashmiri Sufism,<br/> where knowledge is shared through film, music, spoken word, and imagery.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Spiritual Learning in Every Formate",
+    title: "Enlightenment Through <br/>Digital Sufi Resources",
+    text: " Engage with sacred Sufi wisdom through our extensive collection of digital books,<br/> recorded lectures, and audiovisual storytelling.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={MultimediaSlides}/>
       {/* Blog Two Start */}
       <section className="relative block py-[120px] text-left-mobile">
         <div className="container mx-auto">

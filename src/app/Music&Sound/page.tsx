@@ -3,10 +3,48 @@ import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
 
+const MusicSlides = [
+  {
+    subTitle: "Melodies That Elevate the Soul",
+    title: " Experience the Rhythm <br/>of Sufi Devotion",
+    text: " Immerse yourself in the mystical sounds of Sufi music, where divine melodies and<br/> sacred rhythms inspire peace and enlightenment.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Sounds, Spiritual Awakening, Harmony",
+    title: " Timeless Sufi Music<br/> for Inner Peace",
+    text: "Explore a curated collection of Sufi chants, devotional songs, and healing soundscapes<br/> designed to deepen your spiritual journey.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Echoes of Devotion and Love",
+    title: "Mystical Sufi Soundscapes <br/>for the Soul",
+    text: " Let the hypnotic rhythms of Kashmiri Sufi music transport you <br/>into a realm of divine connection and meditative bliss.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Music That Awakens the Heart",
+    title: "Discover the Spiritual<br/> Power of Sound",
+    text: "From traditional Qawwali to meditative instrumental pieces, our Sufi music collection <br/>fosters serenity, devotion, and mindful reflection.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Let the Spirit Dance Freely",
+    title: "Sacred Chants and<br/> Divine Harmonies",
+    text: "Feel the transcendence of Sufi music—soulful melodies, rhythmic poetry,<br/> and sacred sounds designed to uplift and inspire.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
+
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={MusicSlides}/>
       {/* Page Title */}
       <section className="team-top text-left-mobile">
         <div className="container mx-auto px-4">

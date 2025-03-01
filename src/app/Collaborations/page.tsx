@@ -8,6 +8,43 @@ import ModalVideo from "react-modal-video";
 import Link from "next/link";
 import Skill from "@/components/sections/home2/Skill";
 import Banner from "@/components/sections/home3/Banner";
+const CollaborationSlides = [
+  {
+    subTitle: "Together, We Build a Legacy",
+    title: " Partner with Us for<br/> Meaningful Impact",
+    text: "Join hands with us to promote Kashmiri Sufi traditions, foster education,<br/> and create lasting spiritual and cultural initiatives.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Unite, Innovate, Inspire, Grow, Transform",
+    title: " Strengthening Bonds Through<br/> Shared Vision",
+    text: " We welcome organizations, scholars, and institutions to collaborate in preserving Sufi<br/> wisdom, research, and global spiritual education.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Collective Efforts, Lasting Change ",
+    title: "Let’s Work Together<br/> for a Purpose",
+    text: " Partner with us in research, events, and cultural initiatives to promote Sufi<br/> spirituality, ethical living, and conscious learning.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Wisdom Grows When We Collaborate",
+    title: "Join a Network of <br/>Inspired Thinkers",
+    text: " Connect with scholars, artists, and spiritual leaders to expand the<br/> reach of Sufi science, philosophy, and ethical teachings.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Bridging Spirituality, Knowledge, and Action",
+    title: "Partner with Us<br/> for Greater Good",
+    text: "Explore collaboration opportunities in education, research, and cultural programs that <br/>support the growth of Kashmiri Sufi traditions worldwide.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -56,7 +93,7 @@ export default function Home() {
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner></Banner>
+        <Banner slides={CollaborationSlides}/>
         {/*Services Two Start*/}
         <section className="services-two">
           <section className="relative pb-20 bg-cover bg-center">

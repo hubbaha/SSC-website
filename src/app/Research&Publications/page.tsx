@@ -1,11 +1,47 @@
 import Banner from "@/components/sections/home3/Banner";
 import Layout from "../../components/layout/Layout";
 import Link from "next/link";
-
+const ResearchSlides=[
+  {
+    subTitle: "Preserving Wisdom, Advancing Knowledge Forward",
+    title: "Exploring Sufi Thought<br/>Through Research",
+    text: "  Dive into in-depth research and scholarly publications that uncover the<br/> historical, and scientific dimensions of Kashmiri Sufism.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Unveiling Sufi Insights Through Scholarship",
+    title: "A Gateway to Spiritual<br/> Research & Learning",
+    text: "Access a wealth of publications exploring the intersection of Sufism, ,<br/>philosophy, science, and spiritual traditions in a modern context.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Knowledge Meets Academic Inquiry",
+    title: "Deepening Understanding <br/>Through Sufi Studies",
+    text: "Our research and publications offer profound insights into Kashmiri Sufi teachings,<br/> bridging tradition with contemporary academic exploration.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Expanding Minds, Illuminating Sufi Wisdom",
+    title: " Documenting the Legacy <br/>of Sufi Thought",
+    text: " Explore meticulously curated research on the history, ethics, and spiritual<br/> practices that define Kashmiri Sufi traditions and teachings.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Bridging Tradition with Modern Inquiry",
+    title: " Scholarly Exploration <br/>of Sufi Sciences",
+    text: " Our publications serve as a foundation for learning, offering critical perspectives <br/>on Sufi philosophy, consciousness, and ethical living.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={ResearchSlides}/>
       <div className="py-16 bg-gray-100 text-left-mobile">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">

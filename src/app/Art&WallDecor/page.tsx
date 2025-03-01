@@ -2,11 +2,47 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
-
+const ArtSlides = [
+  {
+    subTitle: "Art That Reflects Spiritual Beauty",
+    title: "Elevate Your Space <br/>with Sufi Art",
+    text: " Discover handcrafted art and wall décor inspired by Kashmiri Sufi traditions, <br/>bringing peace, beauty, and spiritual essence to your home.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Sacred Expressions in Every Stroke",
+    title: "Transform Your Home<br/> with Divine Art",
+    text: "Explore intricate Sufi-inspired wall décor, calligraphy, and artwork designed to<br/> inspire tranquility, reflection, and cultural appreciation.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Artistry Rooted in Sufi Tradition",
+    title: "Mystical Wall Décor <br/>for Inspired Spaces",
+    text: "Handcrafted with love, our Kashmiri Sufi art pieces tell stories of <br/>devotion, harmony, and timeless spiritual wisdom.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Spiritual Art to Inspire You",
+    title: "Sacred Masterpieces for<br/> Every Wall",
+    text: "Decorate with soulful Sufi art, blending traditional craftsmanship with <br/>divine inspiration to create an atmosphere of peace and serenity.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Decor That Speaks to the Soul",
+    title: "Experience the Beauty of Kashmiri Art",
+    text: " Bring timeless Sufi aesthetics into your home with unique wall décor<br/> inspired by faith, devotion, and artistic mastery.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={ArtSlides}/>
       {/* Page Title */}
       <section className="team-top text-left-mobile">
         <div className="container mx-auto px-4">

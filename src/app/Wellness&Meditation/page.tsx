@@ -2,11 +2,48 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Banner from "@/components/sections/home3/Banner";
+const WellnessSlides = [
+  {
+    subTitle: "Harmony for Mind, Body, Soul",
+    title: " Sacred Essentials for Inner<br/> Peace & Healing",
+    text: " Discover handcrafted wellness tools, meditation aids, and spiritual remedies<br/> inspired by Kashmiri Sufi traditions for balance and tranquility.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Spiritual Healing, Timeless Sufi Wisdom",
+    title: " Elevate Your Wellness Through Sufi Practices",
+    text: "Explore meditation essentials, natural healing remedies, and holistic well-being<br/> inspired by the sacred wisdom of Sufi spirituality.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Relax, Reflect, Rejuvenate, Renew, Restore",
+    title: "Sacred Healing for<br/> a Tranquil Life",
+    text: " From herbal infusions to meditation cushions, embrace wellness products<br/> that nurture the soul and promote mindful living.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: " Nourish Your Soul, Heal Your Being",
+    title: "Experience Sufi-Inspired<br/> Meditation & Wellness",
+    text: "Enhance your daily spiritual practice with meditation tools, aromatic healing<br/> oils, and mindful essentials crafted with devotion.",
+    buttonText: "Explore Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Stillness, Divine Healing Energy",
+    title: "Journey to Serenity &<br/> Spiritual Wellness",
+    text: "Immerse yourself in holistic healing with our carefully curated collection<br/> of Sufi-inspired meditation, relaxation, and self-care essentials.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
-      <Banner></Banner>
+      <Banner slides={WellnessSlides}/>
       {/* Page Title */}
       <section className="team-top text-left-mobile">
         <div className="container mx-auto px-4">

@@ -9,10 +9,47 @@ export default function Home() {
   const handleOnClick = (index: SetStateAction<number>) => {
     setActiveIndex(index);
   };
+  const ResourcesSlides = [
+    {
+      subTitle: "Guidance, Knowledge, Support, Growth, Enlightenment",
+      title: "Empowering Seekers with<br/> Sufi Wisdom Resources",
+      text: " Access a wealth of teachings, guidance, and support to deepen your Sufi journey,<br/> nurture growth, and enhance spiritual understanding.",
+      buttonText: "Read More",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Find Strength, Learn, and Flourish",
+      title: "Your Path to <br/>Knowledge and Support",
+      text: "Explore valuable Sufi insights, mentorship, and learning materials designed to<br/> support your personal, spiritual, and intellectual development.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Guidance for Every Step Forward",
+      title: "  Supportive Resources for<br/> Lifelong Learning",
+      text: "Whether you're beginning or advancing, find essential Sufi teachings, mentorship,<br/> and tools to guide your spiritual and personal growth.",
+      buttonText: "Join Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Seek Knowledge, Find Guidance, Grow",
+      title: "Nurturing Growth Through <br/>Wisdom and Care",
+      text: "Gain access to essential resources, mentorship, and a supportive community that<br/> empowers your journey through Kashmiri Sufi teachings.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Support, Learn, Thrive, Connect, Evolve",
+      title: "Tools and Guidance for<br/> Your Journey",
+      text: "  Discover comprehensive support, sacred texts, and interactive learning materials<br/> that strengthen your understanding and connection to Kashmiri Sufism.",
+      buttonText: "Join Now",
+      buttonLink: "/Join",
+    },
+  ];
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner></Banner>
+       <Banner slides={ResourcesSlides}/>
         {/*Core Services Start*/}
         <section className="relative block py-[120px] z-[1]">
           <div
