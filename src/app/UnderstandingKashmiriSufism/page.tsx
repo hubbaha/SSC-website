@@ -3,6 +3,43 @@ import CounterUp from "../../components/elements/CounterUp";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
+const KashmiriSlides = [
+  {
+    subTitle: "Unveiling the Soul of Kashmir",
+    title: "Exploring the Depths of <br/>Sufi Wisdom",
+    text: "Kashmiri Sufism blends love, devotion, and spiritual insight, guiding seekers toward harmony,<br/> enlightenment, and a deeper understanding of existence.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sufi Heart, Kashmiri Spirit, Eternal Wisdom",
+    title: "Discover the Essence of Sufi Mysticism",
+    text: "Rooted in poetry, music, and devotion, Kashmiri Sufism embodies a timeless journey toward <br/>divine love, inner peace, and self-discovery.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Love, Devotion, Reflection, Wisdom, Truth",
+    title: "Tracing the Spiritual <br/>Path of Kashmir",
+    text: "Kashmiri Sufism is a legacy of spiritual depth, promoting unity, self-awareness, and enlightenment<br/> through sacred teachings and timeless traditions.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Kashmir’s Soul, Sufi’s Eternal Light",
+    title: "The Mystical Heritage of<br/> Kashmiri Sufis",
+    text: "Journey through the poetic, philosophical, and spiritual dimensions of Kashmiri Sufism, <br/>where divine love and wisdom shape the seeker’s path.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Ancient Teachings, Timeless Spiritual Awakening",
+    title: "Unraveling the Beauty of<br/> Sufi Thought",
+    text: "Understanding Kashmiri Sufism means embracing a philosophy of love, surrender, <br/>and divine connection, guiding humanity toward truth and unity.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -12,7 +49,7 @@ export default function Home() {
         headTitle="Our Team"
         wrapperCls="team-page-wrapper"
       >
-        <Banner></Banner>
+        <Banner slides={KashmiriSlides}/>
         {/*Team Top Start*/}
         <section className="text-left-mobile team-top">
           <div className="container mx-auto px-4">

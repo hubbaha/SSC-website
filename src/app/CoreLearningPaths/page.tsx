@@ -9,10 +9,47 @@ export default function Home() {
   const handleOnClick = (index: SetStateAction<number>) => {
     setActiveIndex(index);
   };
+  const LearningSlides = [
+    {
+      subTitle: "Wisdom, Growth, Enlightenment, Reflection, Mastery",
+      title: " Explore the Foundations of<br/> Sufi Learning",
+      text: " Follow structured learning paths rooted in Kashmiri Sufism, guiding you through <br/>spiritual wisdom, self-discovery, and transformative inner growth.",
+      buttonText: "Read More",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Sacred Knowledge, Guided Spiritual Awakening",
+      title: "Discover the Pathways to <br/>Spiritual Mastery",
+      text: "Delve into the heart of Sufi teachings through curated learning paths, <br/>designed to nurture mindfulness, self-awareness, and deep spiritual insight.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "From Seeking to Understanding, Evolve Spiritually",
+      title: "Step into the <br/>Essence of Sufism",
+      text: "Embark on a structured journey through Kashmiri Sufi traditions, learning the principles<br/> of love, devotion, wisdom, and spiritual awakening.",
+      buttonText: "Join Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: " Illuminate Your Path with Knowledge",
+      title: "The Sufi Learning <br/>Paths Await You",
+      text: "Explore foundational, intermediate, and advanced Sufi learning paths designed <br/>to awaken your consciousness and deepen your spiritual understanding.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "A Journey of Learning and Wisdom",
+      title: "Guided Steps Toward <br/>Spiritual Enlightenment",
+      text: "  Follow structured pathways in Kashmiri Sufism, blending sacred wisdom, ethical teachings,<br/>  and self-exploration for profound personal and spiritual growth.",
+      buttonText: "Join Now",
+      buttonLink: "/Join",
+    },
+  ];
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner></Banner>
+       <Banner slides={LearningSlides}/>
         {/*Core Services Start*/}
         <section className="relative block py-[120px] z-[1]">
           <div

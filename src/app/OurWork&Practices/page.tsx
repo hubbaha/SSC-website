@@ -4,6 +4,43 @@ import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
 
+const WorkSlides = [
+  {
+    subTitle: "Wisdom in Action, Sufism in Practice",
+    title: "Living the Teachings of<br/> Kashmiri Sufism",
+    text: "Through devotion, education, and service, we bring Kashmiri Sufi wisdom to life,<br/> inspiring transformation and fostering spiritual harmony worldwide.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Practices, Modern Spiritual Engagement",
+    title: "Our Commitment to Sufi<br/> Teachings & Growth",
+    text: "We integrate ancient Sufi practices with contemporary understanding, offering a <br/>pathway to enlightenment, self-discovery, and communal well-being.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Faith, Reflection, Knowledge, Service, Unity",
+    title: "Transforming Lives Through<br/> Sufi Traditions",
+    text: " Our work blends Kashmiri Sufi wisdom with modern engagement, <br/>nurturing personal growth, spiritual depth, and social impact for all.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Humanity Through Sufi Wisdom",
+    title: "Sufi Practices That <br/>Inspire and Uplift",
+    text: " We honor Kashmiri Sufi traditions through meaningful practices, guiding individuals<br/> in mindfulness, ethical living, and spiritual development.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sufi Knowledge, Action, and Transformation",
+    title: "Bridging Tradition & <br/>Modern Spiritual Practice",
+    text: "Our mission is to apply Kashmiri Sufi teachings in daily life, <br/>fostering inner peace, knowledge-sharing, and a united global community.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -13,7 +50,7 @@ export default function Home() {
         headTitle="Our Team"
         wrapperCls="team-page-wrapper"
       >
-        <Banner></Banner>
+        <Banner slides={WorkSlides}/>
         {/*Team Top Start*/}
         <section className="text-left-mobile team-top">
           <div className="container mx-auto px-4">

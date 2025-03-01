@@ -9,10 +9,47 @@ export default function Home() {
   const handleOnClick = (index: SetStateAction<number>) => {
     setActiveIndex(index);
   };
+  const LeadershipSlides = [
+    {
+      subTitle: "Lead with Wisdom, Teach with Heart",
+      title: "Empowering Leaders Through <br/>Sufi Knowledge",
+      text: " Discover the art of leadership and teaching rooted in Kashmiri Sufi wisdom,<br/> inspiring transformation, guidance, and lifelong learning.",
+      buttonText: "Read More",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Inspire, Guide, Empower, Transform, Lead",
+      title: " Shaping Future Leaders<br/> with Sufi Wisdom",
+      text: "Develop leadership skills and teaching abilities through Kashmiri Sufi traditions, <br/>fostering spiritual, intellectual, and ethical excellence in every step.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Wisdom-Driven Leadership, Heartfelt Teaching",
+      title: " Become a Guide, <br/>Mentor, & Teacher",
+      text: "Through Kashmiri Sufi teachings, cultivate the knowledge and presence to lead <br/>with purpose and teach with profound spiritual insight.",
+      buttonText: "Join Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Serve, Lead, Teach, Illuminate, Uplift",
+      title: "Transforming Knowledge into <br/>Leadership & Impact",
+      text: "Master the essence of Sufi leadership, guiding others with wisdom, humility,<br/> and a deep understanding of spiritual and ethical values.",
+      buttonText: "Explore Now",
+      buttonLink: "/Home",
+    },
+    {
+      subTitle: "Leading Minds, Enlightening Souls, Teaching Truth",
+      title: "The Path to <br/>Spiritual Leadership Begins",
+      text: "  Embrace the role of a Sufi leader and teacher, illuminating paths with,<br/> knowledge, compassion, and the wisdom of Kashmiri traditions.",
+      buttonText: "Join Now",
+      buttonLink: "/Join",
+    },
+  ];
   return (
     <>
       <Layout headerStyle={2} footerStyle={1}>
-        <Banner></Banner>
+       <Banner slides={LeadershipSlides}/>
         {/*Core Services Start*/}
         <section className="relative block py-[120px] z-[1]">
           <div

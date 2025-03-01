@@ -3,6 +3,43 @@ import CounterUp from "../../components/elements/CounterUp";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
+const PurposeSlides = [
+  {
+    subTitle: "Guided by Wisdom, Driven by Purpose",
+    title: "Shaping the Future with<br/> Sufi Principles",
+    text: "Our mission is to preserve Kashmiri Sufi wisdom while fostering spiritual growth, <br/>community harmony, and transformative learning for future generations.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Path of Light, Vision of Peace",
+    title: "Illuminating the Sufi<br/> Path Forward",
+    text: "We honor Kashmiri Sufi traditions while embracing modern insights, guiding seekers towards spiritual<br/> enlightenment, personal growth, and collective well-being.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sufi Wisdom, Kashmir’s Eternal Soul",
+    title: "Unraveling the Mysticism of<br/> Kashmiri Sufis",
+    text: " Explore the teachings of Kashmiri Sufi luminaries whose insights and<br/> poetry continue to inspire seekers on the path of divine truth.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Wisdom, Purpose, Vision, Legacy, Unity",
+    title: " Our Vision:<br/> Sufi Knowledge for All",
+    text: "With deep roots in Kashmiri Sufism, we strive to inspire, educate,<br/> and uplift individuals on their journey to self-discovery.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Knowledge, Growth, Spirituality, Direction, Impact",
+    title: "Empowering Minds,<br/> Building Community",
+    text: "We bridge tradition and innovation, offering seekers a purposeful path to enlightenment, <br/>rooted in Kashmiri Sufi philosophy and spiritual depth.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -12,7 +49,7 @@ export default function Home() {
         headTitle="Our Team"
         wrapperCls="team-page-wrapper"
       >
-        <Banner></Banner>
+        <Banner slides={PurposeSlides}/>
         {/*Team Top Start*/}
         <section className="team-top text-left-mobile">
           <div className="container mx-auto px-4">

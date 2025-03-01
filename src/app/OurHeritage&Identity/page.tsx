@@ -3,6 +3,43 @@ import CounterUp from "../../components/elements/CounterUp";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
+const HeritageSlides = [
+  {
+    subTitle: "Rooted in Tradition, Evolving Forward",
+    title: " Unveiling the Essence of<br/> Kashmiri Sufism",
+    text: "Explore the rich heritage of Kashmiri Sufism, where timeless wisdom meets modern<br/> understanding, preserving identity, spirituality, and cultural harmony.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Timeless Wisdom, Eternal Connection, Now",
+    title: "Honoring Kashmir’s Sufi<br/> Legacy & Spirit",
+    text: "Step into the mystical past of Kashmiri Sufism, where tradition, devotion,<br/> and enlightenment shape our collective spiritual journey forward.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Ancient Teachings, Modern Spiritual Awakening",
+    title: "Echoes of Sufi Wisdom<br/> in Kashmir",
+    text: "Reconnect with the soul of Kashmiri Sufism, blending sacred teachings,<br/> cultural depth, and spiritual enlightenment for a harmonious future.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Wisdom, Peace, Identity, Sufism, Kashmir",
+    title: "Preserving the Spirit of<br/> Sufi Heritage",
+    text: " Discover the heart of Kashmiri Sufism, where love, devotion,<br/> and sacred traditions guide seekers on their path to enlightenment.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Past and Future in Harmony",
+    title: "Kashmiri Sufi Heritage –<br/> A Living Legacy",
+    text: "Embrace the living traditions of Kashmiri Sufism, a journey of faith,<br/> resilience, and wisdom woven into the region’s cultural fabric.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -12,7 +49,7 @@ export default function Home() {
         headTitle="Our Team"
         wrapperCls="team-page-wrapper"
       >
-        <Banner></Banner>
+        <Banner slides={HeritageSlides}/>
         <section className="team-top text-left-mobile">
           <div className="container mx-auto px-4">
             <div className="text-center sm:text-left relative block mt-[-6px] mb-[49px] z-[1]">

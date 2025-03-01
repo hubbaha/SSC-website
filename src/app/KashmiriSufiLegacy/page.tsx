@@ -3,6 +3,43 @@ import CounterUp from "../../components/elements/CounterUp";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
+const LegacySlides = [
+  {
+    subTitle: "Legacy of Light, Love, Wisdom",
+    title: "Echoes of Kashmir’s<br/> Sufi Masters",
+    text: " Journey through the sacred traditions of Kashmiri Sufism, where timeless wisdom,<br/> devotion, and love illuminate the path of seekers.",
+    buttonText: "Read More",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sacred Roots, Enduring Spiritual Legacy",
+    title: "Tracing the Footsteps of<br/> Sufi Saints",
+    text: "Discover the spiritual depth of Kashmiri Sufism, a legacy of divine wisdom, <br/>poetic expression, and profound devotion passed through generations.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Sufi Wisdom, Kashmir’s Eternal Soul",
+    title: "Unraveling the Mysticism of<br/> Kashmiri Sufis",
+    text: " Explore the teachings of Kashmiri Sufi luminaries whose insights and<br/> poetry continue to inspire seekers on the path of divine truth.",
+    buttonText: "Join Now",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Faith, Devotion, Unity, Love, Truth",
+    title: " Kashmir’s Sufi Heritage: <br/>A Living Tradition",
+    text: " Witness the spiritual legacy of Kashmir’s Sufis, who shaped a culture of love,<br/> tolerance, and enlightenment that transcends time.",
+    buttonText: "Explore",
+    buttonLink: "/Home",
+  },
+  {
+    subTitle: "Love, Harmony, Faith, Knowledge, Eternity",
+    title: "Timeless Teachings of<br/>  Kashmiri Sufi Masters",
+    text: "Step into the rich spiritual legacy of Kashmiri Sufism, where poetry,<br/> devotion, and wisdom illuminate the seeker’s path to inner peace.",
+    buttonText: "Join Now",
+    buttonLink: "/Join",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -12,7 +49,7 @@ export default function Home() {
         headTitle="Our Team"
         wrapperCls="team-page-wrapper"
       >
-        <Banner></Banner>
+        <Banner slides={LegacySlides}/>
         {/*Team Top Start*/}
         <section className="team-top text-left-mobile">
           <div className="container mx-auto px-4">
