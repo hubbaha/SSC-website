@@ -49,11 +49,11 @@ const Header2: React.FC<Header2Props> = ({
               Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
-              <div className="flex items-center justify-center py-2 px-4 bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300   space-x-1">
+              <div className="flex items-center justify-center py-2 px-4 hover:bg-fixnix-lightpurple bg-fixnix-white text-fixnix-darkpurple rounded-lg text-sm font-bold transition-all duration-300   space-x-1">
                 {/* Login Link */}
                 <Link
                   href="/Login"
-                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple"
+                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-white"
                 >
                   Login
                 </Link>
@@ -61,7 +61,7 @@ const Header2: React.FC<Header2Props> = ({
                 {/* Register Link */}
                 <Link
                   href="/Register"
-                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-lightpurple"
+                  className="hover:underline text-fixnix-darkpurple hover:text-fixnix-white"
                 >
                   Register
                 </Link>
@@ -97,10 +97,10 @@ const Header2: React.FC<Header2Props> = ({
         </div>
 
         {/* Main Header */}
-        <nav className="bg-fixnix-white z-[1200]">
+        <nav className="bg-fixnix-white z-[1200] ">
           <div className="relative z-10">
             <div className="flex flex-wrap items-center justify-between p-4">
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-3">
                 <Link href="/">
                   <Image
                     src="/assets/images/resources/logo-3.png"
@@ -117,7 +117,7 @@ const Header2: React.FC<Header2Props> = ({
               <div className="flex items-center  ml-auto">
                 <Link
                   href="/GetMembership"
-                  className="h-12 xl:h-14 items-center justify-center bg-fixnix-lightpurple text-white font-bold rounded-lg transition-colors duration-300 hover:bg-fixnix-darkpurple py-3 px-6 xl:px-5 xl:py-8 text-center 2xl:px-10 2xl:py-10  whitespace-nowrap text-base sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-xl hidden sm:block"
+                  className="membership-btn "
                 >
                   Get Membership
                 </Link>

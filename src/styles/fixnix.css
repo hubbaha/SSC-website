@@ -257,6 +257,52 @@ ul {
   height: 25px;
   opacity: 0.4;
 }
+.membership-btn {
+  color: var(--fixnix-white);
+  background-color: var(--fixnix-lightpuple);
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: color 0.9s ease-in-out, background-color 0.9s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.membership-btn:before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--fixnix-darkpurple); /* Light purple on hover */
+  border-radius: 50%;
+  transition: top 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.membership-btn:hover {
+  color: var(--fixnix-white);
+}
+
+.membership-btn:hover:before {
+  top: -50%;
+}
+
+/* Hide on medium (md) and small (sm) screens */
+@media (max-width: 992px) { /* Bootstrap md and below */
+  .membership-btn {
+    display: none;
+  }
+}
+
+
 
 .thm-btn {
   position: relative;
@@ -783,8 +829,8 @@ ul {
     font-size: 5.5rem;
   }
   .responsive-tagline {
-    font-size: 1.3rem;
-    margin-top: -70px;
+    font-size: 23px;
+    margin-top: -75px;
     margin-left:210px;
     padding-right: 380px
   }
@@ -797,12 +843,13 @@ ul {
     width: 130px;
   }
   .responsive-website-name {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .responsive-tagline {
-    font-size: 12px;
-    margin-top: -80px;
-    margin-left: 145px;
+    font-size: 12.5px;
+    margin-top: -70px;
+    margin-left:140px;
+    padding-right: 380px
   }
 }
 
@@ -813,12 +860,13 @@ ul {
     width: 90px;
   }
   .responsive-website-name {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
   }
   .responsive-tagline {
-    font-size: 10px;
-    margin-top: -50px;
-    margin-left: 100px;
+    font-size: 9.5px;
+    margin-top: -45px;
+    margin-left:100px;
+    padding-right: 380px
   }
 }
 /* Medium screens */
@@ -828,15 +876,31 @@ ul {
     width: 90px;
   }
   .responsive-website-name {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .responsive-tagline {
-    font-size: 10px;
-    margin-top: -100px;
-    margin-left: 100px;
+    font-size: 8.5px;
+    margin-top: -50px;
+    margin-left:100px;
+    padding-right: 280px
   }
 }
-
+/* Small screens */
+@media (max-width: 600px) {
+  .responsive-logo {
+    height: 50px;
+    width: 50px;
+  }
+  .responsive-website-name {
+    font-size: 23px;
+  }
+  .responsive-tagline {
+    font-size: 6px;
+    margin-top: -60px;
+    margin-left:60px;
+    padding-right: 70px
+  }
+}
 /* Small screens */
 @media (max-width: 500px) {
   .responsive-logo {
@@ -844,12 +908,28 @@ ul {
     width: 50px;
   }
   .responsive-website-name {
-    font-size: 14px;
+    font-size: 23px;
   }
   .responsive-tagline {
     font-size: 6px;
-    margin-top: -70px;
-    margin-left: 65px;
+    margin-top: -25px;
+    margin-left:60px;
+    padding-right: 70px
+  }
+}
+/* Extra-small screens */
+@media (max-width: 400px) {
+  .responsive-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .responsive-website-name {
+    font-size: 19px;
+  }
+  .responsive-tagline {
+    font-size: 4.5px;
+    margin-top: -55px;
+    margin-left: 52px;
   }
 }
 /* Extra-small screens */
@@ -859,12 +939,26 @@ ul {
     width: 40px;
   }
   .responsive-website-name {
-    font-size: 12px;
+    font-size: 19px;
   }
   .responsive-tagline {
     font-size: 5px;
-    margin-top: -60px;
-    margin-left: 55px;
+    margin-top: -20px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .responsive-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .responsive-website-name {
+    font-size: 16px;
+  }
+  .responsive-tagline {
+    font-size: 4px;
+    margin-top: -22px;
+    margin-left: 50px;
   }
 }
 /* Extra-small screens */
@@ -874,12 +968,12 @@ ul {
     width: 40px;
   }
   .responsive-website-name {
-    font-size: 11px;
+    font-size: 16px;
   }
   .responsive-tagline {
     font-size: 4px;
-    margin-top: -65px;
-    margin-left: 55px;
+    margin-top: -22px;
+    margin-left: 53px;
   }
 }
 
@@ -2842,7 +2936,6 @@ ul {
     opacity 2000ms ease,
     -webkit-transform 2000ms ease;
 }
-
 .main-slider-two__btn {
   color: var(--fixnix-darkpurple);
   background-color: var(--fixnix-white);

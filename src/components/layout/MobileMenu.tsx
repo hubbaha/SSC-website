@@ -331,7 +331,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/UnderstandingKashmiriSufism"
+                      href="/HumanSciences"
                       className="text-white text-sm font-medium"
                     >
                       Human Sciences
@@ -339,7 +339,7 @@ const MobileMenu = ({
                   </li>
                   <li>
                     <Link
-                      href="/UnderstandingKashmiriSufism"
+                      href="/SpiritualTechnologies"
                       className="text-white text-sm font-medium"
                     >
                       Spiritual Technologies

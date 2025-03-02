@@ -188,19 +188,14 @@ export default function Home() {
                   <div className="relative block">
                     <div className="text-left">
                       <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                        Path of the Seeker
+                      The Ethical Teachings of the Sufi Path
                         <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                       </span>
                       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Uniting Spirituality & Science
+                      An embodiment of divine love 
                       </h2>
                       <p className="text-base sm:text-lg text-gray-700">
-                        In Kashmir, the heart of the ancient Sufi tradition,
-                        embark on a transformative journey where the soul’s
-                        longings meet the wisdom of the natural world. This
-                        journey transcends boundaries, revealing spirituality
-                        and science as two sides of same coin – pathways leading
-                        to Divine Truth.
+                      Ethics, in the Sufi tradition, is not a mere set of rules; it is a way of being—an embodiment of divine love and compassion. The Sufi seeker lives by the principles of mercy, truth, and humility, which transcend the material world and lead the heart to spiritual purity. Ethical conduct is integral to the purification of the soul (Tazkiyah) and the realization of true knowledge.
                       </p>
                     </div>
                   </div>
@@ -224,55 +219,50 @@ export default function Home() {
                   <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
                     <div className="mb-[24px]">
                       <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
-                        The Call to Begin
+                      Compassion in Action
                       </h4>
                       <p>
-                        Embark on a transformative journey, connecting inner
-                        spiritual awakening with outer exploration.
+                      Embrace kindness and justice, honoring the divine spark in all beings and nature.
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Inner Awakening
+                            Justice and Mercy
                           </h5>
                           <p>
-                            Refine the soul through practices like meditation,
-                            Dhikr, and whirling.
+                          Act with fairness and compassion, upholding ethical behavior as a divine duty.
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Divine Connection
+                          Living in Truth
                           </h5>
                           <p>
-                            Deepen connection to the divine and higher spiritual
-                            purpose.
+                          Align thoughts, words, and actions with the divine principle of truth (Haq).
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            New Vision
+                          Integrity in Practice
                           </h5>
                           <p>
-                            Discover hidden patterns shaping existence with
-                            renewed spiritual vision.
+                          Cultivate honesty and authenticity, reflecting divine truth in every aspect of life.
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Sacred Harmony
+                          Humility and Service
                           </h5>
                           <p>
-                            Unveil harmony between divine love and universal
-                            scientific principles.
+                          Serve humanity with humility, recognizing the interconnectedness of all life and souls.
                           </p>
                         </div>
                       </li>
