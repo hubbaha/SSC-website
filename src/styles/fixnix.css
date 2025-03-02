@@ -3451,7 +3451,7 @@ ul {
   transition: all 500ms ease;
 }
 
-.about-one__points li:hover .about-one__points-title a {
+.about-one__points li:hover .about-one__points-title  {
   color: var(--fixnix-white);
 }
 
@@ -5215,7 +5215,7 @@ ul {
   left: 0;
   height: 90px;
   width: 90px;
-  background-color: #ffebee;
+  background-color: var(--fixnix-lightpuple);
   border-radius: 50%;
   transition: all 500ms linear;
   transition-delay: 0.1s;

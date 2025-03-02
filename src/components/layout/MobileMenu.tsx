@@ -541,6 +541,22 @@ const MobileMenu = ({
               </li>
             </ul>
           </div>
+          <div className="flex  py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300  text-fixnix-darkpurple  space-x-2">
+    <i className="fa fa-user-circle text-fixnix-white text-lg"></i>
+    <Link
+      href="/Login"
+      className="hover:underline text-fixnix-white hover:text-fixnix-white"
+    >
+      Login
+    </Link>
+    <span>/</span>
+    <Link
+      href="/Register"
+      className="hover:underline text-fixnix-darkpurple hover:text-fixnix-white"
+    >
+      Register
+    </Link>
+  </div>
 
           {/* Contact */}
           <ul className="mobile-nav__contact list-unstyled space-y-3">

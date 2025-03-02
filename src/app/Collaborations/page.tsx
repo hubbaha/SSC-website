@@ -132,18 +132,11 @@ export default function Home() {
                 <div className="relative">
                   <div className="rounded-lg overflow-hidden w-[425px] h-[500px]  bg-fixnix-lightpurple">
                     <img
-                      src="assets/images/resources/skill-1-1.jpg"
+                      src="assets/images/resources/Collaboration.png"
                       alt="Repair Services"
                       className="w-[425px] h-[500px] mix-blend-multiply"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <button
-                        onClick={() => setOpen(true)}
-                        className="w-16 h-16 bg-white bg-opacity-30 rounded-full flex items-center justify-center text-purple-700"
-                      >
-                        <span className="fa fa-play text-lg"></span>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -160,9 +153,11 @@ export default function Home() {
             onClose={() => setOpen(false)}
           />
           <div className="container">
-            <div className="section-title section-title--two text-center">
-              <span className="section-title__tagline">
-                Our Collaborative Endeavours
+          <div className="text-left mb-12">
+              <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+              Our Collaborative Endeavours
+                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+                
               </span>
               <h2 className="section-title__title">
                 Empower, Preserve, Transform.
@@ -186,11 +181,9 @@ export default function Home() {
                       <span className="icon-phone"></span>
                     </div>
                     <h3 className="services-two__title">Artisan Empowerment</h3>
-                    <p className="services-two__text">
-                      {" "}
-                      We extend our hands to like-minded artisans, spiritual
-                      guides, and craftsmen whose work embodies the
-                      traditions.{" "}
+                    <p className="text-left">
+                    We collaborate with artisans, spiritual mentors, and craftspeople to preserve Kashmir’s traditions. Each woven thread and carved detail reflects devotion and timeless wisdom. Together, we sustain heritage through craftsmanship infused with spiritual significance.
+                  
                     </p>
                   </div>
                 </div>
@@ -203,16 +196,14 @@ export default function Home() {
               >
                 <div className="services-two__single">
                   <div className="services-two__single-inner">
-                    <div className="services-two__icon services-two__icon--two">
+                    <div className="services-two__icon">
                       <span className="icon-tap"></span>
                     </div>
                     <h3 className="services-two__title">
                       Educational Partnerships
                     </h3>
-                    <p className="services-two__text">
-                      The Centre seeks to build alliances with educational
-                      institutions, universities, and spiritual academies
-                      worldwide.
+                    <p className=" text-left">
+                    The Centre partners with universities, spiritual institutions, and scholars worldwide. We offer transformative learning rooted in Sufi wisdom, Kashmiri mysticism, and sacred traditions. Through teachings and exchanges, we deepen understanding of spiritual principles.
                     </p>
                   </div>
                 </div>
@@ -225,16 +216,14 @@ export default function Home() {
               >
                 <div className="services-two__single">
                   <div className="services-two__single-inner">
-                    <div className="services-two__icon services-two__icon--three">
+                    <div className="services-two__icon">
                       <span className="icon-laptop"></span>
                     </div>
                     <h3 className="services-two__title">
                       Cultural Preservation
                     </h3>
-                    <p className="services-two__text">
-                      From the delicate craft of weaving to the intricate
-                      spiritual calligraphy, we strive to preserve the sacred
-                      arts.
+                    <p className="text-left">
+                    We work with museums, cultural organizations, and heritage foundations to protect Kashmir’s sacred arts. From Pashmina weaving to spiritual calligraphy, we ensure their legacy endures. Our collaborations safeguard these treasures for future generations.
                     </p>
                   </div>
                 </div>
@@ -247,13 +236,12 @@ export default function Home() {
               >
                 <div className="services-two__single">
                   <div className="services-two__single-inner">
-                    <div className="services-two__icon services-two__icon--three">
+                    <div className="services-two__icon">
                       <span className="icon-computer"></span>
                     </div>
                     <h3 className="services-two__title">Spiritual Retreats</h3>
-                    <p className="services-two__text">
-                      . Through prayer, meditation, and collective celebration
-                      of divine love, we aim to nurture the soul.
+                    <p className="text-left">
+                    We create transformative spaces with Sufi orders, retreats, and healing sanctuaries. Through meditation, devotion, and divine love, seekers connect with spirituality. These gatherings offer sacred environments for reflection and collective enlightenment.
                     </p>
                   </div>
                 </div>
@@ -270,9 +258,8 @@ export default function Home() {
                       <span className="icon-camera"></span>
                     </div>
                     <h3 className="services-two__title">Social Initiatives </h3>
-                    <p className="services-two__text">
-                      By working together, we uplift the spiritual and material
-                      well-being of the region, one heart at a time.
+                    <p className="text-left">
+                    We engage in ethical commerce, environmental sustainability, and humanitarian outreach in Kashmir. Our initiatives address social challenges while preserving cultural values. By fostering dialogue, we build bridges of mutual respect and understanding.
                     </p>
                   </div>
                 </div>
@@ -285,15 +272,14 @@ export default function Home() {
               >
                 <div className="services-two__single">
                   <div className="services-two__single-inner">
-                    <div className="services-two__icon services-two__icon--two">
+                    <div className="services-two__icon">
                       <span className="icon-smartwatch"></span>
                     </div>
                     <h3 className="services-two__title">
                       Community Empowerment
                     </h3>
-                    <p className="services-two__text">
-                      We invite partners who wish to make a difference in the
-                      lives of the people of Kashmir, empowering communities.
+                    <p className="text-left">
+                    We support sustainable development and spiritual enrichment for Kashmiri communities. By reviving ancestral knowledge and fostering resilience, we empower families. Our holistic approach integrates economic stability with spiritual well-being.
                     </p>
                   </div>
                 </div>
@@ -308,11 +294,11 @@ export default function Home() {
         <section className="relative bg-[var(--fixnix-lightpuple)] py-24 text-left-mobile">
           <div className="absolute inset-0 bg-no-repeat bg-center bg-cover mix-blend-multiply"></div>
           <div className="container">
-            <div className="text-center mb-12">
+            <div className="text-left mb-12">
               <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
                 For partnership inquiries
                 <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-white"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-white"></span>
+                
               </span>
               <h2 className="text-[var(--fixnix-white)] text-3xl mt-2 font-bold">
                 Please reach out to us
@@ -329,7 +315,7 @@ export default function Home() {
                 illuminate the hearts of all those who participate.
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-left gap-8">
               {[
                 {
                   icon: "fa-envelope",

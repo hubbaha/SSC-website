@@ -85,7 +85,7 @@ export default function Home() {
               <div className="relative">
                 <div className="text-left">
                   <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                    Volunteer With Us
+                    Why Volunteer With Us
                     <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                   </span>
                   <h2 className="text-3xl font-bold mt-3">
@@ -134,16 +134,14 @@ export default function Home() {
               </div>
               <div className="relative ml-[35px]">
                 <p className="mb-[62px]">
-                  In the sacred land of Kashmir, where the divine whispers of
-                  Sufi mystics still resonate through the valleys, we extend an
-                  invitation to kindred souls to join us on a journey of
-                  spiritual growth and service...
+                At the Sufi Science Centre - Kashmir Chapter, we believe that the path to enlightenment is not just one of personal transformation, but a shared experience of collective devotion, love, and service to the divine.
                 </p>
                 <div className="relative">
                   <img
-                    className="w-full rounded-[var(--fixnix-bdr-radius)]"
-                    src="assets/images/resources/book-service-img-1.jpg"
+                    className="w-[500px] h-[500px] rounded-[var(--fixnix-bdr-radius)]"
+                    src="assets/images/resources/Volunteer.png"
                     alt=""
+
                   />
                 </div>
               </div>
@@ -155,18 +153,18 @@ export default function Home() {
 
         <section className="relative block pb-20 mt-20 bg-white text-left-mobile ">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-left mb-12">
               <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
                 How You Can Serve
                 <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+                
               </span>
               <h2 className="text-3xl font-bold text-fixnix-darkpurple mt-2">
                 Offer your time and talents to the Sufi Science Centre
               </h2>
               <p className="text-gray-600 mt-3">
                 As a volunteer with the Sufi Science Centre, you step into a
-                realm of sacred work—one that touches the very essence of
+                realm of sacred work, one that touches the very essence of
                 spirituality, wisdom, and the rich cultural heritage of Kashmir.
                 Through your service, you will support the preservation of
                 ancient Sufi teachings, the revitalization of Kashmiri spiritual
@@ -197,6 +195,16 @@ export default function Home() {
                   title: "Outreach and Community Engagement",
                   desc: "Help us expand our reach by connecting with local communities and sharing the teachings of Sufism.",
                 },
+                {
+                  icon: "icon-computer-1",
+                  title: "Help with Digital and Media",
+                  desc: "Help manage our website, social media, and content creation that spreads our message of divine love and wisdom.",
+                },
+                {
+                  icon: "icon-computer-1",
+                  title: "Create Sacred Art and Handicrafts",
+                  desc: "Join our efforts to create spiritual art, handcrafted objects, and sacred items that reflect the divine beauty of Kashmir’s culture. ",
+                },
               ].map((item, index) => (
                 <div
                   key={index}
@@ -221,11 +229,11 @@ export default function Home() {
         <section className="relative bg-[var(--fixnix-lightpuple)] py-24 text-left-mobile">
           <div className="absolute inset-0 bg-no-repeat bg-center bg-cover mix-blend-multiply"></div>
           <div className="container">
-            <div className="text-center mb-12">
+            <div className="text-left mb-12">
               <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
                 How to Get Involved
                 <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-white"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-white"></span>
+                
               </span>
               <h2 className="text-[var(--fixnix-white)] text-3xl mt-2 font-bold">
                 To volunteer, please reach out to us
@@ -239,7 +247,7 @@ export default function Home() {
                 your journey of sacred service.
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-left gap-8">
               {[
                 {
                   icon: "fa-envelope",
@@ -279,7 +287,22 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <div className="text-left mb-12 mt-8">
+              <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
+              A Journey of Love and Light
+                
+              </span>
+              
+              <p className="text-[var(--fixnix-white)] mt-2">
+                To serve with us is to walk in the footsteps of the great Sufi saints who lived and breathed the path of love, truth, and devotion. In every moment of service, you become an instrument of the divine, a conduit of peace, and a reflection of the sacred love that unites all of humanity. Together, let us light the way for others to follow the path of peace, healing, and spiritual awakening.
+              </p>
+              <h2 className="text-[var(--fixnix-white)] text-3xl mt-2 font-bold">
+              We invite you to bring your light to our sacred mission.
+              </h2>
+            </div>
           </div>
+          
+
         </section>
 
         {/*Contact Two  End*/}
@@ -333,7 +356,7 @@ export default function Home() {
                         <div className="select-box">
                           <select className="w-full h-14 border-none bg-fixnix-white rounded-md px-5 text-fixnix-gray text-lg">
                             <option>Select Services</option>
-                            <option value="1">Select Services 01</option>
+                            <option value="1"></option>
                             <option value="2">Select Services 02</option>
                             <option value="3">Select Services 03</option>
                             <option value="4">Select Services 04</option>
