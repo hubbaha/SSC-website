@@ -356,10 +356,12 @@ export default function Home() {
                         <div className="select-box">
                           <select className="w-full h-14 border-none bg-fixnix-white rounded-md px-5 text-fixnix-gray text-lg">
                             <option>Select Services</option>
-                            <option value="1"></option>
-                            <option value="2">Select Services 02</option>
-                            <option value="3">Select Services 03</option>
-                            <option value="4">Select Services 04</option>
+                            <option value="1">Assist with Spiritual Programs</option>
+                            <option value="2">Support Craft and Culture Preservation</option>
+                            <option value="3">Fundraising and Event Organization</option>
+                            <option value="4">Outreach and Community Engagement</option>
+                            <option value="5">Help with Digital and Media</option>
+                            <option value="6">Create Sacred Art and Handicrafts</option>
                           </select>
                         </div>
                       </div>

@@ -397,14 +397,14 @@ export default function Home() {
       </section>
       {/* Product End */}
       {/*Contact Two Start*/}
-      <section className="relative bg-[var(--fixnix-darkpurple)] py-24 text-left-mobile">
+      <section className="relative bg-fixnix-lightpurple py-24 text-left-mobile">
         <div className="absolute inset-0 bg-no-repeat bg-center bg-cover mix-blend-multiply"></div>
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-left mb-12">
             <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
               How to Get Involved
               <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-white"></span>
-              <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-white"></span>
+              
             </span>
             <h2 className="text-[var(--fixnix-white)] text-3xl mt-2 font-bold">
               To contribute, please reach out to us
@@ -417,32 +417,30 @@ export default function Home() {
               your journey of sacred service.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-left gap-8">
             <Link href="/DonationForm" className="thm-btn main-slider-two__btn">
               {" "}
               Donate Now{" "}
             </Link>
           </div>
         </div>
-      </section>
-      <section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
+        <section className="text-left-mobile team-top py-[40px] sm:py-[60px] md:py-[80px]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
+          <div className="text-left relative block mt-[-6px] mb-[40px] sm:mb-[49px] z-[1]">
             {/* Section Tagline */}
-            <span className="relative inline-block text-[14px] sm:text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">
+            <span className="relative inline-block text-[14px] sm:text-[16px] leading-[16px] text-fixnix-white font-semibold uppercase z-[1]">
               Become a Divine Partner
-              <span className="absolute top-[6px] left-[-40px] sm:left-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-              <span className="absolute top-[6px] right-[-40px] sm:right-[-56px] w-[30px] sm:w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+              
             </span>
 
             {/* Section Title */}
-            <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
+            <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-white text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
               Together, we walk the path of spiritual awakening, sharing the
               light of wisdom, compassion, and peace.
             </h2>
 
             {/* Section Text */}
-            <p className="pt-[15px] sm:pt-[20px] text-gray-600 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
+            <p className="pt-[15px] sm:pt-[20px] text-white text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
               We see each one of you as a partner on this sacred journey.
               Whether you offer through your time, resources, or prayers, your
               contribution is an offering to the Divine that flows through all
@@ -453,12 +451,14 @@ export default function Home() {
             </p>
 
             {/* Subheading */}
-            <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[16px] sm:text-[18px] md:text-[20px] leading-[30px] sm:leading-[40px] font-semibold">
+            <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-white text-[16px] sm:text-[18px] md:text-[20px] leading-[30px] sm:leading-[40px] font-semibold">
               We invite you to bring your light to our sacred mission.
             </h2>
           </div>
         </div>
       </section>
+      </section>
+      
     </Layout>
   );
 }
