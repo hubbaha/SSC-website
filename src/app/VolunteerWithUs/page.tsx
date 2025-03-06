@@ -376,7 +376,7 @@ export default function Home() {
                       </div>
                       <div className="contact-page-two__btn-box">
                         <Link
-                          href="about"
+                          href=""
                           className=" bg-fixnix-lightpurple px-8 py-3 my-4 rounded-lg text-white hover:bg-fixnix-darkpurple hover:text-white"
                         >
                           Send Message

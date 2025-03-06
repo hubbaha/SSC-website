@@ -7173,6 +7173,7 @@ ul {
   font-size: 60px;
   font-weight: 700;
   line-height: 70px;
+  margin-top: 100px;
 }
 
 .blog-details-two__top-meta-list {
@@ -11228,7 +11229,7 @@ ul {
 }
 
 .feature-one__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 30px;
   margin-top: 18px;

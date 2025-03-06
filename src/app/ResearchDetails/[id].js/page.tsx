@@ -1,4 +1,4 @@
-import Layout from "../../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 export default function Home() {
   return (
@@ -9,31 +9,32 @@ export default function Home() {
         breadcrumbTitle="How To Fix Broken Back Glass On Your Phone"
       >
         {/*Blog Details Two Start*/}
-        <section className="blog-details-two">
+        <section className="relative block bg-[var(--fixnix-primary)]">
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
-                <div className="blog-details-two__inner">
-                  <div className="blog-details-two__top">
-                    <h3 className="blog-details-two__top-title">
-                      How To Fix Broken Back Glass <br /> On Your Phone
+                <div className="relative block bg-white mx-4 rounded-lg py-28 mt-[-110px] z-10">
+                  <div className="relative block text-center">
+                    <h3 className="text-6xl font-bold leading-[70px] mt-24">
+                      Mystical Cosmology<br/> Mapping Divine Reality
+                      <p className="text-center text-[var(--fixnix-lightpurple)] text-[25px] font-normal px-4">The divine architecture of existence and its unfolding from unity to multiplicity.</p>
                     </h3>
-                    <ul className="blog-details-two__top-meta-list list-unstyled">
-                      <li>
-                        <Link href="#">
-                          <i className="fa fa-user"></i>John Doe
+                    <ul className="relative block mt-6 list-unstyled">
+                      <li className="flex items-center justify-center">
+                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
+                          <i className="fa fa-user text-[var(--fixnix-lightpuple)] mr-2.5"></i>John Doe
                         </Link>
-                        <Link href="#">
-                          <i className="fa fa-calendar-alt"></i>5 AUG 2023
+                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] ml-4 transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
+                          <i className="fa fa-calendar-alt text-[var(--fixnix-lightpuple)] mr-2.5"></i>5 AUG 2023
                         </Link>
-                        <Link href="#">
-                          <i className="far fa-comments"></i>02 COMMENTS
+                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] ml-4 transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
+                          <i className="far fa-comments text-[var(--fixnix-lightpuple)] mr-2.5"></i>02 COMMENTS
                         </Link>
                       </li>
                     </ul>
                   </div>
-                  <div className="blog-details-two__content-1">
-                    <p className="blog-details-two__text-1">
+                  <div className="relative block max-w-[630px] px-4 mx-auto mt-24">
+                    <p>
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, by injected humour, or randomised words which
@@ -43,37 +44,39 @@ export default function Home() {
                       All the Lorem Ipsum generators on the Internet tend to
                       repeat predefined chunks as necessary,{" "}
                     </p>
-                    <p className="blog-details-two__text-2">
+                    <p className="mt-7 mb-6">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
                       at its layout. The point of using Lorem Ipsum is that it
                       has a more-or-less normal distribution of letters,
                     </p>
-                    <p className="blog-details-two__text-3">
+                    <p className="font-bold text-[var(--fixnix-darkpurple)] italic">
                       Duis aute irure dolor in reprehenderit in voluptate velit
                       esse cillum dolore fugiat nulla pariatur. Excepteur sint
                       occaecat cupidatat non proident, sunt in culpa qui officia
                       deserunt mollit anim id est laborum.{" "}
                     </p>
-                    <h3 className="blog-details-two__title blog-details-two__title-1">
+                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
                       Our Personal Approach
                     </h3>
-                    <p className="blog-details-two__text-4">
+                    <p>
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the, printer took a galley
                       of type and scrambled it to make a type specimen book. It
                       has survived not only five centuries,{" "}
                     </p>
-                    <div className="blog-details-two__quote">
-                      <p className="blog-details-two__quote-text">
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
                         Duis aute irure dolor in reprehenderit in voluptate
                         velit on esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident,
                       </p>
-                      <p className="blog-details-two__quote-name">Markon Deo</p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                        Markon Deo
+                      </p>
                     </div>
-                    <p className="blog-details-two__text-5">
+                    <p>
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the, printer took a galley
@@ -81,86 +84,89 @@ export default function Home() {
                       has survived not only five centuries,
                     </p>
                   </div>
-                  <div className="blog-details-two__img-box">
+                  <div className="relative block mt-14 mb-6">
                     <div className="row">
                       <div className="col-xl-6 col-lg-6 col-md-6">
-                        <div className="blog-details-two__single">
-                          <div className="blog-details-two__img-1">
+                        <div className="relative block mb-8">
+                          <div className="relative block">
                             <img
                               src="assets/images/blog/blog-details-2-1.jpg"
                               alt=""
+                              className="w-full rounded-tr-lg rounded-br-lg"
                             />
                           </div>
                         </div>
                       </div>
                       <div className="col-xl-6 col-lg-6 col-md-6">
-                        <div className="blog-details-two__single">
-                          <div className="blog-details-two__img-2">
+                        <div className="relative block mb-8">
+                          <div className="relative block">
                             <img
                               src="assets/images/blog/blog-details-2-2.jpg"
                               alt=""
+                              className="w-full rounded-tl-lg rounded-bl-lg"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="blog-details-two__content-2">
-                    <h3 className="blog-details-two__title blog-details-two__title-2">
+                  <div className="relative block max-w-[630px] px-4 mx-auto">
+                    <h3 className="text-2xl font-semibold leading-6">
                       Keep Your Battery Health 100%
                     </h3>
-                    <p className="blog-details-two__text-6">
+                    <p className="mt-7 mb-7">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the, printer took a galley
                       of type and scrambled it to make a type specimen book. It
                       has survived not only five centuries,
                     </p>
-                    <p className="blog-details-two__text-7">
+                    <p>
                       Sed ut perspiciatis unde omnis iste natus error sit
                       voluptatem laudantium, totam rem aperiam, eaque ipsa quae
                       ab illo inventore veritatis et quasi architecto beatae
                       vitae dicta sunt explicabo.{" "}
                     </p>
-                    <p className="blog-details-two__text-8">
+                    <p className="mt-6 mb-14">
                       Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                       aut odit aut fugit, sed quia consequuntur magni dolores
                       eos qui ratione voluptatem sequi nesciunt. Neque porro
                       quisquam est, qui dolorem ipsum quia dolor sit amet,{" "}
                     </p>
-                    <h3 className="blog-details-two__title blog-details-two__title-3">
+                    <h3 className="text-2xl font-semibold leading-6">
                       Choose The Right Case Guard
                     </h3>
-                    <p className="blog-details-two__text-9">
+                    <p className="mt-7 mb-6">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the, printer took a galley
                       of type and scrambled it to make a type specimen book. It
                       has survived not only five centuries,
                     </p>
-                    <p className="blog-details-two__text-10">
+                    <p>
                       Sed ut perspiciatis unde omnis iste natus error sit
                       voluptatem laudantium, totam rem aperiam, eaque ipsa quae
                       ab illo inventore veritatis et quasi architecto beatae
                       vitae dicta sunt explicabo.
                     </p>
-                    <p className="blog-details-two__text-11">
+                    <p className="mt-6 mb-14">
                       Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                       aut odit aut fugit, sed quia consequuntur magni dolores
                       eos qui ratione voluptatem sequi nesciunt. Neque porro
                       quisquam est, qui dolorem ipsum quia dolor sit amet,
                     </p>
                   </div>
-                  <div className="blog-details-two__img-box-2">
-                    <div className="blog-details-two__img-3">
+                  <div className="relative block">
+                    <div className="relative block before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[var(--fixnix-darkpurple)] before:opacity-30">
                       <img
                         src="assets/images/blog/blog-details-2-3.jpg"
                         alt=""
+                        className="w-full"
                       />
                     </div>
                   </div>
-                  <div className="blog-details-two__content-3">
-                    <p className="blog-details-two__text-12">
+                  <div className="relative block max-w-[630px] px-4 mx-auto">
+                    <p className="mt-14 mb-8">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, by injected humour, or randomised words which
@@ -170,13 +176,13 @@ export default function Home() {
                       All the Lorem Ipsum generators on the Internet tend to
                       repeat predefined chunks as necessary,
                     </p>
-                    <p className="blog-details-two__text-13">
+                    <p>
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
                       at its layout. The point of using Lorem Ipsum is that it
                       has a more-or-less normal distribution of letters,
                     </p>
-                    <p className="blog-details__tags">
+                    <p className="mt-14">
                       <span>Tags:</span>
                       <Link href="#">Gadget Repair</Link>
                       <Link href="#">Smartphone</Link>

@@ -188,7 +188,7 @@ export default function Menu() {
                 href="/FoundationalSciences"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Foundational Sciences
+                Foundational Matrices
               </Link>
             </li>
             <li className="mb-2">
@@ -196,7 +196,7 @@ export default function Menu() {
                 href="/Mind&Consciousness"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Mind & Consciousness
+               Ecological Intelligence
               </Link>
             </li>
             <li className="mb-2">
@@ -204,7 +204,7 @@ export default function Menu() {
                 href="/Nature&Environment"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Nature & Environment
+                Consciousness Geometries
               </Link>
             </li>
             <li className="mb-2">
@@ -212,7 +212,7 @@ export default function Menu() {
                 href="/Philosophy&Ethics"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Philosophy & Ethics
+                Perceptual Gateways
               </Link>
             </li>
             <li className="mb-2">
@@ -220,7 +220,7 @@ export default function Menu() {
                 href="/HumanSciences"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Human Sciences
+                Reality Frameworks
               </Link>
             </li>
             <li className="mb-2">
@@ -228,9 +228,66 @@ export default function Menu() {
                 href="/SpiritualTechnologies"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
-                Spiritual Technologies
+                Cosmic Harmonics
               </Link>
             </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Energetic Architectures 
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Character Alchemy 
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Unity Sciences
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Healing Mysteries
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Wisdom Transmission
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Sacred Artistry
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                href="/SpiritualTechnologies"
+                className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
+              >
+                Advanced Technologies
+              </Link>
+            </li>
+
           </ul>
         </li>
 

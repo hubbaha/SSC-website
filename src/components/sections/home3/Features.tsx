@@ -5,8 +5,15 @@ export default function Features() {
     <>
       {/*Feature One Start*/}
       <section className="feature-one">
+      <div className="text-left mb-3 -mt-24">
+      <h2 className="text-3xl font-bold mb-4">
+                    Why this matters?
+                  </h2>
+                    </div>
+                   
         <div className="container">
           <div className="row">
+            
             {/*Feature One Single Start*/}
             <div
               className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
@@ -14,11 +21,11 @@ export default function Features() {
             >
               <div className="feature-one__single">
                 <div className="feature-one__icon">
-                  <span className="icon-phone-call"></span>
+                <span className="text-white">✓</span>
                 </div>
                 <h3 className="feature-one__title">
                   <Link href="/Conferences">
-                    Provide Mobile Repair Services
+                  Bridging Ancient Knowledge with Modern Inquiry
                   </Link>
                 </h3>
               </div>
@@ -31,11 +38,11 @@ export default function Features() {
             >
               <div className="feature-one__single">
                 <div className="feature-one__icon">
-                  <span className="icon-computer"></span>
+                <span className="text-white">✓</span>
                 </div>
                 <h3 className="feature-one__title">
                   <Link href="/Conferences">
-                    Provide Computer Repair Services
+                  A Structured Path for Seekers, Thinkers & Practitioners
                   </Link>
                 </h3>
               </div>
@@ -48,11 +55,11 @@ export default function Features() {
             >
               <div className="feature-one__single">
                 <div className="feature-one__icon">
-                  <span className="icon-computer-1"></span>
+                <span className="text-white">✓</span>
                 </div>
                 <h3 className="feature-one__title">
                   <Link href="/Conferences">
-                    Provide Televisition Repair Services
+                  Integrating Mysticism with Scientific Exploration
                   </Link>
                 </h3>
               </div>
@@ -65,11 +72,11 @@ export default function Features() {
             >
               <div className="feature-one__single">
                 <div className="feature-one__icon">
-                  <span className="icon-laptop-1"></span>
+                  <span className="text-white">✓</span>
                 </div>
                 <h3 className="feature-one__title">
                   <Link href="/Conferences">
-                    Provide Laptop Repair Services
+                  Practical Applications for Consciousness & Transformation
                   </Link>
                 </h3>
               </div>

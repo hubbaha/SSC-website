@@ -7,42 +7,51 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ModalVideo from "react-modal-video";
 import Banner from "@/components/sections/home3/Banner";
+import Features from "@/components/sections/home3/Features";
 const ScienceSlides = [
   {
-    subTitle: "Nurture Wisdom, Evolve Spiritually, Transform",
-    title: "Unlock Your Spiritual <br/>Potential and Growth",
-    text: " Embrace personal and spiritual growth through Kashmiri Sufi teachings,<br/> fostering wisdom, resilience, and self-discovery for a fulfilled life.",
+    subTitle: "Exploring Knowledge, Rooted in Wisdom",
+    title: " Unveiling the Core of<br/> Sufi Science",
+    text: "Discover the fundamental sciences that bridge spirituality and intellect,<br/> forming the foundation of Kashmiri Sufi wisdom and enlightenment.",
     buttonText: "Read More",
     buttonLink: "/Home",
   },
   {
-    subTitle: "Spiritual Awakening, Lifelong Learning, Inner Strength",
-    title: "Elevate Your Mind, <br/>Heart, and Soul",
-    text: "Guided by Sufi principles, embark on a journey of self-improvement,<br/> wisdom, and transformation to achieve true inner peace and fulfillment.",
+    subTitle: "Science, Spirituality, Harmony, Truth, Understanding",
+    title: "The Scientific Foundations of<br/> Sufi Thought",
+    text: "Explore the principles of foundational sciences in Sufism, where reason,<br/> observation, and divine knowledge unite in harmony.",
     buttonText: "Explore Now",
     buttonLink: "/Home",
   },
   {
-    subTitle: "Learn, Reflect, Flourish, Empower, Inspire",
-    title: " Cultivating Spiritual Growth <br/>Through Sufi Wisdom",
-    text: "Deepen your connection to Sufi teachings, unlocking the strength, clarity, <br/>and purpose needed for continuous growth and meaningful transformation.",
+    subTitle: "Timeless Wisdom, Scientific Exploration, Enlightenment",
+    title: "Connecting Spirituality with<br/> Scientific Inquiry",
+    text: "Unravel the essential sciences that support the philosophical, metaphysical, <br/>and intellectual traditions of Kashmiri Sufism.",
     buttonText: "Join Now",
     buttonLink: "/Home",
   },
   {
-    subTitle: "Knowledge, Devotion, Progress, Purpose, Fulfillment",
-    title: "A Transformative Path<br/> to Self-Realization",
-    text: "Harness the wisdom of Kashmiri Sufism to evolve spiritually, <br/>refine your character, and develop a profound sense of purpose in life.",
+    subTitle: "Sacred Knowledge, Scientific Inquiry, Truth",
+    title: " Bridging Science and <br/>Spiritual Wisdom",
+    text: "Foundational sciences in Sufism offer a deeper understanding of nature, consciousness,<br/> and the universe through spiritual and intellectual exploration.",
     buttonText: "Explore Now",
     buttonLink: "/Home",
   },
   {
-    subTitle: "Expand Consciousness, Deepen Inner Awareness",
-    title: "Journey Toward Lasting <br/>Personal & Spiritual Growth",
-    text: " Step into a transformative journey guided by Kashmiri Sufi wisdom, nurturing your<br/> mind, soul, and spirit for a fulfilling life.",
+    subTitle: "Ancient Science, Modern Spiritual Awakening",
+    title: " Discover the Science Behind<br/> Sufi Mysticism",
+    text: "  Learn how Kashmiri Sufi traditions incorporate scientific reasoning, natural laws,<br/> and divine knowledge to explore the mysteries of existence.",
     buttonText: "Join Now",
     buttonLink: "/Join",
   },
+];
+const blogTitles = [
+  "Spiritual Foundations",
+  "Mystical Cosmology",
+  "Divine Numerology",
+  "Attribute Studies",
+  "Soul Psychology",
+  "Unity Laboratory"
 ];
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -93,245 +102,111 @@ export default function Home() {
       <Layout headerStyle={2} footerStyle={1}>
         {/*Core Services Start*/}
         <Banner slides={ScienceSlides}/>
-        <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
-          <div className="absolute top-[10px] left-0 services-one-shape-1">
-            <img src="assets/images/shapes/services-one-shape-1.png" alt="" />
-          </div>
-          <div className="absolute top-[65px] right-0 services-one-shape-2">
-            <img src="assets/images/shapes/services-one-shape-2.png" alt="" />
-          </div>
-          <div className="container">
-            <div className=" text-center mb-[49px]">
-              <span className=" text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
-                Foundational Sciences
-                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-              </span>
-              <h2 className=" text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
-                That shape the very essence of existence
-              </h2>
-              <p className="text-gray-700 pt-[20px]">
-                In the sacred land of Kashmir, where the timeless wisdom of Sufi
-                mysticism intertwines with the natural world. These sciences,
-                deeply rooted in the spiritual traditions of the land, serve as
-                a bridge between the unseen mysteries of the universe and the
-                observable world. At the Sufi Science Center, we delve into the
-                heart of these teachings, where science and spirituality meet in
-                harmony, guiding us toward a deeper understanding of life,
-                energy, and consciousness.
-              </p>
-            </div>
+        
 
-            <div className="row flex flex-wrap">
-              {/* Service 1 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className=" relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
-                  {/* <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-            <img src="assets/images/services/services-1-1.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
-            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-          </div> */}
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] text-white transition-all duration-[500ms]  font-semibold leading-[34px]">
-                      Geometry of the Universe
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px] text-white">
-                      The cosmos is a living manifestation of divine geometry—a
-                      sacred order woven into every fiber of creation. This
-                      sacred geometry is the language through which the Creator
-                      expresses divine harmony, guiding the movement of planets,
-                      the growth of plants, and the rhythm of the human heart.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 2 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
-                  {/* <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-            <img src="assets/images/services/services-1-2.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
-            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-          </div> */}
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] text-white transition-all duration-[500ms] font-semibold leading-[34px]">
-                      Science of Light & Energy
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px] text-white">
-                      In Sufi mysticism, light is a profound symbol of the
-                      Divine's presence and wisdom. The light of the heart
-                      illuminates the path to knowledge, while the light of the
-                      universe reflects the infinite beauty of the Creator. But
-                      beyond its meaning, light is a real force—a form of energy
-                      that permeates everything.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 3 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="relative block bg-fixnix-lightpurple shadow-light-purple mb-[30px] z-[2] transition-transform duration-[500ms] hover:-translate-y-[10px] group hover:bg-fixnix-darkpurple">
-                  {/* <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-            <img src="assets/images/services/services-1-3.jpg" alt="" className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"/>
-            <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-          </div> */}
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] text-white transition-all duration-[500ms]  font-semibold leading-[34px]">
-                      Sacred Sound & Vibrations
-                    </h3>
-                    <p className="text-white mt-[15px] mb-[22px]">
-                      Sound is not merely an audible phenomenon; it is the
-                      vibrational expression of the Divine. In Sufism, sound is
-                      used as a tool for spiritual awakening. The sacred
-                      vibrations produced in these practices align the
-                      individual’s soul with the cosmic resonance, tuning it to
-                      the frequencies of the Divine.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="relative block pb-20 mt-20 pt-10 bg-fixnix-darkpurple text-left-mobile ">
-          <div className="container mx-auto px-4">
-            <div className="text-center my-12">
-              <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-fixnix-white font-semibold uppercase z-[1]">
-                The Path of Knowledge & Divine Wisdom
-                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-white"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-white"></span>
-              </span>
-              <h2 className="text-3xl font-bold text-fixnix-white mt-2">
-                The knowledge that transcends the intellect and touches the soul
-              </h2>
-              <p className="text-fixnix-white mt-3">
-                At the Sufi Science Center, we honor the sacred unity of science
-                and spirituality. Explore these foundational sciences, where the
-                divine mysteries of the universe meet the rational insights of
-                modern science. A journey to unlock the hidden wisdom that lies
-                within us and in the world around us. It emphasizes the
-                importance of direct experience of the Divine, encouraging
-                seekers to cultivate an inner knowing that guides them in both
-                their spiritual and worldly lives.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                {
-                  icon: "icon-award",
-                  title: "Consciousness",
-                  desc: "Through the awakening of consciousness, seekers experience the world as a unified whole, deeply connected to the Divine.",
-                },
-                {
-                  icon: "icon-customer-service",
-                  title: "State of the soul ",
-                  desc: "Neuroscience, psychology, and spiritual traditions converge here to reveal the profound potential of the human soul.",
-                },
-                {
-                  icon: "icon-security",
-                  title: "The Laws of Nature",
-                  desc: "Sufism teaches that universe is governed by universal laws, that dictate the balance of nature and the order of all creation.",
-                },
-                {
-                  icon: "icon-computer-1",
-                  title: "Sufi and Scientific Perspectives",
-                  desc: "The harmony between Sufi teachings on the laws of nature & modern principles like the laws of thermodynamics.",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center bg-white shadow-light-purple border border-transparent rounded-lg p-6 transition duration-500 hover:border-fixnix-lightpurple hover:-translate-y-2 hover:translate-x-2"
-                >
-                  <div className="text-fixnix-lightpurple text-5xl">
-                    <span className={item.icon}></span>
-                  </div>
-                  <div className="ml-5">
-                    <div className="text-xl font-semibold text-fixnix-darkpurple hover:text-fixnix-lightpurple transition duration-500">
-                      <h2 className="text-fixnix-lightpurple">{item.title}</h2>
-                    </div>
-                    <p className="text-gray-600 mt-2">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="services-two">
-          <section className="relative pb-20 bg-cover bg-center">
+        <div className="py-16 bg-gray-100 text-left-mobile">
+        <div className="container mx-auto px-4">
+          {/* <div className="text-left mb-12">
+            <span className="relative text-left-mobile inline-block text-[18px] leading-[16px] text-fixnix-lightpurple font-bold uppercase z-[1]">
+            Foundational Sciences
+              <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
+             
+            </span>
+            <h2 className="text-4xl font-bold text-fixnix-darkpurple mt-3 text-left-mobile">
+              Our Research Focus
+            </h2>
+            <p className="text-gray-600 my-2 text-left-mobile">
+            The Foundational Matrices serve as a structured framework for exploring the intersection of mysticism, science, and consciousness. Rooted in classical Sufi knowledge yet adapted for the modern seeker, this study unveils the hidden order of existence through mathematical, cosmological, and psychological dimensions.
+            </p>
+            <p className="text-gray-600 my-2 text-left-mobile">
+            At the Kashmir Sufi Science Centre, under the Sufi Science Explorer Module, this structured approach provides seekers with a scientific yet experiential path to understanding divine reality, soul dynamics, and cosmic harmony.
+            </p>
+        </div> */}
+        
+          <section className="relative  bg-cover bg-center">
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-56 mb-11 items-center">
                 {/* Left Column */}
                 <div>
                   <div className="text-left ">
-                    <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                      The Soul and the Elements
+                    <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-bold uppercase z-[1]">
+                    Foundational Matrices
                       <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                     </span>
-                    <h2 className="text-3xl font-bold text-fixnix-darkpurple mt-2">
-                      The soul is a reflection of the Divine
-                    </h2>
+                    
                   </div>
                   <p className="text-gray-700 mt-4">
-                    According to Sufi teachings, the soul is a reflection of the
-                    Divine, a spark of light that exists beyond the physical
-                    realm. It is through the purification of the soul that one
-                    attains true knowledge and enlightenment. In this sacred
-                    journey, the elements—earth, water, fire, and air—play an
-                    integral role, representing both the material and spiritual
-                    aspects of our existence.
+                  The Foundational Matrices serve as a structured framework for exploring the intersection of mysticism, science, and consciousness. Rooted in classical Sufi knowledge yet adapted for the modern seeker, this study unveils the hidden order of existence through mathematical, cosmological, and psychological dimensions.
                   </p>
                   <p className="text-gray-700 mt-2">
-                    At the Sufi Science Center, we study the relationship
-                    between the soul and the elements, recognizing that each
-                    element holds specific energies and qualities that
-                    correspond to different aspects of the self. Just as the
-                    body is composed of these elements, so too is the soul
-                    influenced by their spiritual essence. By understanding
-                    these connections, we seek to harmonize the inner world with
-                    the outer world, creating balance and peace.
+                  At the Kashmir Sufi Science Centre, under the Sufi Science Explorer Module, this structured approach provides seekers with a scientific yet experiential path to understanding divine reality, soul dynamics, and cosmic harmony.
                   </p>
                 </div>
 
                 {/* Right Column */}
                 <div className="relative">
-                  <div className="rounded-lg overflow-hidden w-[425px] h-[500px]  bg-fixnix-lightpurple">
+                  <div className="rounded-lg overflow-hidden w-[350px] h-[350px]  bg-fixnix-lightpurple">
                     <img
-                      src="assets/images/resources/skill-1-1.jpg"
+                      src="assets/images/resources/Collaboration1.png"
                       alt="Repair Services"
-                      className="w-[425px] h-[500px] mix-blend-multiply"
+                      className="w-[350px] h-[350px] mix-blend-multiply"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <button
-                        onClick={() => setOpen(true)}
-                        className="w-16 h-16 bg-white bg-opacity-30 rounded-full flex items-center justify-center text-purple-700"
-                      >
-                        <span className="fa fa-play text-lg"></span>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </section>
 
-        {/* Modal Video */}
-        <ModalVideo
-          channel="youtube"
-          isOpen={isOpen}
-          videoId="Get7rqXYrbQ"
-          onClose={() => setOpen(false)}
+            {/* Counter Section */}
+          </section>
+        <Features></Features>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {blogTitles.map((title, index) => (
+    <div
+      key={index}
+      className="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+    >
+      <div className="relative">
+        <img
+          src={`assets/images/blog/blog-1-${index + 1}.jpg`}
+          alt={title}
+          className="w-full h-60 object-cover"
         />
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity">
+          <Link href="/Details" className="text-white text-2xl">
+            View Details
+          </Link>
+        </div>
+      </div>
+      <div className="p-4">
+        
+        <h3 className="text-xl text-center font-semibold text-fixnix-darkpurple mb-3">
+          <Link
+            href="/Details"
+            className="text-fixnix-darkpurple hover:text-fixnix-lightpurple"
+          >
+            {title}
+          </Link>
+        </h3>
+        <div className="flex justify-center">
+        <Link
+         href="/Details"
+         className="inline-block bg-fixnix-lightpurple text-white hover:bg-fixnix-darkpurple px-2 py-1 rounded-md"
+         >
+         Unveil Insights
+         </Link>
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>
+
+          
+        </div>
+      </div>
+        
 
         {/*Services One End*/}
       </Layout>

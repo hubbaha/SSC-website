@@ -62,32 +62,34 @@ export default function Home() {
               teachings about the unity of existence, sacred geometry and energy
               can be harmonized with modern fields like quantum physics.
             </p>
-          </div>
+        </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
+            {[1, 2, 3, 4, 5, 6].map((id) => (
               <div
-                key={index}
+                key={id}
                 className="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
               >
                 <div className="relative">
                   <img
-                    src={`assets/images/blog/blog-1-${item}.jpg`}
+                    src={`assets/images/blog/blog-1-${id}.jpg`}
                     alt="Blog Image"
                     className="w-full h-60 object-cover"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity">
                     <Link
-                      href="/ResearchDetails"
+                      href={`/ResearchDetails/${id}`}
                       className="text-white text-2xl"
-                    ></Link>
+                    >
+                      View Details
+                    </Link>
                   </div>
                 </div>
                 <div className="p-4">
                   <ul className="flex space-x-4 text-gray-500 text-sm mb-2">
                     <li>
                       <Link
-                        href="/ResearchDetails"
+                        href={`/ResearchDetails/${id}`}
                         className="flex items-center text-fixnix-lightpurple hover:text-fixnix-darkpurple font-bold"
                       >
                         <i className="fa fa-calendar-alt mr-2"></i> 5 AUG 2023
@@ -95,7 +97,7 @@ export default function Home() {
                     </li>
                     <li>
                       <Link
-                        href="/ResearchDetails"
+                        href={`/ResearchDetails/${id}`}
                         className="flex items-center text-fixnix-lightpurple hover:text-fixnix-darkpurple font-bold"
                       >
                         <i className="far fa-comments mr-2"></i> 02 COMMENTS
@@ -104,15 +106,15 @@ export default function Home() {
                   </ul>
                   <h3 className="text-lg font-semibold text-fixnix-darkpurple mb-3">
                     <Link
-                      href="/ResearchDetails"
+                      href={`/ResearchDetails/${id}`}
                       className="text-fixnix-darkpurple hover:text-fixnix-lightpurple"
                     >
-                      Blog Post Title {item}
+                      Blog Post Title {id}
                     </Link>
                   </h3>
                   <div>
                     <Link
-                      href="/ResearchDetails"
+                      href={`/ResearchDetails/${id}`}
                       className="inline-block bg-fixnix-lightpurple text-white hover:bg-fixnix-darkpurple px-4 py-2 rounded-md"
                     >
                       Read More
