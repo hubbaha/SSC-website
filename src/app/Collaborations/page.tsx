@@ -145,13 +145,7 @@ export default function Home() {
             {/* Counter Section */}
           </section>
 
-          {/* Modal Video */}
-          <ModalVideo
-            channel="youtube"
-            isOpen={isOpen}
-            videoId="Get7rqXYrbQ"
-            onClose={() => setOpen(false)}
-          />
+          
           <div className="container">
           <div className="text-left mb-12">
               <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-fixnix-lightpurple font-semibold uppercase z-[1]">

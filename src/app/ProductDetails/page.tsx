@@ -55,12 +55,12 @@ export default function Home() {
               <div className="mt-4">
                 <h3 className="text-lg font-medium">Quantity</h3>
                 <div className="flex items-center mt-2">
-                  {/* <button className="px-3 py-1 bg-gray-200 rounded-l"><i className="fa fa-minus"></i></button> */}
+                 
                   <input
                     type="number"
                     className="w-12 text-center border border-gray-300 "
                   />
-                  {/* <button className="px-3 py-1 bg-gray-200 rounded-r"><i className="fa fa-plus"></i></button> */}
+                  
                 </div>
               </div>
 

@@ -89,16 +89,10 @@ export default function Home() {
                         <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                       </span>
                       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Harmony of Spirit and Scientific Wonder
+                      THE UNIQUE LEGACY OF KASHMIRI SUFISM
                       </h2>
                       <p className="text-base sm:text-lg text-gray-700">
-                        Welcome to the Sufi Science Center – Kashmir Chapter,
-                        where the sacred wisdom of Sufism meets the wonders of
-                        modern science. Here in the tranquil and mystic land of
-                        Kashmir, a place where the Divine Presence is felt in
-                        every breeze, every mountain, and every stream, your
-                        journey towards spiritual enlightenment and scientific
-                        discovery begins.
+                      Kashmir, known as Pir Waer (Valley of Saints), represents a profound convergence of spiritual traditions where Sufism developed unique characteristics. The Sufi Science Centre Kashmir embodies this rich heritage, where ancient wisdom meets contemporary science. Our approach honors Kashmir's distinctive Rishi tradition while creating bridges between traditional practices and modern understanding, preserving timeless wisdom while making it accessible to today's seekers.
                       </p>
                     </div>
                     <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
@@ -169,295 +163,278 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative  block py-[120px] pt-10">
-              <div className="mb-[52px]">
-                <div className="flex flex-col md:flex-row bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative mr-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
-                    <div className="mb-[24px]">
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                 START YOUR SUFI JOURNEY
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
                       <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
-                        The Call to Begin
+                      How to Start Your Sufism Journey
                       </h4>
                       <p>
-                        Embark on a transformative journey, connecting inner
-                        spiritual awakening with outer exploration.
+                      Beginning a journey in Sufism involves both intellectual understanding and practical experience. Here's a structured approach to start your path:
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Inner Awakening
+                          Step 1: Begin with Intention (Niyyah)
                           </h5>
                           <p>
-                            Refine the soul through practices like meditation,
-                            Dhikr, and whirling.
+                          Set a clear and sincere intention for your journey. In Sufism, the quality of your intention shapes your entire path. Ask yourself why you're drawn to Sufism and what you hope to discover or develop through this tradition.
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Divine Connection
+                          Step 2: Study Foundational Concepts
                           </h5>
                           <p>
-                            Deepen connection to the divine and higher spiritual
-                            purpose.
+                          Build a basic intellectual framework:<br/>
+                          •	Read introductory texts on Sufi principles and practices<br/>
+                          •	Learn about key concepts like tawhid (divine unity), dhikr (remembrance), and muraqabah (contemplation)<br/>
+                          •	Explore the relationship between the outer law (shariah) and the inner path (tariqah)
+
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            New Vision
+                          Step 3: Connect with Authentic Teachers
                           </h5>
                           <p>
-                            Discover hidden patterns shaping existence with
-                            renewed spiritual vision.
+                          In the Sufi tradition, guidance from an experienced teacher is considered essential:<br/>
+                          •	Research established Sufi orders (tariqahs) with authentic lineages<br/>
+                          •	Attend talks, gatherings, or workshops led by respected Sufi teachers<br/>
+                          •	Consider whether a formal initiation (bay'ah) with a teacher is right for you
+
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Sacred Harmony
+                          Step 4: Develop a Regular Practice
                           </h5>
                           <p>
-                            Unveil harmony between divine love and universal
-                            scientific principles.
+                          Consistency is crucial for spiritual development:<br/>
+                         •	Begin with simple daily dhikr (remembrance practices)<br/>
+                         •	Incorporate regular periods of silent contemplation (muraqabah)<br/>
+                         •	Practice mindfulness in everyday activities<br/>
+                         •	Implement ethical principles in your daily interactions
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          Step 5: Engage with Community (Suhbah)
+                          </h5>
+                          <p>
+                          Sufism is typically practiced in community:<br/>
+                          •	Attend regular gatherings (majlis) where possible<br/>
+                          •	Participate in group dhikr sessions<br/>
+                          •	Engage in service to others as a spiritual practice<br/>
+                          •	Learn from the experiences of fellow travelers on the path
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          Step 6: Integrate Knowledge with Experience
+                          </h5>
+                          <p>
+                          Balance intellectual study with direct experience:<br/>
+                          •	Apply what you read in your daily practice<br/>
+                          •	Observe how theoretical concepts manifest in your life<br/>
+                          •	Journal about your experiences and insights<br/>
+                          •	Discuss your understanding with teachers and fellow seekers
+
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          Step 7: Practice Patience and Perseverance
+                          </h5>
+                          <p>
+                          Spiritual development unfolds gradually:<br/>
+                          •	Approach the path with commitment and consistency<br/>
+                          •	Be patient with yourself through challenges and obstacles<br/>
+                          •	Recognize that periods of difficulty are often important growth opportunities<br/>
+                          •	Understand that Sufism is a lifelong journey, not a destination
                           </p>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row pl-5 bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
+                <div className="relative block mb-[52px]">
+              <div className="flex items-center">
+                <div className="w-full lg:w-8/12">
+                  <div className="relative block">
+                    <div className="text-left">
+                      <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
+                        Path of the Seeker
+                        <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
+                      </span>
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                        Uniting Spirituality & Science
+                      </h2>
+                      <p className="text-base sm:text-lg text-gray-700">
+                        In Kashmir, the heart of the ancient Sufi tradition,
+                        embark on a transformative journey where the soul’s
+                        longings meet the wisdom of the natural world. This
+                        journey transcends boundaries, revealing spirituality
+                        and science as two sides of same coin – pathways leading
+                        to Divine Truth.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <div className="flex flex-col md:flex-row  bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                 INTEGRATE SCIENTIFIC KNOWLEDGE
+                </div>
+                  <div className="pt-[123px] relative px-10">
                     <div className="mb-[24px]">
                       <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">
-                        The Kashmir Chapter
+                      Integrating Scientific Knowledge into the Sufi Journey for New Seekers
                       </h4>
                       <p>
-                        Tradition and innovation merge, creating a dynamic blend
-                        of progress, heritage, creativity, and transformation.
+                      For newcomers with scientific backgrounds, let us help you to integrate your existing knowledge with Sufi practices & create a meaningful entry point.
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Kashmiri Wisdom
+                          Step 1: Establish Conceptual Parallels
                           </h5>
                           <p>
-                            Spiritual practice blends with modern scientific
-                            exploration for truth.
+                          Create introductory materials that explicitly connect scientific concepts with Sufi principles:<br/>
+                          •	Quantum non-locality and the Sufi concept of unity (tawhid)<br/>
+                          •	Neuroplasticity research and Sufi practices of heart transformation<br/>
+                          •	Complex systems theory and Sufi understanding of interconnection<br/>
+                          •	Consciousness studies and Sufi states of awareness
+
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Holistic Learning
+                          Step 2: Develop Evidence-Based Entry Practices
                           </h5>
                           <p>
-                            Integrating spiritual growth and intellectual
-                            expansion in immersive programs.
+                          Offer beginning practices with both spiritual significance and documented scientific effects:<br/>
+                          •	Breathing techniques with known neurophysiological benefits<br/>
+                          •	Attention training exercises validated by cognitive science<br/>
+                          •	Contemplative practices with measured effects on stress reduction<br/>
+                          •	Heart-focused meditation with documented HRV improvements
+
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Sacred Knowledge
+                          Step 3: Create Dual-Language Learning Materials
                           </h5>
                           <p>
-                            Combining Sufi tradition with scientific inquiry for
-                            transformative understanding.
+                          Design resources that speak both languages fluently:<br/>
+                            •	Practice guides that include both traditional descriptions and scientific explanations<br/>
+                            •	Glossaries that translate between scientific terminology and Sufi concepts<br/>
+                            •	Case studies showing how scientists have personally integrated these approaches<br/>
+                            •	Reading lists that include both scientific research and accessible Sufi texts
+
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Unified Quest
+                            Step 4: Establish Experiential Laboratories
                           </h5>
                           <p>
-                            Fostering collaboration between spiritual seekers
-                            and scientific minds.
+                          Develop structured environments where beginning students can explore both dimensions:<br/>
+                          •	Workshops where practices are both experienced and objectively measured<br/>
+                          •	Discussion groups facilitated by individuals fluent in both scientific and Sufi discourse<br/>
+                          •	Demonstration sessions where experienced practitioners show measurable physiological changes during Sufi practices<br/>
+                          •	Peer learning circles where students share observations using both frameworks
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                            Step 5: Train Bridge-Building Mentors
+                          </h5>
+                          <p>
+                          Identify and develop guides who understand both worlds:<br/>
+                          •	Scientists who have personal experience with Sufi practices<br/>
+                          •	Sufi practitioners with scientific literacy<br/>
+                          •	Educators skilled at translating between different epistemologies<br/>
+                          •	Researchers studying contemplative practices who can communicate findings accessibly
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                            Step 6: Design Progressive Integration Pathways
+                          </h5>
+                          <p>
+                          Create structured journeys that gradually deepen integration:<br/>
+                            •	Begin with practices where scientific validation is strongest<br/>
+                            •	Gradually introduce experiences that extend beyond current scientific frameworks<br/>
+                            •	Help students develop sophisticated models that honor both empirical evidence and direct experience<br/>
+                            •	Guide the transition from "either/or" thinking to "both/and" understanding
+
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                            Step 7: Document and Share Integration Experiences
+                          </h5>
+                          <p>
+                          Cultivate a community knowledge base:<br/>
+                          •	Collect narratives from scientists who have successfully integrated Sufi practices<br/>
+                          •	Document common challenges and effective approaches for overcoming them<br/>
+                          •	Create case studies showing how scientific understanding can enhance spiritual development<br/>
+                          •	Develop resources addressing frequent questions from scientifically-trained beginners
+
                           </p>
                         </div>
                       </li>
                     </ul>
                   </div>
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative ml-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/*Pricing One End*/}
-
-        {/*Contact Two Start*/}
-        <section className="text-left-mobile relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
-          <div className="absolute inset-0 bg-center bg-cover mix-blend-multiply z-[-1]"></div>
-          <div className="container">
-            <div className="relative block">
-              <div className=" text-center mb-[42px]">
-                <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-                  Start Your Journey Today
-                  <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                  <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                </span>
-                <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-                  Your journey into the heart of Sufi science begins
-                </h2>
-                <p className="pt-[15px] sm:pt-[20px] text-gray-100 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-                  With each step, you will uncover new dimensions of
-                  understanding, not only of the world around you but also of
-                  the divine presence within. The ancient Sufi wisdom and modern
-                  scientific discoveries are not separate but two expressions of
-                  the same Divine Truth. We will awaken hidden knowledge and
-                  power, fostering personal transformation, collective healing,
-                  and the realization of Divine Unity that connects all of
-                  creation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/*Contact Two  End*/}
-
-        {/*Services One Start*/}
-        <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
-          <div className="absolute top-[10px] left-0 services-one-shape-1">
-            <img src="assets/images/shapes/services-one-shape-1.png" alt="" />
-          </div>
-          <div className="absolute top-[65px] right-0 services-one-shape-2">
-            <img src="assets/images/shapes/services-one-shape-2.png" alt="" />
-          </div>
-          <div className="container">
-            <div className=" text-center mb-[49px]">
-              <span className=" text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
-                What Awaits You on This Sacred Journey?
-                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-              </span>
-              <h2 className=" text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
-                Embark on a Transformative Path
-              </h2>
-              <p className="s pt-[20px]">
-                Step into a realm where ancient wisdom and modern science
-                converge, offering you profound insights into the universe and
-                your inner self. This journey will awaken your spirit, expand
-                your consciousness, and guide you toward deeper healing and
-                enlightenment.
-              </p>
-            </div>
-
-            <div className="row flex flex-wrap">
-              {/* Service 1 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-1.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Sufi Practices
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Learn spiritual meditation, dhikr, and sacred whirling to
-                      connect with divine energy and awaken the soul.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 2 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-2.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Sacred Geometry
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Explore the universe's hidden geometric patterns, uniting
-                      modern physics and ancient wisdom for universal harmony.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 3 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-3.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Mindful Science
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Study the connection between spirit and mind, with Sufi
-                      wisdom guiding pathways to inner-outer unity.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/*Services One End*/}
+        
       </Layout>
     </>
   );

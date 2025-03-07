@@ -28,7 +28,7 @@ const Header2: React.FC<Header2Props> = ({
   const handleScroll = () => {
     const currentScrollPosition = window.scrollY;
     setScrollPosition(currentScrollPosition);
-    setIsSticky(currentScrollPosition > 100); // Adjust "100" based on the height of your main header
+    setIsSticky(currentScrollPosition > 100); 
   };
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Header2: React.FC<Header2Props> = ({
         {/* Top Bar */}
         <div className="bg-fixnix-darkpurple py-2 lg:block hidden">
           <div className="container mx-auto flex items-center justify-between px-4">
-            <p className="text-white text-base font-bold font-sans lg:ml-28 xl:ml-10 2xl:-ml-[440px]">
+            <p className="text-white text-base font-bold font-sans lg:ml-28 xl:ml-10 2xl:-ml-[530px]">
               Kashmir Chapter
             </p>
             <div className="flex items-center space-x-4">
@@ -107,10 +107,23 @@ const Header2: React.FC<Header2Props> = ({
                     alt="Sufi Science Centre Logo"
                     width={110}
                     height={110}
-                    className="responsive-logo"
+                    className="responsive-logo  w-[110px] h-[110px] transition-all duration-300 ease-in-out
+                    2xl:w-[130px] 2xl:h-[130px]
+                   3xl:w-[200px] 3xl:h-[200px]
+                  lg:w-[90px] lg:h-[90px]
+                  md:w-[90px] md:h-[90px]
+          sm:w-[50px] sm:h-[50px]
+          xs:w-[40px] xs:h-[40px]"
                   />
                 </Link>
-                <span className="text-fixnix-darkpurple font-bold text-[40px] leading-none font-serif whitespace-nowrap responsive-website-name">
+                <span className="text-fixnix-darkpurple  leading-none font-serif whitespace-nowrap responsive-website-name  text-[1.8rem] font-bold truncate transition-all duration-300 ease-in-out text-center
+               3xl:text-[5.5rem]
+               2xl:text-[3.2rem]
+               lg:text-[2.3rem]
+               md:text-[2rem]
+               sm:text-[23px]
+               xs:text-[19px]
+               2xs:text-[16px]">
                   Sufi Science Centre
                 </span>
               </div>
@@ -124,7 +137,17 @@ const Header2: React.FC<Header2Props> = ({
                 
               </div>
 
-              <p className="italic text-gray-600  responsive-tagline">
+              <p className="italic text-gray-600  responsive-tagline text-base mt-[5px] text-center
+        3xl:text-[23px] 3xl:-mt-[75px] 3xl:ml-[210px] 3xl:pr-[380px]
+        2xl:text-[13.5px] 2xl:-mt-[50px] 2xl:ml-[140px] 2xl:pr-[1200px]
+        lg:text-[9.5px] lg:-mt-[45px] lg:ml-[100px] lg:pr-[380px]
+        md:text-[8.5px] md:-mt-[50px] md:ml-[100px] md:pr-[280px]
+        sm:text-[6px] sm:-mt-[60px] sm:ml-[60px] sm:pr-[70px]
+        smd:text-[6px] smd:-mt-[25px] smd:ml-[60px] smd:pr-[70px]
+        xs:text-[4.5px] xs:-mt-[55px] xs:ml-[52px]
+        sxs:text-[5px] sxs:-mt-[20px] sxs:ml-[50px]
+        2xs:text-[4px] 2xs:-mt-[22px] 2xs:ml-[50px]
+        3xs:text-[4px] 3xs:-mt-[22px] 3xs:ml-[53px]">
                 A Harmony of Knowledge and Inner Peace: The Next Generation Sufi
                 Way Forward
               </p>

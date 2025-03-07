@@ -542,7 +542,7 @@ const MobileMenu = ({
             </ul>
           </div>
           <div className="flex  py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300  text-fixnix-darkpurple  space-x-2">
-    <i className="fa fa-user-circle text-fixnix-white text-lg"></i>
+    <i className="fa fa-user-circle  text-white bg-lightpurple p-2 rounded-full mr-2"></i>
     <Link
       href="/Login"
       className="hover:underline text-fixnix-white hover:text-fixnix-white"
