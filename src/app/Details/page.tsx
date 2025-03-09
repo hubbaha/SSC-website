@@ -16,22 +16,10 @@ export default function Home() {
                 <div className="relative block bg-white mx-4 rounded-lg py-28 mt-[-110px] z-10">
                   <div className="relative block text-center">
                     <h3 className="text-6xl font-bold leading-[70px] mt-24">
-                      Mystical Cosmology<br/> Mapping Divine Reality
-                      <p className="text-center text-[var(--fixnix-lightpurple)] text-[25px] font-normal px-4">The divine architecture of existence and its unfolding from unity to multiplicity.</p>
+                      Foundational Matrices<br/> 
+                      <p className="text-center text-[var(--fixnix-lightpurple)] text-[25px] font-normal px-4">The Ontology of Divine Reality</p>
                     </h3>
-                    <ul className="relative block mt-6 list-unstyled">
-                      <li className="flex items-center justify-center">
-                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
-                          <i className="fa fa-user text-[var(--fixnix-lightpuple)] mr-2.5"></i>John Doe
-                        </Link>
-                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] ml-4 transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
-                          <i className="fa fa-calendar-alt text-[var(--fixnix-lightpuple)] mr-2.5"></i>5 AUG 2023
-                        </Link>
-                        <Link href="#" className="font-semibold uppercase text-[var(--fixnix-gray)] ml-4 transition duration-500 hover:text-[var(--fixnix-lightpuple)]">
-                          <i className="far fa-comments text-[var(--fixnix-lightpuple)] mr-2.5"></i>02 COMMENTS
-                        </Link>
-                      </li>
-                    </ul>
+                    
                   </div>
                   <div className="relative block max-w-[630px] px-4 mx-auto mt-24">
                     {/* <p>
@@ -57,281 +45,152 @@ export default function Home() {
                       deserunt mollit anim id est laborum.{" "}
                     </p> */}
                     <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
+                    Prophetic Sayings 
                     </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
+                    
                     <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
                       <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
+                      	Islam – “Actions are judged by intentions.” (Prophet Muhammad ﷺ)
                       </p>
                       <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
+                      	This emphasizes that the inner dimension of action is what gives it reality, suggesting a consciousness-based reality framework.
                       </p>
                     </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
+                    
+                    
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      	Christianity – "In the beginning was the Word, and the Word was with God, and the Word was God." (John 1:1)
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      The primacy of divine articulation in the formation of existence, hinting at a linguistic structure to reality.
+                      </p>
+                    </div>
+                    
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      Judaism – "And God said, ‘Let there be light,’ and there was light." (Genesis 1:3)
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      The creative force of divine command (Kun Fayakun in Islam) as the initiating principle of reality.
+                      </p>
+                    </div>
+                    
                     <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
+                    Scientific Reflections
                     </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
+                    
                     <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
                       <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
+                      Ibn Sina (980–1037) – The Metaphysics of Existence and Essence
                       </p>
                       <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
+                      Ibn Sina distinguished existence (wujud) from essence (mahiyya), asserting that existence is granted by a necessary being (God).
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      This aligns with quantum mechanics, where particles have potential existence until observed (collapse of the wave function).
                       </p>
                     </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
+                    
+                  
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      Werner Heisenberg (1901–1976) – The Uncertainty Principle and Reality's Fluidity
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      Heisenberg discovered that the act of measurement changes a system’s state, implying that observation participates in reality’s formation.
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      This resonates with Islamic metaphysics, where divine witnessing (shuhud) is what grants stability to creation.
+                      </p>
+                    </div>
+                    
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      John Wheeler (1911–2008) – The Participatory Universe
+                      </p>
+                      
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      	Wheeler proposed that reality is fundamentally observer-dependent, suggesting that consciousness is part of the fabric of existence.
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      This idea mirrors Sufi teachings, where the knower (arif) transforms their own reality through divine perception.
+                      </p>
+                    </div>
+                    
                     <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
+                    Kashmiri Sufi Wisdom
                     </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
+                    
                     <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
                       <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
+                      Sheikh Noor-ud-Din (1377–1440) – The Seeker as a Co-Creator
+	
+
                       </p>
                       <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
+                      “The one who seeks, finds the world reshaped by his vision.”
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      Noor-ud-Din emphasized that perception is not passive but actively constructs the seen world.
                       </p>
                     </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
+                    
+                   
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      Lalla Ded (1320–1392) – The Body as a Temple of Light
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      	“The lamp of truth shines in those who remove the dust of illusion.”
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      She described the human body as an instrument of divine perception, mirroring Heisenberg’s discovery that matter exists in flux until conscious interaction occurs.
+                      </p>
+                    </div>
+                    
+                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
+                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
+                      Baba Dawood Khaki (16th century) – The Reality Behind Forms
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      	"The form deceives, the truth is hidden beneath the veil of names.”
+                      </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      His insights resonate with Plato’s concept of ideal forms and modern physics’ search for a unified field theory.
+                      </p>
+                    </div>
+                    
                     <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
+                    Scholarly Insights from Dr. Ghulam Mohammad Kumar 
                     </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
+                    
                     <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
                       <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
+                      Spiritual Foundations as a Quantum Superstructure
                       </p>
                       <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
+                      	Dr. Ghulam Mohammad Kumar proposes that divine consciousness is the underlying field of reality, akin to the quantum vacuum field, which is not empty but a potential-filled foundation of all existence.
                       </p>
+                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
+                      He argues that Sufi perception (kashf) is a function of aligning human awareness with this divine field, much like quantum coherence in Bose-Einstein condensates.</p>
                     </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
                     <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
                       <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
+                      The Role of Divine Witnessing in Reality Formation
                       </p>
                       <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
+                      	He correlates the Islamic concept of ‘Shahid’ (The Ever-Witnessing) with Wheeler’s Participatory Universe, arguing that divine observation sustains the very fabric of existence.
                       </p>
+                      
                     </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
-                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
-                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                      </p>
-                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
-                      </p>
-                    </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
-                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
-                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                      </p>
-                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
-                      </p>
-                    </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
-                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
-                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                      </p>
-                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
-                      </p>
-                    </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
-                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
-                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                      </p>
-                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
-                      </p>
-                    </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
-                    <h3 className="text-2xl font-semibold leading-6 mt-14 mb-6">
-                      Our Personal Approach
-                    </h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,{" "}
-                    </p>
-                    <div className="relative block bg-[var(--fixnix-primary)] py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']">
-                      <p className="text-xl leading-7 text-[var(--fixnix-darkpurple)]">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit on esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                      </p>
-                      <p className="relative inline-block text-xl leading-7 text-[var(--fixnix-darkpurple)] mt-4 ml-14 before:content-[''] before:absolute before:h-0.5 before:w-10 before:top-3.5 before:left-[-54px] before:bg-[var(--fixnix-lightpuple)]">
-                        Markon Deo
-                      </p>
-                    </div>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the, printer took a galley
-                      of type and scrambled it to make a type specimen book. It
-                      has survived not only five centuries,
-                    </p>
+                   
                   </div>
                   <div className="relative block  py-6 px-10 mt-8 mb-6 before:absolute before:left-0 before:right-0 before:top-0 before:h-1.5 before:bg-[var(--fixnix-lightpuple)] before:rounded-md before:content-['']"></div>
 
               
                   
-                  <div className="relative block  mt-5 mx-3">
+                  <div className="relative block  mt-5 mx-12">
                     <h3 className="text-2xl font-semibold leading-6">
                     Core Concept
                     </h3>

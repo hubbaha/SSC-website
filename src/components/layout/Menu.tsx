@@ -5,7 +5,7 @@ import React from "react";
 export default function Menu() {
   return (
     <>
-      <ul className="main-menu__list lg:pl-[100px] xl:pl-[130px]  2xl:pl-[200px]  hidden lg:flex  lg:space-x-[25px] xl:space-x-[30px]  2xl:space-x-[55px]  ">
+      <ul className="main-menu__list lg:pl-[100px] xl:pl-[100px]  2xl:pl-[140px]  hidden lg:flex  lg:space-x-[25px] xl:space-x-[30px]  2xl:space-x-[55px]  ">
         {/* HOME */}
         <li className="dropdown megamenu relative group">
           <Link
@@ -185,7 +185,7 @@ export default function Menu() {
           <ul className="bg-white absolute z-50 mt-0 pt-4 px-2 w-72 rounded-b-md max-h-[500px]   hidden group-hover:block">
             <li className="mb-2">
               <Link
-                href="/FoundationalSciences"
+                href="/FoundationalMatrices"
                 className="text-fixnix-darkpurple text-[15px] hover:bg-fixnix-darkpurple hover:text-white rounded px-4 py-1 transition-all"
               >
                 Foundational Matrices

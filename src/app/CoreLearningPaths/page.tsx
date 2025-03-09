@@ -2,13 +2,191 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useState,  useEffect  } from "react";
 import Banner from "@/components/sections/home3/Banner";
+type ChecklistSection = {
+  title: string;
+  items: string[];
+  completed: boolean[];
+};
+
 export default function Home() {
+  const [sections, setSections] = useState<ChecklistSection[]>([
+    {
+      title: "Initial Orientation",
+      items: [
+        "Read introductory materials on Sufi principles and practices",
+        "Learn basic terminology used in Sufi discourse",
+        "Research different Sufi orders (tariqahs) and their approaches",
+        "Identify scientific concepts that parallel Sufi teachings",
+        "Attend an introductory session or talk on Sufism"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Finding Guidance",
+      items: [
+        "Connect with respected teachers who understand both scientific and spiritual dimensions",
+        "Research authentic lineages (silsilas) and their methods of transmission",
+        "Speak with practitioners who have scientific backgrounds",
+        "Attend gatherings of potential spiritual communities",
+        "Ask questions about how scientific understanding is integrated with practice"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Establishing Daily Practice",
+      items: [
+        "Set up a consistent time and space for daily meditation/contemplation",
+        "Learn a basic form of dhikr (remembrance practice)",
+        "Begin a practice journal to document experiences and observations",
+        "Track basic physiological effects of practice (calm, focus, sleep quality)",
+        "Establish a regular reading schedule of relevant materials"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Developing Self-Awareness",
+      items: [
+        "Begin systematic self-observation throughout daily activities",
+        "Identify habitual patterns in thoughts and reactions",
+        "Notice how different states of mind affect perception and experience",
+        "Practice mindful attention during routine activities",
+        "Observe the relationship between breath, emotions, and thoughts"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Community Engagement",
+      items: [
+        "Attend group dhikr or meditation sessions",
+        "Participate in study circles discussing texts or concepts",
+        "Engage in service activities with the community",
+        "Ask questions and share observations with fellow practitioners",
+        "Build relationships with more experienced practitioners"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Knowledge Integration",
+      items: [
+        "Create connections between scientific understanding and spiritual concepts",
+        "Notice parallels between scientific research and personal experience",
+        "Study one classic Sufi text alongside contemporary scientific perspectives",
+        "Attend lectures or workshops that bridge scientific and spiritual worldviews",
+        "Begin developing a personalized framework that honors both approaches"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Character Development",
+      items: [
+        "Identify key virtues to develop in daily life",
+        "Practice mindful communication and listening",
+        "Implement ethical principles in professional and personal contexts",
+        "Notice and work with challenging emotional patterns",
+        "Seek feedback from trusted others about behavioral patterns"
+      ],
+      completed: [false, false, false, false, false]
+    },
+    {
+      title: "Early Assessment",
+      items: [
+        "Review journal entries to identify patterns and changes",
+        "Notice shifts in perception, emotions, and thought patterns",
+        "Recognize challenges and obstacles that have emerged",
+        "Assess which practices resonate most strongly",
+        "Consult with teachers about appropriate next steps"
+      ],
+      completed: [false, false, false, false, false]
+    }
+  ]);
+
+  const [overallProgress, setOverallProgress] = useState(0);
+  const [sectionProgress, setSectionProgress] = useState<number[]>(Array(8).fill(0));
+  const [showProgressDetails, setShowProgressDetails] = useState(false);
+
+  const toggleItem = (sectionIndex: number, itemIndex: number) => {
+    const newSections = [...sections];
+    newSections[sectionIndex].completed[itemIndex] = !newSections[sectionIndex].completed[itemIndex];
+    setSections(newSections);
+  };
+
+  const resetAll = () => {
+    const newSections = sections.map(section => ({
+      ...section,
+      completed: Array(section.items.length).fill(false)
+    }));
+    setSections(newSections);
+  };
+
+  const completeAll = () => {
+    const newSections = sections.map(section => ({
+      ...section,
+      completed: Array(section.items.length).fill(true)
+    }));
+    setSections(newSections);
+  };
+
+  useEffect(() => {
+    // Calculate progress for each section
+    const newSectionProgress = sections.map(section => {
+      const completedCount = section.completed.filter(Boolean).length;
+      return (completedCount / section.items.length) * 100;
+    });
+    setSectionProgress(newSectionProgress);
+
+    // Calculate overall progress
+    const totalItems = sections.reduce((total, section) => total + section.items.length, 0);
+    const totalCompleted = sections.reduce(
+      (total, section) => total + section.completed.filter(Boolean).length, 0
+    );
+    setOverallProgress((totalCompleted / totalItems) * 100);
+  }, [sections]);
+
+  const getJourneyStatus = () => {
+    if (overallProgress <= 25) return "Threshold of the Path";
+    if (overallProgress <= 50) return "Active Engagement";
+    if (overallProgress <= 75) return "Developing Integration";
+    return "Ready for Advancement";
+  };
+
+  const getJourneyDescription = () => {
+    if (overallProgress <= 25) {
+      return "You are at the beginning stages of exploration. Focus on establishing basic knowledge, finding proper guidance, and implementing consistent daily practice. This is a crucial foundation-building phase.";
+    } else if (overallProgress <= 50) {
+      return "You've established a basic foundation and are actively engaging with multiple dimensions of the path. Continue deepening your practice while expanding community connections and knowledge integration.";
+    } else if (overallProgress <= 75) {
+      return "You're experiencing meaningful integration of scientific understanding and spiritual practice. Your personal framework is developing, and transformations in awareness and character are becoming noticeable. Focus on consistency and refinement.";
+    } else {
+      return "You've established a robust foundation across all dimensions of the beginner's path. You're ready to advance to intermediate practices and deeper studies. Consider increasing commitment to a specific lineage while maintaining your integrated approach.";
+    }
+  };
+
+  // Add local storage functionality
+  useEffect(() => {
+    // Try to load saved data from localStorage when component mounts
+    const savedData = localStorage.getItem('sufiJourneyProgress');
+    if (savedData) {
+      try {
+        const parsedData = JSON.parse(savedData);
+        setSections(parsedData);
+      } catch (e) {
+        console.error('Error loading saved progress', e);
+      }
+    }
+  }, []);
+  
+  // Save to localStorage whenever sections change
+  useEffect(() => {
+    localStorage.setItem('sufiJourneyProgress', JSON.stringify(sections));
+  }, [sections]);
+
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index: SetStateAction<number>) => {
     setActiveIndex(index);
   };
+  
   const LearningSlides = [
     {
       subTitle: "Wisdom, Growth, Enlightenment, Reflection, Mastery",
@@ -51,97 +229,6 @@ export default function Home() {
       <Layout headerStyle={2} footerStyle={1}>
        <Banner slides={LearningSlides}/>
         {/*Core Services Start*/}
-        <section className="relative block py-[120px] z-[1]">
-          <div
-            className="absolute inset-0 bg-no-repeat bg-center bg-cover z-[-1]"
-            style={{
-              backgroundImage:
-                "url(assets/images/backgrounds/core-services-bg.jpg)",
-            }}
-          ></div>
-          {/*Experience One End*/}
-          <div className="relative block py-12 lg:py-28 bg-cover bg-center bg-no-repeat">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-wrap items-center">
-                {/* Left Section */}
-                <div className="w-full lg:w-5/12 xl:w-1/2 pt-8 lg:pt-14">
-                  <div className="relative">
-                    <div className="rounded-lg overflow-hidden relative group">
-                      <Image
-                        src="/assets/images/services/core-services-img-1.jpg"
-                        alt="Core services"
-                        layout="responsive"
-                        width={500}
-                        height={400}
-                        className="w-full transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Section */}
-                <div className="w-full lg:w-7/12 xl:w-1/2 py-8 lg:py-5 lg:pl-12 xl:pl-24">
-                  <div className="relative">
-                    <div className="text-left mb-8">
-                      <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                        Core Learning Paths
-                        <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
-                      </span>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Divine Unity Through Sacred Knowledge
-                      </h2>
-                      <p className="text-base sm:text-lg text-gray-700">
-                        Welcome to the heart of Sufi Science, where sacred
-                        wisdom and science converge to reveal existence’s
-                        mysteries. The Sufi Science Center – Kashmir Chapter
-                        invites you on a transformative journey, blending
-                        Sufism’s timeless wisdom with modern discoveries,
-                        exploring divine truths that permeate both seen and
-                        unseen realms.
-                      </p>
-                    </div>
-                    <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
-                      {/* List Item 1 */}
-                      <li className="relative flex items-center p-4 py-6 md:py-8 bg-white rounded-lg shadow-md transition-all duration-500 hover:-translate-y-[10px] group ">
-                        <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
-                          <span className="icon-checked"></span>
-                        </div>
-                        <div className="ml-6 sm:ml-6">
-                          <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
-                            The Science of Divine Unity
-                          </h5>
-                          <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
-                            Unity, Interconnection, Science, Divine
-                          </p>
-                        </div>
-                      </li>
-
-                      {/* List Item 2 */}
-                      <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md  transition-all duration-500 hover:-translate-y-[10px] group">
-                        <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
-                          <span className="icon-repair"></span>
-                        </div>
-                        <div className="ml-4 sm:ml-6">
-                          <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
-                            The Laws of Creation
-                          </h5>
-                          <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
-                            Science, Sufism, consciousness, harmony.{" "}
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/*Core Services End*/}
-
-        {/*Pricing One Start*/}
         <section className="relative block py-[120px] pb-[10px]">
           <div className="container mx-auto px-4">
             <div className="relative block mb-[52px]">
@@ -150,310 +237,336 @@ export default function Home() {
                   <div className="relative block">
                     <div className="text-left">
                       <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                        Sufi Spirituality and Mysticism
+                        Core Learning Paths
                         <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                       </span>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Love Awakening of Divine
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      for New Journey in Sufism
                       </h2>
                       <p className="text-base sm:text-lg text-gray-700">
-                        In Kashmir, where sacred mountains meet pristine lakes,
-                        Sufi spirituality invites divine experience. This path
-                        explores mysticism, focusing on love and oneness. Learn
-                        from masters, discover spiritual purification stages
-                        (Tazkiyah), and practice dhikr.
+                        In Kashmir, the heart of the ancient Sufi tradition,
+                        embark on a transformative journey where the soul’s
+                        longings meet the wisdom of the natural world. This
+                        journey transcends boundaries, revealing spirituality
+                        and science as two sides of same coin – pathways leading
+                        to Divine Truth.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative  block py-[120px] pt-10">
-              <div className="mb-[52px]">
-                <div className="flex flex-col md:flex-row bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative mr-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
-                    <div className="mb-[24px]">
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                 START YOUR SUFI JOURNEY
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
                       <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
-                        Divine patterns in nature & science
+                      An Integrated Scientific-Spiritual Framework
                       </h4>
                       <p>
-                        Exploring divine patterns connecting spirituality,
-                        nature, and modern quantum physics.
+                      These paths build progressively upon each other, creating bridges between empirical knowledge and experiential wisdom:
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Sufi Geometry
+                          1. Knowledge Foundation
                           </h5>
                           <p>
-                            Understanding divine order reflected in nature’s
-                            harmonious and sacred patterns.
+                          •	Study essential Sufi concepts and terminology alongside their potential neurological and psychological correlates<br/>
+                          •	Learn about the historical development of Sufism within the context of human cognitive and cultural evolution<br/>
+                          •	Understand the relationship between Sufism and broader Islamic teachings through comparative analytical frameworks<br/>
+                          •	Explore writings of key Sufi masters through both literary analysis and cognitive science perspectives<br/>
+                          •	Examine how Sufi epistemology relates to scientific methods of knowledge acquisition and validation processes<br/>
+                          
+
+                          </p>
+                          <p className="pt-3"><span className="font-bold">	Resource Enhancement:</span>
+                          Access multimedia learning libraries containing lectures, animations and interactive modules that explain complex concepts from both traditions using multiple learning approaches</p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          2. Spiritual Practices
+                          </h5>
+                          <p>
+                          •	Learn foundational remembrance practices (dhikr) with attention to their effects on neural synchronization and stress physiology<br/>
+                          •	Develop regular meditation and contemplation (muraqabah) while exploring research on neuroplasticity and attentional networks<br/>
+                          •	Practice presence and mindfulness with understanding of their documented effects on executive function and emotional regulation<br/>
+                          •	Understand the purpose and method of spiritual retreats (khalwa) through both traditional frameworks and sensory processing studies<br/>
+                          •	Track physiological markers (HRV, EEG patterns) as complementary data points to subjective experiential reporting techniques<br/>
+                          
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">Practice Support:</span>
+                          Implement a structured documentation system for recording both objective measurements and subjective experiences, creating valuable personal data for reflection and growth
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Kashmiri Beauty
+                          3. Character Development
                           </h5>
                           <p>
-                            Exploring sacred geometry in Kashmir’s art,
-                            architecture, and landscapes.
+                          •	Focus on purification of the lower self (tazkiyat an-nafs) with insights from personality psychology and behavioral neuroscience<br/>
+                          •	Cultivate essential virtues (adab) in all interactions while studying the social neuroscience of prosocial behavior development<br/>
+                          •	Recognize and work with psychological patterns using both traditional Sufi models and contemporary cognitive-behavioral frameworks<br/>
+                          •	Implement ethical teachings in daily life while examining research on moral development and ethical decision-making processes<br/>
+                          •	Apply principles of positive psychology that align with traditional Sufi approaches to character refinement and virtue cultivation
+
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">	Assessment Framework: </span>
+                          Utilize graduated evaluation methods that honor both objective metrics from psychology and traditional spiritual markers, creating a comprehensive developmental profile
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Quantum Patterns
+                          4. Lineage Understanding & Transmission (Silsila)
                           </h5>
                           <p>
-                            Bridging spirituality and science through cosmic
-                            structures and mathematical harmony.
+                          •	Study the concept of spiritual lineages (silsila) as methodological frameworks for transmission of experiential knowledge<br/>
+                          •	Explore how diverse Sufi orders (Qadiriyya, Naqshbandiyya, Chishtiyya, etc.) represent different methodological approaches to the same truth<br/>
+                          •	Understand how all authentic spiritual chains, though varied in specific practices and emphasis, ultimately converge at the same source of wisdom<br/>
+                          •	Examine the scientific parallels to transmission lineages in terms of skill acquisition, expertise development, and knowledge preservation<br/>
+                          •	Recognize how the teacher-student relationship (sheikh-murid) creates an empirically verifiable environment for accelerated neuroplasticity and learning
+
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">Integrative Understanding:  </span>
+                          Develop appreciation for how the diversity of spiritual paths represents different methodological approaches to the same universal realities, similar to how various scientific disciplines offer complementary perspectives on natural phenomena
                           </p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Spiritual Nature
+                          5. Community Engagement
                           </h5>
                           <p>
-                            Sacred patterns reveal deep connections between
-                            divinity and universal laws.
+                          •	Participate in group remembrance ceremonies (hadra) while understanding collective coherence phenomena and group psychology<br/>
+                          •	Engage in service to others (khidma) with awareness of the documented health benefits of altruism and prosocial behavior<br/>
+                          •	Learn from the company of fellow seekers (suhbah) through principles of collaborative learning and knowledge construction<br/>
+                          •	Build relationships with more experienced practitioners while studying mentorship dynamics and skill acquisition models<br/>
+                          •	Explore social contagion theories in relation to traditional emphasis on spiritual companionship and community development
+
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">	Learning Enhancement:  </span>
+                          Participate in interdisciplinary study groups that bring together individuals from diverse scientific backgrounds with those knowledgeable in Sufi traditions, generating unique insights through cross-pollination
+                          </p>
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          7. Integration Practices
+                          </h5>
+                          <p>
+                          •	Apply Sufi principles across all aspects of life using systems thinking and complexity science models for holistic understanding<br/>
+                          •	Bridge contemplative practice with active engagement through understanding of state-dependent learning and performance<br/>
+                          •	Harmonize intellectual understanding with experiential knowledge using dual-process theories of cognition and knowledge integration<br/>
+                          •	Balance individual development with community responsibility through ecological frameworks and network science principles<br/>
+                          •	Develop research projects that ethically explore the intersection of Sufi practices and scientific measurement methodologies
+
+
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">Ethical Framework:   </span>
+                          Implement a contextual ethics module addressing considerations at the intersection of scientific research and spiritual practice, including cultural respect, research ethics, and responsible integration
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          8. Advanced Integration & Contribution
+                          </h5>
+                          <p>
+                          •	Study contemporary case examples of scientists who have successfully integrated Sufi practices while maintaining their scientific rigor<br/>
+                          •	Contribute to the growing body of research at the intersection of contemplative practice and scientific investigation<br/>
+                          •	Develop individualized approaches that honor both traditional lineage practices and scientific understanding<br/>
+                          •	Mentor newcomers with scientific backgrounds who are beginning their own integrative journeys<br/>
+                          •	Participate in collaborative projects that advance understanding in both scientific and spiritual domains
+
+
+                          </p>
+                          <p className="pt-3">
+                          <span className="font-bold">Community Building:   </span>
+                          Create digital and in-person forums where practitioners can share experiences, insights and measurement approaches, building a community of practice around integrated scientific-spiritual development
                           </p>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row pl-5 bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
-                    <div className="mb-[24px]">
-                      <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">
-                        Consciousness & the Soul
-                      </h4>
-                      <p>
-                        Understanding the soul’s path back to the divine source.
-                      </p>
-                    </div>
-                    <ul className="space-y-[17px] pb-[17px]">
-                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
-                        <div>
-                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            The Soul’s Journey
-                          </h5>
-                          <p>
-                            Understanding the soul’s evolution, purpose, and
-                            return to divine unity.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
-                        <div>
-                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Nafs and Purification
-                          </h5>
-                          <p>
-                            Refining the self through discipline, spiritual
-                            practices, and inner transformation.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
-                        <div>
-                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Expanding Consciousness
-                          </h5>
-                          <p>
-                            Unlocking human potential through meditation,
-                            prayer, and heightened awareness.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
-                        <div>
-                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Union with the Divine
-                          </h5>
-                          <p>
-                            Attaining enlightenment through devotion,
-                            self-awareness, and divine connection.
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative ml-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
+             </div> 
+              
           </div>
         </section>
+        <div className="min-h-screen bg-gradient-to-br from-fixnix-lightpurple to-fixnix-darkpurplepy-4 sm:py-6 md:py-8 px-2 sm:px-4 md:px-6 lg:px-8">
+        
+      <div className="max-w-4xl mx-auto w-full">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          
+          <div className="bg-gradient-to-r from-fixnix-lightpurple to-fixnix-darkpurple py-6 px-4 sm:px-6 md:px-10">
+          <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                 EVALUATE NOW
+                </div>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Beginner's Checklist for the Sufi Journey</h1>
+            <p className="text-purple-100 mt-1 text-sm sm:text-base">An Integrated Scientific-Spiritual Assessment Tool</p>
+          </div>
+          
+          <div className="p-4 sm:p-6 md:p-10">
+            <div className="mb-6 sm:mb-8">
+              <div className="flex flex-wrap items-center justify-between mb-2 gap-2">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800">Overall Progress</h2>
+                <span className="text-sm font-medium text-gray-600 bg-gray-100 px-2 py-1 rounded-full">
+                  {Math.round(overallProgress)}% Complete
+                </span>
+              </div>
+              <div className="w-full h-4 bg-gray-200 rounded-full overflow-hidden">
+                <div 
+                  className="h-full rounded-full transition-all duration-500 ease-out"
+                  style={{ 
+                    width: `${overallProgress}%`,
+                    background: `linear-gradient(to right, 
+                      ${overallProgress <= 25 ? '#a855f7' : 
+                        overallProgress <= 50 ? '#8b5cf6' : 
+                          overallProgress <= 75 ? '#6366f1' : '#4f46e5'
+                      }, 
+                      ${overallProgress <= 25 ? '#d8b4fe' : 
+                        overallProgress <= 50 ? '#c4b5fd' : 
+                          overallProgress <= 75 ? '#a5b4fc' : '#818cf8'
+                      })`
+                  }}
+                ></div>
+              </div>
+              
+              <div className="mt-4 p-4 rounded-lg bg-gray-200 border border-indigo-100">
+                <h3 className="font-medium text-lg text-fixnix-lightpurple">Current Status: {getJourneyStatus()}</h3>
+                <p className="mt-1 text-fixnix-lightpurple">{getJourneyDescription()}</p>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mt-4">
+                <button 
+                  onClick={() => setShowProgressDetails(!showProgressDetails)}
+                  className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm bg-indigo-100 hover:bg-indigo-200 text-indigo-700 rounded-md transition"
+                >
+                  {showProgressDetails ? 'Hide Details' : 'Show Details'}
+                </button>
+                <button 
+                  onClick={resetAll}
+                  className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md transition"
+                >
+                  Reset All
+                </button>
+                <button 
+                  onClick={completeAll}
+                  className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-md transition"
+                >
+                  Complete All
+                </button>
+              </div>
+              
+              {showProgressDetails && (
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  {sections.map((section, idx) => (
+                    <div key={`progress-${idx}`} className="bg-white border border-gray-200 rounded-md p-3 sm:p-4 shadow-sm">
+                      <div className="flex justify-between items-center mb-2 flex-wrap gap-1">
+                        <h4 className="font-medium text-gray-800 text-sm sm:text-base">{section.title}</h4>
+                        <span className="text-xs sm:text-sm font-medium text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded-full">
+                          {Math.round(sectionProgress[idx])}%
+                        </span>
+                      </div>
+                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-500 ease-out"
+                          style={{ width: `${sectionProgress[idx]}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+            
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              {sections.map((section, sectionIndex) => (
+                <div key={`section-${sectionIndex}`} className="border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                  <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 border-b border-gray-200">
+                    <h3 className="text-base sm:text-lg font-medium text-gray-800">{section.title}</h3>
+                    <div className="w-full h-1 bg-gray-200 rounded-full mt-2 overflow-hidden">
+                      <div 
+                        className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-500 ease-out"
+                        style={{ width: `${sectionProgress[sectionIndex]}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                  
+                  <div className="divide-y divide-gray-200">
+                    {section.items.map((item, itemIndex) => (
+                      <div 
+                        key={`item-${sectionIndex}-${itemIndex}`}
+                        className="px-4 sm:px-6 py-3 sm:py-4 flex items-start hover:bg-gray-50 transition"
+                      >
+                        <div className="flex-shrink-0">
+                          <button
+                            onClick={() => toggleItem(sectionIndex, itemIndex)}
+                            className={`w-5 h-5 rounded border flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors ${
+                              section.completed[itemIndex]
+                                ? 'bg-indigo-600 border-indigo-600 text-white'
+                                : 'border-gray-300'
+                            }`}
+                          >
+                            {section.completed[itemIndex] && (
+                              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            )}
+                          </button>
+                        </div>
+                        <label 
+                          htmlFor={`item-${sectionIndex}-${itemIndex}`}
+                          className={`ml-3 cursor-pointer ${
+                            section.completed[itemIndex] ? 'text-indigo-600 font-medium' : 'text-gray-800'
+                          }`}
+                        >
+                          {item}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 border-t border-gray-200 text-xs sm:text-sm text-gray-500 text-center">
+            <p>This assessment is a guide for personal reflection, not an absolute measure of spiritual development.</p>
+            <p>Regular consultation with qualified teachers remains essential.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
         {/*Pricing One End*/}
 
-        {/*Contact Two Start*/}
-        <section className="text-left-mobile relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
-          <div className="absolute inset-0 bg-center bg-cover mix-blend-multiply z-[-1]"></div>
-          <div className="container">
-            <div className="relative block">
-              <div className=" text-center mb-[42px]">
-                <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-                  Global Dialogue
-                  <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                  <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                </span>
-                <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-                  Sharing Sufi Science with the World
-                </h2>
-                <p className="pt-[15px] sm:pt-[20px] text-gray-100 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-                  As Kashmir has long been a center of spiritual learning, it is
-                  our mission to extend the knowledge of Sufi science to the
-                  global community. This learning path invites you to
-                  participate in international dialogues, conferences, and
-                  collaborations where Sufi scholars and modern scientists can
-                  come together to explore the confluence of the mystical and
-                  the scientific. By sharing our insights with the world, we
-                  contribute to the global understanding of the unity of
-                  existence and the path of spiritual enlightenment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/*Contact Two  End*/}
-
-        {/*Services One Start*/}
-        <section className=" text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
-          <div className="absolute top-[10px] left-0 services-one-shape-1">
-            <img src="assets/images/shapes/services-one-shape-1.png" alt="" />
-          </div>
-          <div className="absolute top-[65px] right-0 services-one-shape-2">
-            <img src="assets/images/shapes/services-one-shape-2.png" alt="" />
-          </div>
-          <div className="container">
-            <div className=" text-center mb-[49px]">
-              <span className=" text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
-                Education for the Soul
-                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-              </span>
-              <h2 className=" text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
-                Integrating Sufi Science with Modern Thought
-              </h2>
-              <p className="s pt-[20px]">
-                Exploring the integration of ancient Sufi wisdom with modern
-                scientific knowledge, this path empowers individuals to navigate
-                both the spiritual and material worlds, fostering a deeper
-                understanding of life, consciousness, and the universe.
-              </p>
-            </div>
-
-            <div className="row flex flex-wrap">
-              {/* Service 1 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-1.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Wisdom Integration
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Bringing together Sufi teachings and modern scientific
-                      knowledge for holistic understanding.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 2 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className=" relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-2.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className=" p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Experiential Learning
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Offering workshops, lectures, and courses combining
-                      spirituality with scientific exploration and practice.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 3 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className=" relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-3.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className=" text-[24px] font-semibold leading-[34px]">
-                      Spiritual Science
-                    </h3>
-                    <p className=" mt-[15px] mb-[22px]">
-                      Empowering seekers to unite divine reverence with
-                      intellectual curiosity for deeper wisdom.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/*Services One End*/}
       </Layout>
