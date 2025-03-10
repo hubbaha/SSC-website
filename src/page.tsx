@@ -24,9 +24,7 @@ export default function Home() {
       <Layout
         headerStyle={2}
         footerStyle={1}
-        headTitle={headTitle}
-        breadcrumbTitle={breadcrumbTitle}
-        wrapperCls={wrapperCls}
+        
       >
         <Banner />
         <Experience />

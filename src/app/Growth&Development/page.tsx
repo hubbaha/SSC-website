@@ -68,12 +68,12 @@ export default function Home() {
                   <div className="relative">
                     <div className="rounded-lg overflow-hidden relative group">
                       <Image
-                        src="/assets/images/services/core-services-img-1.jpg"
+                        src="/assets/images/services/growth&development.png"
                         alt="Core services"
                         layout="responsive"
                         width={500}
-                        height={400}
-                        className="w-full transition-transform duration-500 group-hover:scale-105"
+                        height={300}
+                        className="w-full h-[400px] transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-fixnix-lightpurple opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
                     </div>
@@ -88,376 +88,1099 @@ export default function Home() {
                         Growth and Development
                         <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
                       </span>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Embracing the Path of Growth
+                      <h2 className="text-4xl sm:text-3xl md:text-2xl font-semibold mt-4 mb-2 leading-snug sm:leading-tight">
+                      ADVANCING BEYOND FOUNDATIONS: 
                       </h2>
+                      <h3 className="text-3xl sm:text-xl md:text-xl font-semibold lowercase mb-6 leading-snug sm:leading-tight">THE INTEGRATED PATH OF SCIENTIFIC-SPIRITUAL DEVELOPMENT</h3>
                       <p className="text-base sm:text-lg text-gray-700">
-                        Sufi science is a transformative journey of the soul,
-                        deepening one's connection to the Divine and the natural
-                        world. Rooted in Kashmir’s spiritual traditions, it
-                        emphasizes heart purification and unity. The Sufi
-                        Science Center guides seekers toward inner and outer
-                        harmony, nurturing spiritual, mental, and emotional
-                        growth.
+                      After establishing the foundational practices and understanding outlined in the beginner's checklist, the serious seeker faces the essential question: How does one progress systematically along the Sufi path while maintaining integration with scientific understanding? This page addresses the dynamics of authentic growth and development through an approach that honors both spiritual wisdom and empirical inquiry.
+                      </p>
+                      <p className="text-base sm:text-lg mt-5 text-gray-700">
+                      The journey beyond foundations involves specific challenges, methodologies, and markers of progress that can be understood through both traditional Sufi frameworks and contemporary scientific perspectives. What follows is a comprehensive guide to navigating this terrain with intellectual integrity and spiritual authenticity.
                       </p>
                     </div>
-                    <ul className="space-y-6 sm:space-y-8 lg:space-y-10">
-                      {/* List Item 1 */}
-                      <li className="relative flex items-center p-4 py-6 md:py-8 bg-white rounded-lg shadow-md transition-all duration-500 hover:-translate-y-[10px] group ">
-                        <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
-                          <span className="icon-checked"></span>
-                        </div>
-                        <div className="ml-6 sm:ml-6">
-                          <h5 className="text-[19px] sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
-                            Journey of the Soul
-                          </h5>
-                          <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
-                            A transformative path of spiritual growth.
-                          </p>
-                        </div>
-                      </li>
-
-                      {/* List Item 2 */}
-                      <li className="relative flex items-center p-6 py-6 md:py-8 bg-white rounded-lg shadow-md  transition-all duration-500 hover:-translate-y-[10px] group">
-                        <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-fixnix-lightpurple text-white text-lg sm:text-xl rounded-full transition-colors duration-500 ">
-                          <span className="icon-repair"></span>
-                        </div>
-                        <div className="ml-4 sm:ml-6">
-                          <h5 className="text-lg sm:text-xl md:text-[21px] font-semibold text-fixnix-darkpurple transition-colors duration-500 ">
-                            Inner and Outer Harmony
-                          </h5>
-                          <p className="text-sm sm:text-base text-gray-700 transition-colors duration-500 ">
-                            Balancing spirituality, mind, and emotions{" "}
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        {/*Core Services End*/}
-
-        {/*Pricing One Start*/}
-        <section className="relative block py-[120px] pb-[10px]">
+        <section className="relative block py-[120px] -mb-[340px] ">
           <div className="container mx-auto px-4">
-            <div className="relative block mb-[52px]">
+            <div className="relative block ">
+              <div className="flex items-center">
+                <div className="w-full ">
+                  <div className="relative block">
+                    <div className="text-left">
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      RECOGNIZING THE STAGES OF DEVELOPMENT
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[20px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                 SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                     1. Traditional Framework
+                      </h4>
+                      <p>
+                      In the Sufi tradition, development progresses through distinct stations (maqamat) and states (ahwal). Stations represent stable achievements of character and consciousness, while states are temporary experiences that come and go. Understanding this framework provides a map for the journey ahead.
+                      </p>
+                    </div>
+                    <ul className="space-y-[17px] pb-[17px]">
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Stations of Development (Maqamat):
+                          </h5>
+                          
+                          <p className="">
+                          Systematic progression through stages such as tawba (reorientation), wara (mindfulness), and sabr (patience) that represent stable character attainments.</p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	States of Experience (Ahwal): 
+                          </h5>
+                          <p>
+                          Encountering temporary states such as qurb (nearness), mahabbah (love), and yaqin (certainty) that arise and subside during development.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Progressive Unveiling (Kashf): 
+                          </h5>
+                          <p>
+                          The gradual revelation of spiritual realities as the seeker advances along the path of knowledge and practice.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                     2. Scientific Perspective
+                      </h4>
+                      <p>
+                      Contemporary developmental psychology and neuroscience provide complementary frameworks for understanding stages of human growth.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Developmental Metrics: 
+                          </h5>
+                          <p>
+                          Research on post-conventional adult development showing measurable stages in cognitive and ethical maturation beyond conventional socialization.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Neuroplasticity Research: 
+                          </h5>
+                          <p>
+                          Studies demonstrating how consistent contemplative practice creates quantifiable changes in neural architecture at different expertise stages.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	State-Trait Transformation: 
+                          </h5>
+                          <p>
+                          Evidence for how temporary states, when cultivated repeatedly, can become enduring traits through neurobiological mechanisms.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             
+            </div>
+             </div> 
+              
+          </div>
+        </section>
+        <section className="relative block py-[120px] -mb-[340px] ">
+          <div className="container mx-auto px-4">
+            <div className="relative block ">
+              <div className="flex items-center">
+                <div className="w-full ">
+                  <div className="relative block">
+                    <div className="text-left ">
+                      
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      KEY DIMENSIONS OF GROWTH
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      1. Perceptual Development
+                      </h4>
+                      <p>
+                      The systematic refinement of awareness and attention, allowing for increasingly subtle perception of both inner and outer realities.
+                      </p>
+                    </div>
+                    <ul className="space-y-[17px] pb-[17px]">
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Heart Perception (Basirah): 
+                          </h5>
+                          
+                          <p className="">
+                          Development of the heart's capacity to recognize realities beyond ordinary sensory experience through systematic practice.</p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Attentional Training: 
+                          </h5>
+                          <p>
+                          Research-based protocols for developing sustained, focused, and panoramic attention as foundations for advanced perception.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Discrimination Development: 
+                          </h5>
+                          <p>
+                          Cultivating the ability to distinguish between genuine perception and projection, validated through multiple methods.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      2. Emotional Transformation
+                      </h4>
+                      <p>
+                      Contemporary developmental psychology and neuroscience provide complementary frameworks for understanding stages of human growth.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Nafs Purification: 
+                          </h5>
+                          <p>
+                          Traditional methods for recognizing and transforming the reactive patterns of the self through awareness and practice.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Emotional Regulation: 
+                          </h5>
+                          <p>
+                          Scientific approaches to developing balanced emotional responses based on neurobiological understanding.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Heart Qualities: 
+                          </h5>
+                          <p>
+                          Systematic cultivation of refined emotional states such as compassion, gratitude, and equanimity through integrated practices.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      3. Cognitive Integration
+                      </h4>
+                      <p>
+                      The development of wisdom that transcends yet includes rational thinking, allowing for more comprehensive understanding.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Integrative Wisdom (Hikmah): 
+                          </h5>
+                          <p>
+                          Traditional approaches to developing knowledge that transcends the limitations of ordinary analytical thinking.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Cognitive Flexibility: 
+                          </h5>
+                          <p>
+                          Research-based methods for developing the ability to move fluidly between different modes of knowing and perspectives.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Paradox Comfort: 
+                          </h5>
+                          <p>
+                          Practices that develop capacity to embrace apparent contradictions and transcend binary thinking patterns.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      4. Ethical Refinement
+                      </h4>
+                      <p>
+                      The embodiment of virtues and qualities that reflect spiritual maturation in daily life and relationships.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Divine Attributes (Akhlaq): 
+                          </h5>
+                          <p>
+                          Traditional framework for cultivating qualities that reflect divine attributes in human character and conduct.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Prosocial Development: 
+                          </h5>
+                          <p>
+                          Scientific research on the cultivation of compassion, altruism, and ethical decision-making in interpersonal contexts.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Ethical Intelligence: 
+                          </h5>
+                          <p>
+                          Integrated approaches to developing nuanced ethical understanding that responds appropriately to complex situations.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             
+            </div>
+             </div> 
+              
+          </div>
+        </section>
+        <section className="relative block py-[120px] -mb-[340px] ">
+          <div className="container mx-auto px-4">
+            <div className="relative block ">
+              <div className="flex items-center">
+                <div className="w-full ">
+                  <div className="relative block">
+                    <div className="text-left ">
+                      
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      METHODOLOGIES FOR SYSTEMATIC DEVELOPMENT
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      1. Progressive Practice Sequences
+                      </h4>
+                      <p>
+                      Structured approaches that introduce practices at appropriate developmental stages with clear criteria for advancement.
+                      </p>
+                    </div>
+                    <ul className="space-y-[17px] pb-[17px]">
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Graduated Protocols:
+                          </h5>
+                          
+                          <p className="">
+                          Carefully sequenced practices with specific parameters for duration, frequency, and quality indicators.</p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Readiness Assessment: 
+                          </h5>
+                          <p>
+                          Methods for determining when a practitioner is prepared to engage with more advanced practices.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Customized Adaptation: 
+                          </h5>
+                          <p>
+                          Frameworks for adjusting practice sequences based on individual temperament and circumstances.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      2. Balanced Development Framework
+                      </h4>
+                      <p>
+                      Approaches that ensure growth occurs across multiple dimensions rather than creating lopsided development.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Multiple Faculties: 
+                          </h5>
+                          <p>
+                          Systems for developing intellectual, emotional, intuitive, physical, and social aspects of being in parallel.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Compensatory Focus: 
+                          </h5>
+                          <p>
+                          Methods for identifying and addressing underdeveloped areas to ensure balanced growth.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Integration Practices: 
+                          </h5>
+                          <p>
+                          Specific approaches that connect and harmonize development across different dimensions of experience.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      3. Qualified Guidance System
+                      </h4>
+                      <p>
+                      Structured relationships with teachers and communities that provide essential feedback and direction.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Teacher-Student Models: 
+                          </h5>
+                          <p>
+                          Traditional and contemporary approaches to working with guides who have navigated the territory.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Community Validation: 
+                          </h5>
+                          <p>
+                          Methods for engaging with peers who provide reflective feedback and diverse perspectives.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Objective Assessment:  
+                          </h5>
+                          <p>
+                          Tools for measuring progress through both traditional wisdom criteria and scientific metrics.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      4. Integrative Study Approach
+                      </h4>
+                      <p>
+                      Systematic engagement with knowledge that combines intellectual understanding with direct experience.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Text-Experience Dialogue: 
+                          </h5>
+                          <p>
+                          Practices that relate traditional texts and scientific research to personal experiential understanding.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Cross-Tradition Study: 
+                          </h5>
+                          <p>
+                          Comparative approaches examining how similar developmental patterns appear across contemplative systems.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Interdisciplinary Integration: 
+                          </h5>
+                          <p>
+                          Methods for connecting insights from diverse fields including psychology, neuroscience, and philosophy.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             
+            </div>
+             </div> 
+              
+          </div>
+        </section>
+        <section className="relative block py-[120px] -mb-[340px] ">
+          <div className="container mx-auto px-4">
+            <div className="relative block ">
               <div className="flex items-center">
                 <div className="w-full lg:w-8/12">
                   <div className="relative block">
-                    <div className="text-left">
-                      <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
-                        The Path of Development
-                        <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
-                      </span>
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
-                        Harmonizing Spirituality and Growth
+                    <div className="text-left ">
+                      
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      NAVIGATING CHALLENGES AND OBSTACLES
                       </h2>
-                      <p className="text-base sm:text-lg text-gray-700">
-                        True development in Sufism unfolds inner potential,
-                        integrating spirituality with science. At the Sufi
-                        Science Center, we nurture sustainable growth,
-                        emphasizing service, interconnectedness, and divine
-                        balance for individual and collective transformation.
-                      </p>
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative  block py-[120px] pt-10">
-              <div className="mb-[52px]">
-                <div className="flex flex-col md:flex-row bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative mr-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
-                    <div className="mb-[24px]">
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
                       <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
-                        Integrating Spiritual & Scientific Growth
+                      1. Common Developmental Challenges
                       </h4>
                       <p>
-                        Uniting Mystical Wisdom with Scientific Exploration for
-                        Deeper Understanding.
+                      Recognition and understanding of typical difficulties that arise during the growth process.
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Spiritual Science
+                          •	Spiritual Materialism: 
                           </h5>
-                          <p>
-                            Discover how ancient Sufi teachings align with
-                            modern scientific discoveries.
-                          </p>
+                          
+                          <p className="">
+                           Identifying and working with the tendency to pursue spiritual experiences as achievements or possessions.</p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Kashmir’s Wisdom
+                          •	Psychological Bypassing: 
                           </h5>
                           <p>
-                            From Shah Hamdan’s wisdom to quantum physics,
-                            explore Kashmir’s intellectual heritage.
+                          Recognizing when spiritual concepts are used to avoid necessary psychological development.
                           </p>
+                          
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Deep Awareness
+                          •	Integration Difficulties: 
                           </h5>
                           <p>
-                            Delve into meditation, sacred geometry, and science
-                            to understand the universe’s mysteries.
+                          Addressing challenges in applying insights from contemplative states to daily life situations.
+
                           </p>
+                          
+                        </div>
+                      </li>
+                      
+                  
+                      
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      2. Scientific Approach to Obstacles
+                      </h4>
+                      <p>
+                      Application of evidence-based methods for identifying and addressing specific types of developmental challenges.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Systematic Assessment: 
+                          </h5>
+                          <p>
+                          Research-based protocols for identifying the precise nature and cause of particular obstacles.
+
+                          </p>
+                          
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Truth Exploration
+                          •	Targeted Interventions: 
                           </h5>
                           <p>
-                            The Sufi Science Center offers a space to explore
-                            deeper truths and connections.
+                          Specific approaches matched to the particular challenge based on empirical understanding.
+
                           </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Progress Monitoring:  
+                          </h5>
+                          <p>
+                          Methods for tracking changes objectively to evaluate intervention effectiveness over time.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      3. Traditional Wisdom on Tests
+                      </h4>
+                      <p>
+                      Understanding of how challenges serve essential functions in the developmental process according to Sufi teaching.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Contraction and Expansion: 
+                          </h5>
+                          <p>
+                          Recognition of how states of constriction (qabd) and expansion (bast) serve the refinement process.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Necessary Challenges: 
+                          </h5>
+                          <p>
+                          Understanding how difficulties function as catalysts for deeper surrender and development.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Discernment Development: 
+                          </h5>
+                          <p>
+                          How tests cultivate the ability to distinguish between different qualities of experience.
+                          </p>
+                         
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row pl-5 bg-gray-100 p-0 pb-[52px] mb-[110px] relative z-10">
-                  <div className="md:w-1/2 lg:w-7/12 pt-[123px] relative">
-                    <div className="mb-[24px]">
-                      <h4 className="text-[30px] font-semibold leading-[40px] mb-[14px]">
-                        Nurturing Your Growth
+             
+            </div>
+             </div> 
+              
+          </div>
+        </section>
+        <section className="relative block py-[120px] -mb-[340px] ">
+          <div className="container mx-auto px-4">
+            <div className="relative block ">
+              <div className="flex items-center">
+                <div className="w-full lg:w-8/12">
+                  <div className="relative block">
+                    <div className="text-left ">
+                      
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      MARKERS OF AUTHENTIC PROGRESS
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      1. Traditional Signs of Advancement
                       </h4>
                       <p>
-                        Cultivating Wisdom, Harmony, and Personal
-                        Transformation.
+                      Indicators recognized within Sufi tradition as reflecting genuine spiritual development rather than temporary states.
                       </p>
                     </div>
                     <ul className="space-y-[17px] pb-[17px]">
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Holistic Learning
+                          •	Presence Capacity: 
                           </h5>
-                          <p>
-                            Blending ancient Sufi wisdom with modern science for
-                            a balanced, insightful journey.
-                          </p>
+                          
+                          <p className="">
+                          Increased ability to maintain conscious awareness in diverse circumstances beyond formal practice.</p>
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Spiritual Growth
+                          •	Ethical Embodiment:  
                           </h5>
                           <p>
-                            Guiding self-discovery to foster inner peace,
-                            purpose, and deeper connection.
+                          Spontaneous expression of virtues without calculation, reflecting internalized spiritual qualities.
                           </p>
+                          
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Transformative Programs
+                          •	Service Orientation:  
                           </h5>
                           <p>
-                            Workshops and retreats designed to nurture
-                            emotional, and spiritual development.
+                          Natural movement toward benefiting others rather than focus on personal spiritual attainment.
+
                           </p>
+                          
+                        </div>
+                      </li>
+                      
+                      
+                      
+                      
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      2. Scientific Indicators of Development
+                      </h4>
+                      <p>
+                      Measurable changes in functioning that correlate with progress in contemplative development.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Neurophysiological Markers: 
+                          </h5>
+                          <p>
+                          Observable shifts in brain function, heart rate variability, and stress response patterns.
+
+                          </p>
+                          
                         </div>
                       </li>
                       <li className="flex justify-between border-b border-gray-300 pb-[17px]">
                         <div>
                           <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
-                            Lasting Impact
+                          •	Cognitive Adaptability: 
                           </h5>
                           <p>
-                            Empowering individuals to create meaningful change
-                            in their lives and communities.
+                          Enhanced capacity to navigate complexity, uncertainty, and paradox in thought and perception.
+
                           </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Behavioral Consistency:  
+                          </h5>
+                          <p>
+                          Alignment between stated values and actual behavior across different contexts and challenges.
+
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      3. Integrated Assessment Approach
+                      </h4>
+                      <p>
+                      Comprehensive methods that combine multiple perspectives to evaluate authentic development.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Multi-dimensional Evaluation:  
+                          </h5>
+                          <p>
+                          Systems integrating subjective reporting, community feedback, and objective measurement.
+
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Longitudinal Tracking: 
+                          </h5>
+                          <p>
+                          Approaches for observing patterns over extended time periods rather than isolated experiences.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Contextual Understanding: 
+                          </h5>
+                          <p>
+                          Frameworks for evaluating progress in relationship to life circumstances and personal history.
+                          </p>
+                         
                         </div>
                       </li>
                     </ul>
                   </div>
-                  <div className="md:w-1/2 lg:w-5/12">
-                    <div className="relative ml-[45px] rounded-lg">
-                      <Image
-                        src="/assets/images/resources/pricing-one-img-1-1.jpg"
-                        alt=""
-                        className="w-full rounded-lg"
-                        width={500} // specify the width
-                        height={300} // specify the height
-                      />
+                </div>
+             
+            </div>
+             </div> 
+              
+          </div>
+        </section>
+        <section className="relative block py-[120px] -mb-48 ">
+          <div className="container mx-auto px-4">
+            <div className="relative block ">
+              <div className="flex items-center">
+                <div className="w-full lg:w-8/12">
+                  <div className="relative block">
+                    <div className="text-left ">
+                      
+                      <h2 className="text-2xl uppercase sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      ADVANCED INTEGRATION PRACTICES
+                      </h2>
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        {/*Pricing One End*/}
+            <div className="relative  block py-[120px] pt-10  ">
+              
+              <div className="mb-[52px] ">
+             
+                <div className="flex flex-col md:flex-row bg-gray-100  p-0 pb-[52px] mb-[110px] relative z-10 rounded-3xl">
+                <div className="absolute top-0 right-0 bg-fixnix-lightpurple text-white py-1 px-3 rounded-tr-3xl rounded-bl-xl text-sm font-medium z-20">
+                SUFI GROWTH & DEVELOPMENT
+                </div>
+                  <div className=" pt-[123px] px-10 relative ">
+                    <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      1. Contemplative Inquiry Methods
+                      </h4>
+                      <p>
+                      Disciplined approaches to investigating consciousness directly while maintaining scientific rigor.
+                      </p>
+                    </div>
+                    <ul className="space-y-[17px] pb-[17px]">
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	First-Person Science: 
+                          </h5>
+                          
+                          <p className="">
+                          Structured methods for exploring subjective experience with precision and systematic reflection.</p>
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Phenomenological Refinement:  
+                          </h5>
+                          <p>
+                          Development of nuanced language and categories for articulating subtle experiences.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Collaborative Investigation: 
+                          </h5>
+                          <p>
+                          Protocols for engaging in shared exploration with fellow practitioners to validate insights.
 
-        {/*Contact Two Start*/}
-        <section className="text-left-mobile relative block bg-fixnix-lightpurple overflow-hidden py-[120px] z-10">
-          <div className="absolute inset-0 bg-center bg-cover mix-blend-multiply z-[-1]"></div>
-          <div className="container">
-            <div className="relative block">
-              <div className=" text-center mb-[42px]">
-                <span className="relative inline-block lg:text-[16px] sm:text-[14px] md:text-[16px] leading-[16px] text-white font-semibold uppercase z-[1]">
-                  The Path Ahead
-                  <span className="absolute top-[6px] left-[-40px] md:left-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                  <span className="absolute top-[6px] right-[-40px] md:right-[-56px] w-[30px] md:w-[40px] h-[2px] bg-fixnix-darkpurple"></span>
-                </span>
-                <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-darkpurple text-[24px] sm:text-[32px] md:text-[42px] leading-[32px] sm:leading-[40px] md:leading-[52px] font-semibold">
-                  Let the path of growth & development illuminate your soul.
-                </h2>
-                <p className="pt-[15px] sm:pt-[20px] text-gray-100 text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[30px]">
-                  As you step onto this path, know that growth and development
-                  are ongoing processes—an eternal journey toward becoming the
-                  fullest expression of yourself. It is a journey that will
-                  continue to unfold, and at the Sufi Science Center - Kashmir
-                  Chapter, we are here to walk with you every step of the way.
-                  Here, in the land of mystics, we blend the ancient with the
-                  modern, the spiritual with the scientific, to guide you on
-                  your journey toward a more enlightened, harmonious, and
-                  sustainable existence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      
+                      
+                      
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      2. Life as Laboratory
+                      </h4>
+                      <p>
+                      Approaches that transform ordinary experience into opportunities for accelerated development.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Everyday Practice: 
+                          </h5>
+                          <p>
+                          Methods for bringing awareness and transformative intention to routine activities and encounters.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Relationship Development:  
+                          </h5>
+                          <p>
+                          Using interpersonal dynamics as mirrors for self-understanding and growth opportunities.
 
-        {/*Contact Two  End*/}
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Work Integration:  
+                          </h5>
+                          <p>
+                          Approaches for bringing contemplative awareness to professional activities and challenges.
 
-        {/*Services One Start*/}
-        <section className="text-left-mobile relative block py-[120px] pb-[90px] bg-fixnix-primary z-10">
-          <div className="absolute top-[10px] left-0 services-one-shape-1">
-            <img src="assets/images/shapes/services-one-shape-1.png" alt="" />
-          </div>
-          <div className="absolute top-[65px] right-0 services-one-shape-2">
-            <img src="assets/images/shapes/services-one-shape-2.png" alt="" />
-          </div>
-          <div className="container">
-            <div className="text-center mb-[49px]">
-              <span className="text-fixnix-lightpurple uppercase font-semibold text-[16px] leading-[16px] relative inline-block">
-                Awakening the Mind and Soul
-                <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-                <span className="absolute top-[6px] right-[-56px] w-[40px] h-[2px] bg-fixnix-lightpurple"></span>
-              </span>
-              <h2 className="text-fixnix-darkpurple text-[42px] leading-[52px] font-semibold mt-[14px]">
-                Bridging Sufi Wisdom and Scientific Discovery
-              </h2>
-              <p className="s pt-[20px]">
-                Uniting the spiritual depth of Sufi traditions with modern
-                scientific exploration, this journey offers insight into the
-                mysteries of consciousness, the universe, and personal
-                transformation through a harmonious blend of knowledge and
-                faith.
-              </p>
-            </div>
+                          </p>
+                         
+                        </div>
+                      </li>
+                      <div className="mb-[24px] ">
+                      <h4 className="text-[30px] font-semibold leading-[40px]  mb-[14px]">
+                      3. Service and Contribution
+                      </h4>
+                      <p>
+                      Ways that advanced practitioners can support others and contribute to collective understanding.
+                      </p>
+                    </div>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Knowledge Translation:  
+                          </h5>
+                          <p>
+                          Methods for articulating insights in accessible language for different audiences and contexts.
 
-            <div className="row flex flex-wrap">
-              {/* Service 1 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-1.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className="text-[24px] font-semibold leading-[34px]">
-                      Knowledge Synthesis
-                    </h3>
-                    <p className="mt-[15px] mb-[22px]">
-                      Harmonizing spiritual enlightenment and scientific
-                      advancements for a holistic worldview.
-                    </p>
+                          </p>
+                          
+                        </div>
+                      </li>
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Mentoring Approaches: 
+                          </h5>
+                          <p>
+                          Frameworks for supporting those earlier on the path with appropriate guidance and reflection.
+                          </p>
+                          
+                        </div>
+                      </li>
+                      
+                      <li className="flex justify-between border-b border-gray-300 pb-[17px]">
+                        <div>
+                          <h5 className="text-[24px] font-semibold leading-[34px] text-fixnix-lightpurple mb-[14px]">
+                          •	Community Cultivation:  
+                          </h5>
+                          <p>
+                          Approaches for creating environments that nurture integrated scientific-spiritual development.
+                          </p>
+                         
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-
-              {/* Service 2 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-2.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className="text-[24px] font-semibold leading-[34px]">
-                      Transformative Learning
-                    </h3>
-                    <p className="mt-[15px] mb-[22px]">
-                      Interactive workshops and immersive experiences bridging
-                      spiritual practice with scientific inquiry.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Service 3 */}
-              <div
-                className="col-xl-4 col-lg-4 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="relative block bg-white shadow-[0_8px_29px_0_rgba(0,0,0,0.1)] mb-[30px] z-[2]">
-                  <div className="relative block overflow-hidden bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] z-[1]">
-                    <img
-                      src="assets/images/services/services-1-3.jpg"
-                      alt=""
-                      className="w-full rounded-tl-[5px] rounded-tr-[5px] transition-all ease-in-out duration-[500ms]"
-                    />
-                    <div className="absolute top-[-100%] bottom-[100%] left-0 right-0 bg-fixnix-lightpurple rounded-tl-[5px] rounded-tr-[5px] mix-blend-multiply transition-all ease-in-out duration-[600ms] z-[1]"></div>
-                  </div>
-                  <div className="p-[22px] pb-[30px]">
-                    <h3 className="text-[24px] font-semibold leading-[34px]">
-                      Conscious Exploration
-                    </h3>
-                    <p className="mt-[15px] mb-[22px]">
-                      Empowering seekers to unveil deeper realities by merging
-                      faith and scientific discovery.
-                    </p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
+             </div> 
+              
           </div>
         </section>
+        <section className="relative bg-fixnix-lightpurple py-24 text-left-mobile">
+        <div className="absolute inset-0 bg-no-repeat bg-center bg-cover mix-blend-multiply"></div>
+        <div className="container">
+          <div className="text-left mb-12">
+            <span className="relative text-left-mobile inline-block text-[16px] leading-[16px] text-white font-bold  uppercase z-[1]">
+            THE CONTINUOUS JOURNEY
+              <span className="absolute top-[6px] left-[-56px] w-[40px] h-[2px] bg-white"></span>
+              
+            </span>
+            
+            <p className="text-[var(--fixnix-white)] mt-2">
+            Growth and development on the Sufi path is not a linear progression toward a final destination but a continuous unfolding of human potential. Each stage brings new challenges, insights, and capacities while revealing ever-subtler dimensions of reality and selfhood. The integrated scientific-spiritual approach offers a comprehensive framework for this journey, one that honors both the profound wisdom of the Sufi tradition and the methodological rigor of scientific inquiry. By bringing these complementary perspectives together, the contemporary seeker can navigate the path with both the heart's wisdom and the mind's clarity, allowing each to enhance and refine the other.
+            </p>
+            
+            <h2 className="mt-[10px] sm:mt-[14px] text-fixnix-white text-[16px] sm:text-[18px] md:text-[20px] leading-[10px] sm:leading-[40px] 2xl:leading-[20px] font-semibold">
+            Whether you are just beginning to move beyond foundations or are well-established on the path, the principles and practices outlined here provide orientation for the journey ahead, a journey of continuous growth, development, and discovery at the frontier of human possibility.
+            </h2>
+          </div>
+          
+        </div>
+        
+    </section>
 
-        {/*Services One End*/}
+       
+
+        
+        
       </Layout>
     </>
   );

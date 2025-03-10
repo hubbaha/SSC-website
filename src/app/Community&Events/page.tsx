@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/sections/home3/Banner";
 import { SetStateAction, useState } from "react";
+
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index: SetStateAction<number>) => {

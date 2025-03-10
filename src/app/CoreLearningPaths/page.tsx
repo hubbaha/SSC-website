@@ -244,12 +244,7 @@ export default function Home() {
                       for New Journey in Sufism
                       </h2>
                       <p className="text-base sm:text-lg text-gray-700">
-                        In Kashmir, the heart of the ancient Sufi tradition,
-                        embark on a transformative journey where the soul’s
-                        longings meet the wisdom of the natural world. This
-                        journey transcends boundaries, revealing spirituality
-                        and science as two sides of same coin – pathways leading
-                        to Divine Truth.
+                      For those beginning a journey in Sufism, particularly those with scientific backgrounds, the following core learning paths provide an integrated structure that honors both spiritual tradition and scientific understanding. 
                       </p>
                     </div>
                   </div>
@@ -418,9 +413,169 @@ export default function Home() {
               
           </div>
         </section>
-        <div className="min-h-screen bg-gradient-to-br from-fixnix-lightpurple to-fixnix-darkpurplepy-4 sm:py-6 md:py-8 px-2 sm:px-4 md:px-6 lg:px-8">
+        <div className="min-h-screen bg-white pb-y -mt-24 sm:py-6 md:py-8 px-2 sm:px-4 md:px-6 lg:px-8">
         
-      <div className="max-w-4xl mx-auto w-full">
+      <div className="w-full lg:w-8/12 mx-auto ">
+      <div className="relative block">
+                    <div className="text-left py-5">
+                      <span className="relative inline-block text-sm sm:text-base md:text-lg text-fixnix-lightpurple font-semibold uppercase z-[1]">
+                      The Sufi Journey: A Path to Enlightenment
+                        <span className="absolute top-[10px] left-[-50px] w-[35px] sm:w-[45px] h-[2px] bg-fixnix-lightpurple"></span>
+                      </span>
+                      <h2 className="text-lg  sm:text-3xl md:text-4xl font-semibold mt-4 mb-6 leading-snug sm:leading-tight">
+                      An Integrated Scientific-Spiritual Assessment Tool for the Modern Seeker
+
+                      </h2>
+                      <p className="text-base sm:text-lg text-gray-700">
+                      Embark on a transformative journey where ancient wisdom meets modern understanding. This powerful checklist is designed to guide you through the stages of Sufi practice, seamlessly blending scientific inquiry with profound spiritual exploration. It offers a comprehensive roadmap for establishing a deep, holistic practice that nurtures the mind, body, and soul. By following this path, you will not only gain insights into Sufi teachings but also integrate them into your daily life, ensuring both spiritual growth and scientific clarity as you advance towards higher states of consciousness.
+                      </p>
+                    </div>
+                  </div>
+                  <section className="feature-one">
+                  <div className="text-left mb-3 -mt-24">
+                  <h2 className="text-3xl font-bold mb-4">
+                  Why Do You Need This Checklist?
+                  </h2>
+                  <p className="text-base sm:text-lg text-gray-700 pb-3">
+                  The Sufi Journey is more than a set of rituals—it is a transformative path that refines the heart, mind, and soul. This checklist is designed for those who seek structured, meaningful progress in their spiritual journey while integrating modern scientific insights.
+                  </p>
+                    </div>
+                   
+        <div className="container">
+          <div className="row">
+            
+            {/*Feature One Single Start*/}
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                  Structured Spiritual Growth
+                  
+                </h3>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+            {/*Feature One Single Start*/}
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="200ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                 
+                  Integration of Science & Spirituality
+                  
+                </h3>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+            {/*Feature One Single Start*/}
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                  Self-Discovery & Mindfulness
+                  
+                </h3>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+            {/*Feature One Single Start*/}
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="400ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                  <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                  Guided Learning & Practice
+                  
+                </h3>
+              </div>
+            </div>
+            
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                Community & Connection 
+                  
+                </h3>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                Character <br/> Refinement
+                  
+                </h3>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                Milestone-Based Progress
+                  
+                </h3>
+              </div>
+            </div>
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                <span className="text-white">✓</span>
+                </div>
+                <h3 className="feature-one__title">
+                  
+                Authenticity <br/>& Wisdom
+                  
+                </h3>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+          </div>
+        </div>
+      </section>
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           
           <div className="bg-gradient-to-r from-fixnix-lightpurple to-fixnix-darkpurple py-6 px-4 sm:px-6 md:px-10">
